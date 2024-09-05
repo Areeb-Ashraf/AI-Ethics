@@ -1,2 +1,3 @@
 # AI-Ethics
-- Chase Richardson, , , , , 
+- Chase Richardson
+- Areeb Ashraf
