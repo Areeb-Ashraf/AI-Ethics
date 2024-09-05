@@ -1,5 +1,5 @@
 # AI-Ethics
 - Chase Richardson 🪱
-- Areeb Ashraf
+- Areeb Ashraf 🐼
 - Josiah Larimer ✨
 - Nouman Mohammed
