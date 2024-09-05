@@ -1,1 +1,2 @@
 # AI-Ethics
+- Chase Richardson, , , , , 
