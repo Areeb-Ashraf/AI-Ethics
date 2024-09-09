@@ -3,3 +3,4 @@
 - Areeb Ashraf 🐼
 - Josiah Larimer ✨
 - Nouman Mohammed
+- Sebastian Melendez
