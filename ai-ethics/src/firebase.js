@@ -42,4 +42,48 @@ const auth = getAuth(app);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
-export { auth, db };
+/*********************************************************
+ * handle authentication through this class
+ * usage:
+ *
+ * import authManager from './path-to-authManager';
+ * authManager.registerWithEmailAndPassword(name, email, password);
+ * authManager.sendPasswordReset(email);
+ * authManager.logout();
+ ***********************************************************/
+
+class AuthManager {
+  async registerWithEmailAndPassword(name, email, password) {
+    try {
+      const res = await createUserWithEmailAndPassword(auth, email, password);
+      const user = res.user;
+      await addDoc(collection(db, "users"), {
+        uid: user.uid,
+        name,
+        authProvider: "local",
+        email,
+      });
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  }
+
+  async sendPasswordReset(email) {
+    try {
+      await sendPasswordResetEmail(auth, email);
+      alert("Password reset link sent!");
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  }
+
+  logout() {
+    signOut(auth);
+  }
+}
+
+const authManager = new AuthManager();
+
+export { auth, db, authManager };
