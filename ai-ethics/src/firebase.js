@@ -9,6 +9,7 @@ import {
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,
   signOut,
+  signInWithEmailAndPassword,
 } from "firebase/auth";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 
@@ -50,6 +51,15 @@ class AuthManager {
         authProvider: "local",
         email,
       });
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  }
+
+  async logInWithEmailAndPassword(email, password) {
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
     } catch (err) {
       console.error(err);
       alert(err.message);
