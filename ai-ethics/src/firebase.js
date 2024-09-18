@@ -4,24 +4,13 @@ import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-// I am pulling these imports from my last project that used firebase
-// I will clean it up as I go
 import {
   getAuth,
-  signInWithPopup,
-  signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,
   signOut,
 } from "firebase/auth";
-import {
-  getFirestore,
-  query,
-  getDocs,
-  collection,
-  where,
-  addDoc,
-} from "firebase/firestore";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
 
 // the firebase creds as pulled from .env file
 const firebaseConfig = {
@@ -42,8 +31,8 @@ const db = getFirestore(app);
 
 /*********************************************************
  * handle authentication through this class
- * usage:
  *
+ * usage:
  * import authManager from './path-to-authManager';
  * authManager.registerWithEmailAndPassword(name, email, password);
  * authManager.sendPasswordReset(email);
