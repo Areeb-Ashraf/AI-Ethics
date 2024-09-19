@@ -49,6 +49,28 @@ class DatabaseManager {
       throw error;
     }
   }
+
+  // Fetches a word from the glossary
+  async fetchGlossary(word) {
+    try {
+      const q = query(
+        collection(db, "glossaryWord"),
+        where("title", "==", word)
+      );
+      const querySnapshot = await getDocs(q);
+
+      // Return the first matching document's data if it exists
+      if (!querySnapshot.empty) {
+        return querySnapshot.docs[0].data(); // return the first document's data
+      } else {
+        console.error("No matching glossary word found");
+        return null; // or handle as you wish
+      }
+    } catch (error) {
+      console.error("Error fetching glossary: ", error);
+      throw error;
+    }
+  }
 }
 
 export default DatabaseManager = new DatabaseManager();
