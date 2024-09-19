@@ -1,8 +1,5 @@
-// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 import {
   getAuth,
@@ -10,8 +7,17 @@ import {
   sendPasswordResetEmail,
   signOut,
   signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from "firebase/auth";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import {
+  getFirestore,
+  collection,
+  query,
+  where,
+  getDocs,
+  addDoc,
+} from "firebase/firestore";
 
 // the firebase creds as pulled from .env file
 const firebaseConfig = {
@@ -29,6 +35,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
+const googsProvider = new GoogleAuthProvider();
 
 /*********************************************************
  * handle authentication through this class
@@ -38,6 +45,7 @@ const db = getFirestore(app);
  * authManager.registerWithEmailAndPassword(name, email, password);
  * authManager.sendPasswordReset(email);
  * authManager.logout();
+ * authManager.loginWithGoogle();
  ***********************************************************/
 
 class AuthManager {
@@ -70,6 +78,39 @@ class AuthManager {
     try {
       await sendPasswordResetEmail(auth, email);
       alert("Password reset link sent!");
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  }
+
+  async loginWithGoogle() {
+    try {
+      const res = await signInWithPopup(auth, googsProvider);
+
+      // Get Google credential and user info
+      const credential = GoogleAuthProvider.credentialFromResult(res);
+      const token = credential.accessToken;
+      const user = res.user;
+
+      // Check if user already exists in Firestore
+      const q = query(collection(db, "users"), where("uid", "==", user.uid));
+      const existingUsers = await getDocs(q);
+
+      if (existingUsers.empty) {
+        // User is not registered, add them to the database
+        const userDoc = await addDoc(collection(db, "users"), {
+          uid: user.uid,
+          name: user.displayName,
+          authProvider: "google",
+          email: user.email,
+          token: token,
+        });
+        console.log("New user registered:", userDoc.id);
+      } else {
+        // User already exists, just log them in
+        console.log("User already exists, logging in:", user.uid);
+      }
     } catch (err) {
       console.error(err);
       alert(err.message);

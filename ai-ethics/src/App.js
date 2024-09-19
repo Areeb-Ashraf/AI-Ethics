@@ -1,7 +1,8 @@
-import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Sidebar from './components/sidebar'
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Sidebar from "./components/sidebar";
+import DatabaseManTester from "./DatabaseManTester";
 
 // Placeholder components for the pages
 const Explore = () => <div>Explore Page</div>;
@@ -15,9 +16,9 @@ function App() {
   return (
     <Router>
       {/*Remove inline css*/}
-      <div style={{ display: 'flex' }}>
-        <Sidebar />  {/* Sidebar stays fixed */}
-        <div style={{ marginLeft: '20%', padding: '20px', width: '80%' }}>
+      <div style={{ display: "flex" }}>
+        <Sidebar /> {/* Sidebar stays fixed */}
+        <div style={{ marginLeft: "20%", padding: "20px", width: "80%" }}>
           <Routes>
             {/*Add Homepage route*/}
             <Route path="/explore" element={<Explore />} />
@@ -26,6 +27,7 @@ function App() {
             <Route path="/ai-term-glossary" element={<AITermGlossary />} />
             <Route path="/quizzes" element={<Quizzes />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/databaseTest" element={<DatabaseManTester />} />
           </Routes>
         </div>
       </div>
