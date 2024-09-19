@@ -10,6 +10,8 @@ import {
   sendPasswordResetEmail,
   signOut,
   signInWithEmailAndPassword,
+  GoogleAuthProvider,
+  signInWithPopup,
 } from "firebase/auth";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 
@@ -29,6 +31,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
+const googsProvider = new GoogleAuthProvider();
 
 /*********************************************************
  * handle authentication through this class
@@ -70,6 +73,30 @@ class AuthManager {
     try {
       await sendPasswordResetEmail(auth, email);
       alert("Password reset link sent!");
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+  }
+
+  // google oauth login and register
+  async loginWithGoogle() {
+    try {
+      const res = await signInWithPopup(auth, googsProvider);
+
+      // This gives you a Google Access Token and the signed-in user's info
+      const credential = GoogleAuthProvider.credentialFromResult(res);
+      const token = credential.accessToken;
+
+      const user = res.user;
+      const userDoc = await addDoc(collection(db, "users"), {
+        uid: user.uid,
+        name: user.displayName,
+        authProvider: "google",
+        email: user.email,
+        token: token,
+      });
+      console.log(userDoc);
     } catch (err) {
       console.error(err);
       alert(err.message);
