@@ -6,6 +6,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 
+// Sidebar items data
 const SidebarData = [
   {
     title: 'Explore',
@@ -25,7 +26,7 @@ const SidebarData = [
   {
     title: 'AI Term Glossary',
     path: '/ai-term-glossary',
-    icon: <FaIcons.FaBook />,
+    icon: <FaIcons.FaBook />,  
   },
   {
     title: 'Quizzes',
@@ -40,6 +41,7 @@ const SidebarData = [
 ];
 
 function Navbar() {
+  // Toggle and responsive logic
   const [sidebar, setSidebar] = useState(true);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -70,19 +72,35 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff', className: "contactIcon" }}>
+        {/* Navbar */}
         <div className='navbar'>
+          {/* Menubar icon */}
           <NavLink to='#' className='toggle-icons'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavLink>
+
+        {/* Search bar */}
+        <div className={sidebar ? 'search-bar expanded' : 'search-bar'}>
+          <input type="text" placeholder="Search..." className='search-input' />
         </div>
+
+        {/* Login and Signup buttons */}
+        <div className="auth-buttons">
+          <button className="btn login-btn">Log in</button>
+          <button className="btn signup-btn">Sign Up</button>
+        </div>
+      </div>
+        {/* Sidebar */}
         <nav className={sidebar ? 'sidebar-container active' : 'sidebar-container'}>
           <ul className='sidebar-items'>
+            {/* Title and cross icon */}
             <li className='sidebar-header'>
-              <NavLink to="/" onClick={handleLinkClick}> <h1>✨AI Ethics</h1> </NavLink>
+              <NavLink to="/" onClick={handleLinkClick}> <h1>✨Ai Ethics</h1> </NavLink>
               <NavLink to='#' className='toggle-icons' onClick={showSidebar}>
                 <AiIcons.AiOutlineClose />
               </NavLink>
             </li>
+            {/* Fetch sidebar items*/}
             {SidebarData.map((item, index) => (
               <li key={index} className='sidebar-text'>
                 <NavLink 
