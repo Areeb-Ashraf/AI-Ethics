@@ -1,73 +1,104 @@
-// Sidebar.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/sidebar.css';
+import "../styles/sidebar.css";
+import { IconContext } from 'react-icons';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import * as IoIcons from 'react-icons/io';
 
-const Sidebar = () => {
+const SidebarData = [
+  {
+    title: 'Explore',
+    path: '/explore',
+    icon: <FaIcons.FaSearch />,
+  },
+  {
+    title: 'Lessons',
+    path: '/lessons',
+    icon: <IoIcons.IoMdBook />,
+  },
+  {
+    title: 'Linked Content',
+    path: '/linked-content',
+    icon: <FaIcons.FaLink />,
+  },
+  {
+    title: 'AI Term Glossary',
+    path: '/ai-term-glossary',
+    icon: <FaIcons.FaBook />,
+  },
+  {
+    title: 'Quizzes',
+    path: '/quizzes',
+    icon: <IoIcons.IoMdSchool />,
+  },
+  {
+    title: 'Leaderboard',
+    path: '/leaderboard',
+    icon: <FaIcons.FaTrophy />,
+  }
+];
+
+function Navbar() {
+  const [sidebar, setSidebar] = useState(true);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+      if (window.innerWidth > 768) {
+        setSidebar(true);
+      } else {
+        setSidebar(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const handleLinkClick = () => {
+    if (isMobile) {
+      setSidebar(false);
+    }
+  };
+
   return (
-    <div className="sidebar-container">
-
-      <NavLink 
-        to="/" 
-        className="sidebar-link" 
-        activeClassName="active"
-      >
-        <div className="sidebar-head">✨AI Ethics</div>
-      </NavLink>
-
-      <NavLink 
-        to="/explore" 
-        className="sidebar-link" 
-        activeClassName="active"
-      >
-        <div className="sidebar-item">Explore</div>
-      </NavLink>
-
-      <div className="sub-heading">Learn<hr /></div>
-
-      <NavLink 
-        to="/lessons" 
-        className="sidebar-link" 
-        activeClassName="active"
-      >
-        <div className="sidebar-item">Lessons</div>
-      </NavLink>
-
-      <NavLink 
-        to="/linked-content" 
-        className="sidebar-link" 
-        activeClassName="active"
-      >
-        <div className="sidebar-item">Linked Content</div>
-      </NavLink>
-
-      <NavLink 
-        to="/ai-term-glossary" 
-        className="sidebar-link" 
-        activeClassName="active"
-      >
-        <div className="sidebar-item">AI Term Glossary</div>
-      </NavLink>
-
-      <div className="sub-heading">Grow<hr /></div>
-
-      <NavLink 
-        to="/quizzes" 
-        className="sidebar-link" 
-        activeClassName="active"
-      >
-        <div className="sidebar-item">Quizzes</div>
-      </NavLink>
-
-      <NavLink 
-        to="/leaderboard" 
-        className="sidebar-link" 
-        activeClassName="active"
-      >
-        <div className="sidebar-item">Leaderboard</div>
-      </NavLink>
-    </div>
+    <>
+      <IconContext.Provider value={{ color: '#fff', className: "contactIcon" }}>
+        <div className='navbar'>
+          <NavLink to='#' className='toggle-icons'>
+            <FaIcons.FaBars onClick={showSidebar} />
+          </NavLink>
+        </div>
+        <nav className={sidebar ? 'sidebar-container active' : 'sidebar-container'}>
+          <ul className='sidebar-items'>
+            <li className='sidebar-header'>
+              <NavLink to="/" onClick={handleLinkClick}> <h1>✨AI Ethics</h1> </NavLink>
+              <NavLink to='#' className='toggle-icons' onClick={showSidebar}>
+                <AiIcons.AiOutlineClose />
+              </NavLink>
+            </li>
+            {SidebarData.map((item, index) => (
+              <li key={index} className='sidebar-text'>
+                <NavLink 
+                  to={item.path} 
+                  activeClassName="active" 
+                  onClick={handleLinkClick}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </IconContext.Provider>
+    </>
   );
 }
 
-export default Sidebar;
+export default Navbar;

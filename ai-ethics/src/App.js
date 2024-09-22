@@ -15,10 +15,9 @@ const Leaderboard = () => <div>Leaderboard Page</div>;
 function App() {
   return (
     <Router>
-      {/*Remove inline css*/}
-      <div style={{ display: "flex" }}>
+      <div>
         <Sidebar /> {/* Sidebar stays fixed */}
-        <div style={{ marginLeft: "20%", padding: "20px", width: "80%" }}>
+        <div>
           <Routes>
             {/*Add Homepage route*/}
             <Route path="/explore" element={<Explore />} />
