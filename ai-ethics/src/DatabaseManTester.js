@@ -1,5 +1,5 @@
 import React from "react";
-import { authManager } from "./firebase";
+import { auth } from "./firebase";
 import databaseManager from "./databaseManager";
 
 function DatabaseManTester() {
@@ -21,8 +21,31 @@ function DatabaseManTester() {
     console.log(leaderboard);
   }
 
+  // function that fetches then logs a user's profile
+  async function fetchUserProfile(userID) {
+    const user = auth.currentUser;
+    if (user) {
+      userID = user.uid;
+    }
+
+    const userProfile = await databaseManager.fetchUserProfile(userID);
+    console.log(userProfile);
+  }
+
+  // function that logs the uid of the currently logged in user
+  function fetchCurrentUser() {
+    console.log(databaseManager.getCurrentUserId());
+  }
+
   return (
     <div>
+      <div
+        style={{
+          height: "100px",
+          width: "100%",
+          backgroundColor: "transparent",
+        }}
+      ></div>
       <button onClick={() => fetchGlossary("LLM")}>
         Click me to retrieve "LLM" glossary word
       </button>
@@ -31,6 +54,14 @@ function DatabaseManTester() {
       </button>
       <button onClick={() => fetchLeaderboardByUserID("bar")}>
         Click me to retrieve leaderboard by user ID bar
+      </button>
+      <button onClick={() => fetchUserProfile("baz")}>
+        Click me to retrieve user profile by user ID or logged in User (if you
+        are logged in it will retrieve your profile)
+      </button>
+      <button onClick={fetchCurrentUser}>
+        Click me to retrieve the current user's UID (if no user is logged in it
+        will throw an error)
       </button>
     </div>
   );
