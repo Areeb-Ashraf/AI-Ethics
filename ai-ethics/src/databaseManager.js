@@ -1,5 +1,6 @@
-import { auth, db } from "./firebase";
+import { auth, db, imagesRef } from "./firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 class DatabaseManager {
   //   async addDoc(collectionName, data) {
@@ -122,6 +123,22 @@ class DatabaseManager {
       console.error("Error completing lesson: ", error);
       throw error;
     }
+  }
+
+  async uploadImage(file) {
+    const storageRef = ref(imagesRef, file.name);
+    try {
+      const snapshot = await uploadBytes(storageRef, file);
+      console.log("Uploaded a blob or file!");
+    } catch (error) {
+      console.error(error);
+    }
+
+    // Upload completed successfully, now we can get the download URL
+    return getDownloadURL(ref(imagesRef, file.name)).then((url) => {
+      console.log("File available at", url);
+      return url;
+    });
   }
 }
 
