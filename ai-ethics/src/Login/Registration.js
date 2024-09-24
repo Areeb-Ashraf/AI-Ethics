@@ -11,7 +11,21 @@ const Registration = () => {
 
   const handleRegister = async (e) => {
     e.preventDefault();
+
+    // Check password length before proceeding
+    if (password.length < 6) {
+      alert("Password must be at least 6 characters long.");
+      return; // Stop the registration process
+    }
+
     try {
+      // Check if the user is already registered before attempting to register
+      const isRegistered = await authManager.isUserRegistered(email);
+      if (isRegistered) {
+        throw new Error("Email is already in use. Please log in.");
+      }
+
+      // If not registered, proceed to register
       await authManager.registerWithEmailAndPassword(name, email, password);
       alert('Registration successful!');
       navigate('/login'); // Redirect to login after successful registration
@@ -64,4 +78,3 @@ const Registration = () => {
 };
 
 export default Registration;
-

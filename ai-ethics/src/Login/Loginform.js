@@ -10,13 +10,40 @@ const LoginForm = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    // Input validation
+    if (!email || !password) {
+      alert('Please enter both email and password.');
+      return;
+    }
+
     try {
-      await authManager.loginWithEmailAndPassword(email, password);
+      // Check if the user is registered in Firestore
+      const isRegistered = await authManager.isUserRegistered(email);
+      
+      if (!isRegistered) {
+        alert('User not registered. Please sign up.');
+        return;
+      }
+
+      // Proceed with login if the user is registered
+      await authManager.logInWithEmailAndPassword(email, password);
       alert('Login successful!');
-      navigate('/explore'); // Redirect to AI Ethics site (starting with "Explore" page) after successful login
+      navigate('/explore'); // Redirect to AI Ethics site after successful login
     } catch (err) {
       console.error('Login failed:', err.message);
       alert('Login failed: ' + err.message);
+    }
+  };
+
+  const handleGoogleLogin = async () => {
+    try {
+      await authManager.loginWithGoogle();
+      alert('Google login successful!');
+      navigate('/explore'); // Redirect after Google login
+    } catch (err) {
+      console.error('Google login failed:', err.message);
+      alert('Google login failed: ' + err.message);
     }
   };
 
@@ -44,6 +71,9 @@ const LoginForm = () => {
           />
         </div>
         <button type="submit" className="login-button">Login</button>
+        <button type="button" className="google-login-button" onClick={handleGoogleLogin}>
+          Login with Google
+        </button>
       </form>
     </div>
   );
