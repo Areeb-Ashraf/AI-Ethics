@@ -119,6 +119,10 @@ span {
   cursor: pointer;
 }
 
+.contactIcon:hover {
+  fill: #1a83ff;
+}
+
 /* Search bar styles */
 .search-bar {
   display: flex;

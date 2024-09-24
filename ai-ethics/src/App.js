@@ -1,8 +1,9 @@
 import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/sidebar";
 import DatabaseManTester from "./DatabaseManTester";
+import Homepage from "./components/homepage";
 
 // Placeholder components for the pages
 const Explore = () => <div>Explore Page</div>;
@@ -13,13 +14,15 @@ const Quizzes = () => <div>Quizzes Page</div>;
 const Leaderboard = () => <div>Leaderboard Page</div>;
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(true); // Sidebar state
+
   return (
     <Router>
-      <div>
-        <Sidebar /> {/* Sidebar stays fixed */}
-        <div>
+      <div className={sidebarOpen ? "app-container sidebar-open" : "app-container sidebar-closed"}>
+        <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
+        <div className="main-content">
           <Routes>
-            {/*Add Homepage route*/}
+            <Route path="/" element={<Homepage />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/lessons" element={<Lessons />} />
             <Route path="/linked-content" element={<LinkedContent />} />
@@ -35,3 +38,4 @@ function App() {
 }
 
 export default App;
+
