@@ -37,6 +37,12 @@ function DatabaseManTester() {
     console.log(databaseManager.getCurrentUserId());
   }
 
+  // function that fetches then logs all words from the glossary
+  async function fetchAllWords() {
+    const allWords = await databaseManager.fetchAllGlossary();
+    console.log(allWords);
+  }
+
   return (
     <div>
       <div
@@ -46,7 +52,7 @@ function DatabaseManTester() {
           backgroundColor: "transparent",
         }}
       ></div>
-      <button onClick={() => fetchGlossary("LLM")}>
+      <button onClick={() => fetchGlossary("API")}>
         Click me to retrieve "LLM" glossary word
       </button>
       <button onClick={() => fetchLeaderboardByQuizID("foo")}>
@@ -62,6 +68,9 @@ function DatabaseManTester() {
       <button onClick={fetchCurrentUser}>
         Click me to retrieve the current user's UID (if no user is logged in it
         will throw an error)
+      </button>
+      <button onClick={fetchAllWords}>
+        Click me to retrieve all words from the glossary
       </button>
     </div>
   );
