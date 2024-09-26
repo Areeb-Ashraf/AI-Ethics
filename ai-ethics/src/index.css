@@ -1,18 +1,10 @@
 body {
   margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow: hidden; /* Prevent scrolling, if needed */
-  background: linear-gradient(#2a00b7, #42006c);
-  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-html, #root {
-  height: 100%; /* Ensure the root div takes the full height of the screen */
 }
 
 code {
