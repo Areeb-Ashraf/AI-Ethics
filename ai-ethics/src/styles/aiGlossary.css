@@ -1,0 +1,75 @@
+/* Glossary container */
+.glossary-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  /* Heading */
+  .glossary-heading {
+    font-size: 2.5rem;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Search bar */
+  .glossary-search-bar {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .glossary-search-bar:focus {
+    border-color: #1a73e8;
+    outline: none;
+  }
+  
+  /* Glossary list */
+  .glossary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Glossary item styling */
+  .glossary-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .glossary-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Glossary term */
+  .glossary-term {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Glossary definition */
+  .glossary-definition {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  /* No results message */
+  .no-results {
+    font-size: 1.2rem;
+    color: #ff4c4c;
+    text-align: center;
+  }
