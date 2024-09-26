@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./styles/aiGlossary.css";
+import databaseManager from "./databaseManager";
 
 // Sample AI Glossary Data (to be fetched from firebase)
 const glossaryData = [
