@@ -17,7 +17,7 @@
   }
   
   /* Search bar */
-  .search-bar {
+  .glossary-search-bar {
     width: 100%;
     padding: 0.8rem;
     font-size: 1.2rem;
@@ -27,7 +27,7 @@
     transition: border-color 0.3s ease-in-out;
   }
   
-  .search-bar:focus {
+  .glossary-search-bar:focus {
     border-color: #1a73e8;
     outline: none;
   }

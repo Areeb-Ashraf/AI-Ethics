@@ -34,7 +34,7 @@ const AIGlossary = () => {
       {/* Search Bar */}
       <input 
         type="text" 
-        className="search-bar" 
+        className="glossary-search-bar" 
         placeholder="Search for a term..." 
         value={searchTerm}
         onChange={e => setSearchTerm(e.target.value)}
