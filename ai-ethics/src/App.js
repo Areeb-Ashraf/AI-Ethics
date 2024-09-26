@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/sidebar";
 import DatabaseManTester from "./DatabaseManTester";
+import AIGlossary from "./aiGlossary";
 import Homepage from "./components/homepage";
 import UserProfile from "./UserProfile";
 
@@ -10,7 +11,6 @@ import UserProfile from "./UserProfile";
 const Explore = () => <div>Explore Page</div>;
 const Lessons = () => <div>Lessons Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
-const AITermGlossary = () => <div>AI Term Glossary Page</div>;
 const Quizzes = () => <div>Quizzes Page</div>;
 const Leaderboard = () => <div>Leaderboard Page</div>;
 
@@ -33,7 +33,7 @@ function App() {
             <Route path="/explore" element={<Explore />} />
             <Route path="/lessons" element={<Lessons />} />
             <Route path="/linked-content" element={<LinkedContent />} />
-            <Route path="/ai-term-glossary" element={<AITermGlossary />} />
+            <Route path="/ai-term-glossary" element={<AIGlossary />} />
             <Route path="/quizzes" element={<Quizzes />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/databaseTest" element={<DatabaseManTester />} />
