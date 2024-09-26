@@ -13,17 +13,18 @@ const Quizzes = () => <div>Quizzes Page</div>;
 const Leaderboard = () => <div>Leaderboard Page</div>;
 
 function AppContent() {
-  const location = useLocation();  // Correctly placed inside Router context
+  const location = useLocation();
 
   return (
     <div style={{ display: 'flex' }}>
       {/* Only show the sidebar if the user is not on the login or registration page */}
-      {location.pathname !== '/login' && location.pathname !== '/' && <Sidebar />}
+      {location.pathname !== '/login' && location.pathname !== '/' && location.pathname !== '/register' && <Sidebar />}  
       
-      <div style={{ marginLeft: location.pathname !== '/login' && location.pathname !== '/' ? '20%' : '0', padding: '20px', width: '100%' }}>
+      <div style={{ marginLeft: location.pathname !== '/login' && location.pathname !== '/' && location.pathname !== '/register' ? '20%' : '0', padding: '20px', width: '100%' }}>
         <Routes>
-          <Route path="/" element={<Registration />} />  {/* Registration page */}
-          <Route path="/login" element={<LoginForm />} />  {/* Login page */}
+          <Route path="/" element={<LoginForm />} />  {/* Set LoginForm as the default page */}
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/register" element={<Registration />} />  {/* Registration page */}
           <Route path="/explore" element={<Explore />} />
           <Route path="/lessons" element={<Lessons />} />
           <Route path="/linked-content" element={<LinkedContent />} />

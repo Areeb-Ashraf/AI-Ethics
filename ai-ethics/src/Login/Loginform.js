@@ -1,35 +1,30 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Import Link for navigation to registration
 import { authManager } from '../config/firebase'; // Adjust the path as needed
-import './Loginform.css';  // Reusing the same styles
+import './Loginform.css';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // To handle redirection after login
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
-    // Input validation
     if (!email || !password) {
       alert('Please enter both email and password.');
       return;
     }
 
     try {
-      // Check if the user is registered in Firestore
       const isRegistered = await authManager.isUserRegistered(email);
-      
       if (!isRegistered) {
         alert('User not registered. Please sign up.');
         return;
       }
 
-      // Proceed with login if the user is registered
       await authManager.logInWithEmailAndPassword(email, password);
       alert('Login successful!');
-      navigate('/explore'); // Redirect to AI Ethics site after successful login
+      navigate('/explore'); // Redirect after successful login
     } catch (err) {
       console.error('Login failed:', err.message);
       alert('Login failed: ' + err.message);
@@ -40,7 +35,7 @@ const LoginForm = () => {
     try {
       await authManager.loginWithGoogle();
       alert('Google login successful!');
-      navigate('/explore'); // Redirect after Google login
+      navigate('/explore');
     } catch (err) {
       console.error('Google login failed:', err.message);
       alert('Google login failed: ' + err.message);
@@ -75,6 +70,9 @@ const LoginForm = () => {
           Login with Google
         </button>
       </form>
+      <p className="redirect-text">
+        Don't have an account? <Link to="/register">Sign up here</Link>  {/* Link to registration */}
+      </p>
     </div>
   );
 };
