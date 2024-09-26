@@ -73,6 +73,25 @@ class DatabaseManager {
     }
   }
 
+  // fetches all words from the glossary
+  async fetchAllGlossary() {
+    try {
+      const q = query(collection(db, "glossaryWord"));
+      const querySnapshot = await getDocs(q);
+
+      // Return the first matching document's data if it exists
+      if (!querySnapshot.empty) {
+        return querySnapshot.docs.map((doc) => doc.data());
+      } else {
+        console.error("No glossary words found");
+        return null; // or handle as you wish
+      }
+    } catch (error) {
+      console.error("Error fetching glossary: ", error);
+      throw error;
+    }
+  }
+
   // Fetches a user profile from the database
   async fetchUserProfile(userID) {
     try {
@@ -92,6 +111,25 @@ class DatabaseManager {
     } catch (error) {
       console.error("Error fetching user profile: ", error);
       throw error;
+    }
+  }
+
+  async getUserDocumentIdByUid(uid) {
+    try {
+      const q = query(collection(db, "users"), where("uid", "==", uid));
+      const querySnapshot = await getDocs(q);
+
+      if (querySnapshot.empty) {
+        console.error("User document not found for UID:", uid);
+        return null;
+      }
+
+      // Assuming there's only one user document per UID
+      const userDoc = querySnapshot.docs[0].data();
+      return userDoc;
+    } catch (error) {
+      console.error("Error fetching user document ID:", error);
+      return null;
     }
   }
 

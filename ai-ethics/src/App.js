@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/sidebar";
 import DatabaseManTester from "./DatabaseManTester";
 import Homepage from "./components/homepage";
+import UserProfile from "./UserProfile";
 
 // Placeholder components for the pages
 const Explore = () => <div>Explore Page</div>;
@@ -18,7 +19,13 @@ function App() {
 
   return (
     <Router>
-      <div className={sidebarOpen ? "app-container sidebar-open" : "app-container sidebar-closed"}>
+      <div
+        className={
+          sidebarOpen
+            ? "app-container sidebar-open"
+            : "app-container sidebar-closed"
+        }
+      >
         <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} />
         <div className="main-content">
           <Routes>
@@ -30,6 +37,7 @@ function App() {
             <Route path="/quizzes" element={<Quizzes />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/databaseTest" element={<DatabaseManTester />} />
+            <Route path="/profile" element={<UserProfile />} />
           </Routes>
         </div>
       </div>
@@ -38,4 +46,3 @@ function App() {
 }
 
 export default App;
-
