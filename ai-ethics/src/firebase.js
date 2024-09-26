@@ -18,6 +18,7 @@ import {
   getDocs,
   addDoc,
 } from "firebase/firestore";
+import { getStorage, ref } from "firebase/storage";
 
 // the firebase creds as pulled from .env file
 const firebaseConfig = {
@@ -36,6 +37,8 @@ const auth = getAuth(app);
 const analytics = getAnalytics(app);
 const db = getFirestore(app);
 const googsProvider = new GoogleAuthProvider();
+const storage = getStorage(app);
+const imagesRef = ref(storage, "images");
 
 /*********************************************************
  * handle authentication through this class
@@ -124,4 +127,4 @@ class AuthManager {
 
 const authManager = new AuthManager();
 
-export { auth, db, authManager };
+export { auth, db, authManager, imagesRef };
