@@ -4,36 +4,32 @@ import { authManager } from '../config/firebase'; // Adjust the path as needed
 import './Loginform.css';  // Reusing the same styles
 
 const LoginForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // To handle redirection after login
-
-  const handleLogin = async (e) => {
-    e.preventDefault();
-
-    if (!email || !password) {
-      alert('Please enter both email and password.');
-      return;
-    }
-
-    try {
-      const isRegistered = await authManager.isUserRegistered(email);
-      
-      if (!isRegistered) {
-        alert('User not registered. Please sign up.');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+  
+    const handleLogin = async (e) => {
+      e.preventDefault();
+      if (!email || !password) {
+        alert('Please enter both email and password.');
         return;
       }
-
-      await authManager.logInWithEmailAndPassword(email, password);
-      alert('Login successful!');
-      
-      // Ensure you don't navigate prematurely
-      navigate('/explore');
-    } catch (err) {
-      console.error('Login failed:', err.message);
-      alert('Login failed: ' + err.message);
-    }
-  };
+  
+      try {
+        const isRegistered = await authManager.isUserRegistered(email);
+        if (!isRegistered) {
+          alert('User not registered. Please sign up.');
+          return;
+        }
+  
+        await authManager.logInWithEmailAndPassword(email, password);
+        alert('Login successful!');
+        navigate('/explore'); // Redirect after successful login
+      } catch (err) {
+        console.error('Login failed:', err.message);
+        alert('Login failed: ' + err.message);
+      }
+    };
 
   const handleGoogleLogin = async () => {
     try {

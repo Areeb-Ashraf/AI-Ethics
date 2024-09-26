@@ -33,22 +33,20 @@ function AppContent() {
 
   return (
     <div style={{ display: 'flex' }}>
-      {/* Only show the sidebar if the user is logged in */}
-      {user && location.pathname !== '/login' && location.pathname !== '/register' && <Sidebar />}
+      {/* Only show the sidebar if the user is not on the login or registration page */}
+      {location.pathname !== '/login' && location.pathname !== '/' && location.pathname !== '/register' && <Sidebar />}  
       
-      <div style={{ marginLeft: user ? '20%' : '0', padding: '20px', width: '100%' }}>
+      <div style={{ marginLeft: location.pathname !== '/login' && location.pathname !== '/' && location.pathname !== '/register' ? '20%' : '0', padding: '20px', width: '100%' }}>
         <Routes>
-          {/* Redirect logged-in users to /explore, otherwise show Login page */}
-          <Route path="/" element={user ? <Navigate to="/explore" /> : <LoginForm />} />
-          <Route path="/login" element={user ? <Navigate to="/explore" /> : <LoginForm />} />
-          <Route path="/register" element={user ? <Navigate to="/explore" /> : <Registration />} />
-          {/* Protected routes - if user is not logged in, redirect to login */}
-          <Route path="/explore" element={user ? <Explore /> : <Navigate to="/login" />} />
-          <Route path="/lessons" element={user ? <Lessons /> : <Navigate to="/login" />} />
-          <Route path="/linked-content" element={user ? <LinkedContent /> : <Navigate to="/login" />} />
-          <Route path="/ai-term-glossary" element={user ? <AITermGlossary /> : <Navigate to="/login" />} />
-          <Route path="/quizzes" element={user ? <Quizzes /> : <Navigate to="/login" />} />
-          <Route path="/leaderboard" element={user ? <Leaderboard /> : <Navigate to="/login" />} />
+          <Route path="/" element={<LoginForm />} />  {/* Set LoginForm as the default page */}
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/register" element={<Registration />} />  {/* Registration page */}
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/lessons" element={<Lessons />} />
+          <Route path="/linked-content" element={<LinkedContent />} />
+          <Route path="/ai-term-glossary" element={<AITermGlossary />} />
+          <Route path="/quizzes" element={<Quizzes />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
         </Routes>
       </div>
     </div>

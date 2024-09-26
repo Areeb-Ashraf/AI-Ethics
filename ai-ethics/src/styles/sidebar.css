@@ -1,70 +1,69 @@
 .sidebar-container {
-    background-color: #030d3b;
-    height: 100vh;
-    width: 18%;
-    color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    font-family: sans-serif;
-  }
-  
-  .sidebar-head {
-    /* background-color: #fca4a4; */
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    text-align: center;
-    font-size: 35px;
-  }
-  
-  .sidebar-link {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    color: aliceblue;
-  }
-  
-  .sidebar-link:visited {
-    color: aliceblue; /* Prevents the link from turning purple */
-  }
-  
-  .sidebar-item {
-    /* background-color: #73da95; */
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    text-align: center;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  
-  .sidebar-item:hover {
-    background-color: #325eb0;
+  background-color: #030d3b;
+  height: 100vh;
+  width: 18%;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+.sidebar-head {
+  /* background-color: #fca4a4; */
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+  font-size: 35px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: aliceblue;
+}
+
+.sidebar-link:visited {
+  color: aliceblue; /* Prevents the link from turning purple */
+}
+
+.sidebar-item {
+  /* background-color: #73da95; */
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.sidebar-item:hover {
+  background-color: #325eb0;
+  font-weight: bold;
+}
+
+.active .sidebar-item {
+    background-color: #325eb0; 
     font-weight: bold;
-  }
-  
-  .active .sidebar-item {
-      background-color: #325eb0; 
-      font-weight: bold;
-  }
-  
-  .sub-heading {
-    align-items: center;
-    margin-left: 10px;
-    font-weight: 650;
-    display: flex;
-    color: aquamarine;
-  }
-  
-  hr {
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    border: 1px dashed aqua;
-    border-radius: 5px;
-  }
-  
+}
+
+.sub-heading {
+  align-items: center;
+  margin-left: 10px;
+  font-weight: 650;
+  display: flex;
+  color: aquamarine;
+}
+
+hr {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px dashed aqua;
+  border-radius: 5px;
+}
