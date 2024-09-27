@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";  // Import useNavigate
 import "../styles/sidebar.css";
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 
-// Sidebar items data
 const SidebarData = [
   {
     title: "Explore",
@@ -42,6 +41,7 @@ const SidebarData = [
 
 function Sidebar({ sidebarOpen, setSidebarOpen }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const navigate = useNavigate();  // Initialize the useNavigate hook
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -63,41 +63,40 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
     if (isMobile) setSidebarOpen(false);
   };
 
+  // Add handlers for login and sign-up button clicks
+  const handleLoginClick = () => {
+    navigate("/login");  // Navigate to the login page
+  };
+
+  const handleSignupClick = () => {
+    navigate("/register");  // Navigate to the sign-up page
+  };
+
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
-      {/* Navbar */}
       <div className="navbar">
-
-        {/* Menubar icon */}
         <NavLink to="#" className="toggle-icons">
-          <FaIcons.FaBars className='contactIcon' onClick={toggleSidebar} />
+          <FaIcons.FaBars className="contactIcon" onClick={toggleSidebar} />
         </NavLink>
 
-        {/* Search bar */}
         <div className={sidebarOpen ? "search-bar expanded" : "search-bar"}>
           <input type="text" placeholder="Search..." className="search-input" />
         </div>
 
-        {/* Login and Signup buttons */}
         <div className="auth-buttons">
-          <button className="btn login-btn">Log in</button>
-          <button className="btn signup-btn">Sign Up</button>
+          <button className="btn login-btn" onClick={handleLoginClick}>Log in</button>  {/* Redirects to Login */}
+          <button className="btn signup-btn" onClick={handleSignupClick}>Sign Up</button>  {/* Redirects to Sign Up */}
         </div>
       </div>
 
-      {/* Sidebar */}
-      <nav
-        className={
-          sidebarOpen ? "sidebar-container active" : "sidebar-container"
-        }
-      >
+      <nav className={sidebarOpen ? "sidebar-container active" : "sidebar-container"}>
         <ul className="sidebar-items">
           <li className="sidebar-header">
             <NavLink to="/" onClick={handleLinkClick}>
               <h1>✨Ai Ethics</h1>
             </NavLink>
             <NavLink to="#" className="toggle-icons" onClick={toggleSidebar}>
-              <AiIcons.AiOutlineClose className='contactIcon'/>
+              <AiIcons.AiOutlineClose className="contactIcon" />
             </NavLink>
           </li>
           {SidebarData.map((item, index) => (

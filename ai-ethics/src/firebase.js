@@ -76,6 +76,18 @@ class AuthManager {
       alert(err.message);
     }
   }
+  async isUserRegistered(email) {
+    try {
+      const q = query(collection(db, "users"), where("email", "==", email));
+      const querySnapshot = await getDocs(q);
+
+      // If querySnapshot is empty, no user with this email exists
+      return !querySnapshot.empty;
+    } catch (err) {
+      console.error("Error checking if user is registered:", err);
+      return false;
+    }
+  }
 
   async sendPasswordReset(email) {
     try {

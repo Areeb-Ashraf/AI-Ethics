@@ -1,39 +1,34 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { authManager } from '../config/firebase'; // Adjust the path as needed
-import './Loginform.css';  // Reusing the same styles
+import { authManager } from './firebase';
+import './styles/Loginform.css'; 
 
 const Registration = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
-  const navigate = useNavigate(); // To handle redirection
+  const navigate = useNavigate();
 
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    // Check password length before proceeding
     if (password.length < 6) {
       alert("Password must be at least 6 characters long.");
-      return; // Stop the registration process
+      return;
     }
 
     try {
-      // Check if the user is already registered before attempting to register
       const isRegistered = await authManager.isUserRegistered(email);
       if (isRegistered) {
         alert("Email is already in use. Please log in.");
-        return; // Stop the registration process
+        return;
       }
 
-      // Register the user but don't log them in automatically
       await authManager.registerWithEmailAndPassword(name, email, password);
-
-      // Make sure to sign them out after registration
       await authManager.logout();
       
       alert('Registration successful! Please log in.');
-      navigate('/login'); // Redirect to login after successful registration
+      navigate('/login');
     } catch (err) {
       console.error('Registration failed:', err.message);
       alert('Registration failed: ' + err.message);
