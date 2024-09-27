@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { NavLink, useNavigate } from "react-router-dom"; // Import useNavigate
+import { NavLink, useNavigate } from "react-router-dom";
 import "../styles/sidebar.css";
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
-import { authManager } from '../firebase'; // Adjust the path as needed
+import { authManager } from '../firebase';
+import { FaSignOutAlt } from "react-icons/fa";
 
-// Sidebar items data
 const SidebarData = [
   {
     title: "Explore",
@@ -41,9 +41,9 @@ const SidebarData = [
   },
 ];
 
-function Sidebar({ sidebarOpen, setSidebarOpen, setIsLoggedIn }) { // Add setIsLoggedIn as a prop
+function Sidebar({ sidebarOpen, setSidebarOpen, setIsLoggedIn }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -66,8 +66,8 @@ function Sidebar({ sidebarOpen, setSidebarOpen, setIsLoggedIn }) { // Add setIsL
   };
 
   const handleLogout = async () => {
-    await authManager.logout(); // Call the logout function
-    setIsLoggedIn(false); // Update login state
+    await authManager.logout();
+    setIsLoggedIn(false);
     navigate("/"); // Redirect to the LoginForm page
   };
 
@@ -100,8 +100,12 @@ function Sidebar({ sidebarOpen, setSidebarOpen, setIsLoggedIn }) { // Add setIsL
               </NavLink>
             </li>
           ))}
+          {/* Logout Link */}
           <li className="sidebar-text">
-            <button onClick={handleLogout} className="logout-button">Logout</button> {/* Add a logout button */}
+            <div className="sidebar-link" onClick={handleLogout}>
+              <FaSignOutAlt />
+              <span style={{ marginLeft: '6px' }}>Logout</span> {/* Add margin to separate the icon and text */}
+            </div>
           </li>
         </ul>
       </nav>
