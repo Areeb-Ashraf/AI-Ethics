@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/lessons.css";
+import * as FaIcons from "react-icons/fa";
 
 const Lessons = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -39,7 +40,9 @@ const Lessons = () => {
             onClick={() => handlePanelButtonClick(1)}
             id="first-panel-button"
           >
-            <span className="panel-button-icon"></span>
+            <span className="panel-button-icon">
+            <FaIcons.FaBrain />
+            </span>
             <span className="panel-button-text">
               Module 1 Lesson <br />
               <span className="panel-button-time">4 min</span>
@@ -53,7 +56,9 @@ const Lessons = () => {
             }`}
             onClick={() => handlePanelButtonClick(2)}
           >
-            <span className="panel-button-icon"></span>
+            <span className="panel-button-icon">
+            <FaIcons.FaVideo />
+            </span>
             <span className="panel-button-text">
               Module 1 Video <br />
               <span className="panel-button-time">10 min</span>
@@ -67,7 +72,9 @@ const Lessons = () => {
             }`}
             onClick={() => handlePanelButtonClick(3)}
           >
-            <span className="panel-button-icon"></span>
+            <span className="panel-button-icon">
+            <FaIcons.FaQuestionCircle />
+            </span>
             <span className="panel-button-text">
               Module 1 Quiz <br />
               <span className="panel-button-time">5 min</span>

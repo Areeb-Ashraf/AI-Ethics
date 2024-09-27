@@ -118,6 +118,10 @@
     width: 35.22px;
     background-color: #c0dde9;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
   }
   
   .panel-button-text {
@@ -161,6 +165,10 @@
   .panel-button:hover .panel-button-text {
     color: white;
   }
+
+  .panel-button:hover .panel-button-icon {
+    color: black;
+  }
   
   /* Active state CSS */
   .active-panel-button {
@@ -175,6 +183,10 @@
   
   .active-panel-button .panel-button-text {
     color: white;
+  }
+
+  .active-panel-button .panel-button-icon {
+    color: black;
   }
   
   /* Module Content */
@@ -192,3 +204,11 @@
       font-size: larger;
       margin: 20px;
   }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .lesson-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    }  
