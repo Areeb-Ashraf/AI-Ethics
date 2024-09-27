@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom"; // Import useNavigate
 import "../styles/sidebar.css";
 import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
+import { authManager } from '../firebase'; // Adjust the path as needed
 
 // Sidebar items data
 const SidebarData = [
@@ -40,8 +41,9 @@ const SidebarData = [
   },
 ];
 
-function Sidebar({ sidebarOpen, setSidebarOpen }) {
+function Sidebar({ sidebarOpen, setSidebarOpen, setIsLoggedIn }) { // Add setIsLoggedIn as a prop
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
@@ -63,38 +65,28 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
     if (isMobile) setSidebarOpen(false);
   };
 
+  const handleLogout = async () => {
+    await authManager.logout(); // Call the logout function
+    setIsLoggedIn(false); // Update login state
+    navigate("/"); // Redirect to the LoginForm page
+  };
+
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
-      {/* Navbar */}
       <div className="navbar">
-
-        {/* Menubar icon */}
         <NavLink to="#" className="toggle-icons">
           <FaIcons.FaBars className='contactIcon' onClick={toggleSidebar} />
         </NavLink>
-
-        {/* Search bar */}
         <div className={sidebarOpen ? "search-bar expanded" : "search-bar"}>
           <input type="text" placeholder="Search..." className="search-input" />
         </div>
-
-        {/* Login and Signup buttons */}
-        <div className="auth-buttons">
-          <button className="btn login-btn">Log in</button>
-          <button className="btn signup-btn">Sign Up</button>
-        </div>
       </div>
 
-      {/* Sidebar */}
-      <nav
-        className={
-          sidebarOpen ? "sidebar-container active" : "sidebar-container"
-        }
-      >
+      <nav className={sidebarOpen ? "sidebar-container active" : "sidebar-container"}>
         <ul className="sidebar-items">
           <li className="sidebar-header">
             <NavLink to="/" onClick={handleLinkClick}>
-              <h1>✨Ai Ethics</h1>
+              <h1>✨ Ai Ethics</h1>
             </NavLink>
             <NavLink to="#" className="toggle-icons" onClick={toggleSidebar}>
               <AiIcons.AiOutlineClose className='contactIcon'/>
@@ -108,6 +100,9 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               </NavLink>
             </li>
           ))}
+          <li className="sidebar-text">
+            <button onClick={handleLogout} className="logout-button">Logout</button> {/* Add a logout button */}
+          </li>
         </ul>
       </nav>
     </IconContext.Provider>
