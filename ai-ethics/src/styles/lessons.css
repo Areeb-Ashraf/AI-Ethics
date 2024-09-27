@@ -1,0 +1,194 @@
+.lesson-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* module navigation  */
+  .module-navigation-container {
+    margin-top: 3rem;
+    margin-left: 1rem;
+  }
+
+  .module-header-container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 150px;
+    width: 266px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  
+  .main-header{
+    font-size: 50px;
+    font-weight: 800;
+    margin: 10px 0px 0px 10px;
+  }
+  
+  .sub-header{
+    font-size: 30px;
+    font-weight: 600;
+    color: #1a73e8;
+    margin: 0px 0px 0px 10px;
+  }
+  
+  /* accordian */
+  .accordion {
+    font-weight: 700;
+    background-color: black;
+    color: #fafafa;
+    cursor: pointer;
+    padding: 18px;
+    width: 266px;
+    height: 57px;
+    border: 0.5px solid black;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+  }
+  
+  #first-accordion {
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 1rem;
+  }
+  
+  /* accordion hover and active css */
+  
+  .panel-active,
+  .accordion:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .accordion:hover:after {
+    color: black;
+  }
+  
+  .accordion:after {
+    content: "\02C5";
+    color: #ffffff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .panel-active:after {
+    content: "\02C4";
+    color: black;
+  }
+  
+  /* panel */
+  
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    max-height: 0;
+    max-width: 266px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .panel-button {
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #0e0505;
+    cursor: pointer;
+    padding: 10px 4px;
+    width: 220px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 3.34px 8.34px 0px #00000040;
+  }
+  
+  #first-panel-button {
+    margin-top: 15px;
+  }
+  
+  .panel-button-icon {
+    height: 35.22px;
+    width: 35.22px;
+    background-color: #c0dde9;
+    border-radius: 5px;
+  }
+  
+  .panel-button-text {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    line-height: 1.25;
+    font-size: 14px;
+    margin-left: 5px;
+    color: #0e0505;
+  }
+  
+  .panel-button-status {
+    font-size: 12px;
+    height: 19px;
+    width: 19px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+  
+  .panel-button-time {
+    font-size: 11px;
+    font-weight: 700;
+    color: grey;
+  }
+  
+  /* panel hover css */
+  .panel-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .panel-button:hover .panel-button-status {
+    background-color: white;
+    color: black;
+  }
+  
+  .panel-button:hover .panel-button-text {
+    color: white;
+  }
+  
+  /* Active state CSS */
+  .active-panel-button {
+    background-color: black;
+    color: white;
+  }
+  
+  .active-panel-button .panel-button-status {
+    background-color: white;
+    color: black;
+  }
+  
+  .active-panel-button .panel-button-text {
+    color: white;
+  }
+  
+  /* Module Content */
+  
+  .module-content-container {
+    height: 100vh;
+    width: 100%;
+    margin: 4rem 20px 0px 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+  }
+  
+  .module-content{
+      text-align: center;
+      font-size: larger;
+      margin: 20px;
+  }

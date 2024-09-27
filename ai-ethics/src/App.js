@@ -6,10 +6,10 @@ import DatabaseManTester from "./DatabaseManTester";
 import AIGlossary from "./aiGlossary";
 import Homepage from "./components/homepage";
 import UserProfile from "./UserProfile";
+import Lessons from "./components/lessons";
 
 // Placeholder components for the pages
 const Explore = () => <div>Explore Page</div>;
-const Lessons = () => <div>Lessons Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
 const Quizzes = () => <div>Quizzes Page</div>;
 const Leaderboard = () => <div>Leaderboard Page</div>;
