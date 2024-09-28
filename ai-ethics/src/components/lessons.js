@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import "../styles/lessons.css";
 import * as FaIcons from "react-icons/fa";
 
+// Import lesson components
+import Module1Lesson from "./lessonContents/Module1Lesson";
+// import Module1Video from "./lessonContents/Module1Video";
+// import Module1Quiz from "./lessonContents/Module1Quiz";
+// And so on...
+
 // to be take from database 
 const moduleData = [
     {
@@ -12,6 +18,7 @@ const moduleData = [
           type: "Lesson",
           time: "4 min",
           icon: <FaIcons.FaBrain />,
+          contentComponent: <Module1Lesson />
         },
         {
           type: "Video",
@@ -78,6 +85,7 @@ const moduleData = [
   const Lessons = () => {
     const [activeAccordion, setActiveAccordion] = useState(null);
     const [activePanelButton, setActivePanelButton] = useState(null);
+    const [selectedLessonContent, setSelectedLessonContent] = useState(null);
   
     const toggleAccordion = (index) => {
       setActiveAccordion(activeAccordion === index ? null : index);
@@ -85,6 +93,8 @@ const moduleData = [
   
     const handlePanelButtonClick = (moduleIndex, sectionIndex) => {
       setActivePanelButton(`${moduleIndex}-${sectionIndex}`);
+      const selectedContentComponent = moduleData[moduleIndex].sections[sectionIndex].contentComponent;
+        setSelectedLessonContent(selectedContentComponent);
     };
   
     return (
@@ -129,7 +139,8 @@ const moduleData = [
         ))}
       </div>
       <div className="module-content-container">
-        <div className="module-content">lesson one goes here</div>
+        {/* Add a next and prev button inside */}
+        <div className="module-content">{selectedLessonContent || "Select a lesson to view the content"}</div>
       </div>
     </div>
     );
