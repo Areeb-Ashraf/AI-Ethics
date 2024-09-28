@@ -1,18 +1,20 @@
 import "./App.css";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+// import components 
 import Sidebar from "./components/sidebar";
 import DatabaseManTester from "./DatabaseManTester";
 import AIGlossary from "./aiGlossary";
 import Homepage from "./components/homepage";
 import UserProfile from "./UserProfile";
 import Lessons from "./components/lessons";
+import Leaderboard from "./components/leaderboard";
 
 // Placeholder components for the pages
 const Explore = () => <div>Explore Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
 const Quizzes = () => <div>Quizzes Page</div>;
-const Leaderboard = () => <div>Leaderboard Page</div>;
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true); // Sidebar state
