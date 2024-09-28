@@ -46,12 +46,12 @@
     font-size: 18px;
     transition: 0.4s;
   }
-  
-  #first-accordion {
+
+  .first-accordion {
     border-radius: 20px 20px 0px 0px;
     margin-top: 1rem;
   }
-  
+
   /* accordion hover and active css */
   
   .panel-active,
@@ -108,8 +108,8 @@
     border: none;
     box-shadow: 0px 3.34px 8.34px 0px #00000040;
   }
-  
-  #first-panel-button {
+
+  .panel-button:first-child {
     margin-top: 15px;
   }
   
