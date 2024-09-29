@@ -28,7 +28,7 @@ const Registration = () => {
       // If not registered, proceed to register
       await authManager.registerWithEmailAndPassword(name, email, password);
       alert('Registration successful!');
-      navigate('/'); // Redirect to login after successful registration
+      navigate('/'); // Redirect to homepage after successful registration
     } catch (err) {
       console.error('Registration failed:', err.message);
       alert('Registration failed: ' + err.message);
@@ -71,8 +71,9 @@ const Registration = () => {
         <button type="submit" className="login-button">Register</button>
       </form>
       <p className="redirect-text">
-        Already have an account? <Link to="/">Login here</Link> {/* Link to login */}
+        Already have an account? <Link to="/login">Login here</Link> {/* Corrected link to /login */}
       </p>
+      <button onClick={() => navigate('/')} className="back-to-home-button">Back to Homepage</button>
     </div>
   );
 };

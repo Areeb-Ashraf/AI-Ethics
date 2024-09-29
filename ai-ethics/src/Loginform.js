@@ -93,6 +93,7 @@ const LoginForm = ({ setIsLoggedIn }) => {
       <button type="button" className="forgot-password-button" onClick={handleForgotPassword}>
         Forgot Password?
       </button>
+      <button onClick={() => navigate('/')} className="back-to-home-button">Back to Homepage</button>
     </div>
   );
 };

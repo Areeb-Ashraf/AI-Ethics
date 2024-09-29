@@ -1,15 +1,15 @@
 import "./App.css";
-import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Sidebar from "./components/sidebar";
 import DatabaseManTester from "./DatabaseManTester";
 import AIGlossary from "./aiGlossary";
 import Homepage from "./components/homepage";
 import UserProfile from "./UserProfile";
-import LoginForm from "./Loginform"; // Import LoginForm
-import Registration from "./Registration"; // Import Registration component
+import LoginForm from "./Loginform";
+import Registration from "./Registration";
+import { auth } from './firebase';
 
-// Placeholder components for the pages
 const Explore = () => <div>Explore Page</div>;
 const Lessons = () => <div>Lessons Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
@@ -17,36 +17,44 @@ const Quizzes = () => <div>Quizzes Page</div>;
 const Leaderboard = () => <div>Leaderboard Page</div>;
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to manage login status
-  const [sidebarOpen, setSidebarOpen] = useState(true); // State to manage sidebar visibility
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged(user => {
+      setIsLoggedIn(!!user);
+    });
+    return () => unsubscribe();
+  }, []);
 
   return (
     <Router>
-      <div className="app-container">
-        {!isLoggedIn ? (
-          <Routes>
-            <Route path="/" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
-            <Route path="/register" element={<Registration />} /> {/* Route for registration */}
-          </Routes>
-        ) : (
-          <>
-            <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} setIsLoggedIn={setIsLoggedIn} /> {/* Pass setIsLoggedIn */}
-            <div className="main-content">
-              <Routes>
-                <Route path="/" element={<Homepage />} />
-                <Route path="/explore" element={<Explore />} />
-                <Route path="/lessons" element={<Lessons />} />
-                <Route path="/linked-content" element={<LinkedContent />} />
-                <Route path="/ai-term-glossary" element={<AIGlossary />} />
-                <Route path="/quizzes" element={<Quizzes />} />
-                <Route path="/leaderboard" element={<Leaderboard />} />
-                <Route path="/databaseTest" element={<DatabaseManTester />} />
-                <Route path="/profile" element={<UserProfile />} />
-                <Route path="*" element={<Navigate to="/" />} /> {/* Redirect all unknown routes */}
-              </Routes>
-            </div>
-          </>
-        )}
+      <div className={sidebarOpen ? "app-container sidebar-open" : "app-container sidebar-closed"}>
+        <Routes>
+          <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="/register" element={<Registration />} />
+          <Route
+            path="/*"
+            element={
+              <>
+                <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} isLoggedIn={isLoggedIn} />
+                <div className="main-content">
+                  <Routes>
+                    <Route path="/" element={<Homepage />} />
+                    <Route path="/explore" element={<Explore />} />
+                    <Route path="/lessons" element={<Lessons />} />
+                    <Route path="/linked-content" element={<LinkedContent />} />
+                    <Route path="/ai-term-glossary" element={<AIGlossary />} />
+                    <Route path="/quizzes" element={<Quizzes />} />
+                    <Route path="/leaderboard" element={<Leaderboard />} />
+                    <Route path="/databaseTest" element={<DatabaseManTester />} />
+                    <Route path="/profile" element={<UserProfile />} />
+                  </Routes>
+                </div>
+              </>
+            }
+          />
+        </Routes>
       </div>
     </Router>
   );
