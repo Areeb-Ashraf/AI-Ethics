@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { auth } from "./firebase";
 import databaseManager from "./databaseManager";
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function DatabaseManTester() {
   // function that console fetches then logs the glossary word
   async function fetchGlossary(word) {
     const glossaryWord = await databaseManager.fetchGlossary(word);
-    console.log(glossaryWord);
+    return glossaryWord
   }
 
   // function that fetches then logs all leaderboard entries by quiz ID
@@ -43,6 +45,35 @@ function DatabaseManTester() {
     console.log(allWords);
   }
 
+  const Tooltip = () => {
+    const [definition, setDefinition] = useState("Loading...");
+  
+    useEffect(() => {
+      // Fetch the definition of "A.I." when the component mounts
+      fetchGlossary("A.I.").then((result) => {
+        if (result && result.description) {
+          setDefinition(result.description); // Safely access the description
+        } else {
+          setDefinition("No definition found."); // Handle case where no result is found
+        }
+      }).catch(error => {
+        setDefinition("Error loading definition."); // Handle any errors
+      });
+    }, []);
+
+    return (
+      <Popup
+        trigger={open => (
+          <button className="button">A.I. Definition </button>
+        )}
+        position="right center"
+        closeOnDocumentClick
+      >
+        <span>{definition}</span> {/* This will display the fetched definition */}
+      </Popup>
+    );
+  };
+
   return (
     <div>
       <div
@@ -52,6 +83,7 @@ function DatabaseManTester() {
           backgroundColor: "transparent",
         }}
       ></div>
+      <Tooltip />
       <button onClick={() => fetchGlossary("API")}>
         Click me to retrieve "LLM" glossary word
       </button>
@@ -72,6 +104,7 @@ function DatabaseManTester() {
       <button onClick={fetchAllWords}>
         Click me to retrieve all words from the glossary
       </button>
+      
     </div>
   );
 }
