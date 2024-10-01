@@ -8,6 +8,7 @@ function DatabaseManTester() {
   // function that console fetches then logs the glossary word
   async function fetchGlossary(word) {
     const glossaryWord = await databaseManager.fetchGlossary(word);
+    console.log(glossaryWord);
     return glossaryWord
   }
 
