@@ -7,6 +7,11 @@ import 'reactjs-popup/dist/index.css';
 // Sample AI Glossary Data (to be fetched from firebase)
 const glossaryData = await databaseManager.fetchAllGlossary();
 
+async function fetchGlossary(word) {
+  const glossaryWord = await databaseManager.fetchGlossary(word);
+  return glossaryWord;
+}
+
 const AIGlossary = () => {
   const [searchTitle, setSearchTitle] = useState('');
   const [filteredTitles, setFilteredTitles] = useState(glossaryData);
@@ -18,25 +23,28 @@ const AIGlossary = () => {
     setFilteredTitles(results);
   }, [searchTitle]);
 
-  async function fetchGlossary(word) {
-    const glossaryWord = await databaseManager.fetchGlossary(word);
-    return glossaryWord;
-  }
-
+  // Definining the tooltip, not currently present in the aiGlossary.js
+  // Look to DatabaseManTester.js for function
   const Tooltip = () => {
     const [definition, setDefinition] = useState("Loading...");
   
     useEffect(() => {
-      // Fetch the definition of "API" when the component mounts
-      fetchGlossary("Machine Learning").then((result) => {
-        setDefinition(result);
+      // Fetch the definition of "A.I." when the component mounts
+      fetchGlossary("Chatbot").then((result) => {
+        if (result && result.description) {
+          setDefinition(result.description); // Safely access the description
+        } else {
+          setDefinition("No definition found."); // Handle case where no result is found
+        }
+      }).catch(error => {
+        setDefinition("Error loading definition."); // Handle any errors
       });
-    }, []); 
+    }, []);
   
     return (
       <Popup
         trigger={open => (
-          <button className="button">Trigger - {open ? 'Opened' : 'Closed'}</button>
+          <button className="button">A.I. Definition </button>
         )}
         position="right center"
         closeOnDocumentClick
@@ -49,7 +57,6 @@ const AIGlossary = () => {
   return (
     <div className="glossary-container">
       <h1 className="glossary-heading">AI Glossary</h1>
-      <Tooltip />
 
       {/* Search Bar */}
       <input
