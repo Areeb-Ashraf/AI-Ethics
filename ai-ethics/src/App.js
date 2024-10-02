@@ -13,10 +13,12 @@ import Registration from "./Registration";
 import { auth } from './firebase';
 import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
+import Quizzes from "./components/Quizzes/quizzes";
 
 const Explore = () => <div>Explore Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
-const Quizzes = () => <div>Quizzes Page</div>;
+//const Quizzes = () => <div>Quizzes Page</div>;
+// this is in the quizzes.js file ^
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
