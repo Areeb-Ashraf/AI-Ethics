@@ -13,7 +13,7 @@ import Registration from "./Registration";
 import { auth } from './firebase';
 import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
-import Quizzes from "./components/Quizzes/quizzes";
+import Quizzes from "./components/quizzes";
 
 const Explore = () => <div>Explore Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
@@ -49,7 +49,7 @@ function App() {
                     <Route path="/lessons" element={<Lessons />} />
                     <Route path="/linked-content" element={<LinkedContent />} />
                     <Route path="/ai-term-glossary" element={<AIGlossary />} />
-                    <Route path="/quizzes" element={<Quizzes />} />
+                    <Route path="/quizzes" element={<Quizzes selectedModule={0} />} />
                     <Route path="/leaderboard" element={<Leaderboard />} />
                     <Route path="/databaseTest" element={<DatabaseManTester />} />
                     <Route path="/profile" element={<UserProfile />} />
