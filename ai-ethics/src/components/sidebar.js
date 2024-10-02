@@ -5,6 +5,7 @@ import { IconContext } from "react-icons";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
+import { auth } from "../firebase"; // Import Firebase auth
 
 const SidebarData = [
   {
@@ -39,7 +40,7 @@ const SidebarData = [
   },
 ];
 
-function Sidebar({ sidebarOpen, setSidebarOpen }) {
+function Sidebar({ sidebarOpen, setSidebarOpen, isLoggedIn, setIsLoggedIn, username }) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const navigate = useNavigate();  // Initialize the useNavigate hook
 
@@ -63,18 +64,20 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
     if (isMobile) setSidebarOpen(false);
   };
 
-  // Add handlers for login and sign-up button clicks
-  const handleLoginClick = () => {
-    navigate("/login");  // Navigate to the login page
-  };
-
-  const handleSignupClick = () => {
-    navigate("/register");  // Navigate to the sign-up page
+  const handleLogout = async () => {
+    try {
+      await auth.signOut();
+      setIsLoggedIn(false); // Update login state
+      alert("Logged out successfully");
+    } catch (err) {
+      console.error("Logout error:", err.message);
+    }
   };
 
   return (
     <IconContext.Provider value={{ color: "#fff" }}>
       <div className="navbar">
+        {/* Menubar icon */}
         <NavLink to="#" className="toggle-icons">
           <FaIcons.FaBars className="contactIcon" onClick={toggleSidebar} />
         </NavLink>
@@ -83,17 +86,29 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
           <input type="text" placeholder="Search..." className="search-input" />
         </div>
 
-        <div className="auth-buttons">
-          <button className="btn login-btn" onClick={handleLoginClick}>Log in</button>  {/* Redirects to Login */}
-          <button className="btn signup-btn" onClick={handleSignupClick}>Sign Up</button>  {/* Redirects to Sign Up */}
-        </div>
+        {/* Auth buttons or Welcome message */}
+        {isLoggedIn ? (
+          <div className="welcome-message">
+            <span>Welcome!</span>
+          </div>
+        ) : (
+          <div className="auth-buttons">
+            <NavLink to="/login">
+              <button className="btn login-btn">Log in</button>
+            </NavLink>
+            <NavLink to="/register">
+              <button className="btn signup-btn">Sign Up</button>
+            </NavLink>
+          </div>
+        )}
       </div>
 
+      {/* Sidebar */}
       <nav className={sidebarOpen ? "sidebar-container active" : "sidebar-container"}>
         <ul className="sidebar-items">
           <li className="sidebar-header">
             <NavLink to="/" onClick={handleLinkClick}>
-              <h1>✨Ai Ethics</h1>
+              <h1>✨ AI Ethics</h1>
             </NavLink>
             <NavLink to="#" className="toggle-icons" onClick={toggleSidebar}>
               <AiIcons.AiOutlineClose className="contactIcon" />
@@ -107,6 +122,16 @@ function Sidebar({ sidebarOpen, setSidebarOpen }) {
               </NavLink>
             </li>
           ))}
+
+          {/* Logout button at the bottom */}
+          {isLoggedIn && (
+            <li className="sidebar-text">
+              <button className="sidebar-link logout-btn" onClick={handleLogout}>
+                <FaIcons.FaSignOutAlt />
+                <span>Logout</span>
+              </button>
+            </li>
+          )}
         </ul>
       </nav>
     </IconContext.Provider>

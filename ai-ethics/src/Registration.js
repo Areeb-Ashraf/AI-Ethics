@@ -1,34 +1,34 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { authManager } from './firebase';
-import './styles/Loginform.css'; 
+import { authManager } from './firebase'; // Adjust the path as needed
+import './Loginform.css';  
 
 const Registration = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // To handle redirection
 
   const handleRegister = async (e) => {
     e.preventDefault();
 
+    // Check password length before proceeding
     if (password.length < 6) {
       alert("Password must be at least 6 characters long.");
-      return;
+      return; // Stop the registration process
     }
 
     try {
+      // Check if the user is already registered before attempting to register
       const isRegistered = await authManager.isUserRegistered(email);
       if (isRegistered) {
-        alert("Email is already in use. Please log in.");
-        return;
+        throw new Error("Email is already in use. Please log in.");
       }
 
+      // If not registered, proceed to register
       await authManager.registerWithEmailAndPassword(name, email, password);
-      await authManager.logout();
-      
-      alert('Registration successful! Please log in.');
-      navigate('/login');
+      alert('Registration successful!');
+      navigate('/'); // Redirect to homepage after successful registration
     } catch (err) {
       console.error('Registration failed:', err.message);
       alert('Registration failed: ' + err.message);
@@ -71,8 +71,9 @@ const Registration = () => {
         <button type="submit" className="login-button">Register</button>
       </form>
       <p className="redirect-text">
-        Already have an account? <Link to="/login">Login here</Link>
+        Already have an account? <Link to="/login">Login here</Link> {/* Corrected link to /login */}
       </p>
+      <button onClick={() => navigate('/')} className="back-to-home-button">Back to Homepage</button>
     </div>
   );
 };
