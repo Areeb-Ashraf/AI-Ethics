@@ -1,0 +1,90 @@
+/* progressbar */
+
+.progress-bar{
+    width: 80%;
+    height: 10px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.progress{
+    width: 80%;
+    height: 10px;
+    background-color: #0056D1;
+    border-radius: 50px;
+}
+
+/* question */
+
+.question-container{
+    width: 80%;
+    height: 25%;
+    text-align: start;
+    margin: 20px;
+}
+
+.question-number{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25.5px;
+    text-align: left;
+    color: #797979;
+}
+
+.question-text{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.5px;
+    text-align: left;
+}
+
+/* answers */
+
+.options-container{
+    width: 80%;
+    height: 50%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option{
+    width: 95%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 50px;
+    border: 4px solid #98C0FC;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16px;
+}
+
+.option:hover{
+    border: 5px solid #3583eb;
+    font-weight: 650;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 3.6px;
+}
+
+.option-radio{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px solid #98C0FB;
+    margin-right: 10px;
+}
+
+.option-radio2{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 3px double #3583eb;
+    margin-right: 10px;
+}

@@ -6,6 +6,7 @@ import * as FaIcons from "react-icons/fa";
 import Module1Lesson from "./lessonContents/Module1Lesson";
 // import Module1Video from "./lessonContents/Module1Video";
 // import Module1Quiz from "./lessonContents/Module1Quiz";
+import Quiz from "./quiz";
 // And so on...
 
 // to be take from database 
@@ -29,6 +30,7 @@ const moduleData = [
           type: "Quiz",
           time: "5 min",
           icon: <FaIcons.FaQuestionCircle />,
+          contentComponent: <Quiz />
         },
       ],
     },
@@ -86,6 +88,7 @@ const moduleData = [
     const [activeAccordion, setActiveAccordion] = useState(null);
     const [activePanelButton, setActivePanelButton] = useState(null);
     const [selectedLessonContent, setSelectedLessonContent] = useState(null);
+    const [selectedSectionType, setSelectedSectionType] = useState("");
   
     const toggleAccordion = (index) => {
       setActiveAccordion(activeAccordion === index ? null : index);
@@ -94,7 +97,9 @@ const moduleData = [
     const handlePanelButtonClick = (moduleIndex, sectionIndex) => {
       setActivePanelButton(`${moduleIndex}-${sectionIndex}`);
       const selectedContentComponent = moduleData[moduleIndex].sections[sectionIndex].contentComponent;
+      const selectedType = moduleData[moduleIndex].sections[sectionIndex].type;
         setSelectedLessonContent(selectedContentComponent);
+        setSelectedSectionType(selectedType);
     };
   
     return (
@@ -138,9 +143,8 @@ const moduleData = [
           </div>
         ))}
       </div>
-      <div className="module-content-container">
-        {/* Add a next and prev button inside */}
-        <div className="module-content">{selectedLessonContent || "Select a lesson to view the content"}</div>
+      <div className="module-content-container" style={{ backgroundColor: selectedSectionType === "Quiz" ? "#0056D121" : "whitesmoke" }}>
+        {selectedLessonContent || "Select a lesson to view the content"}
       </div>
     </div>
     );
