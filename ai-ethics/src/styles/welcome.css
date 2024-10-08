@@ -1,0 +1,70 @@
+.welcome-container{
+    background-color: #0056D1;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.welcome-logo{
+    margin-top: 150px;
+    margin-bottom: 60px;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.welcome-title{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 65px;
+    word-spacing: -4px;
+}
+
+.welcome-subtitle{
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 37.5px;
+    word-spacing: -2px; 
+}
+
+.create-account-button{
+    margin-top: 50px;
+    height: 55px;
+    width: 240px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 37.5px;
+    color: #0056D1;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.create-account-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.create-account-button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: -1.5px;
+right: -20px;
+transition: 0.5s;
+}
+  
+.create-account-button:hover span {
+padding-right: 25px;
+}
+
+.create-account-button:hover span:after {
+opacity: 1;
+right: 0;
+}

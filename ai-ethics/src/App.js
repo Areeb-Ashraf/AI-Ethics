@@ -13,6 +13,7 @@ import Registration from "./Registration";
 import { auth } from './firebase';
 import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
+import Welcome from "./components/welcome";
 
 const Explore = () => <div>Explore Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/register" element={<Registration />} />
+          <Route path="/welcome" element={<Welcome />} />
           <Route
             path="/*"
             element={
