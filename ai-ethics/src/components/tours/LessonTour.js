@@ -1,8 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Joyride from "react-joyride";
+import Cookies from "js-cookie";
 
 const LessonTour = () => {
-  const [run, setRun] = useState(true);
+  const [run, setRun] = useState(false);
+
+  const TOUR_COOKIE_KEY = "hasViewedLessonTour";
 
   const steps = [
     {
@@ -24,6 +27,20 @@ const LessonTour = () => {
     },
   ];
 
+  // Check if the user has viewed the tour
+  useEffect(() => {
+    const hasViewedTour = Cookies.get(TOUR_COOKIE_KEY); // Get the cookie
+    if (!hasViewedTour) {
+      setRun(true); // Run the tour if the cookie doesn't exist
+    }
+  }, []);
+
+  // Handle tour completion
+  const handleTourFinish = () => {
+    Cookies.set(TOUR_COOKIE_KEY, "true", { expires: 365 }); // Set cookie to expire in 1 year
+    setRun(false); // Stop running the tour
+  };
+
   return (
     <Joyride
       steps={steps}
@@ -34,6 +51,11 @@ const LessonTour = () => {
         options: {
           zIndex: 1000,
         },
+      }}
+      callback={(data) => {
+        if (data.status === "finished" || data.status === "skipped") {
+          handleTourFinish(); // Set the cookie when the tour finishes or is skipped
+        }
       }}
     />
   );
