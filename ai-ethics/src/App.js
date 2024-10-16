@@ -14,6 +14,7 @@ import { auth } from './firebase';
 import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
 import Welcome from "./components/welcome";
+import Account from "./components/account";
 
 const Explore = () => <div>Explore Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
@@ -37,6 +38,7 @@ function App() {
           <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/register" element={<Registration />} />
           <Route path="/welcome" element={<Welcome />} />
+          <Route path="/account" element={<Account />} />
           <Route
             path="/*"
             element={

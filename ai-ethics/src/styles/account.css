@@ -1,0 +1,114 @@
+.account-container{
+    width: 100%;
+    height: 95vh;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-container{
+    width: 30%;
+    height: 95vh auto;
+    background-color: #0056D1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container{
+    width: 70%;
+    height: 95vh;
+    border-radius: 20px;
+}
+
+.text-title{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    word-spacing: -4px;
+    margin: 180px 40px 0px 40px;
+}
+
+.text-description{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+    margin: 40px 40px 0px 40px;
+}
+
+.form-header{
+    margin: 40px 0px 0px 70px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    word-spacing: -4px;
+}
+
+.form-sub-text{
+    margin: 0px 0px 0px 70px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    
+}
+
+.form-sub-text a:visited, a:active {
+    color: #0056D1;
+}
+
+.form-container{
+    /* background-color: #755b5b; */
+    width: 65%;
+    margin: 40px 0px 0px 70px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 37.5px;
+    text-align: left;
+}
+
+.label input{
+    border: 3px solid #70AAFE;
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 12px;
+    opacity: 0px;
+    font-weight: 600;
+}
+
+.email input{
+    width: 545px;
+}
+
+#submit-button{
+    width: 200px;
+    height: 75px;
+    border-radius: 15px;
+    background: #0056D1;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+#submit-button:hover{
+    font-weight: 550;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
