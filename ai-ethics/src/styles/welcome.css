@@ -68,3 +68,16 @@ padding-right: 25px;
 opacity: 1;
 right: 0;
 }
+
+.login-text{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.login-link{
+    color: white;
+}
+
+.login-link:visited{
+    color: white;
+}

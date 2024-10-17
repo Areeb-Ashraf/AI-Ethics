@@ -112,3 +112,39 @@
     font-weight: 550;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
+.column{
+    flex-direction: column;
+}
+
+@media screen and (max-width: 935px){
+    .account-container{
+        flex-direction: column;
+    }
+
+    .text-container{
+        width: 100%;
+    }
+
+    .text-title{
+        margin-top: 20px;
+    }
+
+    .text-description{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .email input{
+        width: 250px;
+    }
+
+    .form-container, .form-header, .form-sub-text{
+        margin-left: 20px;
+    }
+
+    .form-sub-text{
+        font-size: 16px;
+    }
+
+}
