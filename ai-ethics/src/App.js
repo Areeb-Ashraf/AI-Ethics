@@ -16,12 +16,7 @@ import Leaderboard from "./components/leaderboard";
 import Welcome from "./components/welcome";
 import Account from "./components/account";
 
-const Explore = () => <div>Explore Page</div>;
-const LinkedContent = () => <div>Linked Content Page</div>;
-const Quizzes = () => <div>Quizzes Page</div>;
-
 function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -33,36 +28,27 @@ function App() {
 
   return (
     <Router>
-      <div className={sidebarOpen ? "app-container sidebar-open" : "app-container sidebar-closed"}>
-        <Routes>
-          <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
-          <Route path="/register" element={<Registration />} />
-          <Route path="/welcome" element={<Welcome />} />
-          <Route path="/account" element={<Account />} />
-          <Route
-            path="/*"
-            element={
-              <>
-                <Sidebar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen} isLoggedIn={isLoggedIn} />
-                <div className="main-content">
-                  <Routes>
-                    <Route path="/" element={<Homepage />} />
-                    <Route path="/explore" element={<Explore />} />
-                    <Route path="/lessons" element={<Lessons />} />
-                    <Route path="/linked-content" element={<LinkedContent />} />
-                    <Route path="/ai-term-glossary" element={<AIGlossary />} />
-                    <Route path="/quizzes" element={<Quizzes />} />
-                    <Route path="/leaderboard" element={<Leaderboard />} />
-                    <Route path="/databaseTest" element={<DatabaseManTester />} />
-                    <Route path="/profile" element={<UserProfile />} />
-                  </Routes>
-                </div>
-              </>
-            }
-          />
-        </Routes>
-      </div>
-    </Router>
+    <Routes>
+      <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} /> 
+      <Route path="/register" element={<Registration />} />
+      <Route path="/welcome" element={<Welcome />} />
+      <Route path="/account" element={<Account />} />
+    </Routes>
+    <Sidebar />
+    <div className="main-content-area">
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/Dashboard" element={<h1>Dashboard</h1>} />
+      <Route path="/modules" element={<Lessons />} />
+      <Route path="/leaderboard" element={<Leaderboard />} />
+      <Route path="/profile" element={<UserProfile />} />
+      <Route path="/information" element={<h1>Information</h1>} />
+      <Route path="/logout" element={<h1>Logout</h1>} />
+      <Route path="/databaseTest" element={<DatabaseManTester />} />
+      <Route path="/ai-term-glossary" element={<AIGlossary />} />
+    </Routes>
+    </div>
+  </Router>
   );
 }
 
