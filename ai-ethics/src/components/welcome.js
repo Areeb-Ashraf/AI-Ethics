@@ -23,7 +23,7 @@ const Welcome = () => {
           <span>Create Account</span>
         </button>
         <div className="login-text">
-          Already Have an account? 
+          Already Have an account?&nbsp;
           <a className="login-link" href="#" onClick={goToLogin}>Log in</a>
         </div>
       </div>

@@ -10,6 +10,8 @@ const leaderboardData = [
     { name: 'Mary Q.', score: 95 },
     { name: 'Brandon V.', score: 90 },
     { name: 'Lewis T.', score: 85 },
+    { name: 'Jamie O.', score: 80 },
+    { name: 'Tiffany R.', score: 85 },
 ];
 
 const Leaderboard = () => {
@@ -41,6 +43,7 @@ const Leaderboard = () => {
 
             {/* List container */}
             <div className="list-container">
+                <input className="list-container-search" type="text" placeholder='&#x1F50E;&#xFE0E; Search rank'/>
                 {rest.map((player, index) => (
                     <div key={index} className="list-box">
                         <div className="list-rank">{index + 4}</div>
