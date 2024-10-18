@@ -5,7 +5,6 @@
   
   /* module navigation  */
   .module-navigation-container {
-    margin-top: 3rem;
     margin-left: 1rem;
   }
 
@@ -192,10 +191,10 @@
   /* Module Content */
   
   .module-content-container {
-    min-height: 85vh;
-    height: auto;
+    height: 900px;
+    /* height: auto; */
     width: 100%;
-    margin: 4rem 20px 0px 20px;
+    margin: 0rem 20px 0px 20px;
     background-color: whitesmoke;
     border-radius: 20px;
     box-shadow: 0px 3.54px 8.86px 0px #00000040;
