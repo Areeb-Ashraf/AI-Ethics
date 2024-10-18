@@ -1,0 +1,243 @@
+/* Dashboard Container */
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Grid for Left and Right Columns */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Space between columns */
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between items inside the columns */
+}
+
+/* Greeting Section */
+.greeting-section {
+  margin-bottom: 30px;
+}
+
+.greeting-title {
+  font-size: 1.8rem;
+  color: #0d6efd;
+}
+
+/* Course Progress */
+/* Course Progress Container */
+.course-progress {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better card look */
+}
+
+/* Progress Card Styling */
+.progress-card {
+  background-color: #0056b3; /* Blue background for the progress card */
+  color: #fff; /* White text color */
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  position: relative; /* For positioning percentage inside the progress bar */
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+  margin-top: 20px;
+  background-color: #e0e0e0; /* Light gray for the empty part of the progress bar */
+  border-radius: 10px;
+  overflow: hidden; /* Ensure the progress bar is contained */
+  height: 20px;
+  width: 100%; /* Full width of the container */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle inner shadow for depth */
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: #040709; /* Dark color for the filled part */
+  height: 100%; /* Matches the height of the container */
+  border-radius: 10px;
+  transition: width 0.5s ease; /* Smooth transition for width changes */
+}
+
+/* Progress Percentage Text */
+.progress-card p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8); /* Slightly transparent white text */
+  margin-top: 10px; /* Adds space between text and the bar */
+}
+
+/* Position the percentage inside the progress bar */
+.progress-percentage {
+  position: absolute;
+  top: -25px; /* Adjust this based on where you want the percentage to show */
+  right: 10px; /* Align percentage text to the right of the container */
+  font-size: 14px;
+  color: #fff; /* White text inside the progress bar */
+  font-weight: bold;
+}
+
+/* Recently Finished Section */
+.recent-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a card-like appearance */
+}
+
+.quiz-cards {
+  display: flex;
+  gap: 20px; /* Increased space between quiz cards */
+  justify-content: space-between; /* Spread out the cards */
+}
+
+.quiz-card {
+  background-color: #0056b3; /* Blue background for each quiz card */
+  color: #fff; /* White text */
+  padding: 20px; /* Increased padding for larger cards */
+  border-radius: 12px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  flex: 1; /* Allow each card to grow equally */
+  min-width: 150px; /* Minimum width for each card */
+  max-width: 200px; /* Optional max width to keep cards consistent */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  position: relative; /* For positioning percentage text */
+}
+
+/* Style the quiz title and subtitle */
+.quiz-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quiz-card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #d1e0ff; /* Slightly lighter blue for the subtitle */
+}
+
+/* Percentage text styling */
+.quiz-card .quiz-percentage {
+  background-color: #000000; /* Black background for percentage bar */
+  color: #fff; /* White text */
+  padding: 5px 0;
+  width: 100%;
+  position: absolute; /* Position at the bottom of the card */
+  bottom: 0;
+  left: 0;
+  font-size: 0.9rem;
+  border-bottom-left-radius: 12px; /* Matching rounded corners */
+  border-bottom-right-radius: 12px; /* Matching rounded corners */
+}
+
+/* Next Milestone */
+.next-milestone {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Similar shadow for card consistency */
+}
+
+.milestone-bar {
+  background-color: #e0e0e0;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle inner shadow */
+}
+
+.milestone-progress {
+  background-color: #040709;
+  height: 100%; /* Matches the height of the container */
+  border-radius: 5px;
+  transition: width 0.5s ease; /* Smooth transition for width changes */
+}
+
+/* Statistics Section */
+.stats-section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Similar shadow for card consistency */
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  gap: 10px; /* Space between the title and cards */
+}
+
+.stat-cards {
+  display: flex;
+  justify-content: space-between; /* Align the cards in a row underneath the title */
+  gap: 20px; /* Add spacing between the statistic cards */
+}
+
+.stat-card {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1; /* Ensure equal width for all stat cards */
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow for effect */
+}
+
+/* Time Progress Bar */
+.time-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  height: 10px;
+  margin-top: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2); /* Subtle inner shadow */
+}
+
+.time-progress {
+  background-color: #060807;
+  height: 100%; /* Matches the height of the container */
+  border-radius: 8px;
+  transition: width 0.5s ease; /* Smooth transition for width changes */
+}
+
+/* Upcoming Tasks */
+.upcoming-tasks {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Similar shadow for card consistency */
+}
+
+.task-item {
+  background-color: #e0e0e0;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow for effect */
+}
+
+/* Title Styling */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Hover Effects for Links and Cards */
+.course-progress-link, .quiz-card a, .next-milestone, .stat-card, .task-item {
+  text-decoration: none;
+  color: inherit; /* Keep the text color consistent */
+}
+
+.course-progress-link:hover .course-progress,
+.quiz-card:hover, .next-milestone:hover, .stat-card:hover, .task-item:hover {
+  transform: scale(1.02); /* Add a subtle zoom effect on hover */
+  transition: transform 0.2s ease-in-out;
+}

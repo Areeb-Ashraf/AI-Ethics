@@ -9,9 +9,9 @@ import { auth } from "../firebase"; // Import Firebase auth
 
 const SidebarData = [
   {
-    title: "Explore",
-    path: "/explore",
-    icon: <FaIcons.FaSearch />,
+    title: "Dashboard",
+    path: "/dashboard",
+    icon: <FaIcons.FaHome />, // You can change the icon if needed
   },
   {
     title: "Lessons",

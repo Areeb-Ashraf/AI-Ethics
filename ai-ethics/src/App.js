@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
+
 // import components 
 import Sidebar from "./components/sidebar";
 import DatabaseManTester from "./DatabaseManTester";
@@ -14,6 +15,7 @@ import { auth } from './firebase';
 import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
 import Quizzes from "./components/quizzes";
+import Dashboard from './components/dashboard';
 
 const Explore = () => <div>Explore Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
@@ -53,6 +55,7 @@ function App() {
                     <Route path="/leaderboard" element={<Leaderboard />} />
                     <Route path="/databaseTest" element={<DatabaseManTester />} />
                     <Route path="/profile" element={<UserProfile />} />
+                    <Route path="/dashboard" element={<Dashboard />} /> {/* Add Dashboard route */}
                   </Routes>
                 </div>
               </>
