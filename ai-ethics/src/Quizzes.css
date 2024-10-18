@@ -1,0 +1,136 @@
+.quiz-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the initial start quiz box */
+.quiz-start-box {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #2980b9;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 50%;
+  margin: 100px auto;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background-color: #3498db;
+}
+
+/* After starting the quiz */
+.question-block {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h3 {
+  color: #34495e;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option-label {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.submit-btn,
+.reset-btn {
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-btn:hover,
+.reset-btn:hover {
+  background-color: #3498db;
+}
+
+/* Result block styling */
+.result-block {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #2ecc71;
+  border-radius: 10px;
+  background-color: #ecf0f1;
+}
+
+.result-block p {
+  font-size: 1.2em;
+  color: #27ae60;
+}
+
+/* Option labels */
+.option-label {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Timer style */
+.timer {
+  text-align: right;
+  font-size: 18px;
+  color: #e74c3c;
+  margin-bottom: 20px;
+}
+
+/* Submit and reset buttons */
+.submit-btn, .reset-btn {
+  padding: 10px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-btn:hover, .reset-btn:hover {
+  background-color: #2ecc71;
+}
+
+/* Style for the result block */
+.result-block {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #2980b9;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 50%;
+  margin: 50px auto;
+}
+
+.result-block h2 {
+  color: #2c3e50;
+}
+
+.result-block p {
+  font-size: 18px;
+  color: #34495e;
+}

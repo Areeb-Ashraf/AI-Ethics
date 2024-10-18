@@ -13,10 +13,10 @@ import Registration from "./Registration";
 import { auth } from './firebase';
 import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
+import Quizzes from "./Quizzes"; // Import the Quizzes component
 
 const Explore = () => <div>Explore Page</div>;
 const LinkedContent = () => <div>Linked Content Page</div>;
-const Quizzes = () => <div>Quizzes Page</div>;
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -47,7 +47,7 @@ function App() {
                     <Route path="/lessons" element={<Lessons />} />
                     <Route path="/linked-content" element={<LinkedContent />} />
                     <Route path="/ai-term-glossary" element={<AIGlossary />} />
-                    <Route path="/quizzes" element={<Quizzes />} />
+                    <Route path="/quizzes" element={<Quizzes />} /> {/* Quizzes Route */}
                     <Route path="/leaderboard" element={<Leaderboard />} />
                     <Route path="/databaseTest" element={<DatabaseManTester />} />
                     <Route path="/profile" element={<UserProfile />} />
