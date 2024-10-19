@@ -16,6 +16,7 @@ import Leaderboard from "./components/leaderboard";
 import Welcome from "./components/welcome";
 import Account from "./components/account";
 import Help from "./components/help";
+import Profile from "./components/profile";
 // import Dashboard from "./components/dashboard";
 
 function App() {
@@ -43,7 +44,8 @@ function App() {
       {/* <Route path="/dashboard" element={<Dashboard />} /> */}
       <Route path="/modules" element={<Lessons />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
-      <Route path="/profile" element={<UserProfile />} />
+      <Route path="/Userprofile" element={<UserProfile />} />
+      <Route path="/profile" element={<Profile />} />
       <Route path="/help" element={<Help />} />
       <Route path="/logout" element={<h1>Logout</h1>} />
       <Route path="/databaseTest" element={<DatabaseManTester />} />

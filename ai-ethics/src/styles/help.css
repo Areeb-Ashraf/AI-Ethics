@@ -1,5 +1,5 @@
 .help-container{
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .walkthrough{
@@ -60,9 +60,11 @@ td{
 
 .milestone-text {
     color: #5C5C5C;
+    font-weight: 600;
 }
 
 .milestone-text span {
     font-weight: 600;
     text-decoration: underline;
+    color: #0056D1;
 }
