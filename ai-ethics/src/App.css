@@ -1,13 +1,16 @@
 .main-content-area {
   z-index: 1000;
   position: absolute;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-left: 100px;
   width: 93%;
+  height: 94vh;
+  overflow: auto;
 }
 
 @media screen and (max-width: 768px){
   .main-content-area {
     margin-left: 15px;
+    margin-top: 48px;
   }  
 }

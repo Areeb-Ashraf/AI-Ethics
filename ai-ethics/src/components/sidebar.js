@@ -89,14 +89,14 @@ const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
         </NavLink>
 
         <NavLink 
-          to="/information" 
+          to="/help" 
           className="sidebar-item" 
           id="info"
           activeClassName="active" 
           onClick={handleRouteClick}
         >
           <div className="sidebar-item-icon"><AiOutlineInfoCircle /></div>
-          <div className="sidebar-item-name">Information</div>
+          <div className="sidebar-item-name">Help</div>
         </NavLink>
 
         {/*Add proper logout backend*/}
