@@ -4,6 +4,7 @@ import databaseManager from "./databaseManager";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import Cookies from "js-cookie";
+import AddQuestions from "./firebaseAddBatchScript";
 
 function DatabaseManTester() {
   // function that console fetches then logs the glossary word
@@ -108,6 +109,7 @@ function DatabaseManTester() {
         Click me to retrieve all words from the glossary
       </button>
       <ResetAllCookies />
+      <AddQuestions />
     </div>
   );
 }
