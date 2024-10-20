@@ -6,6 +6,7 @@ import LessonTour from "./tours/LessonTour";
 // Import lesson components
 import Mod1Sec2 from "./lessonContents/module1/mod1sec2";
 import Mod1Sec1 from "./lessonContents/module1/mod1sec1";
+import Mod1Sec3 from "./lessonContents/module1/mod1sec3";
 import Mod1Sec4 from  "./lessonContents/module1/mod1sec4";
 // import Module1Video from "./lessonContents/Module1Video";
 // import Module1Quiz from "./lessonContents/Module1Quiz";
@@ -22,7 +23,7 @@ const moduleData = [
         type: "Lesson",
         time: "4 min",
         icon: <FaIcons.FaBrain />,
-        contentComponent: <Mod1Sec1 />,
+        contentComponent: <Mod1Sec3 />,
       },
       {
         type: "Video",

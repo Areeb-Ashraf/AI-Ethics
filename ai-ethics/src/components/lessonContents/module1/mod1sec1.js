@@ -8,12 +8,12 @@ const Mod1Sec = () => {
     <>
       <div className="introduction-content">
         <h1>AI Ethics: An Introduction</h1>
-        <h3>Summary of AI Ethics: An Introduction</h3>
+        <h3>Summary of AI Ethics</h3>
 
         <p>Artificial Intelligence (AI) is transforming industries, offering advancements in areas such as healthcare, education, and environmental sustainability. However, ethical challenges must be addressed to ensure AI's responsible development and use. AI ethics is the study of applying moral frameworks to AI technologies to promote fairness, accountability, transparency, and privacy. It examines issues such as bias, discrimination, decision-making transparency, and the protection of individual rights. Without ethical considerations, AI could exacerbate societal inequalities, compromise privacy, and lead to data breaches and a loss of public trust.</p>
         <p>To address these risks, AI ethics emphasizes fairness to combat bias, transparency in decision-making, accountability for harmful outcomes, safety to ensure no harm is done, and privacy protection. In real-world applications, ethical AI has the potential to enhance innovation while serving society equitably. By developing AI systems that respect human values and follow ethical guidelines, industries can build trust, improve lives, and ensure that AI contributes to the public good.</p>
 
-        <h4>Learning Objectives for AI Ethics: An Introduction</h4>
+        <h4>Learning Objectives for Module 1</h4>
         <ol>
           <li>
               Understand the Concept of AI Ethics:
