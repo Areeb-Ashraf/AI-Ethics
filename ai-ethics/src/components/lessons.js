@@ -8,6 +8,7 @@ import Mod1Sec2 from "./lessonContents/module1/mod1sec2";
 import Mod1Sec1 from "./lessonContents/module1/mod1sec1";
 import Mod1Sec3 from "./lessonContents/module1/mod1sec3";
 import Mod1Sec4 from  "./lessonContents/module1/mod1sec4";
+import Mod1Sec6 from "./lessonContents/module1/mod1sec6";
 // import Module1Video from "./lessonContents/Module1Video";
 // import Module1Quiz from "./lessonContents/Module1Quiz";
 import Quiz from "./quiz";
@@ -84,7 +85,7 @@ const moduleData = [
         type: "Section 6",
         time: "6 min",
         icon: <FaIcons.FaBrain />,
-        contentComponent: <Mod1Sec2 />,
+        contentComponent: <Mod1Sec6 />,
 
       },
     ],
