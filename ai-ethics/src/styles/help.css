@@ -1,0 +1,70 @@
+.help-container{
+    margin-left: 15px;
+}
+
+.walkthrough{
+    color: #1b1a1a;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 37.5px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.help-text{
+    width: 70%;
+    color: #1b1a1a;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.help-subheading{
+    font-size: 20px;
+    font-weight: 650;
+    line-height: 30px;
+    text-align: left;
+    /* margin-bottom: 5px; */
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    border-style: hidden; /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 2px black; /* this draws the table border  */ 
+    background: #F1F1F1;
+    font-weight: 550;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+th{
+    border: black solid 2px;
+    padding: 10px;
+    text-align: left;
+}
+
+td{
+    border-right: black solid 2px;
+    border-bottom: 1px solid #C8C8C8;
+    padding: 10px;
+
+}
+
+.what-they-are{
+    width: 12%;
+}
+
+.milestone-text {
+    color: #5C5C5C;
+    font-weight: 600;
+}
+
+.milestone-text span {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #0056D1;
+}

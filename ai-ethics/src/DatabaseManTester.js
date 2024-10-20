@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { auth } from "./firebase";
 import databaseManager from "./databaseManager";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+import Cookies from "js-cookie";
+import AddQuestions from "./firebaseAddBatchScript";
 
 function DatabaseManTester() {
   // function that console fetches then logs the glossary word
   async function fetchGlossary(word) {
     const glossaryWord = await databaseManager.fetchGlossary(word);
     console.log(glossaryWord);
-    return glossaryWord
+    return glossaryWord;
   }
 
   // function that fetches then logs all leaderboard entries by quiz ID
@@ -48,29 +50,30 @@ function DatabaseManTester() {
 
   const Tooltip = () => {
     const [definition, setDefinition] = useState("Loading...");
-  
+
     useEffect(() => {
       // Fetch the definition of "A.I." when the component mounts
-      fetchGlossary("A.I.").then((result) => {
-        if (result && result.description) {
-          setDefinition(result.description); // Safely access the description
-        } else {
-          setDefinition("No definition found."); // Handle case where no result is found
-        }
-      }).catch(error => {
-        setDefinition("Error loading definition."); // Handle any errors
-      });
+      fetchGlossary("A.I.")
+        .then((result) => {
+          if (result && result.description) {
+            setDefinition(result.description); // Safely access the description
+          } else {
+            setDefinition("No definition found."); // Handle case where no result is found
+          }
+        })
+        .catch((error) => {
+          setDefinition("Error loading definition."); // Handle any errors
+        });
     }, []);
 
     return (
       <Popup
-        trigger={open => (
-          <button className="button">A.I. Definition </button>
-        )}
+        trigger={(open) => <button className="button">A.I. Definition </button>}
         position="right center"
         closeOnDocumentClick
       >
-        <span>{definition}</span> {/* This will display the fetched definition */}
+        <span>{definition}</span>{" "}
+        {/* This will display the fetched definition */}
       </Popup>
     );
   };
@@ -105,9 +108,32 @@ function DatabaseManTester() {
       <button onClick={fetchAllWords}>
         Click me to retrieve all words from the glossary
       </button>
-      
+      <ResetAllCookies />
+      <AddQuestions />
     </div>
   );
 }
+
+const ResetAllCookies = () => {
+  const resetAllCookies = () => {
+    // Get all cookies
+    const allCookies = Cookies.get();
+
+    // Loop through each cookie and remove it
+    for (let cookie in allCookies) {
+      Cookies.remove(cookie);
+    }
+
+    alert("All cookies have been reset.");
+  };
+
+  return (
+    <div>
+      <button onClick={resetAllCookies} className="reset-all-cookies-button">
+        Reset All Cookies
+      </button>
+    </div>
+  );
+};
 
 export default DatabaseManTester;
