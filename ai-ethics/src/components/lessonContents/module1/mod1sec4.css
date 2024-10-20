@@ -1,20 +1,20 @@
-/* mod1sec2.css */
-.mod1sec2-content {
+/* mod1sec4.css */
+.mod1sec4-content {
     padding: 20px;
     text-align: left;
   }
   
-  .mod1sec2-content h3 {
+  .mod1sec4-content h3 {
     font-size: 20px;
     font-weight: bold;
     color: #333;
     text-align: left;
 
   }
-  .mod1sec2-content h1{
+  .mod1sec4-content h1{
     text-align: center;
   }
-  .mod1sec2-content p {
+  .mod1sec4-content p {
     max-width: 1600px;
     margin: 0 auto;
     font-size: 16px;
