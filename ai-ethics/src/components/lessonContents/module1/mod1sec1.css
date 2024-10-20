@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.introduction-content h4 {
+   color: #1a73e8;
+}
+
 .introduction-content p {
     width: 80%;
 }
