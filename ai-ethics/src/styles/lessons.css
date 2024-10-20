@@ -209,4 +209,7 @@
         flex-direction: column;
         align-items: center;
     }
-    }  
+    .module-content-container{
+      height: auto;
+    }
+}  
