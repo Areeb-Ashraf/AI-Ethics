@@ -1,0 +1,22 @@
+.introduction-content{
+    margin: 20px;
+
+}
+
+.introduction-content h1 {
+    text-align: center;
+}
+
+.introduction-content p {
+    width: 80%;
+}
+
+.introduction-content > ol{
+    font-weight: bold;
+    width: 80%;
+}
+
+.introduction-content > ol > li > ul li{
+    font-weight: normal;
+}
+
