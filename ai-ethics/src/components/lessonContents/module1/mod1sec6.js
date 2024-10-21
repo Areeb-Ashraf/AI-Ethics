@@ -5,7 +5,6 @@ import './mod1sec6.css'
 const Mod1Sec6 = () => {
     return (
       <div className="mod1sec6-content">
-            <h1>AI Ethics: An Introduction</h1>
 
             <h3>Ethical AI in Environmental Sustainability</h3>
             <div className="accountability-container">

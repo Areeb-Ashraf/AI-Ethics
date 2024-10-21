@@ -5,7 +5,6 @@ import './mod1sec2.css'
 const Mod1Sec2 = () => {
     return (
       <div className="mod1sec2-content">
-            <h1>AI Ethics: An Introduction</h1>
             <h3>What is AI Ethics</h3>
             <p>
               Ethics may appear like an esoteric concept. So, before understanding “AI ethics,” let’s first focus on what ethics means.

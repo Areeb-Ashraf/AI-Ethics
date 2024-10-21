@@ -5,7 +5,6 @@ import './mod1sec4.css'
 const Mod1Sec4 = () => {
     return (
       <div className="mod1sec4-content">
-            <h1>AI Ethics: An Introduction</h1>
 
             <h3>2. Accountability: Who Takes Responsibility?</h3>
             <div className="accountability-container">
