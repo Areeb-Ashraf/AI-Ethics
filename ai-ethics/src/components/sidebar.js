@@ -29,6 +29,7 @@ const routeNames = {
   '/modules': 'Modules',
   '/leaderboard': 'Leaderboard',
   '/profile': 'Profile',
+  '/help': 'Help',
   '/information': 'Information',
   '/logout': 'Logout',
 };

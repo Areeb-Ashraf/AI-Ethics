@@ -1,5 +1,10 @@
 import React from 'react'
 import '../styles/help.css';
+import ModuleBadge from '../styles/Badges/ModuleBadge.svg'
+import XPBadge from '../styles/Badges/XPBadge.svg'
+import EthicBot from '../styles/Badges/EthicBot.svg'
+import VirtueBot from '../styles/Badges/VirtueBot.svg'
+import JusticeBot from '../styles/Badges/JusticeBot.svg'
 
 const Help = () => {
   return (
@@ -10,32 +15,32 @@ const Help = () => {
       <div className="help-subheading">Badges/symbols</div>
       <table>
         <tr>
-            <th>Symbol</th>
-            <th className='what-they-are'>What they are </th>
+            <th className='tbl-hd'>Symbol</th>
+            <th className='tbl-hd'>What they are </th>
             <th>How to earn them</th>
         </tr>
         <tr>
-            <td>1</td>
+            <td><img src={ModuleBadge} alt="ModuleBadge-img" /></td>
             <td>Module Badges</td>
             <td>This badge is earned after successfully completing each modules.</td>
         </tr>
         <tr>
-            <td>2</td>
+            <td><img src={XPBadge} alt="XPBadge-img" /></td>
             <td>XP Badges</td>
             <td>This badge is given to score each user on the leaderboard. They are earned by taking quizzes and answering each question correctly. You can also get extra points for answering quickly.</td>
         </tr>
         <tr>
-            <td>3</td>
+            <td><img src={EthicBot} alt="EthicBot-img" /></td>
             <td>EthicBot</td>
             <td>This badge is earned after successfully completing modules 1-3.</td>
         </tr>
         <tr>
-            <td>4</td>
+            <td><img src={VirtueBot} alt="VirtueBot-img" /></td>
             <td>VirtueBot</td>
             <td>This badge is earned after successfully completing modules 4-6.</td>
         </tr>
         <tr>
-            <td>5</td>
+            <td><img src={JusticeBot} alt="JusticeBot-img" /></td>
             <td>JusticeBot</td>
             <td>This badge is earned after successfully completing modules 7-10.</td>
         </tr>

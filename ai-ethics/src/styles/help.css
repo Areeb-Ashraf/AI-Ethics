@@ -1,5 +1,5 @@
 .help-container{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 .walkthrough{
@@ -44,18 +44,19 @@ table{
 th{
     border: black solid 2px;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
 td{
     border-right: black solid 2px;
     border-bottom: 1px solid #C8C8C8;
     padding: 10px;
+    text-align: center;
 
 }
 
-.what-they-are{
-    width: 12%;
+.tbl-hd{
+    width: 12.5%;
 }
 
 .milestone-text {
@@ -67,4 +68,12 @@ td{
     font-weight: 600;
     text-decoration: underline;
     color: #0056D1;
+}
+
+td:nth-child(3){
+    text-align: left;
+}
+
+th:nth-child(3){
+    text-align: left;
 }
