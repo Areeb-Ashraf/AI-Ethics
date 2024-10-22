@@ -32,3 +32,18 @@
     gap: 20px; /* Adds some space between the image and the paragraph */
   }
   
+  @media (max-width: 1420px){
+    .environmental-container{
+      flex-direction: column;
+    }
+  
+    .environmental-img {
+      max-width: 100%;
+    }
+  
+    .environmental-container{
+      align-items: center;
+    }
+  
+  
+  }
