@@ -1,0 +1,21 @@
+.mod1sec7-container{
+    margin: 20px;
+   
+}
+
+.mod1sec7-container h2{
+    font-size: 20px;
+}
+
+.mod1sec7-container .img-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.mod1sec7-container img{
+
+    width: 90%;
+
+}
