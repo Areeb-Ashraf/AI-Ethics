@@ -1,5 +1,10 @@
 import React from 'react'
 import '../styles/profile.css';
+import ModuleBadge from '../styles/Badges/ModuleBadge.svg'
+import XPBadge from '../styles/Badges/XPBadge.svg'
+import EthicBot from '../styles/Badges/EthicBot.svg'
+import VirtueBot from '../styles/Badges/VirtueBot.svg'
+import JusticeBot from '../styles/Badges/JusticeBot.svg'
 
 const milestones = [
     { xp: 0, label: 'Novice' },
@@ -18,6 +23,11 @@ const milestones = [
 
 const Profile = () => {
       const progressPercentage = (currentXP / 1000) * 100;
+      const totalModules = 10;
+      const completedModules = 3; // This value can come from your backend or state to reflect the user's progress
+      const modules = Array.from({ length: totalModules }, (_, i) => i + 1);
+      const completedXPS = 575;
+      const xps = [5, 10, 50, 100, 200, 500, 1000];
   return (
     <>
       <h1>Profile</h1>
@@ -97,7 +107,47 @@ const Profile = () => {
                 
                 </div>
             </div>
-            <div className="achivements-container"></div>
+            <div className="achivements-container">
+                <div className="achivements-header">Your Achievements</div>
+                <div className="achievements-section-header">Module Badges</div>
+                <div className="achievements-badges-container">
+                {modules.map((module) => (
+                    <div
+                        key={module}
+                        className="badge-box"
+                        style={{
+                        filter: module <= completedModules ? 'none' : 'grayscale(1)', // Apply grayscale for unearned badges
+                        }}
+                    >
+                        <img src={ModuleBadge} alt={`ModuleBadge-${module}`} />
+                        Module {module}
+                    </div>
+                ))}
+                </div>
+                <div className="achievements-section-header">XP Badges</div>
+                <div className="achievements-badges-container">
+                    <div className="badge-box"><img src={XPBadge} alt="XPBadge-img" />5 XP</div>
+                    {xps.map((xp) => (
+                    <div
+                        key={xp}
+                        className="badge-box"
+                        style={{
+                        filter: xp <= completedXPS ? 'none' : 'grayscale(1)', // Apply grayscale for unearned badges
+                        }}
+                    >
+                        <img src={XPBadge} alt={`XPBadge-${xp}`} />
+                        {xp}
+                    </div>
+                ))}
+                </div>
+                <div className="achievements-section-header">Elite Badges</div>
+                <div className="achievements-badges-container">
+                    <div className="badge-box"><img src={EthicBot} alt="EthicBot-img" />EthicBot</div>
+                    <div className="badge-box" style={{filter: 'grayscale(1)'}}><img src={VirtueBot} alt="VirtueBot-img" />VirtueBot</div>
+                    <div className="badge-box" style={{filter: 'grayscale(1)'}}><img src={JusticeBot} alt="JusticeBot-img" />JusticeBot</div>
+                </div>
+
+            </div>
         </div>
       </div>
     </>
