@@ -14,6 +14,7 @@ const Mod1Sec4 = () => {
             In many cases, it is difficult to assign accountability due to the complexity and autonomy of AI systems. However, it is essential that developers and organizations take responsibility for the outcomes produced by their AI systems. This includes being proactive in monitoring and correcting any harmful impacts, as well as establishing clear guidelines for how AI should be used ethically.
             Moreover, governments and regulatory bodies need to establish policies that clearly define accountability in the context of AI. This might include setting standards for AI development, requiring regular audits, and enforcing penalties for harmful or unethical AI practices. Without clear accountability, organizations may be less motivated to address potential harms, leading to significant societal risks.
             </p>
+            
           </div>
 
             <h3>3. Safety: Ensuring No Harm</h3>

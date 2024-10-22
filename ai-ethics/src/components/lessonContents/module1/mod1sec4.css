@@ -36,6 +36,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between; /* Adjusts spacing between the image and the text */
+  flex-direction: row;
   gap: 20px; /* Adds some space between the image and the paragraph */
 }
 
@@ -43,10 +44,25 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between; /* Adjusts spacing between the image and the text */
+  flex-direction: row;
   gap: 20px; /* Adds some space between the image and the paragraph */
 }
 
+@media (max-width: 1420px){
+  .accountability-container, .dataprotect-container{
+    flex-direction: column;
+  }
 
+  .dataprotect-img, .accountability-img {
+    max-width: 100%;
+  }
+
+  .dataprotect-container{
+    align-items: center;
+  }
+
+
+}
 
   
 
