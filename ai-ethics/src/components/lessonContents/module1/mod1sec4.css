@@ -1,0 +1,68 @@
+/* mod1sec4.css */
+.mod1sec4-content {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .mod1sec4-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .mod1sec4-content p {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .accountability-img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.dataprotect-img {
+  max-width: 20%;
+  height: auto;
+  display: block;
+}
+
+.dataprotect-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; /* Adjusts spacing between the image and the text */
+  flex-direction: row;
+  gap: 20px; /* Adds some space between the image and the paragraph */
+}
+
+.accountability-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; /* Adjusts spacing between the image and the text */
+  flex-direction: row;
+  gap: 20px; /* Adds some space between the image and the paragraph */
+}
+
+@media (max-width: 1420px){
+  .accountability-container, .dataprotect-container{
+    flex-direction: column;
+  }
+
+  .dataprotect-img, .accountability-img {
+    max-width: 100%;
+  }
+
+  .dataprotect-container{
+    align-items: center;
+  }
+
+
+}
+
+  
+

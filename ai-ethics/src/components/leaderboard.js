@@ -35,8 +35,10 @@ const Leaderboard = () => {
                         <div className="rank-icon"></div>
                         <div className="rank-name">{player.name}</div>
                         <div className="rank-score">{player.score} XP</div>
+                        <div className="rank-platform">
                         <div className="rank-platform-top"></div>
                         <div className="rank-platform-body">{index === 0 ? 2 : index === 1 ? 1 : 3}</div> {/* // Makes sure number is correct */}
+                        </div>
                     </div>
                 ))}
             </div>
@@ -44,13 +46,15 @@ const Leaderboard = () => {
             {/* List container */}
             <div className="list-container">
                 <input className="list-container-search" type="text" placeholder='&#x1F50E;&#xFE0E; Search rank'/>
-                {rest.map((player, index) => (
-                    <div key={index} className="list-box">
-                        <div className="list-rank">{index + 4}</div>
-                        <div className="list-name">{player.name}</div>
-                        <div className="list-score">{player.score} XP</div>
-                    </div>
-                ))}
+                <div className="list-items-container">
+                    {rest.map((player, index) => (
+                        <div key={index} className="list-box">
+                            <div className="list-rank">{index + 4}</div>
+                            <div className="list-name">{player.name}</div>
+                            <div className="list-score">{player.score} XP</div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
         </div>

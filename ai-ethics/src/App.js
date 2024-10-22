@@ -15,6 +15,9 @@ import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
 import Welcome from "./components/welcome";
 import Account from "./components/account";
+import Help from "./components/help";
+import Profile from "./components/profile";
+// import Dashboard from "./components/dashboard";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -38,11 +41,12 @@ function App() {
     <div className="main-content-area">
     <Routes>
       <Route path="/" element={<Homepage />} />
-      <Route path="/Dashboard" element={<h1>Dashboard</h1>} />
+      {/* <Route path="/dashboard" element={<Dashboard />} /> */}
       <Route path="/modules" element={<Lessons />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
-      <Route path="/profile" element={<UserProfile />} />
-      <Route path="/information" element={<h1>Information</h1>} />
+      <Route path="/Userprofile" element={<UserProfile />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/help" element={<Help />} />
       <Route path="/logout" element={<h1>Logout</h1>} />
       <Route path="/databaseTest" element={<DatabaseManTester />} />
       <Route path="/ai-term-glossary" element={<AIGlossary />} />
