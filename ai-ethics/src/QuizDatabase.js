@@ -45,34 +45,31 @@ class QuizDatabase {
       throw new Error("Failed to fetch quiz question");
     }
   }
-  async uploadQuizScore(email, uid, score, timeTaken) {
+
+  // Function to upload quiz score directly under the 'Scores' collection
+  async uploadQuizScore(uid, accuracy, duration) {
     try {
-      const scoresRef = collection(db, 'Scores');
-      const moduleOneDocRef = doc(scoresRef, 'ModuleOne'); // Reference to ModuleOne document
-      const moduleOneQuizScoresRef = collection(moduleOneDocRef, 'ModuleOneQuizScores');
-  
+      const scoresRef = collection(db, 'Scores'); // Direct reference to 'Scores' collection
+
+      // Create a unique document ID for each score
+      const newScoreRef = doc(scoresRef); 
+      
       // Create a score entry object
       const scoreEntry = {
-        email,
-        uid,
-        score,
-        timeTaken,
-        timestamp: new Date().toISOString(), // Optionally store the timestamp
+        uid, // User's UID as the identifier
+        accuracy, // Percentage score
+        duration, // Duration taken for the quiz
+        timestamp: new Date().toISOString() // Store the timestamp
       };
-  
-      // Use the user's UID as the document ID to ensure uniqueness
-      const userScoreDocRef = doc(moduleOneQuizScoresRef, uid); // Reference the document using UID
-  
-      // Set the document (create or update)
-      await setDoc(userScoreDocRef, scoreEntry); // This will create a new doc or update the existing one
-  
+
+      await setDoc(newScoreRef, scoreEntry);
+
       console.log('Quiz score uploaded successfully:', scoreEntry);
     } catch (error) {
       console.error('Error uploading quiz score:', error);
       throw new Error('Failed to upload quiz score');
     }
   }
-  
 }
 
 const quizDatabase = new QuizDatabase();

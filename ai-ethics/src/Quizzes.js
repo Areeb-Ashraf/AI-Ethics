@@ -69,11 +69,10 @@ const Quizzes = () => {
 
     // Now upload the score to Firestore
     if (user) {
-      const email = user.email; // Get the user's email
       const uid = user.uid; // Get the user's UID
 
       try {
-        await quizDatabase.uploadQuizScore(email, uid, correctAnswers, 600 - timeLeft); // Time taken
+        await quizDatabase.uploadQuizScore(uid, percentage, 600 - timeLeft); // Time taken
         console.log('Score uploaded successfully!');
       } catch (error) {
         console.error('Failed to upload score:', error);
@@ -171,29 +170,26 @@ const Quizzes = () => {
                       </label>
                     ))
                   ) : (
-                    <p>No options available</p> // Handle case where options are missing
+                    <p>No options available for this question.</p>
                   )}
                 </div>
               </div>
             ))
           ) : (
-            <p>Loading questions...</p> // Display a loading message if no questions yet
+            <p>No quiz questions available.</p>
           )}
           <button className="submit-btn" onClick={calculateScore}>
             Submit Quiz
           </button>
         </div>
       ) : (
-        <div className="result-block">
-          <h2>Quiz Results</h2>
-          <p>
-            You got {score.correctAnswers} out of {score.totalQuestions} correct.
-          </p>
-          <p>Your score: {score.percentage.toFixed(2)}%</p>
-          <p>Time taken: {calculateTimeTaken()}</p>
-          <button className="reset-btn" onClick={resetQuiz}>
-            Take Quiz Again
-          </button>
+        <div className="result-block"> {/* Use the existing styling for the result block */}
+          <h2>Quiz Summary</h2>
+          <p>Correct Answers: {score.correctAnswers}</p>
+          <p>Total Questions: {score.totalQuestions}</p>
+          <p>Score: {score.percentage.toFixed(2)}%</p>
+          <p>Time Taken: {calculateTimeTaken()}</p>
+          <button className="reset-btn" onClick={resetQuiz}>Try Again</button>
         </div>
       )}
     </div>
