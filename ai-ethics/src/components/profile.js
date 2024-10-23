@@ -30,15 +30,15 @@ const Profile = () => {
       const xps = [5, 10, 50, 100, 200, 500, 1000];
   return (
     <>
-      <h1>Profile</h1>
       <div className="profile-container">
+      <h1>Profile</h1>
         <div className="profile-upper-containers">
             <div className="profile-info-container">
                 <div className="profile-info-user">
                     <div className="profile-picture"></div>
                     <div className="username-container">
                         <div className="username">Oliver Q.</div>
-                        <div className="current-milestone">Virtual Advocate</div>
+                        <div className="current-milestone">Virtue Advocate</div>
                     </div>
                     <div className="userxp">
                         <div className="xp">500 XP</div>
@@ -46,7 +46,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className="profile-info-progress">
-                    <div className="progress-current-milestone">Virtual Advocate</div>
+                    <div className="progress-current-milestone">Virtue Advocate</div>
                     <div className="milestone-progressbar-container">
                         575/650 XP
                         <div className="milestone-progress-bar">
@@ -117,6 +117,7 @@ const Profile = () => {
                         className="badge-box"
                         style={{
                         filter: module <= completedModules ? 'none' : 'grayscale(1)', // Apply grayscale for unearned badges
+                        animation: `fadeInBounce 0.6s ease-in-out 0.${module-1}s forwards`
                         }}
                     >
                         <img src={ModuleBadge} alt={`ModuleBadge-${module}`} />
@@ -126,13 +127,13 @@ const Profile = () => {
                 </div>
                 <div className="achievements-section-header">XP Badges</div>
                 <div className="achievements-badges-container">
-                    <div className="badge-box"><img src={XPBadge} alt="XPBadge-img" />5 XP</div>
-                    {xps.map((xp) => (
+                    {xps.map((xp, index) => (
                     <div
                         key={xp}
                         className="badge-box"
                         style={{
                         filter: xp <= completedXPS ? 'none' : 'grayscale(1)', // Apply grayscale for unearned badges
+                        animation: `fadeInBounce 0.6s ease-in-out 0.${index}s forwards`
                         }}
                     >
                         <img src={XPBadge} alt={`XPBadge-${xp}`} />
@@ -142,9 +143,9 @@ const Profile = () => {
                 </div>
                 <div className="achievements-section-header">Elite Badges</div>
                 <div className="achievements-badges-container">
-                    <div className="badge-box"><img src={EthicBot} alt="EthicBot-img" />EthicBot</div>
-                    <div className="badge-box" style={{filter: 'grayscale(1)'}}><img src={VirtueBot} alt="VirtueBot-img" />VirtueBot</div>
-                    <div className="badge-box" style={{filter: 'grayscale(1)'}}><img src={JusticeBot} alt="JusticeBot-img" />JusticeBot</div>
+                    <div className="badge-box" style={{animation: "fadeInBounce 0.6s ease-in-out 0.1s forwards"}}><img src={EthicBot} alt="EthicBot-img" />EthicBot</div>
+                    <div className="badge-box" style={{filter: 'grayscale(1)', animation: "fadeInBounce 0.6s ease-in-out 0.2s forwards"}}><img src={VirtueBot} alt="VirtueBot-img" />VirtueBot</div>
+                    <div className="badge-box" style={{filter: 'grayscale(1)', animation: "fadeInBounce 0.6s ease-in-out 0.3s forwards"}}><img src={JusticeBot} alt="JusticeBot-img" />JusticeBot</div>
                 </div>
 
             </div>

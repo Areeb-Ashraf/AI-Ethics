@@ -322,3 +322,82 @@ input[type="radio"] {
         padding-bottom: 20px;
     }
 }
+
+
+
+/* animations css */
+
+@keyframes fadeInBounce {
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2); /* Slight bounce */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Normal size */
+    }
+}
+
+.badge-box {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+
+@keyframes popUp {
+    100% {
+        transform: translateY(0); /* Ends at normal position */
+        opacity: 1;
+    }
+}
+
+.account-label, .account-display, .gender-radio{
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+    100% {
+        transform: translateX(0); /* Ends at normal position */
+        opacity: 1;
+    }
+}
+
+.username{
+    transform: translateX(20%);
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-in-out forwards;
+}
+
+.current-milestone{
+    transform: translateX(20%);
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-in-out 0.1s forwards;
+}
+
+.userxp{
+    transform: translateX(20%);
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-in-out 0.2s forwards;
+}
+
+.progress-current-milestone, .progress-next-milestone{
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out 0.3s forwards;
+}
+
+@keyframes progbar {
+    100% {
+        width: 50%; /* Ends at normal position */
+        opacity: 1;
+    }
+}
+
+.milestone-progress
+{
+    width: 0%;
+    opacity: 0;
+    animation: progbar 0.8s ease-in-out 0.3s forwards;
+}
