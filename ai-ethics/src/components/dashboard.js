@@ -1,108 +1,118 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import '../styles/dashboard.css'; // Make sure the path is correct
+import React from 'react'
+import '../styles/dashboard.css'
+import beginner from './images/beginner.svg'
+import statxpbadge from './images/statxpbadge.svg'
 
-function Dashboard() {
-  const progressPercentage = 40;  // Example progress percentage
-
+const Dashboard = () => {
   return (
-    <div className="dashboard">
-      <h1 className="dashboard-title">Dashboard</h1>
-      
-      <div className="dashboard-grid">
-        
-        {/* Left Column */}
-        <div className="left-column">
-          {/* Greeting Section */}
-          <div className="greeting-section">
-            <h2 className="greeting-title">Hey Sebastian! 👋</h2>
-            <p>Let’s get back to learning.</p>
-          </div>
-
-{/* Course Progress - Make it clickable */}
-<NavLink to="/lessons" className="course-progress-link">
-  <div className="course-progress">
-    <h1 className="section-title">Course Progress</h1>
-    <div className="progress-card">
-      <h3>AI Ethics Course <span className="course-level">Beginner</span></h3>
-      <p>25 Lessons | 10 Quizzes | 5 Hours</p>
-      <div className="progress-bar-container">
-        <div className="progress-bar" style={{ width: `${progressPercentage}%` }}></div>
-        <p>{progressPercentage}100%</p> {/* Fixed this line */}
-      </div>
-    </div>
-  </div>
-</NavLink>
-
-          {/* Recently Finished - Each quiz has its own card with percentage */}
-          <div className="recent-section">
-            <h1 className="section-title">Recently Finished</h1>
-            <div className="quiz-cards">
-              {/* Quiz 3 */}
-              <div className="quiz-card">
-                <h3>Quiz 3 ✔️</h3>
-                <p>AI Ethics Course</p>
-                <div className="quiz-percentage">100%</div>
+    <>
+      <div className="db-container">
+        <div className="db-left">
+          <div className="left-inner">
+            <h1>Dashboard</h1>
+            <div className="db-text-container">
+              <div className="db-user-name">Hey Oliver!👋</div>
+               Let's get back to learning
+            </div>
+            <h4>Course Progress</h4>
+            <div className="course-prog-container">
+              <div className="prog-upper">
+                <div>
+                  <div className="db-course-name">AI Ethics Course <span className="beginner">Beginner</span></div>
+                  <div className="db-course-name-subtext">5 Mosules | 5 Quizzes | 10 Hours</div>
+                  <button className="resume-btn">Resume</button>
+                </div>
+                <div className="db-img">
+                <img src={beginner} alt="randon-img" />
+                </div>
               </div>
-
-              {/* Quiz 2 */}
-              <div className="quiz-card">
-                <h3>Quiz 2 ✔️</h3>
-                <p>AI Ethics Course</p>
-                <div className="quiz-percentage">100%</div>
+              <div className="prog-bottom">
+                <div className="prog-black"><span className="prog-cont-percent">50%</span></div>
               </div>
-
-              {/* Quiz 1 */}
-              <div className="quiz-card">
-                <h3>Quiz 1 ✔️</h3>
-                <p>AI Ethics Course</p>
-                <div className="quiz-percentage">100%</div>
+              
+            </div>
+            <h4>Recently Finished</h4>
+            <div className="recently-finished-container">
+            <div className="quiz-card-container">
+              <div className="quiz-upper">
+                <div className="quiz-num">Quiz 1</div>
+                <div className="quiz-course-name">AI Ethics Course</div>
+              </div>
+              <div className="quiz-lower">
+                <div className="quiz-prog"><span className="quiz-prog-percent">100%</span></div>
               </div>
             </div>
+            <div className="quiz-card-container"></div>
+            <div className="quiz-card-container"></div>
+
+            </div>
+
           </div>
+          
         </div>
-
-        {/* Right Column */}
-        <div className="right-column">
-          {/* Next Milestone - No Links Here */}
-          <div className="next-milestone">
-            <h1 className="section-title">Next Milestone</h1>
-            <div className="milestone-bar">
-              <div className="milestone-progress" style={{ width: '75%' }}></div>
+        <div className="db-right">
+          <div className="right-inner">
+            <h4>Next Milestone</h4>
+            <div className="next-milestone-container">
+              <div className="db-progress-current-milestone">Virtue Advocate</div>
+                  <div className="db-milestone-progressbar-container">
+                      575/650 XP
+                      <div className="db-milestone-progress-bar">
+                          <div className="db-milestone-progress"></div>
+                      </div> 
+                  </div>
+                <div className="db-progress-next-milestone">AI Specialist</div>
             </div>
-            <p>500/650 XP</p>
-          </div>
 
-          {/* Statistics */}
-          <div className="stats-section">
-            <h1 className="section-title">Statistics</h1> 
-            <div className="stat-cards">
-              <div className="stat-card">
-                <h4>500 XP Points</h4>
+            <h4>Statistic</h4>
+            <div className="statistic-container">
+              <div className="stat-upper">
+                <div className="statxp-contaner">
+                  <div className="statbadge-container">
+                  <img src={statxpbadge} alt="statxpbadge-img" />
+                  </div>
+                  <div className="stat-xp">
+                    <div className="state-user-xp">500XP</div>
+                    <div>points</div>
+                  </div>
+                </div>
+                <div className="stat-module-semicircle-prog-container">
+                  Module 4
+                  <div className="semi-prog">
+                    <div class="barOverflow">
+                      <div class="bar"></div>
+                    </div>
+                    <span>80</span>%
+                  </div>
+                </div>
               </div>
-              <div className="stat-card">
-                <h4>Module 1 - What is AI</h4>
-              </div>
-              <div className="stat-card">
-                <h4>1 min left today!</h4>
-                <div className="time-progress-bar">
-                  <div className="time-progress" style={{ width: '10%' }}></div>
+              <div className="stat-lower">
+                <div className='stat-time-left'>10 min left today!</div>
+                <div className="stat-lower-prog-container-bar">
+                  <div className="stat-lower-prog"><span className="stat-lower-prog-text">15/30</span></div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Upcoming Tasks - No Links Here */}
-          <div className="upcoming-tasks">
-            <h1 className="section-title">Upcoming Tasks</h1> 
-            <div className="task-item">AI Security Article</div>
-            <div className="task-item">Module 4 Quiz</div>
+            <h4>Upcoming Tasks</h4>
+            <div className="upcoming-task-container">
+              <div className="task-box">
+                <div className="task-box-icon"></div>
+                <div className="task-box-name">AI Security Article</div>
+                <div className="gtsymb">&gt;</div>
+              </div>
+              <div className="task-box">
+                <div className="task-box-icon"></div>
+                <div className="task-box-name">Module 4 Quiz</div>
+                <div className="gtsymb">&gt;</div>
+              </div>
+            </div>
+
           </div>
         </div>
-
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
-export default Dashboard;
+export default Dashboard

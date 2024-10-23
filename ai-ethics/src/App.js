@@ -17,7 +17,7 @@ import Welcome from "./components/welcome";
 import Account from "./components/account";
 import Help from "./components/help";
 import Profile from "./components/profile";
-// import Dashboard from "./components/dashboard";
+import Dashboard from "./components/dashboard";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -41,7 +41,7 @@ function App() {
     <div className="main-content-area">
     <Routes>
       <Route path="/" element={<Homepage />} />
-      {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+      <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/modules" element={<Lessons />} />
       <Route path="/leaderboard" element={<Leaderboard />} />
       <Route path="/Userprofile" element={<UserProfile />} />
