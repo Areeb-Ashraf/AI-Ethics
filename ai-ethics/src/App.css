@@ -1,44 +1,16 @@
-/* For desktop mode */
-.app-container {
-    display: flex;
-  }
-  
-  .sidebar-open .main-content {
-    margin-left: 250px; /* Push content when sidebar is expanded */
-  }
-  
-  .sidebar-closed .main-content {
-    margin-left: 0; /* Reset content margin when sidebar is collapsed */
-  }
-  
-  .main-content {
-    margin-top: 30px;
-    flex-grow: 1;
-    padding: 20px;
-    transition: margin-left 350ms ease;
-  }
-  
-  .sidebar-container.active {
-    left: 0; /* Show when active */
-  }
-  
-  /* Mobile-specific behavior */
-  @media screen and (max-width: 768px) {
-    .main-content {
-      margin-left: 0; /* No margin shift for mobile */
-    }
-  
-    /* Mobile-specific sidebar behavior */
-    .sidebar-container {
-      left: -100%; /* Hidden by default in mobile */
-      position: fixed; /* Sidebar overlays content in mobile */
-      z-index: 2000; /* Ensure it's on top */
-      width: 250px;
-    }
-  
-    .sidebar-container.active {
-      left: 0; /* Overlay content when active */
-    }
-  }
- 
-  
+.main-content-area {
+  z-index: 1000;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 88px;
+  width: 93%;
+  height: 94vh;
+  overflow: auto;
+}
+
+@media screen and (max-width: 768px){
+  .main-content-area {
+    margin-left: 15px;
+    margin-top: 48px;
+  }  
+}
