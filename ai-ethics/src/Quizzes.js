@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { quizDatabase } from './QuizDatabase'; // Import the QuizDatabase instance
 import { auth } from './firebase'; // Import the Firebase auth instance
 import './Quizzes.css'; // Import the CSS for styling
+import lockIcon from './lock.png'; // Import the lock icon image
 
 const Quizzes = () => {
   const [quizStarted, setQuizStarted] = useState(false); // Track whether quiz has started
@@ -12,18 +13,22 @@ const Quizzes = () => {
   const [timeLeft, setTimeLeft] = useState(600); // 600 seconds = 10 minutes
   const [timeFinished, setTimeFinished] = useState(null); // Track the time left when the quiz is submitted
 
-  // Fetch random quiz questions
-  const fetchQuizQuestions = async () => {
+  // Add a selectedModule state to allow for module selection
+  const [selectedModule, setSelectedModule] = useState(null); // No module selected initially
+
+  // Fetch random quiz questions for the selected module
+  const fetchQuizQuestions = useCallback(async () => {
+    if (!selectedModule) return;
     try {
-      const questions = await quizDatabase.getRandomQuizQuestions(); // Get 10 random questions
+      const questions = await quizDatabase.getRandomQuizQuestions(selectedModule); // Pass selected module
       setQuizQuestions(questions);
     } catch (error) {
       console.error('Failed to fetch quiz questions:', error);
       setQuizQuestions([]); // Ensure it's at least an empty array
     }
-  };
+  }, [selectedModule]); // Include selectedModule in the dependency array
 
-  // Fetch quiz questions when the component mounts
+  // Fetch quiz questions when the component mounts or when the module changes
   useEffect(() => {
     fetchQuizQuestions();
 
@@ -34,7 +39,7 @@ const Quizzes = () => {
 
     // Clean up the subscription
     return () => unsubscribe();
-  }, []);
+  }, [fetchQuizQuestions]); // Include fetchQuizQuestions in the dependency array
 
   // Map letter answers to numeric options
   const answerLetterToIndex = (letter) => {
@@ -72,7 +77,7 @@ const Quizzes = () => {
       const uid = user.uid; // Get the user's UID
 
       try {
-        await quizDatabase.uploadQuizScore(uid, percentage, 600 - timeLeft); // Time taken
+        await quizDatabase.uploadQuizScore(uid, percentage, 600 - timeLeft, selectedModule); // Time taken
         console.log('Score uploaded successfully!');
       } catch (error) {
         console.error('Failed to upload score:', error);
@@ -86,7 +91,7 @@ const Quizzes = () => {
       totalQuestions,
       percentage,
     });
-  }, [quizQuestions, userAnswers, timeLeft, user]); // Add user to dependencies
+  }, [quizQuestions, userAnswers, timeLeft, user, selectedModule]); // Add user to dependencies
 
   // Reset the quiz and fetch a new set of questions
   const resetQuiz = () => {
@@ -99,7 +104,8 @@ const Quizzes = () => {
   };
 
   // Start the quiz
-  const startQuiz = () => {
+  const startQuiz = (moduleName) => {
+    setSelectedModule(moduleName); // Set the selected module
     setQuizStarted(true);
     setTimeLeft(600); // Start the 10-minute timer when the quiz starts
   };
@@ -133,30 +139,48 @@ const Quizzes = () => {
   return (
     <div className="quiz-container">
       {!quizStarted ? (
-        // Initial view with start button
-        <div className="quiz-start-box">
-          <h1>AI Racial Bias</h1>
-          {user ? (
-            <button className="start-btn" onClick={startQuiz}>
-              Start Quiz
-            </button>
-          ) : (
-            <p>Please log in to access the quiz.</p>
-          )}
+        // Initial view with module boxes
+        <div className="quiz-start-boxes">
+          <h1>Select a Quiz</h1>
+          <div className="quiz-boxes">
+            <div className="quiz-box" onClick={() => (user ? startQuiz('Introduction') : null)}>
+              <div className="quiz-content">
+                <p>Introduction Quiz</p>
+                {user ? null : (
+                  <>
+                    <img src={lockIcon} alt="Locked" className="lock-icon" />
+                    <p>Please log in to access the quiz</p>
+                  </>
+                )}
+              </div>
+            </div>
+            <div className="quiz-box" onClick={() => (user ? startQuiz('ModuleOne') : null)}>
+              <div className="quiz-content">
+                <p>Module One Quiz</p>
+                {user ? null : (
+                  <>
+                    <img src={lockIcon} alt="Locked" className="lock-icon" />
+                    <p>Please log in to access the quiz</p>
+                  </>
+                )}
+              </div>
+            </div>
+            {/* Add more quiz boxes for other modules as needed */}
+          </div>
         </div>
       ) : score === null ? (
         <div>
           <div className="timer">
             <p>Time left: {formatTime(timeLeft)}</p>
           </div>
-          {quizQuestions && quizQuestions.length > 0 ? ( // Ensure quizQuestions is valid
+          {quizQuestions && quizQuestions.length > 0 ? (
             quizQuestions.map((question, index) => (
               <div key={question.id} className="question-block">
                 <h3>
                   {index + 1}. {question.question}
                 </h3>
                 <div className="options">
-                  {question.options && question.options.length > 0 ? ( // Ensure options array exists
+                  {question.options && question.options.length > 0 ? (
                     question.options.map((option, i) => (
                       <label key={i} className="option-label">
                         <input
@@ -183,7 +207,7 @@ const Quizzes = () => {
           </button>
         </div>
       ) : (
-        <div className="result-block"> {/* Use the existing styling for the result block */}
+        <div className="result-block">
           <h2>Quiz Summary</h2>
           <p>Correct Answers: {score.correctAnswers}</p>
           <p>Total Questions: {score.totalQuestions}</p>

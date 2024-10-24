@@ -1,12 +1,12 @@
-import { db } from './firebase'; 
+import { db } from './firebase';
 import { collection, getDocs, doc, setDoc } from "firebase/firestore"; // Import doc and setDoc
 
 class QuizDatabase {
-  // Function to get 10 random quiz questions from the ModuleOneQuizzes subcollection
-  async getRandomQuizQuestions() {
+  // Function to get 10 random quiz questions from any module
+  async getRandomQuizQuestions(moduleName) {
     try {
-      const moduleOneQuizzesCollection = collection(db, "Quizzes", "ModuleOne", "ModuleOneQuizzes");
-      const quizSnapshot = await getDocs(moduleOneQuizzesCollection);
+      const quizCollection = collection(db, "Quizzes", moduleName, `${moduleName}Quizzes`);
+      const quizSnapshot = await getDocs(quizCollection);
       const quizData = [];
 
       // Iterate through each document in the collection
@@ -28,10 +28,29 @@ class QuizDatabase {
     }
   }
 
-  // Optional: Function to get a specific quiz question by document ID
-  async getQuizQuestionById(id) {
+  // Function to get all quizzes from all modules
+  async getAllQuizzes() {
     try {
-      const quizDocRef = doc(collection(db, "Quizzes", "ModuleOne", "ModuleOneQuizzes"), id);
+      const allQuizzes = {};
+      const modules = ['Introduction', 'ModuleOne']; // Add more modules here as necessary
+
+      // Loop through each module and get quiz questions
+      for (const moduleName of modules) {
+        const moduleQuizzes = await this.getRandomQuizQuestions(moduleName);
+        allQuizzes[moduleName] = moduleQuizzes;
+      }
+
+      return allQuizzes;
+    } catch (error) {
+      console.error("Error fetching all quizzes:", error);
+      throw new Error("Failed to fetch all quizzes");
+    }
+  }
+
+  // Optional: Function to get a specific quiz question by document ID
+  async getQuizQuestionById(moduleName, id) {
+    try {
+      const quizDocRef = doc(collection(db, "Quizzes", moduleName, `${moduleName}Quizzes`), id);
       const quizDoc = await getDocs(quizDocRef);
 
       if (quizDoc.exists) {
@@ -47,19 +66,28 @@ class QuizDatabase {
   }
 
   // Function to upload quiz score directly under the 'Scores' collection
-  async uploadQuizScore(uid, accuracy, duration) {
+  async uploadQuizScore(uid, accuracy, duration, quizID) {
     try {
       const scoresRef = collection(db, 'Scores'); // Direct reference to 'Scores' collection
 
       // Create a unique document ID for each score
-      const newScoreRef = doc(scoresRef); 
-      
+      const newScoreRef = doc(scoresRef);
+
       // Create a score entry object
       const scoreEntry = {
         uid, // User's UID as the identifier
         accuracy, // Percentage score
         duration, // Duration taken for the quiz
-        timestamp: new Date().toISOString() // Store the timestamp
+        quizID,
+        timestamp: new Intl.DateTimeFormat('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: 'numeric',
+          second: 'numeric',
+          timeZoneName: 'short',
+        }).format(new Date()) // Store the timestamp
       };
 
       await setDoc(newScoreRef, scoreEntry);
