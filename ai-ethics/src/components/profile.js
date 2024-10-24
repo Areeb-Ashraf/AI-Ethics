@@ -57,6 +57,14 @@ const Profile = () => {
                 </div>
             </div>
             <div className="ethical-evolution-container">
+                <div className="ethical-eval-title">Your Ethical Evaluation</div>
+                <div className="ethic-card-container">
+                    <div className="ethic-card">
+                        <div className="ethic-card-xp"></div>
+                        <div className="ethic-card-circle"></div>
+                        <div className="ethic-card-name"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div className="profile-lower-containers">
