@@ -23,25 +23,24 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod1Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec5 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec6 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec7 /> },
+      { type: "Lesson2", contentComponent: <Mod1Sec2 /> },
+      { type: "Lesson3", contentComponent: <Mod1Sec3 /> },
+      { type: "Lesson3", contentComponent: <Mod1Sec4 /> },
+      { type: "Lesson4", contentComponent: <Mod1Sec5 /> },
+      { type: "Lesson4", contentComponent: <Mod1Sec6 /> },
+      { type: "Lesson4", contentComponent: <Mod1Sec7 /> },
       { type: "Quiz", contentComponent: <Quiz /> },
     ],
   },
-  // {
-  //   id: 2,
-  //   title: "Module 2",
-  //   time: "30min",
-  //   sections: [
-  //     { type: "Lesson", contentComponent: <Mod2Sec1 /> },
-  //     { type: "Quiz", contentComponent: <Quiz /> },
-  //   ],
-  // },
-  // Add more module data as necessary...
+  {
+    id: 2,
+    title: "Module 2",
+    time: "30min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod1Sec1 /> },
+      { type: "Quiz", contentComponent: <Quiz /> },
+    ],
+  },
 ];
 
 

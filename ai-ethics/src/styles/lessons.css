@@ -33,13 +33,13 @@
   /* accordian */
   .accordion {
     font-weight: 700;
-    background-color: black;
+    background-color: #1a73e8;
     color: #fafafa;
     cursor: pointer;
     padding: 18px;
     width: 266px;
     height: 57px;
-    border: 0.5px solid black;
+    border: 0.5px solid #1a73e8;
     text-align: left;
     outline: none;
     font-size: 18px;
@@ -55,12 +55,12 @@
   
   .panel-active,
   .accordion:hover {
-    background-color: white;
-    color: black;
+    background-color: #78a8e7;
+    color: rgb(255, 255, 255);
   }
   
   .accordion:hover:after {
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   .accordion:after {
@@ -73,7 +73,7 @@
   
   .panel-active:after {
     content: "\02C4";
-    color: black;
+    color: rgb(255, 255, 255);
   }
   
   /* panel */
@@ -147,18 +147,18 @@
   .panel-button-time {
     font-size: 11px;
     font-weight: 700;
-    color: grey;
+    color: rgb(128, 128, 128);
   }
   
   /* panel hover css */
   .panel-button:hover {
-    background-color: black;
+    background-color: #1a73e8;
     color: white;
   }
   
   .panel-button:hover .panel-button-status {
     background-color: white;
-    color: black;
+    color: #1a73e8;
   }
   
   .panel-button:hover .panel-button-text {
@@ -168,10 +168,14 @@
   .panel-button:hover .panel-button-icon {
     color: black;
   }
-  
+
+  .panel-button:hover .panel-button-time {
+    color: white;
+  }
+
   /* Active state CSS */
   .active-panel-button {
-    background-color: black;
+    background-color: #1a73e8;
     color: white;
   }
   
@@ -186,6 +190,10 @@
 
   .active-panel-button .panel-button-icon {
     color: black;
+  }
+
+  .active-panel-button .panel-button-time {
+    color: white;
   }
   
   /* Module Content */
