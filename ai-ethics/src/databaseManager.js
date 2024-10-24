@@ -23,30 +23,30 @@ class DatabaseManager {
   //     }
   //   }
 
-  async fetchLeaderboardByQuizID(quizID) {
-    const leaderboardRef = collection(db, "leaderboard");
-    const q = query(leaderboardRef, where("quizID", "==", quizID));
+  async fetchScoresByQuizID(quizID) {
+    const scoresRef = collection(db, "Scores");
+    const q = query(scoresRef, where("quizID", "==", quizID));
 
     try {
       const querySnapshot = await getDocs(q);
       const results = querySnapshot.docs.map((doc) => doc.data());
       return results;
     } catch (error) {
-      console.error("Error fetching leaderboard: ", error);
+      console.error("Error fetching scores: ", error);
       throw error;
     }
   }
 
-  async fetchLeaderboardByUserID(userID) {
-    const leaderboardRef = collection(db, "leaderboard");
-    const q = query(leaderboardRef, where("userID", "==", userID));
+  async fetchScoresByUserID(userID) {
+    const scoresRef = collection(db, "Scores");
+    const q = query(scoresRef, where("uid", "==", userID));
 
     try {
       const querySnapshot = await getDocs(q);
       const results = querySnapshot.docs.map((doc) => doc.data());
       return results;
     } catch (error) {
-      console.error("Error fetching leaderboard: ", error);
+      console.error("Error fetching scores: ", error);
       throw error;
     }
   }
