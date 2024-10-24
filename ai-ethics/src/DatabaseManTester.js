@@ -48,6 +48,18 @@ function DatabaseManTester() {
     console.log(allWords);
   }
 
+  // function that fetches xp for a user
+  async function fetchXP(userID) {
+    const xp = await databaseManager.fetchXPforUser(userID);
+    console.log(xp);
+  }
+
+  // function that fetches leaderboard data
+  async function fetchLeaderboard() {
+    const leaderboard = await databaseManager.fetchLeaderboardData();
+    console.log(leaderboard);
+  }
+
   const Tooltip = () => {
     const [definition, setDefinition] = useState("Loading...");
 
@@ -110,6 +122,14 @@ function DatabaseManTester() {
       <button onClick={fetchAllWords}>
         Click me to retrieve all words from the glossary
       </button>
+      <br />
+      <button onClick={() => fetchXP("ygQVXEi2YLRXDP4elYPCNdKHGWj2")}>
+        Click me to retrieve XP by user ID ygQVXEi2YLRXDP4elYPCNdKHGWj2
+      </button>
+      <button onClick={fetchLeaderboard}>
+        Click me to retrieve leaderboard data
+      </button>
+
       <ResetAllCookies />
       <AddQuestions />
     </div>
