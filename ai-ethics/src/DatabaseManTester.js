@@ -14,16 +14,16 @@ function DatabaseManTester() {
     return glossaryWord;
   }
 
-  // function that fetches then logs all leaderboard entries by quiz ID
-  async function fetchLeaderboardByQuizID(quizID) {
-    const leaderboard = await databaseManager.fetchLeaderboardByQuizID(quizID);
-    console.log(leaderboard);
+  // function that fetches then logs all score entries by quiz ID
+  async function fetchScoresByQuizID(quizID) {
+    const score = await databaseManager.fetchScoresByQuizID(quizID);
+    console.log(score);
   }
 
-  // function that fetches then logs all leaderboard entries by user ID
-  async function fetchLeaderboardByUserID(userID) {
-    const leaderboard = await databaseManager.fetchLeaderboardByUserID(userID);
-    console.log(leaderboard);
+  // function that fetches then logs all score entries by user ID
+  async function fetchScoresByUserID(userID) {
+    const score = await databaseManager.fetchScoresByUserID(userID);
+    console.log(score);
   }
 
   // function that fetches then logs a user's profile
@@ -91,11 +91,13 @@ function DatabaseManTester() {
       <button onClick={() => fetchGlossary("API")}>
         Click me to retrieve "LLM" glossary word
       </button>
-      <button onClick={() => fetchLeaderboardByQuizID("foo")}>
-        Click me to retrieve leaderboard by quiz ID foo
+      <button onClick={() => fetchScoresByQuizID("Module1")}>
+        Click me to retrieve scores by quiz ID Module1
       </button>
-      <button onClick={() => fetchLeaderboardByUserID("bar")}>
-        Click me to retrieve leaderboard by user ID bar
+      <button
+        onClick={() => fetchScoresByUserID("ygQVXEi2YLRXDP4elYPCNdKHGWj2")}
+      >
+        Click me to retrieve score by user ID ygQVXEi2YLRXDP4elYPCNdKHGWj2
       </button>
       <button onClick={() => fetchUserProfile("baz")}>
         Click me to retrieve user profile by user ID or logged in User (if you
