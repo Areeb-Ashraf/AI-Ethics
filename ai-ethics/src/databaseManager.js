@@ -242,14 +242,14 @@ class DatabaseManager {
         const xp = await this.fetchXPforUser(user.uid);
         leaderboardData.push({
           name: user.name,
-          xp: xp,
+          score: xp,
         });
 
         // console.log("Adding user: ", user.name, " with XP: ", xp);
       }
 
       // sort by xp
-      leaderboardData.sort((a, b) => b.xp - a.xp);
+      leaderboardData.sort((a, b) => b.score - a.score);
       return leaderboardData;
     } catch (error) {
       console.error("Error fetching leaderboard data: ", error);
