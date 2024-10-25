@@ -6,28 +6,25 @@ import EthicBot from '../styles/Badges/EthicBot.svg'
 import VirtueBot from '../styles/Badges/VirtueBot.svg'
 import JusticeBot from '../styles/Badges/JusticeBot.svg'
 
-const milestones = [
-    { xp: 0, label: 'Novice' },
-    { xp: 50, label: 'Ethics Explorer' },
-    { xp: 100, label: 'AI Learner' },
-    { xp: 150, label: 'Moral Thinker' },
-    { xp: 250, label: 'Ethics Analyst' },
-    { xp: 350, label: 'AI Scholar' },
-    { xp: 500, label: 'Virtue Advocate' },
-    { xp: 650, label: 'AI Specialist' },
-    { xp: 800, label: 'Guardian of Ethics' },
-    { xp: 1000, label: 'Master of Integrity' },
-  ];
-  
-  const currentXP = 575; // Replace this later with dynamic value
 
 const Profile = () => {
-      const progressPercentage = (currentXP / 1000) * 100;
       const totalModules = 10;
       const completedModules = 3; // This value can come from your backend or state to reflect the user's progress
       const modules = Array.from({ length: totalModules }, (_, i) => i + 1);
-      const completedXPS = 575;
+      const completedXPS = 575; // also used as completed milestones in ethical evolution container
       const xps = [5, 10, 50, 100, 200, 500, 1000];
+      const milestones = [
+        { xp: 0, label: 'Novice' },
+        { xp: 50, label: 'Ethics Explorer' },
+        { xp: 100, label: 'AI Learner' },
+        { xp: 150, label: 'Moral Thinker' },
+        { xp: 250, label: 'Ethics Analyst' },
+        { xp: 350, label: 'AI Scholar' },
+        { xp: 500, label: 'Virtue Advocate' },
+        { xp: 650, label: 'AI Specialist' },
+        { xp: 800, label: 'Guardian of Ethics' },
+        { xp: 1000, label: 'Master of Integrity' },
+      ];
   return (
     <>
       <div className="profile-container">
@@ -59,11 +56,19 @@ const Profile = () => {
             <div className="ethical-evolution-container">
                 <div className="ethical-eval-title">Your Ethical Evaluation</div>
                 <div className="ethic-card-container">
-                    <div className="ethic-card">
-                        <div className="ethic-card-xp"></div>
-                        <div className="ethic-card-circle"></div>
-                        <div className="ethic-card-name"></div>
-                    </div>
+                    {milestones.map((milestone, index) => (
+                        <div 
+                            className="ethic-card" 
+                            key={index} 
+                            style={{
+                                filter: milestone.xp <= completedXPS ? 'none' : 'grayscale(1)',
+                                animation: `fadeInBounce 0.6s ease-in-out 0.${index}s forwards`
+                            }}>
+                            <div className="ethic-card-xp">{milestone.xp} XP</div>
+                            <div className="ethic-card-circle">&#10003;</div>
+                            <div className="ethic-card-name">{milestone.label}</div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

@@ -262,18 +262,43 @@ input[type="radio"] {
     display: flex;
     flex-direction: row ;
     gap: 10px;
-    margin: 10px 0px 0px 20px;
+    margin: 8px 20px 10px 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .ethic-card{
     width: 60px;
-    height: 75px;
-    background-color: #de1717;
+    height: 85px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.ethic-card-xp{
+    font-size: 10px;
+    font-weight: 700;
+    color: #0056D1;
+    margin-bottom: 8px;
+}
+
+.ethic-card-name{
+    font-size: 10px;
+    font-weight: 700;
+    color: #0056D1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ethic-card-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
+    color: white;
 }
 
 
@@ -339,11 +364,19 @@ input[type="radio"] {
         width: 95%;
     }
 
+    .xp{
+        font-size: 16px;
+    }
+
+    .userxp{
+        font-size: 11px;
+    }
+
 
 }
 
 @media screen and (max-width: 1390px){
-    .achivements-container{
+    .achivements-container, .ethical-evolution-container{
         height: auto;
         padding-bottom: 20px;
     }
@@ -364,7 +397,7 @@ input[type="radio"] {
     }
 }
 
-.badge-box {
+.badge-box, .ethic-card {
     opacity: 0;
     transform: scale(0.5);
 }
