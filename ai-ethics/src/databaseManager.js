@@ -103,7 +103,9 @@ class DatabaseManager {
       const querySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
-        return querySnapshot.docs[0].data();
+        const profile = querySnapshot.docs[0].data();
+        profile["id"] = querySnapshot.docs[0].id;
+        return profile;
       } else {
         console.error("No matching user found");
         return null;
@@ -165,6 +167,7 @@ class DatabaseManager {
   }
 
   // uploads an image to the firebase storage and returns the download URL
+  // TODO: add a way to delete images
   async uploadImage(file) {
     const storageRef = ref(imagesRef, file.name);
     try {
@@ -225,7 +228,7 @@ class DatabaseManager {
   }
 
   // Fetches the leaderboard data
-  // recalculates it every time some asks for it
+  // recalculates it every time someone asks for it
   // curently rather inefficient, but should be fine for now
   async fetchLeaderboardData() {
     try {
@@ -234,14 +237,19 @@ class DatabaseManager {
       const querySnapshot = await getDocs(q);
       const users = querySnapshot.docs.map((doc) => doc.data());
 
-      console.log("Users: ", users);
-
       // for each user, fetch scores
       const leaderboardData = [];
       for (const user of users) {
+        const userProfile = await this.fetchUserProfile(user.uid);
+        let name = "";
+        if (!userProfile) {
+          name = user.name;
+        } else {
+          name = userProfile.name;
+        }
         const xp = await this.fetchXPforUser(user.uid);
         leaderboardData.push({
-          name: user.name,
+          name: name,
           score: xp,
         });
 

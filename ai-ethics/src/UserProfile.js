@@ -5,6 +5,7 @@ import {
   getDocs,
   where,
   updateDoc,
+  addDoc,
   doc,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
@@ -13,15 +14,12 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 
-function UserProfile() {
-  const [username, setUsername] = useState("");
+function UserProfile({ userProfile }) {
+  const [isEditMode, setIsEditMode] = useState(false);
   const [name, setName] = useState("");
-  const [location, setLocation] = useState("");
-  const [bio, setBio] = useState("");
+  const [username, setUsername] = useState("");
   const [photo, setPhoto] = useState(null);
   const [user, loading, error] = useAuthState(auth);
-  const [userProfile, setUserProfile] = useState(null);
-  const [userDoc, setUserDoc] = useState(null);
 
   const navigate = useNavigate();
 
@@ -33,16 +31,10 @@ function UserProfile() {
 
   async function handleSaveChanges() {
     try {
-      // Get the profile document for the current user
-      const userRef = doc(db, "userProfile", userDoc.uid);
+      let dataToUpdate = {};
 
-      let dataToUpdate = {}; // An empty object to hold the data to update
-
-      // Construct the object with non-empty fields
-      //   if (username !== "") dataToUpdate.username = username;
       if (name !== "") dataToUpdate.name = name;
-      //   if (location !== "") dataToUpdate.location = location;
-      //   if (bio !== "") dataToUpdate.bio = bio;
+      if (username !== "") dataToUpdate.username = username;
 
       // If photo is not null, update imgURL field
       if (photo) {
@@ -54,122 +46,192 @@ function UserProfile() {
         }
       }
 
-      await updateDoc(userRef, dataToUpdate);
-      console.log("User profile updated successfully");
+      if (userProfile && userProfile.id) {
+        console.log("first");
+        await updateDoc(doc(db, "userProfile", userProfile.id), dataToUpdate);
+        console.log("User profile updated successfully");
+        setIsEditMode(false);
+      } else {
+        console.log("second");
+        dataToUpdate.userID = user.uid;
+        await addDoc(collection(db, "userProfile"), dataToUpdate);
+        console.log("User profile created successfully");
+        setIsEditMode(false);
+      }
     } catch (error) {
       console.error("Error saving profile:", error);
+      alert("There was an error saving your profile.");
     }
   }
-
-  useEffect(() => {
-    async function fetchProfile() {
-      try {
-        if (user) {
-          const profile = await databaseManager.fetchUserProfile(user.uid);
-          const docId = await databaseManager.getUserDocumentIdByUid(user.uid);
-          setUserProfile(profile);
-          setUserDoc(docId);
-        } else {
-          const profile = await databaseManager.fetchUserProfile("baz");
-          const docId = await databaseManager.getUserDocumentIdByUid("baz");
-          setUserProfile(profile);
-          setUserDoc(docId);
-          console.log(profile);
-          console.log(docId);
-        }
-      } catch (error) {
-        console.error("Error fetching profile:", error);
-      }
-    }
-
-    fetchProfile();
-  }, [user]);
 
   useEffect(() => {
     // if (loading) return;
     // if (!user) return navigate("/");
-    console.log("not logged in");
+    // console.log("not logged in");
+    if (!user) {
+      console.log("not logged in");
+    } else {
+      console.log("logged in");
+    }
   }, [user, loading]);
 
-  if (loading || !userProfile || !userDoc) {
-    return <p>Loading...</p>; // Display loading state while fetching data
+  // This function will toggle between edit and view modes
+  function toggleEditMode() {
+    setIsEditMode(!isEditMode);
   }
 
-  return (
-    <div>
-      <div
-        style={{
-          height: "100px",
-          width: "100%",
-          backgroundColor: "transparent",
-        }}
-      ></div>
-      <h1>User Profile</h1>
-      <p>Name: {userDoc.name ?? ""}</p>
-      <p>Photo: </p>
-      {/* <img src={userProfile.imgUrl ?? ""} alt="User Profile" /> */}
-      <img
-        src={userProfile.imgUrl ?? ""}
-        alt="User Profile"
-        style={{ height: "150px" }}
-      />
-      <h3>Completed Lessons:</h3>
-      {userProfile.completedLessons &&
-      userProfile.completedLessons.length > 0 ? (
-        <ul>
-          {userProfile.completedLessons.map((lesson, index) => (
-            <li key={index}>{lesson}</li>
-          ))}
-        </ul>
-      ) : (
-        <p>No completed lessons.</p>
-      )}
+  if (isEditMode) {
+    // Edit mode to modify profile details
+    return (
+      <div className="account-details-container">
+        <div className="account-header">Edit Account Details</div>
+        <div className="account-display">
+          <label className="account-label">
+            Name:
+            <input
+              type="text"
+              required
+              minLength="1"
+              maxLength="18"
+              name="fname"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <label className="account-label">
+            Profile Picture:
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => setPhoto(e.target.files[0])}
+            />
+          </label>
+        </div>
+        <div className="account-display">
+          <label className="account-label">
+            Username:
+            <input
+              type="text"
+              required
+              minLength="1"
+              maxLength="18"
+              name="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </label>
+        </div>
 
-      <h3>Badges:</h3>
-      {userProfile.badges && userProfile.badges.length > 0 ? (
-        <ul>
-          {userProfile.badges.map((badge, index) => (
-            <li key={index}>{badge}</li>
-          ))}
-        </ul>
-      ) : (
-        <p>No badges earned.</p>
-      )}
-      <div className="mb-3">
-        <label htmlFor="photo" className="form-label">
-          Photo:
-        </label>
-        <input
-          type="file"
-          className="form-control"
-          id="photo"
-          accept="image/*"
-          onChange={handlePhotoChange}
-        />
-        {photo && (
-          <img
-            src={URL.createObjectURL(photo)}
-            alt="Selected"
-            className="mt-2 img-thumbnail"
-            style={{ maxWidth: "100px" }}
-          />
-        )}
+        <div className="account-actions-row">
+          <button className="action-button" onClick={handleSaveChanges}>
+            Save Changes
+          </button>
+          <button className="cancel-button" onClick={toggleEditMode}>
+            Cancel
+          </button>
+        </div>
       </div>
-      <div>
-        <button className="btn btn-primary me-2" onClick={handleSaveChanges}>
-          Confirm my choices
+    );
+  }
+
+  // View mode to display profile details
+  return (
+    <div className="account-details-container">
+      <div className="account-header">
+        Account Details
+        <button className="edit-profile" onClick={toggleEditMode}>
+          Edit Profile
+        </button>
+      </div>
+      <div className="spaced-box" />
+
+      <div className="account-display">
+        <div className="left-section">
+          <div className="profile-picture-2">
+            <img src={userProfile?.imgURL} alt="Profile" />
+          </div>
+        </div>
+        <div className="right-section">
+          <div className="name">Name: {userProfile?.name}</div>
+          <div className="username2">Username: {userProfile?.username}</div>
+        </div>
+      </div>
+      <div className="spaced-box" />
+
+      <div className="account-actions-row">
+        <button
+          className="action-button reset-password"
+          onClick={handleResetPassword}
+        >
+          Reset Password
         </button>
         <button
-          className="btn btn-secondary"
-          onClick={() => {
-            navigate("/");
-          }}
+          className="action-button change-email"
+          onClick={handleChangeEmail}
         >
-          Cancel
+          Change Email
         </button>
       </div>
     </div>
   );
-}
 
+  // defunct code, keeping for reference
+  // return (
+  //   <div className="account-details-container">
+  //     <div className="account-header">
+  //       Add Account Details
+  //       <button className="edit-profile" onClick={handleSaveChanges}>
+  //         Create Profile
+  //       </button>
+  //     </div>
+  //     <div className="account-display">
+  //       <label className="account-label">
+  //         Name:
+  //         <input
+  //           type="text"
+  //           required
+  //           minLength="1"
+  //           maxLength="18"
+  //           name="fname"
+  //           value={name}
+  //           onChange={(e) => setName(e.target.value)}
+  //         />
+  //       </label>
+  //       <label className="account-label">
+  //         Profile Picture:
+  //         <input
+  //           type="file"
+  //           accept="image/*"
+  //           onChange={(e) => setPhoto(e.target.files[0])}
+  //         />
+  //       </label>
+  //     </div>
+  //     <div className="account-display">
+  //       <label className="account-label">
+  //         Username:
+  //         <input
+  //           type="text"
+  //           required
+  //           minLength="1"
+  //           maxLength="18"
+  //           name="username"
+  //           value={username}
+  //           onChange={(e) => setUsername(e.target.value)} // linked to state
+  //         />
+  //       </label>
+  //     </div>
+  //   </div>
+  // );
+
+  // These functions would handle the reset password and change email actions
+  function handleResetPassword() {
+    // Logic to trigger password reset (e.g., Firebase authentication)
+    console.log("Password reset link sent.");
+  }
+
+  function handleChangeEmail() {
+    // Logic to change the user's email
+    console.log("Change email flow initiated.");
+  }
+}
 export default UserProfile;

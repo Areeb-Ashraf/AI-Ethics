@@ -15,6 +15,8 @@ import databaseManager from "../databaseManager";
 //     { name: 'Tiffany R.', score: 85 },
 // ];
 
+// probably want to put this is a use effect so that it doesn't call the db a bajillion times everytime the user changes the page
+// they are on or refreshes the page from anywhere
 const leaderboardData = await databaseManager.fetchLeaderboardData();
 
 const Leaderboard = () => {
