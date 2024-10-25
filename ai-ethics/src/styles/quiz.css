@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    width: 99%;
+    width: 99.5%;
     height: 98%;
     border-radius: 20px;
 }
@@ -17,9 +17,12 @@
 
 .answers-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 35%;
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     background-color: #fff;
     border-radius: 0px 20px 20px 0px;
 }
@@ -27,8 +30,13 @@
 
 /* progressbar */
 
+.quiz-progress-bar-container{
+    display: flex;
+    align-items: center;
+}
+
 .quiz-progress-bar{
-    width: 90%;
+    width: 100%;
     height: 10px;
     margin: 20px;
     background-color: #fff;
@@ -44,22 +52,181 @@
     border-radius: 50px;
 }
 
+.quiz-progress-percentage{
+    margin: 15px 15px 15px 0px ;
+    color: #0056D1;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+
+.question-details-container{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px;
+    align-items: center;
+}
+
+.question-number{
+    color: #0056D1;
+    font-weight: 800;
+    font-size: 18px;
+    margin-right: auto;
+}
+
+.question-timer-container, .question-xp-container{
+    width: 120px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.question-timer-img, .question-xp-img{
+    width: 40px;
+    height: 40px;
+    background-color: #0056D1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-timer, .question-xp{
+    color: #0056D1;
+    font-weight: 800;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.question{
+    margin: 20px 40px 20px 20px ;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 /* answers */
 
+.answer-box{
+    width: 90%;
+    min-height: 50px;
+    height: auto;
+    margin: 10px ;
+    border-radius: 20px;
+    border: solid #98C0FB 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* This aligns items to the top of the answer box */
+}
 
-/* .option-radio{
+
+.answer-box:hover{
+    border: solid #0056D1 5px;
+    cursor: pointer;
+
+}
+
+.answer-box:hover .answer-text{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.answer-box:hover .option-radio{
+    border: none;
+    width: 18px;
+    height: 18px;
+    background-color: #0056D1;
+}
+
+.option-radio{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 3px solid #98C0FB;
-    margin-right: 10px;
-} */
+    border: 4px solid #98C0FB;
+    margin: 10px;
+    flex-shrink: 0; /* Ensures the circle doesn’t resize */
+}
 
-/* .option-radio2{
-    width: 12px;
-    height: 12px;
+.answer-text{
+    margin: 10px 10px 13px 0px ;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.option-radio2{
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    border: 3px double #3583eb;
+    /* border: 4px double #3583eb; */
+    background-color: #0056D1;
     margin-right: 10px;
-} */
+    margin: 10px;
+    flex-shrink: 0;
+}
+
+
+.quiz-nav-container{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quiz-prev-btn, .quiz-next-btn{
+    height: 35px;
+    width: 110px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 4px solid #98C0FB;
+    padding-bottom: 3px;
+}
+
+.quiz-next-btn{
+    border: 4px solid #0056D1;
+    background-color: #0056D1;
+    color: white;
+}
+
+.quiz-prev-btn:hover, .quiz-next-btn:hover{
+    box-shadow: 0px 3.54px 8.86px 0px #00000040;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+/* responsiveness */
+
+@media (max-width: 1040px){
+    .question-details-container{
+        flex-direction: column;
+        margin-bottom: none;
+    }
+    .question-number{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quiz-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .question-container{
+        width: 100%;
+    }
+
+    .answers-container{
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+    }
+}  
