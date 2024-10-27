@@ -2,18 +2,22 @@ import React from "react";
 import "../styles/leaderboard.css";
 import databaseManager from "../databaseManager";
 
-// const leaderboardData = [
-//     { name: 'John M.', score: 300 },
-//     { name: 'Oliver Q.', score: 250 },
-//     { name: 'James H.', score: 200 },
-//     { name: 'Maddy L.', score: 150 },
-//     { name: 'Emily H.', score: 100 },
-//     { name: 'Mary Q.', score: 95 },
-//     { name: 'Brandon V.', score: 90 },
-//     { name: 'Lewis T.', score: 85 },
-//     { name: 'Jamie O.', score: 80 },
-//     { name: 'Tiffany R.', score: 85 },
-// ];
+/*
+Notes For Backend
+
+fetching `leaderboardData` works great.
+
+but as you can tell longer names does not look good on the design. Working around the design to acommodate longer names is also going to be ugly
+
+We need to display a name of 7 or 8 charecters only. There are 3 ways to do this
+
+1) Display only the first 7 or 8 charecters of the users first/last/full name regardless of the length of the name and ignore the rest when displaying
+2) Limit the user to only inputing 7 or 8 charecters to their first/last/full name while registering
+3) Have them create a seperate "username"/"display name" with a limitation of 7 or 8 charecters only
+
+Need to decide and make the necessary changes
+
+*/ 
 
 // probably want to put this is a use effect so that it doesn't call the db a bajillion times everytime the user changes the page
 // they are on or refreshes the page from anywhere

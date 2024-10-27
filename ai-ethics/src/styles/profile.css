@@ -31,14 +31,6 @@
     align-items: center;
 }
 
-.ethical-evolution-container{
-    width: 69%;
-    height: 150px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 16.93px 0px #00000040;
-    display: flex;
-    flex-direction: row;
-}
 
 .account-details-container{
     width: 29%;
@@ -272,9 +264,68 @@ input[type="radio"] {
     transform: scale(1.2);
   }
 
+  
 
 
+/* Ethical Evolution css */
 
+.ethical-evolution-container{
+    width: 69%;
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 16.93px 0px #00000040;
+    display: flex;
+    flex-direction: column;
+}
+
+.ethical-eval-title{
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0px 0px 20px;
+}
+
+.ethic-card-container{
+    display: flex;
+    flex-direction: row ;
+    gap: 10px;
+    margin: 8px 20px 10px 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ethic-card{
+    width: 60px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ethic-card-xp{
+    font-size: 10px;
+    font-weight: 700;
+    color: #0056D1;
+    margin-bottom: 8px;
+}
+
+.ethic-card-name{
+    font-size: 10px;
+    font-weight: 700;
+    color: #0056D1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.ethic-card-circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
 
 
 
@@ -408,12 +459,99 @@ color: gray; /* Subtle color for the username */
         width: 95%;
     }
 
+    .xp{
+        font-size: 16px;
+    }
+
+    .userxp{
+        font-size: 11px;
+    }
+
 
 }
 
 @media screen and (max-width: 1390px){
-    .achivements-container{
+    .achivements-container, .ethical-evolution-container{
         height: auto;
         padding-bottom: 20px;
     }
+}
+
+
+
+/* animations css */
+
+@keyframes fadeInBounce {
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2); /* Slight bounce */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Normal size */
+    }
+}
+
+.badge-box, .ethic-card {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+
+@keyframes popUp {
+    100% {
+        transform: translateY(0); /* Ends at normal position */
+        opacity: 1;
+    }
+}
+
+.account-label, .account-display, .gender-radio{
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+    100% {
+        transform: translateX(0); /* Ends at normal position */
+        opacity: 1;
+    }
+}
+
+.username{
+    transform: translateX(20%);
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-in-out forwards;
+}
+
+.current-milestone{
+    transform: translateX(20%);
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-in-out 0.1s forwards;
+}
+
+.userxp{
+    transform: translateX(20%);
+    opacity: 0;
+    animation: fadeInLeft 0.5s ease-in-out 0.2s forwards;
+}
+
+.progress-current-milestone, .progress-next-milestone{
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out 0.3s forwards;
+}
+
+@keyframes progbar {
+    100% {
+        width: 50%; /* Ends at normal position */
+        opacity: 1;
+    }
+}
+
+.milestone-progress
+{
+    width: 0%;
+    opacity: 0;
+    animation: progbar 0.8s ease-in-out 0.3s forwards;
 }
