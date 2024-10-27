@@ -244,8 +244,10 @@ class DatabaseManager {
         let name = "";
         if (!userProfile) {
           name = user.name;
-        } else {
+        } else if (!userProfile.username) {
           name = userProfile.name;
+        } else {
+          name = userProfile.username;
         }
         const xp = await this.fetchXPforUser(user.uid);
         leaderboardData.push({
