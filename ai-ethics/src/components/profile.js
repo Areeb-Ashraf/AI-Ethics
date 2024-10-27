@@ -7,6 +7,36 @@ import VirtueBot from '../styles/Badges/VirtueBot.svg'
 import JusticeBot from '../styles/Badges/JusticeBot.svg'
 
 
+/*
+Notes For Backend
+
+Some things are dynamic, some are static
+
+The following are the data we need for this page:
+- Need users name in `username`
+- need the users earned xp and calculate the current milestone and put it in `current-milestone`
+- get usered earned xp and put it in `xp`
+- `progress-current-milestone` and `dprogress-next-milestone` are current and next milestones which is based on the useres earned xp, 
+so the names might not need to come from the db but we need the users earned xp can calculate what their current and nex milestone is dynamically and disply those 
+- the `milestone-progressbar-container` has 575/650 XP displaying earnedXP/XP needed for next milestone. Need earned xp from db
+- The ethical evolution `badge-box` is displayed dynamicaalyy from the variable `completedXPS`, need eaned xp from db
+- The account details container displayes all the users details that they inputed upon registration. user details need to be fetched from db. The password input box should be replaced with a forgot password button. 
+Should these details be editable? the `edit-profile` does nothing for now. If account details should be editable then nedd to add functionality to update db upon editing details.
+- the module badges are displayed dynamically based on the variable `completedModules`. Need to track and fetch the no of modules completed from db
+- the xp badges are displayed dynamically based on the variable `completedXPS`. Need to track and fetch the earned xp completed from db
+- Elite Badges are not dynamic yet. need to make it dynamic based on earned user xp
+
+** Apologies for the huge amount of notes, please read through all of these, all of these need to be addressed.
+
+
+
+TO DO:
+fetch all the relavent data and address the concerns above. How you are getting what data from where is left to you.
+Need to decide what data to display in account details. If they should be editable the implement the feature to edit them and update the db accordingly
+
+
+*/
+
 const Profile = () => {
       const totalModules = 10;
       const completedModules = 3; // This value can come from your backend or state to reflect the user's progress
