@@ -31,22 +31,30 @@ const HomepageTour = () => {
         "This sidebar helps you navigate through the site. You can explore lessons, quizzes, and more.",
     },
     {
-      target: ".sidebar-text:nth-child(2)", // Point to "Explore"
-      content: "Click here to explore the site and learn more about AI ethics.",
+      target: ".sidebar-item:nth-child(2)", // Point to "Dashboard"
+      content: "Go to your Dashboard to see your progress.",
     },
     {
-      target: ".sidebar-text:nth-child(3)", // Point to "Lessons"
+      target: ".sidebar-item:nth-child(3)", // Point to "Modules"
       content:
-        "Access all lessons in this section. You can dive deep into AI ethics topics here.",
+        "Access all lessons in the Modules section. You can dive deep into AI ethics topics here.\n\nTake quizzes to test your knowledge of AI ethics.",
     },
     {
-      target: ".sidebar-text:nth-child(6)", // Point to "Quizzes"
-      content: "Take quizzes to test your knowledge of AI ethics.",
+      target: ".sidebar-item:nth-child(4)", // Point to "leaderboard"
+      content: "view the leaderboard to compete",
     },
     {
-      target: ".auth-buttons",
+      target: ".sidebar-item:nth-child(5)", // Point to "Profile"
       content:
-        "If you’re not signed in, you can log in or sign up here to access more features.",
+        "You can view your information and change your settings in the Profile tab.",
+    },
+    {
+      target: "#info", // Point to "help"
+      content: "stop it, get some help",
+    },
+    {
+      target: ".cta-button", // Point to "Profile"
+      content: "final hook",
     },
   ];
 
@@ -70,9 +78,30 @@ const HomepageTour = () => {
       run={run}
       continuous={true}
       showSkipButton={true}
+      spotlightPadding={10}
+      showProgress={true}
       styles={{
         options: {
           zIndex: 1000,
+          arrowColor: "#fff",
+          // backgroundColor: "#333",
+          overlayColor: "rgba(0, 0, 0, 0.3)",
+          primaryColor: "#007bff",
+          // textColor: "#fff",
+        },
+        buttonNext: {
+          backgroundColor: "#0C06F7",
+          color: "#fff",
+        },
+        buttonBack: {
+          backgroundColor: "#0C06F7",
+          color: "#fff",
+        },
+        buttonClose: {
+          color: "#EF0307",
+        },
+        buttonSkip: {
+          color: "#EF0307",
         },
       }}
       callback={(data) => {

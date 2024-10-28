@@ -47,9 +47,32 @@ const LessonTour = () => {
       run={run}
       continuous={true}
       showSkipButton={true}
+      showProgress={true}
+      locale={{
+        last: "Done",
+      }}
       styles={{
         options: {
           zIndex: 1000,
+          arrowColor: "#fff",
+          // backgroundColor: "#333",
+          overlayColor: "rgba(0, 0, 0, 0.3)",
+          primaryColor: "#007bff",
+          // textColor: "#fff",
+        },
+        buttonNext: {
+          backgroundColor: "#0C06F7",
+          color: "#fff",
+        },
+        buttonBack: {
+          backgroundColor: "#0C06F7",
+          color: "#fff",
+        },
+        buttonClose: {
+          color: "#EF0307",
+        },
+        buttonSkip: {
+          color: "#EF0307",
         },
       }}
       callback={(data) => {
