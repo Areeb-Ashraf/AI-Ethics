@@ -14,7 +14,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 
-function UserProfile({ userProfile }) {
+function UserProfile({ userProfile, setUserProfile }) {
   const [isEditMode, setIsEditMode] = useState(false);
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
@@ -47,17 +47,20 @@ function UserProfile({ userProfile }) {
       }
 
       if (userProfile && userProfile.id) {
-        console.log("first");
+        // console.log("first");
         await updateDoc(doc(db, "userProfile", userProfile.id), dataToUpdate);
         console.log("User profile updated successfully");
-        setIsEditMode(false);
       } else {
-        console.log("second");
+        // console.log("second");
         dataToUpdate.userID = user.uid;
         await addDoc(collection(db, "userProfile"), dataToUpdate);
         console.log("User profile created successfully");
-        setIsEditMode(false);
       }
+
+      // Update local state with the new user profile data
+      const updatedProfile = { ...userProfile, ...dataToUpdate };
+      setUserProfile(updatedProfile); // Assuming you have a state for userProfile
+      setIsEditMode(false);
     } catch (error) {
       console.error("Error saving profile:", error);
       alert("There was an error saving your profile.");
