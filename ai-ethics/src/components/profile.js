@@ -47,13 +47,13 @@ const milestones = [
 
 const Profile = () => {
   const totalModules = 10;
-  const completedModules = 3; // This value can come from your backend or state to reflect the user's progress
   const modules = Array.from({ length: totalModules }, (_, i) => i + 1);
   const xps = [5, 10, 50, 100, 200, 500, 1000];
 
   const [userProfile, setUserProfile] = useState(null);
   const [user, loading, error] = useAuthState(auth);
   const [currentXP, setCurrentXP] = useState(0);
+  const [completedModules, setCompletedModules] = useState(0);
 
   useEffect(() => {
     async function fetchProfile() {
@@ -75,7 +75,13 @@ const Profile = () => {
     fetchProfile();
   }, [user]);
 
-  const completedXPS = currentXP; // also used as completed milestones in ethical evolution container
+  useEffect(() => {
+    if (userProfile && userProfile.completedLessons) {
+      setCompletedModules(userProfile.completedLessons.length);
+    } else {
+      setCompletedModules(3);
+    }
+  }, [userProfile]);
 
   // Find the current and next milestones
   const currentMilestone = milestones
@@ -141,8 +147,7 @@ const Profile = () => {
                   className="ethic-card"
                   key={index}
                   style={{
-                    filter:
-                      milestone.xp <= completedXPS ? "none" : "grayscale(1)",
+                    filter: milestone.xp <= currentXP ? "none" : "grayscale(1)",
                     animation: `fadeInBounce 0.6s ease-in-out 0.${index}s forwards`,
                   }}
                 >
@@ -184,7 +189,7 @@ const Profile = () => {
                   key={xp}
                   className="badge-box"
                   style={{
-                    filter: xp <= completedXPS ? "none" : "grayscale(1)", // Apply grayscale for unearned badges
+                    filter: xp <= currentXP ? "none" : "grayscale(1)", // Apply grayscale for unearned badges
                     animation: `fadeInBounce 0.6s ease-in-out 0.${index}s forwards`,
                   }}
                 >
