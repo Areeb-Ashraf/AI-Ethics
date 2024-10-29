@@ -160,7 +160,10 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile-lower-containers">
-          <UserProfile userProfile={userProfile} />
+          <UserProfile
+            userProfile={userProfile}
+            setUserProfile={setUserProfile}
+          />
           <div className="achivements-container">
             <div className="achivements-header">Your Achievements</div>
             <div className="achievements-section-header">Module Badges</div>
