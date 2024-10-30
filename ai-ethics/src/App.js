@@ -46,6 +46,7 @@ function App() {
           <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/welcome" element={<Welcome />} />
+          <Route path="/databaseTest" element={<DatabaseManTester />} /> {/* Just to test database, so just put /databaseTest */}
 
           {/* Protected Routes */}
           <Route path="/homepage" element={<ProtectedRoute><Homepage /></ProtectedRoute>} />
