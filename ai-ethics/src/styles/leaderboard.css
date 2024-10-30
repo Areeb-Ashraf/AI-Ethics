@@ -1,18 +1,16 @@
 .leaderboard-container{
-    margin-top: 4rem;
-    margin-left: 3rem;
+    font-family: cursive;
     text-align: center;
 }
 
 .leaderboard-list-container {
-    margin-top: 15rem;
+    margin-top: 5rem;
     margin-left: 8rem;
     height: 60%;
     width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: 'Times New Roman', Times, serif ;
 }
 
 .top3-container, .list-container {
@@ -47,12 +45,12 @@
 }
 
 .rank-name {
-    height: 40px;
+    height: 60px;
     width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -83,17 +81,17 @@
     width: 165px;
     background: linear-gradient(180deg, #000000 29.23%, #FFFFFF 100%);
     color: white;
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 800;
     display: flex;
     justify-content: center;
 }
 
-#rank-2-container > .rank-platform-body {
+#rank-2-container > .rank-platform > .rank-platform-body {
     height: 220px;
 }
 
-#rank-3-container > .rank-platform-body {
+#rank-3-container > .rank-platform > .rank-platform-body {
     height: 150px;
 }
 
@@ -105,13 +103,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: auto;
     box-shadow: 0px 3.54px 8.86px 0px #00000040;
+}
+
+.list-container-search{
+    line-height: 40px;
+    text-indent: 30px;
+    width: 375px;
+    background: #E0E0E0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 550;
+    word-spacing: -.2ch;
+}
+
+.list-items-container{
+    overflow: auto;
 }
 
 .list-box {
     height: 65px;
-    width: 400px;
+    width: 375px;
     background: #E0E0E0;
     border-radius: 10px;
     margin: 10px;
@@ -120,8 +136,12 @@
     align-items: center;
 }
 
+.list-box:hover{
+    box-shadow: 0px 3.54px 8.86px 0px #00000040;
+}
+
 .list-box:first-of-type {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .list-rank {
@@ -134,14 +154,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .list-name {
     height: 40px;
     width: 150px;
-    font-size: 27px;
+    font-size: 20px;
     font-weight: 600;
     margin-right: auto;
     display: flex;
@@ -159,4 +179,169 @@
     align-items: center;
     font-weight: 600;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1395px){
+    .leaderboard-list-container {
+        flex-direction: column;
+    }
+    .list-container{
+        margin-top: 5px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .leaderboard-container {
+        font-size: 0.8rem; /* Reducing the font size for smaller screens */
+    }
+
+    .leaderboard-list-container {
+        flex-direction: column;
+        margin: 0; /* Adjust margins to fit the smaller screen */
+        align-items: center;
+        margin-left: 5rem;
+    }
+
+    .top3-container, .list-container {
+        height: auto;
+        width: 100%;
+        max-width: 350px; /* Reduce the width to fit within smaller screens */
+    }
+
+    .list-container{
+        height: 350px;
+        width: 350px;
+    }
+
+    .top3-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rank-container {
+        height: 350px; /* Reduce pedestal height */
+        width: 100px; /* Reduce pedestal width */
+    }
+
+    .rank-icon {
+        height: 45px; /* Reduce size of the rank icon */
+        width: 45px;
+    }
+
+    .rank-name {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .rank-score {
+        font-size: 14px;
+        width: 60px; /* Reduce score container width */
+    }
+
+    .rank-platform-body {
+        height: 180px; /* Reduce pedestal body height */
+        width: 100px;
+        font-size: 50px; /* Adjust the font size for rank number */
+    }
+
+    #rank-2-container > .rank-platform > .rank-platform-body {
+        height: 140px;
+    }
+
+    #rank-3-container > .rank-platform > .rank-platform-body {
+        height: 100px;
+    }
+
+    .rank-platform-top {
+        border-bottom: 8px solid #555;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        height: 0;
+        width: 40px;
+        margin-top: 8px;
+    }
+
+    .list-container-search {
+        width: 90%; /* Full width of the smaller screen */
+        font-size: 16px;
+    }
+
+    .list-box {
+        height: 50px; /* Reduce height of the list items */
+        width: 90%; /* Full width for list boxes */
+    }
+
+    .list-rank {
+        height: 30px; /* Reduce size of rank circle */
+        width: 30px;
+        font-size: 20px;
+    }
+
+    .list-name {
+        font-size: 16px;
+        width: auto;
+    }
+
+    .list-score {
+        font-size: 14px;
+        width: 60px; /* Reduce score container width */
+    }
+}
+
+@media screen and (max-width: 500px){
+    .leaderboard-list-container {
+        margin: 0; 
+    }
+    .top3-container{
+        margin-left: 1.2rem;
+    }
+}
+
+/* Animations */
+
+/* Keyframes for pop-up animation */
+@keyframes popUp {
+    100% {
+        transform: translateY(0); /* Ends at normal position */
+        opacity: 1;
+    }
+}
+
+#rank-1-container > .rank-platform {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out forwards;
+}
+#rank-2-container > .rank-platform {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out 0.2s forwards;
+}
+#rank-3-container > .rank-platform {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out 0.3s forwards;
+}
+
+.list-box{
+    transform: translateY(100%);
+    opacity: 0;
+    animation: popUp 0.5s ease-in-out forwards;
+}
+
+/* Keyframes for fade in and bounce */
+@keyframes fadeInBounce {
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2); /* Slight bounce */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Normal size */
+    }
+}
+
+.rank-icon, .rank-name, .rank-score {
+    opacity: 0;
+    transform: scale(0.5);
+    animation: fadeInBounce 0.6s ease-in-out 0.5s forwards;
 }

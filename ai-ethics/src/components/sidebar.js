@@ -1,143 +1,116 @@
-import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
-import "../styles/sidebar.css";
-import { IconContext } from "react-icons";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import * as IoIcons from "react-icons/io";
-import { auth } from "../firebase"; // Import Firebase auth
+import React, { useState } from 'react';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { AiFillDashboard, AiOutlineProfile, AiOutlineInfoCircle, AiOutlineLogout } from 'react-icons/ai';
+import { FaBook, FaTrophy } from 'react-icons/fa'; // Module and Leaderboard icons
+import { GiArtificialIntelligence } from 'react-icons/gi'; // AI logo icon
+import '../styles/sidebar.css'; // Import the CSS file
 
-// Sidebar items data
-const SidebarData = [
-  {
-    title: "Explore",
-    path: "/explore",
-    icon: <FaIcons.FaSearch />,
-  },
-  {
-    title: "Lessons",
-    path: "/lessons",
-    icon: <IoIcons.IoMdBook />,
-  },
-  {
-    title: "Linked Content",
-    path: "/linked-content",
-    icon: <FaIcons.FaLink />,
-  },
-  {
-    title: "AI Term Glossary",
-    path: "/ai-term-glossary",
-    icon: <FaIcons.FaBook />,
-  },
-  {
-    title: "Quizzes",
-    path: "/quizzes",
-    icon: <IoIcons.IoMdSchool />,
-  },
-  {
-    title: "Leaderboard",
-    path: "/leaderboard",
-    icon: <FaIcons.FaTrophy />,
-  },
-];
+const Sidebar = () => {
+  // For Mobile View
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
 
-function Sidebar({ sidebarOpen, setSidebarOpen, isLoggedIn, setIsLoggedIn, username }) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-      if (window.innerWidth > 768) {
-        setSidebarOpen(true);
-      } else {
-        setSidebarOpen(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, [setSidebarOpen]);
-
-  const handleLinkClick = () => {
-    if (isMobile) setSidebarOpen(false);
+  const handleMenubarClick = () => {
+    setSidebarVisible(!isSidebarVisible);
   };
 
-  const handleLogout = async () => {
-    try {
-      await auth.signOut();
-      setIsLoggedIn(false); // Update login state
-      alert("Logged out successfully");
-    } catch (err) {
-      console.error("Logout error:", err.message);
-    }
+  const handleRouteClick = () => {
+    setSidebarVisible(false);
   };
+
+  const navigate = useNavigate();
+
+  // For name on navbar
+  const location = useLocation();
+
+  // Define a mapping from pathnames to route names
+const routeNames = {
+  '/': 'Homepage',
+  '/Dashboard': 'Dashboard',
+  '/modules': 'Modules',
+  '/leaderboard': 'Leaderboard',
+  '/profile': 'Profile',
+  '/help': 'Help',
+  '/information': 'Information',
+  '/logout': 'Logout',
+};
+
+const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
 
   return (
-    <IconContext.Provider value={{ color: "#fff" }}>
-      {/* Navbar */}
-      <div className="navbar">
-        {/* Menubar icon */}
-        <NavLink to="#" className="toggle-icons">
-          <FaIcons.FaBars className="contactIcon" onClick={toggleSidebar} />
+    <>
+     <div className="navbar-container">
+        <div className="menubar" onClick={handleMenubarClick}>&#9776;</div>
+        <div className="route-name">{currentRouteName}</div>
+      </div>
+      
+      <div className={`sidebar-container ${isSidebarVisible ? 'sidebar-visible' : ''}`}>
+        <div className="sidebar-item-logo" onClick={() => navigate('/')}>
+          <div className="sidebar-item-icon"><GiArtificialIntelligence /></div>
+          <div className="sidebar-item-name">AI</div>
+        </div>
+        
+        <NavLink 
+          to="/Dashboard" 
+          className="sidebar-item" 
+          activeClassName="active" 
+          onClick={handleRouteClick}
+        >
+          <div className="sidebar-item-icon"><AiFillDashboard /></div>
+          <div className="sidebar-item-name">Dashboard</div>
         </NavLink>
 
-        {/* Search bar */}
-        <div className={sidebarOpen ? "search-bar expanded" : "search-bar"}>
-          <input type="text" placeholder="Search..." className="search-input" />
+        <NavLink 
+          to="/modules" 
+          className="sidebar-item" 
+          activeClassName="active" 
+          onClick={handleRouteClick}
+        >
+          <div className="sidebar-item-icon"><FaBook /></div>
+          <div className="sidebar-item-name">Modules</div>
+        </NavLink>
+
+        <NavLink 
+          to="/leaderboard" 
+          className="sidebar-item" 
+          activeClassName="active" 
+          onClick={handleRouteClick}
+        >
+          <div className="sidebar-item-icon"><FaTrophy /></div>
+          <div className="sidebar-item-name">Leaderboard</div>
+        </NavLink>
+
+        <NavLink 
+          to="/profile" 
+          className="sidebar-item" 
+          activeClassName="active" 
+          onClick={handleRouteClick}
+        >
+          <div className="sidebar-item-icon"><AiOutlineProfile /></div>
+          <div className="sidebar-item-name">Profile</div>
+        </NavLink>
+
+        <NavLink 
+          to="/help" 
+          className="sidebar-item" 
+          id="info"
+          activeClassName="active" 
+          onClick={handleRouteClick}
+        >
+          <div className="sidebar-item-icon"><AiOutlineInfoCircle /></div>
+          <div className="sidebar-item-name">Help</div>
+        </NavLink>
+
+        {/*Add proper logout backend*/}
+        <div 
+          className="sidebar-item" 
+          onClick={() => alert('Logged out')}
+        >
+          <div className="sidebar-item-icon"><AiOutlineLogout /></div>
+          <div className="sidebar-item-name">Logout</div>
         </div>
-
-        {/* Auth buttons or Welcome message */}
-        {isLoggedIn ? (
-          <div className="welcome-message">
-            <span>Welcome!</span>
-          </div>
-        ) : (
-          <div className="auth-buttons">
-            <NavLink to="/login">
-              <button className="btn login-btn">Log in</button>
-            </NavLink>
-            <NavLink to="/register">
-              <button className="btn signup-btn">Sign Up</button>
-            </NavLink>
-          </div>
-        )}
       </div>
-
-      {/* Sidebar */}
-      <nav className={sidebarOpen ? "sidebar-container active" : "sidebar-container"}>
-        <ul className="sidebar-items">
-          <li className="sidebar-header">
-            <NavLink to="/" onClick={handleLinkClick}>
-              <h1>✨ AI Ethics</h1>
-            </NavLink>
-            <NavLink to="#" className="toggle-icons" onClick={toggleSidebar}>
-              <AiIcons.AiOutlineClose className="contactIcon" />
-            </NavLink>
-          </li>
-          {SidebarData.map((item, index) => (
-            <li key={index} className="sidebar-text">
-              <NavLink to={item.path} onClick={handleLinkClick}>
-                {item.icon}
-                <span>{item.title}</span>
-              </NavLink>
-            </li>
-          ))}
-
-          {/* Logout button at the bottom */}
-          {isLoggedIn && (
-            <li className="sidebar-text">
-              <button className="sidebar-link logout-btn" onClick={handleLogout}>
-                <FaIcons.FaSignOutAlt />
-                <span>Logout</span>
-              </button>
-            </li>
-          )}
-        </ul>
-      </nav>
-    </IconContext.Provider>
+    </>
   );
-}
+};
 
 export default Sidebar;

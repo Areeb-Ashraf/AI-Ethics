@@ -1,0 +1,514 @@
+.db-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 96%;
+  }
+  
+  .db-left{
+    width: 50%;
+    height: 100%;
+  }
+  
+  .db-right{
+    width: 50%;
+    height: 100%;
+  }
+  
+  .db-container h4{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  /* Dashboard Left side css  */
+  
+  .left-inner{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .db-text-container{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .db-user-name{
+    font-size: 25px;
+    color: #0056D1;
+    font-weight: 800;
+    margin-bottom: 2px;
+  
+  }
+  
+  .course-prog-container{
+    width: 80%;
+    height: 200px;
+    background-color: #0056D1;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3.54px 8.86px 0px #00000040;
+  }
+  
+  .prog-upper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+  }
+  
+  .db-course-name{
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 20px 0px 5px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .beginner{
+    background-color: #001F4B;
+    color: fff;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 90px;
+    height: 24px;
+    text-align: center;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .db-course-name-subtext{
+    color: #D5D5D5;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px 0px 0px 20px;
+  }
+  
+  .resume-btn{
+    margin: 25px 0px 0px 20px;
+    width: 95px;
+    height: 36px;
+    border-radius: 15px;
+    background-color: #fff;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+  }
+  
+  .db-img{
+    margin: 30px 40px 0px auto;
+  }
+  
+  .prog-bottom{
+    background-color: #A6C5F2;
+    width: 100%;
+    height: 16%;
+    border-radius: 0px 0px 25px 25px ;
+  }
+  
+  .prog-black{
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 0px 40px 25px ;
+    display: flex;
+  }
+  
+  .prog-cont-percent{
+    color: #fff;
+    margin: 2.5px 20px 0px auto;
+    font-weight: 700;
+    padding-left: 15px;
+  }
+  
+  
+  .recently-finished-container{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .quiz-card-container{
+    background-color: #0056D1;
+    width: 180px;
+    height: 150px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3.54px 8.86px 0px #00000040;
+  }
+  
+  .quiz-num{
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0px 5px 20px;
+  }
+  
+  .quiz-course-name{
+    color: #D5D5D5;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px 0px 0px 20px;
+  }
+  
+  .quiz-lower{
+    margin-top: auto;
+    background-color: #A6C5F2;
+    width: 100%;
+    height: 16%;
+    border-radius: 0px 0px 25px 25px ;
+  }
+  
+  .quiz-prog{
+    background-color: black;
+    width: 80%;
+    height: 100%;
+    border-radius: 0px 0px 40px 25px ;
+    display: flex;
+  }
+  
+  .quiz-prog-percent{
+    color: #fff;
+    margin: 0px 20px 0px auto;
+    font-weight: 700;
+    padding-left: 15px;
+  }
+  
+  
+  
+  /* Dashboard Right side css  */
+  
+  .right-inner{
+    margin: 35px 15px 15px 15px ;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .next-milestone-container{
+    width: 80%;
+    height: 80px;
+    background-color: #EFF5FD;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .db-progress-current-milestone, .db-progress-next-milestone{
+    width: 20%;
+    height: 45px;
+    color: #0056D1;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .db-milestone-progressbar-container{
+    width: 60%;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+    gap: 2px;
+  }
+  
+  .db-milestone-progress-bar{
+    width: 98%;
+    height: 14px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .db-milestone-progress{
+    width: 50%;
+    height: 14px;
+    background-color: #0056D1;
+    border-radius: 50px;
+  }
+  
+  
+  .statistic-container{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .stat-upper{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  
+  .statxp-contaner{
+    width: 50%;
+    height: 130px;
+    background-color: #EFF5FD;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .statbadge-container{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .stat-xp{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .state-user-xp{
+    font-size: 25px;
+    font-weight: 700;
+    color: #0056D1;
+  }
+  
+  .stat-module-semicircle-prog-container{
+    width: 50%;
+    height: 130px;
+    background-color: #EFF5FD;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 700;
+  }
+  
+  .semi-prog{
+    position: relative;
+    margin: 4px;
+    float:left;
+    text-align: center;
+  }
+  .barOverflow{ /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden; /* Comment this line to understand the trick */
+    width: 100px; height: 50px; /* Half circle (overflow) */
+    margin-bottom: -14px; /* bring the numbers up */
+  }
+  .bar{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100px; height: 100px; /* full circle */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 12px solid #D9D9D9;     
+    border-bottom-color: black;  
+    border-right-color: black;
+    transform: rotate(189deg); /* 45 deg = 0% .... rotate (45 + (p*1.8)) */
+  }
+  
+  .stat-lower{
+    width: 100%;
+    height: 70px;
+    background-color: #EFF5FD;
+    border-radius: 25px;
+  }
+  
+  .stat-time-left{
+    margin: 8px 0px 3px 20px ;
+    font-weight: 600;
+  }
+  
+  .stat-lower-prog-container-bar{
+    width: 92%;
+    height: 18px;
+    background-color: #D9D9D9;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  
+  .stat-lower-prog{
+    width: 50%;
+    height: 18px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .stat-lower-prog-text{
+    color: #fff;
+    margin: 0px 20px 0px auto;
+    font-weight: 700;
+    padding-left: 100px;
+    font-size: 12px;
+  }
+  
+  
+  .upcoming-task-container{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-box{
+    width: 280px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 3.54px 8.86px 0px #00000040;
+    border-radius: 20px;
+  
+  }
+  
+  .task-box-icon{
+    width: 40px;
+    height: 40px;
+    background-color: #C0DDE9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  .task-box-name{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+  }
+  
+  .gtsymb{
+    margin: 0px 20px 0px auto ;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  @media screen and (max-width: 1315px){
+    .db-container{
+      flex-direction: column;
+    }
+    .db-left, .db-right{
+      width: 100%;
+    }
+    .course-prog-container, .recently-finished-container, .next-milestone-container, .statistic-container{
+      width: 98%;
+    }
+    .right-inner{
+      margin-top: 0px;
+     }
+    
+    
+  }
+  
+  @media screen and (max-width: 536px){
+    .db-course-name{
+      font-size: 18px;
+    }
+   .db-course-name-subtext{
+    font-size: 12px;
+   }
+   .beginner{
+    font-size: 12px;
+   }
+   .db-img {
+    margin: 30px 0px 0px auto;
+   }
+   .db-img img{
+    margin-left: 10px;
+    max-width: 60%;
+   }
+   .resume-btn{
+    margin: 15px 0px 0px 20px;
+   }
+  
+   .recently-finished-container{
+    flex-wrap: wrap;
+    height: auto;
+   }
+  
+   .db-left{
+    height: auto;
+   }
+  
+   .quiz-card-container{
+    width: 120px;
+    height: 100px;
+    border-radius: 25px 25px 20px 20px ;
+    
+   }
+  
+   .quiz-num{
+    font-size: 18px;
+   }
+  
+   .quiz-course-name{
+    font-size: 12px;
+   }
+  
+   .quiz-prog-percent{
+    font-size: 12px;
+   }
+  
+   .quiz-prog{
+    border-radius: 0px 0px 25px 25px ;
+   }
+  
+  
+   .db-progress-current-milestone, .db-progress-next-milestone{
+    font-size: 11px;
+   }
+  
+   .statbadge-container{
+    width: 70px;
+    height: 70px;
+   }
+  
+   .statbadge-container img{
+    max-width: 50%;
+   }
+  
+   .state-user-xp{
+    font-size: 18px;
+   }
+  
+   .stat-xp{
+    font-size: 12px;
+   }
+  
+   .statxp-contaner{
+    gap: 5px;
+   }
+  
+  }
+  

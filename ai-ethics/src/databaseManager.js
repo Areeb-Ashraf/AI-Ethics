@@ -1,6 +1,9 @@
 import { auth, db, imagesRef } from "./firebase";
 import { query, collection, getDocs, where } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+function calculateQuizScore(duration, accuracy) {
+  return Math.min((90 / duration) * 100, 100) + accuracy;
+}
 
 class DatabaseManager {
   //   async addDoc(collectionName, data) {
@@ -23,30 +26,30 @@ class DatabaseManager {
   //     }
   //   }
 
-  async fetchLeaderboardByQuizID(quizID) {
-    const leaderboardRef = collection(db, "leaderboard");
-    const q = query(leaderboardRef, where("quizID", "==", quizID));
+  async fetchScoresByQuizID(quizID) {
+    const scoresRef = collection(db, "Scores");
+    const q = query(scoresRef, where("quizID", "==", quizID));
 
     try {
       const querySnapshot = await getDocs(q);
       const results = querySnapshot.docs.map((doc) => doc.data());
       return results;
     } catch (error) {
-      console.error("Error fetching leaderboard: ", error);
+      console.error("Error fetching scores: ", error);
       throw error;
     }
   }
 
-  async fetchLeaderboardByUserID(userID) {
-    const leaderboardRef = collection(db, "leaderboard");
-    const q = query(leaderboardRef, where("userID", "==", userID));
+  async fetchScoresByUserID(userID) {
+    const scoresRef = collection(db, "Scores");
+    const q = query(scoresRef, where("uid", "==", userID));
 
     try {
       const querySnapshot = await getDocs(q);
       const results = querySnapshot.docs.map((doc) => doc.data());
       return results;
     } catch (error) {
-      console.error("Error fetching leaderboard: ", error);
+      console.error("Error fetching scores: ", error);
       throw error;
     }
   }
@@ -60,12 +63,11 @@ class DatabaseManager {
       );
       const querySnapshot = await getDocs(q);
 
-      // Return the first matching document's data if it exists
       if (!querySnapshot.empty) {
-        return querySnapshot.docs[0].data(); // return the first document's data
+        return querySnapshot.docs[0].data();
       } else {
         console.error("No matching glossary word found");
-        return null; // or handle as you wish
+        return null;
       }
     } catch (error) {
       console.error("Error fetching glossary: ", error);
@@ -79,12 +81,11 @@ class DatabaseManager {
       const q = query(collection(db, "glossaryWord"));
       const querySnapshot = await getDocs(q);
 
-      // Return the first matching document's data if it exists
       if (!querySnapshot.empty) {
         return querySnapshot.docs.map((doc) => doc.data());
       } else {
         console.error("No glossary words found");
-        return null; // or handle as you wish
+        return null;
       }
     } catch (error) {
       console.error("Error fetching glossary: ", error);
@@ -101,12 +102,13 @@ class DatabaseManager {
       );
       const querySnapshot = await getDocs(q);
 
-      // Return the first matching document's data if it exists
       if (!querySnapshot.empty) {
-        return querySnapshot.docs[0].data(); // return the first document's data
+        const profile = querySnapshot.docs[0].data();
+        profile["id"] = querySnapshot.docs[0].id;
+        return profile;
       } else {
         console.error("No matching user found");
-        return null; // or handle as you wish
+        return null;
       }
     } catch (error) {
       console.error("Error fetching user profile: ", error);
@@ -114,6 +116,7 @@ class DatabaseManager {
     }
   }
 
+  // Fetches a user document (not the profile!)
   async getUserDocumentIdByUid(uid) {
     try {
       const q = query(collection(db, "users"), where("uid", "==", uid));
@@ -163,6 +166,8 @@ class DatabaseManager {
     }
   }
 
+  // uploads an image to the firebase storage and returns the download URL
+  // TODO: add a way to delete images
   async uploadImage(file) {
     const storageRef = ref(imagesRef, file.name);
     try {
@@ -177,6 +182,106 @@ class DatabaseManager {
       console.log("File available at", url);
       return url;
     });
+  }
+
+  /**
+   * XP is a function of scores and completed lessons for now
+   * each completed lesson (stored in user profile) is worth 50 XP
+   * quiz scores take the users top score for a given quiz and then
+   *    score = ((90 / duration) * 100) + accuracy
+   * There is a helper function to this effect at the top of this file
+   */
+  async fetchXPforUser(userID) {
+    try {
+      const userProfile = await this.fetchUserProfile(userID);
+      const scores = await this.fetchScoresByUserID(userID);
+
+      let xp = 0;
+
+      if (userProfile && userProfile.completedLessons) {
+        const completedLessons = userProfile.completedLessons;
+        xp += completedLessons.length * 50;
+      }
+
+      if (scores.length === 0) {
+        return xp;
+      }
+
+      const maxScores = {};
+      scores.forEach((score) => {
+        let local_score = calculateQuizScore(score.duration, score.accuracy);
+        if (!maxScores[score.quizID] || maxScores[score.quizID] < local_score) {
+          maxScores[score.quizID] = local_score;
+        }
+      });
+
+      for (const quizID in maxScores) {
+        xp += maxScores[quizID];
+        // console.log("Adding score: ", maxScores[quizID], " for quiz: ", quizID);
+      }
+
+      return xp;
+    } catch (error) {
+      console.error("Error fetching XP: ", error);
+      throw error;
+    }
+  }
+
+  // Fetches the leaderboard data
+  // recalculates it every time someone asks for it
+  // curently rather inefficient, but should be fine for now
+  async fetchLeaderboardData() {
+    try {
+      // fetch all user objects
+      const q = query(collection(db, "users"));
+      const querySnapshot = await getDocs(q);
+      const users = querySnapshot.docs.map((doc) => doc.data());
+
+      // for each user, fetch scores
+      const leaderboardData = [];
+      for (const user of users) {
+        const userProfile = await this.fetchUserProfile(user.uid);
+        let name = "";
+        if (!userProfile) {
+          name = user.name;
+        } else if (!userProfile.username) {
+          name = userProfile.name;
+        } else {
+          name = userProfile.username;
+        }
+        const xp = await this.fetchXPforUser(user.uid);
+        leaderboardData.push({
+          name: name,
+          score: xp,
+        });
+
+        // console.log("Adding user: ", user.name, " with XP: ", xp);
+      }
+
+      // sort by xp
+      leaderboardData.sort((a, b) => b.score - a.score);
+      return leaderboardData;
+    } catch (error) {
+      console.error("Error fetching leaderboard data: ", error);
+      throw error;
+    }
+  }
+
+  // adds a lesson to a users completed lessons list in their profile
+  async addCompletedLesson(userID, lessonID) {
+    try {
+      const userProfile = await this.fetchUserProfile(userID);
+      const completedLessons = userProfile.completedLessons;
+      if (!completedLessons.includes(lessonID)) {
+        completedLessons.push(lessonID);
+        await db.collection("userProfile").doc(userID).update({
+          completedLessons: completedLessons,
+        });
+      }
+    } catch (error) {
+      console.error("Error adding completed lesson: ", error);
+      throw error;
+    }
   }
 }
 

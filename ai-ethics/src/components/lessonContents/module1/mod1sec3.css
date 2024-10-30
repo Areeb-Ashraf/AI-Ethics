@@ -1,0 +1,24 @@
+.mod1sec3-container h2{
+    font-size: 20px;
+}
+
+.mod1sec3-container{
+    margin: 20px;
+}
+
+.mod1sec3-container .txt-img-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.txt-img-container p {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1420px){
+    .mod1sec3-container .txt-img-container{
+        flex-direction: column;
+    }
+}
