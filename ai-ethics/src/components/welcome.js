@@ -6,19 +6,19 @@ const Welcome = () => {
   const navigate = useNavigate();
 
   const goToSignup = () => {
-    navigate('/account', { state: { isSignup: true } });
+    navigate('/signup');
   };
 
   const goToLogin = () => {
-    navigate('/account', { state: { isSignup: false } });
+    navigate('/login');
   };
 
   return (
     <>
       <div className="welcome-container">
         <div className="welcome-logo">C</div>{/* placeholder for logo */}
-        <div className="welcome-title">Welcome to EthicAI</div>
-        <div className="welcome-subtitle">We teach the future of AI, responsibly</div>
+        <div className="welcome-title">Welcome to AI Ethics</div>
+        <div className="welcome-subtitle">We teach the future of AI, responsibly!</div>
         <button className="create-account-button" onClick={goToSignup}>
           <span>Create Account</span>
         </button>

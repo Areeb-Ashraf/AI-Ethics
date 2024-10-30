@@ -65,16 +65,13 @@ class AuthManager {
       const user = res.user;
       await addDoc(collection(db, "users"), {
         uid: user.uid,
+        name,
         authProvider: "local",
         email,
       });
-      await addDoc(collection(db, "userProfile"), {
-        name,
-        userID: user.uid,
-      });
     } catch (err) {
-      console.error(err);
-      alert(err.message);
+      console.error("Registration error:", err.message);
+      throw err; // Throw error to be handled by calling function
     }
   }
 
@@ -132,13 +129,10 @@ class AuthManager {
         // User is not registered, add them to the database
         const userDoc = await addDoc(collection(db, "users"), {
           uid: user.uid,
+          name: user.displayName,
           authProvider: "google",
           email: user.email,
           token: token,
-        });
-        await addDoc(collection(db, "userProfile"), {
-          name: user.displayName,
-          userID: user.uid,
         });
         console.log("New user registered:", userDoc.id);
       } else {

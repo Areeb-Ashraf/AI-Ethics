@@ -3,11 +3,14 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AiFillDashboard, AiOutlineProfile, AiOutlineInfoCircle, AiOutlineLogout } from 'react-icons/ai';
 import { FaBook, FaTrophy } from 'react-icons/fa'; // Module and Leaderboard icons
 import { GiArtificialIntelligence } from 'react-icons/gi'; // AI logo icon
+import { auth } from '../firebase'; // Import auth for logout functionality
 import '../styles/sidebar.css'; // Import the CSS file
 
-const Sidebar = () => {
+const Sidebar = ({ setIsLoggedIn }) => {
   // For Mobile View
   const [isSidebarVisible, setSidebarVisible] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleMenubarClick = () => {
     setSidebarVisible(!isSidebarVisible);
@@ -17,28 +20,32 @@ const Sidebar = () => {
     setSidebarVisible(false);
   };
 
-  const navigate = useNavigate();
-
-  // For name on navbar
-  const location = useLocation();
+  const handleLogout = async () => {
+    try {
+      await auth.signOut(); // Sign out the user
+      setIsLoggedIn(false); // Update the logged-in state
+      navigate("/login"); // Redirect to login after logout
+    } catch (err) {
+      console.error("Logout error:", err.message);
+    }
+  };
 
   // Define a mapping from pathnames to route names
-const routeNames = {
-  '/': 'Homepage',
-  '/Dashboard': 'Dashboard',
-  '/modules': 'Modules',
-  '/leaderboard': 'Leaderboard',
-  '/profile': 'Profile',
-  '/help': 'Help',
-  '/information': 'Information',
-  '/logout': 'Logout',
-};
+  const routeNames = {
+    '/': 'Homepage',
+    '/dashboard': 'Dashboard',
+    '/modules': 'Modules',
+    '/leaderboard': 'Leaderboard',
+    '/profile': 'Profile',
+    '/help': 'Help',
+    '/information': 'Information',
+  };
 
-const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
+  const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
 
   return (
     <>
-     <div className="navbar-container">
+      <div className="navbar-container">
         <div className="menubar" onClick={handleMenubarClick}>&#9776;</div>
         <div className="route-name">{currentRouteName}</div>
       </div>
@@ -50,7 +57,7 @@ const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
         </div>
         
         <NavLink 
-          to="/Dashboard" 
+          to="/dashboard" 
           className="sidebar-item" 
           activeClassName="active" 
           onClick={handleRouteClick}
@@ -92,7 +99,7 @@ const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
         <NavLink 
           to="/help" 
           className="sidebar-item" 
-          id="info"
+          id="info" 
           activeClassName="active" 
           onClick={handleRouteClick}
         >
@@ -100,10 +107,10 @@ const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
           <div className="sidebar-item-name">Help</div>
         </NavLink>
 
-        {/*Add proper logout backend*/}
+        {/* Logout button */}
         <div 
           className="sidebar-item" 
-          onClick={() => alert('Logged out')}
+          onClick={handleLogout}
         >
           <div className="sidebar-item-icon"><AiOutlineLogout /></div>
           <div className="sidebar-item-name">Logout</div>
