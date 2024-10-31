@@ -1,6 +1,6 @@
 // lessonContents/Module1Lesson.js
 import React from 'react';
-import './mod1sec3.css'
+import './mod1.css'
 import WhyAIEthicsMatters from './mod1images/WhyAIEthicsMatters.png'
 import transparancy from './mod1images/transparancy.png'
 
@@ -21,11 +21,11 @@ const Mod1Sec3 = () => {
 
             <h3>1. Transparency: Understanding AI Decision-Making</h3>
             <div className="txt-img-container">
-                <img src={transparancy} alt="transparancy-img" />
                 <div>
                     <p>Transparency in AI refers to the ability of a system to explain how it arrives at a decision. This is particularly important for users and stakeholders who are affected by the decisions of AI systems. The "black box" nature of many AI models, particularly deep learning algorithms, makes it difficult to understand their decision-making processes. This opacity raises concerns in sectors such as healthcare and law, where decisions need to be scrutinized and explained.</p>
                     <p>For example, if an AI system recommends a particular medical treatment or diagnosis, both the patient and the healthcare provider have a right to understand the basis for that recommendation. Lack of transparency can erode trust in AI and can even lead to dangerous outcomes if people follow decisions they don’t fully understand.</p>
                 </div>
+                <img src={transparancy} alt="transparancy-img" />
             </div>
             <p>Efforts to improve transparency include developing explainable AI (XAI), which aims to make AI systems more interpretable and understandable by humans. XAI methods could help provide insights into the features that influence decisions, thus enabling users to better comprehend the rationale behind AI-generated outcomes. This is crucial for maintaining trust in AI and ensuring that the technology is used responsibly.</p>
             
