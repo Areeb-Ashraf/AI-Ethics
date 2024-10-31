@@ -167,6 +167,7 @@ const Lessons = () => {
               >
                 &lt; Prev
               </button>
+              <div className="module-title">{selectedModule.title}</div>
               <button
                 id="next-button"
                 className="module-navigation-buttons"
@@ -176,8 +177,9 @@ const Lessons = () => {
                 Next &gt;
               </button>
             </div>
-            <h1 style={{ display: selectedSectionType === "Quiz" ? "none" : "" }} >{selectedModule.title}</h1>
-            {selectedLessonContent}
+            <div className="inner-module-container">
+              {selectedLessonContent}
+            </div>
           </>
         ) : (
           <div>Select a lesson to begin</div>
