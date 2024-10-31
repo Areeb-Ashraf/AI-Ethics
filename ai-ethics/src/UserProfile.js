@@ -88,7 +88,7 @@ function UserProfile({ userProfile, setUserProfile }) {
     return (
       <div className="account-details-container">
         <div className="account-header">Edit Account Details</div>
-        <div className="account-display">
+        <div className="account-display ad-column">
           <label className="account-label">
             Name:
             <input
@@ -97,21 +97,12 @@ function UserProfile({ userProfile, setUserProfile }) {
               minLength="1"
               maxLength="18"
               name="fname"
-              value={name}
+              value={name? name : "Noname"}
               onChange={(e) => setName(e.target.value)}
             />
           </label>
-          <label className="account-label">
-            Profile Picture:
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => setPhoto(e.target.files[0])}
-            />
-          </label>
-        </div>
-        <div className="account-display">
-          <label className="account-label">
+          
+            <label className="account-label">
             Username:
             <input
               type="text"
@@ -119,19 +110,26 @@ function UserProfile({ userProfile, setUserProfile }) {
               minLength="1"
               maxLength="18"
               name="username"
-              value={username}
+              value={username? username : "Noname"}
               onChange={(e) => setUsername(e.target.value)}
             />
           </label>
-        </div>
-
-        <div className="account-actions-row">
-          <button className="action-button" onClick={handleSaveChanges}>
-            Save Changes
-          </button>
-          <button className="cancel-button" onClick={toggleEditMode}>
-            Cancel
-          </button>
+          <div className="PP-label">
+            Profile Pic: 
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => setPhoto(e.target.files[0])}
+              />
+          </div>
+          <div className="account-actions-row">
+            <button className="action-button" onClick={handleSaveChanges}>
+              Save Changes
+            </button>
+            <button className="cancel-button" onClick={toggleEditMode}>
+              Cancel
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -155,8 +153,8 @@ function UserProfile({ userProfile, setUserProfile }) {
           </div>
         </div>
         <div className="right-section">
-          <div className="name">Name: {userProfile?.name}</div>
-          <div className="username2">Username: {userProfile?.username}</div>
+          <div className="name">Name: {userProfile?.name || "Noname"}</div>
+          <div className="username2">Username: {userProfile?.username || "Noname"}</div>
         </div>
       </div>
       <div className="spaced-box" />
