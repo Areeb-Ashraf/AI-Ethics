@@ -1,5 +1,5 @@
 import React from 'react';
-import './mod1sec5.css'
+import './mod1.css'
 
 const Mod1sec5 = () => {
   return (

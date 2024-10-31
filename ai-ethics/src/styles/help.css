@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 .help-container{
     margin-left: 25px;
+    font-family: 'Poppins', sans-serif;
 }
+.help-container h1{
+    font-size: 60px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
 
 .walkthrough{
     color: #1b1a1a;
@@ -26,6 +34,7 @@
     font-weight: 650;
     line-height: 30px;
     text-align: left;
+
     /* margin-bottom: 5px; */
 }
 
@@ -53,6 +62,7 @@ td{
     padding: 10px;
     text-align: center;
 
+
 }
 
 .tbl-hd{
@@ -62,6 +72,7 @@ td{
 .milestone-text {
     color: #5C5C5C;
     font-weight: 600;
+
 }
 
 .milestone-text span {

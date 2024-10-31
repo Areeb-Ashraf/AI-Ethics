@@ -1,6 +1,6 @@
 // lessonContents/Module1Lesson.js
 import React from 'react';
-import './mod1sec6.css'
+import './mod1.css'
 
 const Mod1Sec6 = () => {
     return (

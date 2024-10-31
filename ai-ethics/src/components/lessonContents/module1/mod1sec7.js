@@ -1,6 +1,6 @@
 import React from "react";
 import future from "./mod1images/future.png";
-import "./mod1sec7.css";
+import "./mod1.css";
 import databaseManager from "../../../databaseManager";
 
 const Mod1sec7 = () => {
