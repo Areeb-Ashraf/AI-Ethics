@@ -1,5 +1,13 @@
 import { auth, db, imagesRef } from "./firebase";
-import { query, collection, getDocs, where } from "firebase/firestore";
+import {
+  query,
+  collection,
+  getDocs,
+  where,
+  doc,
+  setDoc,
+  getDoc,
+} from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 function calculateQuizScore(duration, accuracy) {
   return Math.min((90 / duration) * 100, 100) + accuracy;
@@ -149,22 +157,22 @@ class DatabaseManager {
     });
   }
 
-  // function to modify the userProfile object to include the completion of a new lesson
-  async completeLesson(userID, lessonID) {
-    try {
-      const userProfile = await this.fetchUserProfile(userID);
-      const completedLessons = userProfile.completedLessons;
-      if (!completedLessons.includes(lessonID)) {
-        completedLessons.push(lessonID);
-        await db.collection("userProfile").doc(userID).update({
-          completedLessons: completedLessons,
-        });
-      }
-    } catch (error) {
-      console.error("Error completing lesson: ", error);
-      throw error;
-    }
-  }
+  // // function to modify the userProfile object to include the completion of a new lesson
+  // async completeLesson(userID, lessonID) {
+  //   try {
+  //     const userProfile = await this.fetchUserProfile(userID);
+  //     const completedLessons = userProfile.completedLessons;
+  //     if (!completedLessons.includes(lessonID)) {
+  //       completedLessons.push(lessonID);
+  //       await db.collection("userProfile").doc(userID).update({
+  //         completedLessons: completedLessons,
+  //       });
+  //     }
+  //   } catch (error) {
+  //     console.error("Error completing lesson: ", error);
+  //     throw error;
+  //   }
+  // }
 
   // uploads an image to the firebase storage and returns the download URL
   // TODO: add a way to delete images
@@ -268,15 +276,42 @@ class DatabaseManager {
   }
 
   // adds a lesson to a users completed lessons list in their profile
-  async addCompletedLesson(userID, lessonID) {
+  async addCompletedLesson(lessonID) {
     try {
-      const userProfile = await this.fetchUserProfile(userID);
-      const completedLessons = userProfile.completedLessons;
+      const userID = await this.getCurrentUserId();
+      const q = query(
+        collection(db, "userProfile"),
+        where("userID", "==", userID)
+      );
+      const querySnapshot = await getDocs(q);
+      // const docRef = doc(db, "userProfile", userID);
+      let userProfile = null;
+      if (querySnapshot) {
+        userProfile = querySnapshot.docs[0].data();
+      } else {
+        console.error("User profile not found");
+        return;
+      }
+
+      let completedLessons = [];
+
+      if (!userProfile) {
+        console.error("User profile not found");
+        return;
+      }
+      if (userProfile.completedLessons) {
+        completedLessons = userProfile.completedLessons;
+      }
+
       if (!completedLessons.includes(lessonID)) {
         completedLessons.push(lessonID);
-        await db.collection("userProfile").doc(userID).update({
-          completedLessons: completedLessons,
-        });
+        await setDoc(
+          querySnapshot.docs[0].ref,
+          { completedLessons: completedLessons },
+          { merge: true }
+        );
+      } else {
+        console.log("Lesson already completed");
       }
     } catch (error) {
       console.error("Error adding completed lesson: ", error);
