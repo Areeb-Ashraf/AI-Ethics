@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { AiFillDashboard, AiOutlineProfile, AiOutlineInfoCircle, AiOutlineLogout } from 'react-icons/ai';
-import { FaBook, FaTrophy } from 'react-icons/fa'; // Module and Leaderboard icons
-import { GiArtificialIntelligence } from 'react-icons/gi'; // AI logo icon
+import { FaBook, FaTrophy } from 'react-icons/fa';
+import { GiArtificialIntelligence } from 'react-icons/gi'; 
+import { FaUserCircle } from "react-icons/fa";
 import { auth } from '../firebase'; // Import auth for logout functionality
-import '../styles/sidebar.css'; // Import the CSS file
+import '../styles/sidebar.css'; 
 
 const Sidebar = ({ setIsLoggedIn }) => {
   // For Mobile View
@@ -39,6 +40,7 @@ const Sidebar = ({ setIsLoggedIn }) => {
     '/profile': 'Profile',
     '/help': 'Help',
     '/information': 'Information',
+    '/ai-term-glossary': 'AI Glossary',
   };
 
   const currentRouteName = routeNames[location.pathname] || 'Unknown Route';
@@ -92,8 +94,18 @@ const Sidebar = ({ setIsLoggedIn }) => {
           activeClassName="active" 
           onClick={handleRouteClick}
         >
-          <div className="sidebar-item-icon"><AiOutlineProfile /></div>
+          <div className="sidebar-item-icon"><FaUserCircle /></div>
           <div className="sidebar-item-name">Profile</div>
+        </NavLink>
+
+        <NavLink 
+          to="/ai-term-glossary" 
+          className="sidebar-item" 
+          activeClassName="active" 
+          onClick={handleRouteClick}
+        >
+          <div className="sidebar-item-icon"><AiOutlineProfile /></div>
+          <div className="sidebar-item-name">AI Glossory</div>
         </NavLink>
 
         <NavLink 
