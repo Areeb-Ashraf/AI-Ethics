@@ -217,3 +217,25 @@
 .mod1sec7-container img{
     width: 90%;
 }
+
+/* 
+TODO
+Temporay placeholder! 
+Just making the button loop presentable for the demo
+*/
+.action-button {
+  padding: 10px 20px;
+  background-color: #0056D1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: auto;
+}
+
+.action-button:hover {
+  background-color: #0041A1;  
+}

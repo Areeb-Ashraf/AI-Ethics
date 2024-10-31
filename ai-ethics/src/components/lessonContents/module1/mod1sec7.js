@@ -32,7 +32,10 @@ const Mod1sec7 = () => {
           development, we can harness the full potential of this powerful
           technology while ensuring that it serves the public good.{" "}
         </p>
-        <button onClick={() => databaseManager.addCompletedLesson("ModuleOne")}>
+        <button
+          className="action-button"
+          onClick={() => databaseManager.addCompletedLesson("ModuleOne")}
+        >
           Complete Lesson
         </button>
       </div>
