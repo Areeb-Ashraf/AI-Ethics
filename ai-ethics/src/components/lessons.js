@@ -177,7 +177,7 @@ const Lessons = () => {
                 Next &gt;
               </button>
             </div>
-            <div className="inner-module-container">
+            <div className="inner-module-container" style={{ height: selectedSectionType === "Quiz" ? "94vh" : "" }}>
               {selectedLessonContent}
             </div>
           </>
