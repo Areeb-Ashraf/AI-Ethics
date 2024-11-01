@@ -2,6 +2,7 @@
 .help-container{
     margin-left: 25px;
     font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
 }
 .help-container h1{
     font-size: 60px;
@@ -20,12 +21,12 @@
 }
 
 .help-text{
-    width: 70%;
+    width: 80%;
     color: #1b1a1a;
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 30px;
 }
 
@@ -45,7 +46,6 @@ table{
     border-style: hidden; /* hide standard table (collapsed) border */
     box-shadow: 0 0 0 2px black; /* this draws the table border  */ 
     background: #F1F1F1;
-    font-weight: 550;
     margin-bottom: 20px;
     margin-top: 8px;
 }

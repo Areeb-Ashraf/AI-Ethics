@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 /* Glossary container */
 .glossary-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #333;
   }
   
