@@ -12,13 +12,13 @@ import Mod1Sec5 from "./lessonContents/module1/mod1sec5";
 import Mod1Sec6 from "./lessonContents/module1/mod1sec6";
 import Mod1Sec7 from "./lessonContents/module1/mod1sec7";
 
-// import additional module contents as needed
+// import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
 import Quiz from "./quiz";
 
-// Module data for Introduction and Modules 1-8
+// Module data with different section types (Lesson, Quiz, Video)
 const moduleData = [
   {
-    id: "Introduction",
+    id: 1,
     title: "AI Ethics: An Introduction",
     time: "20min",
     sections: [
@@ -32,26 +32,18 @@ const moduleData = [
       { type: "Quiz", contentComponent: <Quiz /> },
     ],
   },
-  {
-    id: 1,
-    title: "Module 1",
-    time: "30min",
-    sections: [
-      { type: "Lesson", contentComponent: <Mod1Sec1 /> }, // Placeholder components
-      { type: "Quiz", contentComponent: <Quiz /> },
-    ],
-  },
-  // Add placeholder modules for Module 2 to Module 8
-  ...Array.from({ length: 7 }, (_, i) => ({
-    id: i + 2,
-    title: `Module ${i + 2}`,
-    time: `${30 + i * 5}min`,
-    sections: [
-      { type: "Lesson", contentComponent: <Mod1Sec1 /> }, // Placeholder component
-      { type: "Quiz", contentComponent: <Quiz /> },
-    ],
-  })),
+  // {
+  //   id: 2,
+  //   title: "Module 2",
+  //   time: "30min",
+  //   sections: [
+  //     { type: "Lesson", contentComponent: <Mod2Sec1 /> },
+  //     { type: "Quiz", contentComponent: <Quiz /> },
+  //   ],
+  // },
+  // Add more module data as necessary...
 ];
+
 
 // Helper function to return icon and label based on type
 const getSectionIconAndLabel = (type) => {
@@ -63,36 +55,41 @@ const getSectionIconAndLabel = (type) => {
     case "Video":
       return { icon: <FaIcons.FaVideo />, label: "Video" };
     default:
-      return { icon: <FaIcons.FaBook />, label: "Content" };
+      return { icon: <FaIcons.FaBook />, label: "Content" }; // Default icon/label if type is unknown
   }
 };
 
 const Lessons = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
-  const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
+  const [currentSectionIndex, setCurrentSectionIndex] = useState(0); // Track current section index
   const [selectedLessonContent, setSelectedLessonContent] = useState(null);
-  const [selectedSectionType, setSelectedSectionType] = useState(null);
-  const [isLessonStarted, setIsLessonStarted] = useState(false);
-  const [selectedModule, setSelectedModule] = useState(null);
+  const [selectedSectionType, setSelectedSectionType] = useState(null); // Track selected section type
+  const [isLessonStarted, setIsLessonStarted] = useState(false); // Check if lesson is started
+  const [selectedModule, setSelectedModule] = useState(null); // Track the selected module
 
+
+  // Toggle Accordion
   const toggleAccordion = (index) => {
     setActiveAccordion(activeAccordion === index ? null : index);
   };
 
+  // Filter sections by type
   const getSectionsByType = (module, type) => {
     return module.sections.filter((section) => section.type === type);
   };
 
+  // Handle panel button click
   const handlePanelButtonClick = (moduleIndex, type) => {
-    const module = moduleData[moduleIndex];
+    const module = moduleData[moduleIndex]; // Get the current module
     const filteredSections = getSectionsByType(moduleData[moduleIndex], type);
-    setSelectedModule(module);
+    setSelectedModule(module); // Set the selected module
     setSelectedSectionType(type);
-    setCurrentSectionIndex(0);
-    setSelectedLessonContent(filteredSections[0].contentComponent);
-    setIsLessonStarted(true);
+    setCurrentSectionIndex(0); // Start at the first section of the selected type
+    setSelectedLessonContent(filteredSections[0].contentComponent); // Render first section of the type
+    setIsLessonStarted(true); // Mark as started
   };
 
+  // Handle navigation between sections
   const handleNextClick = () => {
     const filteredSections = getSectionsByType(moduleData[0], selectedSectionType);
     if (currentSectionIndex < filteredSections.length - 1) {
@@ -111,8 +108,10 @@ const Lessons = () => {
     }
   };
 
+  // Dynamically render panel buttons based on unique section types
   const renderPanelButtons = (module, moduleIndex) => {
     const uniqueSectionTypes = [...new Set(module.sections.map((section) => section.type))];
+    
     return uniqueSectionTypes.map((type) => {
       const { icon, label } = getSectionIconAndLabel(type);
       return (
@@ -123,7 +122,7 @@ const Lessons = () => {
         >
           <span className="panel-button-icon">{icon}</span>
           <span className="panel-button-text">
-            {module.id === "Introduction" ? "Introduction" : `Module ${module.id}`}: {label} <br />
+            Module {module.id}: {label} <br />
             <span className="panel-button-time">{module.time}</span>
           </span>
           <span className="panel-button-status">&#10003;</span>
@@ -146,9 +145,10 @@ const Lessons = () => {
               className={`accordion ${moduleIndex === 0 ? "first-accordion" : ""} ${activeAccordion === moduleIndex ? "active" : ""}`}
               onClick={() => toggleAccordion(moduleIndex)}
             >
-              {module.id === "Introduction" ? "Introduction" : `Module ${module.id}`}
+              Module {module.id}
             </button>
             <div className="panel" style={{ maxHeight: activeAccordion === moduleIndex ? "300px" : "0" }}>
+              {/* Render dynamic buttons for each unique section type */}
               {renderPanelButtons(module, moduleIndex)}
             </div>
           </div>
@@ -167,6 +167,7 @@ const Lessons = () => {
               >
                 &lt; Prev
               </button>
+              <div className="module-title">{selectedModule.title}</div>
               <button
                 id="next-button"
                 className="module-navigation-buttons"
@@ -176,8 +177,9 @@ const Lessons = () => {
                 Next &gt;
               </button>
             </div>
-            <h1 style={{ display: selectedSectionType === "Quiz" ? "none" : "" }}>{selectedModule.title}</h1>
-            {selectedLessonContent}
+            <div className="inner-module-container" style={{ height: selectedSectionType === "Quiz" ? "94vh" : "" }}>
+              {selectedLessonContent}
+            </div>
           </>
         ) : (
           <div>Select a lesson to begin</div>
