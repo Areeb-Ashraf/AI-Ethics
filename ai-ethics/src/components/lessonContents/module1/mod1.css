@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+.introduction-content{
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.introduction-content h4 {
+   color: #1a73e8;
+}
+
+
+.introduction-content p {
+    width: 80%;
+}
+
+.introduction-content > ol{
+    font-weight: bold;
+    width: 80%;
+}
+
+.introduction-content > ol > li > ul li{
+    font-weight: normal;
+}
+
+.mod1sec2-content {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    color: #000000;
+  }
+  
+  .mod1sec2-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+
+  }
+  .mod1sec2-content p {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .mod1sec3-container{
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.mod1sec3-container h2{
+    font-size: 20px;
+}
+
+
+.mod1sec3-container .txt-img-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.txt-img-container p {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1420px){
+    .mod1sec3-container .txt-img-container{
+        flex-direction: column;
+    }
+}
+
+.mod1sec4-content {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+  }
+  
+  .mod1sec4-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .mod1sec4-content p {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .accountability-img {
+    max-width: 25%;
+    height: auto;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.dataprotect-img {
+  max-width: 20%;
+  height: auto;
+  display: block;
+}
+
+.dataprotect-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; 
+  flex-direction: row;
+  gap: 20px; 
+}
+
+.accountability-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; 
+  flex-direction: row;
+  gap: 20px; 
+}
+
+@media (max-width: 1420px){
+  .accountability-container, .dataprotect-container{
+    flex-direction: column;
+  }
+
+  .dataprotect-img, .accountability-img {
+    max-width: 100%;
+  }
+
+  .dataprotect-container{
+    align-items: center;
+  }
+}
+
+.mod1sec5-container{
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.mod1sec5-container h2{
+    font-size: 20px;
+}
+
+.mod1sec6-content {
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    color: #000000;
+  }
+  
+  .mod1sec6-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-align: left;
+
+  }
+  .mod1sec6-content p {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .environmental-img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-bottom: 0px;
+ }
+
+ .environmental-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; 
+    gap: 20px; 
+  }
+  
+  @media (max-width: 1420px){
+    .environmental-container{
+      flex-direction: column;
+    }
+  
+    .environmental-img {
+      max-width: 100%;
+    }
+  
+    .environmental-container{
+      align-items: center;
+    }
+  }
+
+  .mod1sec7-container{
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.mod1sec7-container h2{
+    font-size: 20px;
+}
+
+.mod1sec7-container .img-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.mod1sec7-container img{
+    width: 90%;
+}
+
+/* 
+TODO
+Temporay placeholder! 
+Just making the button loop presentable for the demo
+*/
+.action-button {
+  padding: 10px 20px;
+  background-color: #0056D1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: auto;
+}
+
+.action-button:hover {
+  background-color: #0041A1;  
+}

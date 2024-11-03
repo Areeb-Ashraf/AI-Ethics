@@ -53,7 +53,7 @@ const Dashboard = () => {
               <div className="prog-upper">
                 <div>
                   <div className="db-course-name">AI Ethics Course <span className="beginner">Beginner</span></div>
-                  <div className="db-course-name-subtext">5 Mosules | 5 Quizzes | 10 Hours</div>
+                  <div className="db-course-name-subtext">5 Modules | 5 Quizzes | 10 Hours</div>
                   <button className="resume-btn">Resume</button>
                 </div>
                 <div className="db-img">

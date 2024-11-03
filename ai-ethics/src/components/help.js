@@ -10,7 +10,7 @@ const Help = () => {
   return (
     <div className='help-container'>
       <h1>Help</h1>
-      <div className="walkthrough">Here’s a walkthrough of the course</div>
+      <div className="walkthrough">Course Walkthrough</div>
       <div className="help-text">Welcome to your AI Ethics journey! As you progress through each module, you'll have the chance to earn badges that represent your growing expertise. These badges are more than just rewards—they’re symbols of your hard work, dedication, and understanding of AI ethics. By completing modules, acing quizzes, and answering questions quickly, you'll accumulate points, rise through the ranks, and unlock new titles that showcase your accomplishments. Whether you're a Novice just starting out or aiming to become a Master of Integrity, every step you take brings you closer to mastering the ethical principles shaping AI. Keep going—every badge is a testament to your commitment to making the world of AI a better, more responsible space!</div>
       <div className="help-subheading">Badges/symbols</div>
       <table>
