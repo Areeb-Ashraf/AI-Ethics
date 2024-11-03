@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { authManager } from './firebase'; // Adjust the path as needed
-import "./styles/account.css";
-import eyeIcon from './eye.png'; // Adjust the path as needed
+import { authManager } from '../firebase'; // Adjust the path as needed
+import "../styles/account.css";
+import eyeIcon from '../eye.png'; // Adjust the path as needed
 
 const Signup = () => {
   const [fname, setFname] = useState('');

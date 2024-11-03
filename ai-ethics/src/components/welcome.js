@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/welcome.css"
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const Welcome = () => {
   const navigate = useNavigate();
@@ -9,9 +9,6 @@ const Welcome = () => {
     navigate('/signup');
   };
 
-  const goToLogin = () => {
-    navigate('/login');
-  };
 
   return (
     <>
@@ -23,8 +20,8 @@ const Welcome = () => {
           <span>Create Account</span>
         </button>
         <div className="login-text">
-          Already Have an account?&nbsp;
-          <a className="login-link" href="#" onClick={goToLogin}>Log in</a>
+          Already have an account?&nbsp;
+          <Link to="/login" className="login-link">Log in</Link>
         </div>
       </div>
     </>

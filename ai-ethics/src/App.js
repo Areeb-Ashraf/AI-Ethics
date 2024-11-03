@@ -6,8 +6,8 @@ import DatabaseManTester from "./DatabaseManTester";
 import AIGlossary from "./aiGlossary";
 import Homepage from "./components/homepage";
 import UserProfile from "./UserProfile";
-import LoginForm from "./login";
-import Signup from "./signup";
+import LoginForm from "./components/login";
+import Signup from "./components/signup";
 import { auth } from './firebase';
 import Lessons from "./components/lessons";
 import Leaderboard from "./components/leaderboard";
@@ -18,15 +18,21 @@ import Dashboard from "./components/dashboard";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
       setIsLoggedIn(!!user);
+      setLoading(false); 
     });
+
     return () => unsubscribe();
   }, []);
 
   const ProtectedRoute = ({ children }) => {
+    if (loading) {
+      return null; 
+    }
     return isLoggedIn ? (
       <div className="protected-layout">
         <Sidebar setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />
@@ -46,7 +52,7 @@ function App() {
           <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/welcome" element={<Welcome />} />
-          <Route path="/databaseTest" element={<DatabaseManTester />} /> {/* Just to test database, so just put /databaseTest */}
+          <Route path="/databaseTest" element={<DatabaseManTester />} />
 
           {/* Protected Routes */}
           <Route path="/homepage" element={<ProtectedRoute><Homepage /></ProtectedRoute>} />

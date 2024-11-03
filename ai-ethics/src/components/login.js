@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { authManager } from './firebase';
-import googleLogo from './google.png';
-import eyeIcon from './eye.png';
-import "./styles/account.css";
+import { authManager } from '../firebase';
+import googleLogo from '../google.png';
+import eyeIcon from '../eye.png';
+import "../styles/account.css";
 
 const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState('');
