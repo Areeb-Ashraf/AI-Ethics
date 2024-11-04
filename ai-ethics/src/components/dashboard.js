@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/dashboard.css'
 import beginner from './images/beginner.svg'
 import statxpbadge from './images/statxpbadge.svg'
+import { BiTask } from "react-icons/bi";
 
 /*
 Notes For Backend
@@ -38,6 +39,31 @@ add icons to the task box
 */
 
 const Dashboard = () => {
+  const [modulesProgress, setModulesProgress] = useState(0); // Indicates what % of modules has been completed from total modules
+  const [currentXPPercent, setCurrentXPPercent] = useState(0); // COde for this already in Profile.js Use that to get this data
+
+
+  useEffect(() => {
+    setTimeout(() => {
+      setModulesProgress(50); // needs to come from backend, Indicates what % of modules has been completed from total modules
+      setCurrentXPPercent(50); //refer profile.js and change accordingly. The Next Milestone progressbar is exactly ass how it is in profile. Use that code to do the same here. Setting static values only for now. EVEN the milestone names have to change.
+    });
+  }, []);
+
+   // Example array of completed modules, needed to display last 3 complete things in dasboard
+   const completedThings = [
+    'Lesson 1', 'Quiz 1', 'Lesson 2', 'Quiz 2', 'Lesson 3', 'Quiz 3', 'Lesson 4'
+  ];
+
+  // Get the last 3 completed items
+  const lastThreeCompleted = completedThings.slice(-3);
+
+  const notCompletedThings = [
+    'Lesson 5', 'Quiz 5', 'Lesson 6', 'Quiz 6', 'Lesson 7'
+  ];
+
+  const next2tasks = notCompletedThings.slice(0,2);
+
   return (
     <>
       <div className="db-container">
@@ -45,7 +71,7 @@ const Dashboard = () => {
           <div className="left-inner">
             <h1>Dashboard</h1>
             <div className="db-text-container">
-              <div className="db-user-name">Hey Oliver!👋</div>
+              <div className="db-user-name">Hey Oliver! <div className='hand'>👋</div></div>
                Let's get back to learning
             </div>
             <h4>Course Progress</h4>
@@ -61,24 +87,25 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className="prog-bottom">
-                <div className="prog-black"><span className="prog-cont-percent">50%</span></div>
+                <div className="prog-black" style={{  width: `${modulesProgress}%` }} ><div className="prog-cont-percent">{modulesProgress}%</div></div>
               </div>
               
             </div>
             <h4>Recently Finished</h4>
             <div className="recently-finished-container">
-            <div className="quiz-card-container">
-              <div className="quiz-upper">
-                <div className="quiz-num">Quiz 1</div>
-                <div className="quiz-course-name">AI Ethics Course</div>
-              </div>
-              <div className="quiz-lower">
-                <div className="quiz-prog"><span className="quiz-prog-percent">100%</span></div>
-              </div>
-            </div>
-            <div className="quiz-card-container"></div>
-            <div className="quiz-card-container"></div>
-
+              {lastThreeCompleted.map((module, index) => (
+                <div key={index} className="quiz-card-container" style={{animation: `fadeInLeft 0.5s ease-in-out 0.${index}s forwards`}}>
+                  <div className="quiz-upper">
+                    <div className="quiz-num">{module} <div className="check-mark">&#10003;</div></div>
+                    <div className="quiz-course-name">AI Ethics Course</div>
+                  </div>
+                  <div className="quiz-lower">
+                    <div className="quiz-prog">
+                      <span className="quiz-prog-percent">100%</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
 
           </div>
@@ -92,7 +119,7 @@ const Dashboard = () => {
                   <div className="db-milestone-progressbar-container">
                       575/650 XP
                       <div className="db-milestone-progress-bar">
-                          <div className="db-milestone-progress"></div>
+                          <div className="db-milestone-progress" style={{width: `${currentXPPercent}%`}}></div>
                       </div> 
                   </div>
                 <div className="db-progress-next-milestone">AI Specialist</div>
@@ -130,16 +157,13 @@ const Dashboard = () => {
 
             <h4>Upcoming Tasks</h4>
             <div className="upcoming-task-container">
-              <div className="task-box">
-                <div className="task-box-icon"></div>
-                <div className="task-box-name">AI Security Article</div>
+              {next2tasks.map((task, index) => (
+                <div key={index} className="task-box" style={{animation: `fadeInLeft 0.5s ease-in-out 0.${index}s forwards`}}>
+                <div className="task-box-icon"><BiTask /></div>
+                <div className="task-box-name">{task}</div>
                 <div className="gtsymb">&gt;</div>
               </div>
-              <div className="task-box">
-                <div className="task-box-icon"></div>
-                <div className="task-box-name">Module 4 Quiz</div>
-                <div className="gtsymb">&gt;</div>
-              </div>
+              ))}
             </div>
 
           </div>

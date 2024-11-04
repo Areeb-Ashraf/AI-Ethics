@@ -39,7 +39,7 @@
     color: #0056D1;
     font-weight: 800;
     margin-bottom: 2px;
-  
+   display: flex;
   }
   
   .course-prog-container{
@@ -101,6 +101,11 @@
     font-weight: 700;
     font-size: 15px;
     border: none;
+    cursor: pointer
+  }
+
+  .resume-btn:hover{
+    scale: 1.1;
   }
   
   .db-img{
@@ -116,10 +121,10 @@
   
   .prog-black{
     background-color: black;
-    width: 50%;
     height: 100%;
     border-radius: 0px 0px 40px 25px ;
     display: flex;
+    transition: width 0.8s ease-in-out
   }
   
   .prog-cont-percent{
@@ -153,6 +158,24 @@
     font-size: 24px;
     font-weight: 700;
     margin: 20px 0px 5px 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px
+  }
+
+  .check-mark{
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0056D1;
+    font-size: 20px;
   }
   
   .quiz-course-name{
@@ -172,7 +195,7 @@
   
   .quiz-prog{
     background-color: black;
-    width: 80%;
+    width: 100%;
     height: 100%;
     border-radius: 0px 0px 40px 25px ;
     display: flex;
@@ -240,10 +263,10 @@
   }
   
   .db-milestone-progress{
-    width: 50%;
     height: 14px;
     background-color: #0056D1;
     border-radius: 50px;
+    transition: width 0.8s ease-in-out
   }
   
   
@@ -388,7 +411,12 @@
     align-items: center;
     box-shadow: 0px 3.54px 8.86px 0px #00000040;
     border-radius: 20px;
+    cursor: pointer;
   
+  }
+
+  .task-box:hover{
+    scale: 1.1;
   }
   
   .task-box-icon{
@@ -400,6 +428,7 @@
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    font-size: 30px;
   }
   
   .task-box-name{
@@ -413,6 +442,8 @@
     font-size: 20px;
     font-weight: 900;
   }
+
+  /* Responsiveness */
   
   @media screen and (max-width: 1315px){
     .db-container{
@@ -511,4 +542,54 @@
    }
   
   }
+
+
+  /* Animations */
   
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  .hand{
+    animation: shake 0.8s;
+  }
+
+  @keyframes fadeInBounce {
+    50% {
+        opacity: 0.7;
+        transform: scale(1.2); /* Slight bounce */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Normal size */
+    }
+}
+
+.db-img, .statbadge-container{
+  opacity: 0;
+  transform: scale(0.5);
+  animation: fadeInBounce 0.8s ease-in-out forwards;
+}
+
+
+@keyframes fadeInLeft {
+  100% {
+      transform: translateX(0); /* Ends at normal position */
+      opacity: 1;
+  }
+}
+
+.quiz-card-container, .task-box{
+  transform: translateX(20%);
+  opacity: 0;
+}
