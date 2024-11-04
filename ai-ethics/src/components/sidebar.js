@@ -105,7 +105,7 @@ const Sidebar = ({ setIsLoggedIn }) => {
           onClick={handleRouteClick}
         >
           <div className="sidebar-item-icon"><AiOutlineProfile /></div>
-          <div className="sidebar-item-name">AI Glossory</div>
+          <div className="sidebar-item-name">AI Glossary</div>
         </NavLink>
 
         <NavLink 
