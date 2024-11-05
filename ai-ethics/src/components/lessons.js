@@ -20,6 +20,10 @@ import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
 
 //Mod3
 import Mod3Sec1 from "./lessonContents/module3/mod3sec1";
+import Mod3Sec2 from "./lessonContents/module3/mod3sec2";
+import Mod3Sec3 from "./lessonContents/module3/mod3sec3";
+import Mod3Sec4 from "./lessonContents/module3/mod3sec4";
+import Mod3Sec5 from "./lessonContents/module3/mod3sec5";
 
 //Mod4
 import Mod4Sec1 from "./lessonContents/module4/mod4sec1";
