@@ -42,8 +42,8 @@ import Quiz from "./quiz";
 // Module data with different section types (Lesson, Quiz, Video)
 const moduleData = [
   {
-    id: 1,
-    title: "AI Ethics: An Introduction",
+    id: 0,
+    title: "Introduction",
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <IntroSec1 /> },
@@ -54,6 +54,14 @@ const moduleData = [
       { type: "Lesson", contentComponent: <IntroSec6 /> },
       { type: "Lesson", contentComponent: <IntroSec7 /> },
       { type: "Quiz", contentComponent: <Quiz /> },
+    ],
+  },
+  {
+    id: 1,
+    title: "Module 1", // module 1
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod1Sec1 /> },
     ],
   },
   {
@@ -112,14 +120,6 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod8Sec1 /> },
     ],
   },
-  {
-    id: 9,
-    title: "Module 1", // module 1
-    time: "20min",
-    sections: [
-      { type: "Lesson", contentComponent: <Mod1Sec1 /> },
-    ],
-  },
 
 ];
 
@@ -139,76 +139,75 @@ const getSectionIconAndLabel = (type) => {
 };
 
 const Lessons = () => {
+  const [currentSection, setCurrentSection] = useState({ moduleIndex: 0, sectionIndex: 0 });
+  const [isLessonStarted, setIsLessonStarted] = useState(false);
   const [activeAccordion, setActiveAccordion] = useState(null);
-  const [currentSectionIndex, setCurrentSectionIndex] = useState(0); // Track current section index
-  const [selectedLessonContent, setSelectedLessonContent] = useState(null);
-  const [selectedSectionType, setSelectedSectionType] = useState(null); // Track selected section type
-  const [isLessonStarted, setIsLessonStarted] = useState(false); // Check if lesson is started
-  const [selectedModule, setSelectedModule] = useState(null); // Track the selected module
 
-
-  // Toggle Accordion
-  const toggleAccordion = (index) => {
-    setActiveAccordion(activeAccordion === index ? null : index);
-  };
-
-  // Filter sections by type
-  const getSectionsByType = (module, type) => {
-    return module.sections.filter((section) => section.type === type);
-  };
-
-  // Handle panel button click
-  const handlePanelButtonClick = (moduleIndex, type) => {
-    const module = moduleData[moduleIndex]; // Get the current module
-    const filteredSections = getSectionsByType(moduleData[moduleIndex], type);
-    setSelectedModule(module); // Set the selected module
-    setSelectedSectionType(type);
-    setCurrentSectionIndex(0); // Start at the first section of the selected type
-    setSelectedLessonContent(filteredSections[0].contentComponent); // Render first section of the type
-    setIsLessonStarted(true); // Mark as started
-  };
-
-  // Handle navigation between sections
   const handleNextClick = () => {
-    const filteredSections = getSectionsByType(moduleData[0], selectedSectionType);
-    if (currentSectionIndex < filteredSections.length - 1) {
-      const nextIndex = currentSectionIndex + 1;
-      setCurrentSectionIndex(nextIndex);
-      setSelectedLessonContent(filteredSections[nextIndex].contentComponent);
+    const { moduleIndex, sectionIndex } = currentSection;
+    const module = moduleData[moduleIndex];
+
+    if (sectionIndex < module.sections.length - 1) {
+      setCurrentSection({ moduleIndex, sectionIndex: sectionIndex + 1 });
+    } else if (moduleIndex < moduleData.length - 1) {
+      // Move to the first section of the next module
+      setCurrentSection({ moduleIndex: moduleIndex + 1, sectionIndex: 0 });
+      setActiveAccordion(moduleIndex + 1); // Expand the next module
     }
   };
 
   const handlePrevClick = () => {
-    const filteredSections = getSectionsByType(moduleData[0], selectedSectionType);
-    if (currentSectionIndex > 0) {
-      const prevIndex = currentSectionIndex - 1;
-      setCurrentSectionIndex(prevIndex);
-      setSelectedLessonContent(filteredSections[prevIndex].contentComponent);
+    const { moduleIndex, sectionIndex } = currentSection;
+
+    if (sectionIndex > 0) {
+      setCurrentSection({ moduleIndex, sectionIndex: sectionIndex - 1 });
+    } else if (moduleIndex > 0) {
+      // Move to the last section of the previous module
+      const prevModule = moduleData[moduleIndex - 1];
+      setCurrentSection({ moduleIndex: moduleIndex - 1, sectionIndex: prevModule.sections.length - 1 });
+      setActiveAccordion(moduleIndex - 1); // Expand the previous module
     }
   };
 
-  // Dynamically render panel buttons based on unique section types
   const renderPanelButtons = (module, moduleIndex) => {
     const uniqueSectionTypes = [...new Set(module.sections.map((section) => section.type))];
     
     return uniqueSectionTypes.map((type) => {
       const { icon, label } = getSectionIconAndLabel(type);
+  
+      // Check if the current section type matches to apply active styling
+      const isActiveType = currentSection.moduleIndex === moduleIndex &&
+                           module.sections[currentSection.sectionIndex].type === type;
+  
       return (
         <button
           key={type}
-          className={`panel-button ${selectedSectionType === type ? "active-panel-button" : ""}`}
-          onClick={() => handlePanelButtonClick(moduleIndex, type)}
+          className={`panel-button ${isActiveType ? "active-panel-button" : ""}`}
+          onClick={() => {
+            // Find the first index of the section matching the type (Lesson or Quiz)
+            const sectionIndex = module.sections.findIndex(section => section.type === type);
+            // Set the current section based on the found index
+            if (sectionIndex !== -1) {
+              setCurrentSection({ moduleIndex, sectionIndex });
+              setIsLessonStarted(true);
+            }
+          }}
         >
           <span className="panel-button-icon">{icon}</span>
           <span className="panel-button-text">
-            Module {module.id}: {label} <br />
+            {label === "Quiz" ? `${module.title}: Quiz` : module.title}<br />
             <span className="panel-button-time">{module.time}</span>
           </span>
           <span className="panel-button-status">&#10003;</span>
         </button>
       );
     });
-  };
+  };   
+
+  const { moduleIndex, sectionIndex } = currentSection;
+  const module = moduleData[moduleIndex];
+  const section = module.sections[sectionIndex];
+  const isLastSectionInModule = sectionIndex === module.sections.length - 1;
 
   return (
     <div className="lesson-container">
@@ -222,43 +221,47 @@ const Lessons = () => {
           <div key={module.id}>
             <button
               className={`accordion ${moduleIndex === 0 ? "first-accordion" : ""} ${activeAccordion === moduleIndex ? "active" : ""}`}
-              onClick={() => toggleAccordion(moduleIndex)}
+              onClick={() => setActiveAccordion(activeAccordion === moduleIndex ? null : moduleIndex)}
             >
               Module {module.id}
             </button>
             <div className="panel" style={{ maxHeight: activeAccordion === moduleIndex ? "300px" : "0" }}>
-              {/* Render dynamic buttons for each unique section type */}
               {renderPanelButtons(module, moduleIndex)}
             </div>
           </div>
         ))}
       </div>
 
-      <div className="module-content-container" style={{ backgroundColor: selectedSectionType === "Quiz" ? "#0056D121" : "whitesmoke" }}>
-        {isLessonStarted && selectedModule ? (
+      <div className="module-content-container">
+        {isLessonStarted && module ? (
           <>
-            <div className="buttons-div" style={{ display: selectedSectionType === "Quiz" ? "none" : "" }}>
+            <div className="buttons-div" 
+             style={{
+              background: currentSection && module.sections[currentSection.sectionIndex].type === "Quiz" ? "#0056D121" : "transparent",
+            }}>
               <button
                 id="prev-button"
                 className="module-navigation-buttons"
                 onClick={handlePrevClick}
-                disabled={currentSectionIndex === 0}
+                disabled={moduleIndex === 0 && sectionIndex === 0}
               >
                 &lt; Prev
               </button>
-              <div className="module-title">{selectedModule.title}</div>
+              <div className="module-title">{module.title}</div>
               <button
                 id="next-button"
                 className="module-navigation-buttons"
                 onClick={handleNextClick}
-                disabled={currentSectionIndex === getSectionsByType(moduleData[0], selectedSectionType).length - 1}
+                disabled={moduleIndex === moduleData.length - 1 && isLastSectionInModule}
               >
-                Next &gt;
+                {isLastSectionInModule ? "Next Module" : "Next"} &gt;
               </button>
             </div>
-            <div className="inner-module-container" style={{ height: selectedSectionType === "Quiz" ? "94vh" : "" }}>
-              {selectedLessonContent}
-            </div>
+            <div className="inner-module-container" 
+            style={{
+                    background: currentSection && module.sections[currentSection.sectionIndex].type === "Quiz" ? "#0056D121" : "transparent",
+                  }}
+        >{section.contentComponent}</div>
           </>
         ) : (
           <div>Select a lesson to begin</div>
