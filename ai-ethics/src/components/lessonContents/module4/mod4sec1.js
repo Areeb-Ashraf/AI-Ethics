@@ -21,7 +21,7 @@ const Mod4Sec1 = () => {
         This lesson aims to provide an in-depth understanding of the social impact of AI, beginning with a clear definition of social impact in the technology realm. By exploring historical advancements, students will gain insights into how technologies have shaped societal norms and behaviors, creating a framework for understanding AI's potential implications. The lesson will conclude by examining the current landscape influenced by AI, highlighting both its benefits and challenges, which will serve as a foundation for future discussions on AI's role in society.
       </p>
 
-          <h3>Definition of Social Impact</h3>
+          <h2>Definition of Social Impact</h2>
           <p>
             <strong>Understanding Social Impact:</strong> Social impact refers to the effect that an action, project, or technology has on the well-being of individuals and communities. In the context of AI, social impact encompasses the positive and negative effects that AI technologies can have on various aspects of society, including economy, culture, environment, and public health.
           </p>
@@ -39,7 +39,7 @@ const Mod4Sec1 = () => {
             <strong>Importance of Understanding Social Impact:</strong> Understanding social impact is crucial for policymakers, technologists, and society at large, enabling informed decisions about AI development and implementation to promote equity and justice.
           </p>
 
-          <h3>Historical Context</h3>
+          <h2>Historical Context</h2>
           <p>
             <strong>Technological Advancements and Social Implications:</strong> To appreciate the social impact of AI, it is essential to examine historical technological advancements and their effects on society.
           </p>
@@ -49,7 +49,7 @@ const Mod4Sec1 = () => {
             <li><strong>Social Media and Mobile Technology:</strong> Social media has empowered marginalized voices but also contributed to issues like cyberbullying and mental health challenges.</li>
           </ul>
 
-          <h3>Current Landscape</h3>
+          <h2>Current Landscape</h2>
           <p>
             <strong>AI's Influence on Society Today:</strong> AI technologies are increasingly embedded in various aspects of daily life, reflecting both promises and pitfalls.
           </p>
@@ -58,7 +58,7 @@ const Mod4Sec1 = () => {
             <li><strong>Negative Outcomes:</strong> Issues such as algorithmic bias, privacy concerns, and job displacement remain significant challenges.</li>
           </ul>
 
-      <h3>Conclusion</h3>
+      <h2>Conclusion</h2>
       <p>
         Understanding the social impact of AI is crucial for navigating this transformative technology. By examining its definition, historical context, and current landscape, we can better understand AI's profound effects on society, setting the stage for further exploration in future lessons.
       </p>
