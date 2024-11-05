@@ -27,6 +27,7 @@ import Mod3Sec5 from "./lessonContents/module3/mod3sec5";
 
 //Mod4
 import Mod4Sec1 from "./lessonContents/module4/mod4sec1";
+import Mod4Sec2 from "./lessonContents/module4/mod4sec2";
 
 //Mod5
 import Mod5Sec1 from "./lessonContents/module5/mod5sec1";
@@ -97,6 +98,7 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod4Sec1 /> },
+      { type: "Lesson", contentComponent: <Mod4Sec2 /> },
     ],
   },
   {
