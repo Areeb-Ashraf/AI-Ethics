@@ -85,6 +85,10 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod3Sec1 /> },
+      { type: "Lesson", contentComponent: <Mod3Sec2 /> },
+      { type: "Lesson", contentComponent: <Mod3Sec3 /> },
+      { type: "Lesson", contentComponent: <Mod3Sec4 /> },
+      { type: "Lesson", contentComponent: <Mod3Sec5 /> },
     ],
   },
   {
