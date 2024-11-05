@@ -1,12 +1,12 @@
 import React from "react";
 import future from "./mod1images/future.png";
-import "./mod1.css";
+import "./intro.css";
 import databaseManager from "../../../databaseManager";
 
-const Mod1sec7 = () => {
+const Introsec7 = () => {
   return (
     <>
-      <div className="mod1sec7-container">
+      <div className="introsec7-container">
         <h2>Building a Future with Ethical AI</h2>
         <div className="img-container">
           <img src={future} alt="future-of-AI-img" />
@@ -43,4 +43,4 @@ const Mod1sec7 = () => {
   );
 };
 
-export default Mod1sec7;
+export default Introsec7;

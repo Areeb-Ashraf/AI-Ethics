@@ -1,10 +1,10 @@
 // lessonContents/Module1Lesson.js
 import React from 'react';
-import './mod1.css'
+import './intro.css'
 
-const Mod1Sec6 = () => {
+const IntroSec6 = () => {
     return (
-      <div className="mod1sec6-content">
+      <div className="introsec6-content">
 
             <h3>Ethical AI in Environmental Sustainability</h3>
             <div className="accountability-container">
@@ -12,7 +12,7 @@ const Mod1Sec6 = () => {
                     Another area where AI ethics plays a critical role is environmental sustainability. AI has the potential to contribute significantly to efforts aimed at combating climate change, managing natural resources, and protecting biodiversity. AI technologies can optimize energy usage, reduce waste, and predict environmental disasters, leading to more effective interventions. For example, AI algorithms can analyze satellite imagery to monitor deforestation or track changes in air quality, providing policymakers with valuable data to make informed decisions.
                     However, ethical dilemmas arise when using AI for environmental purposes. One primary concern is the carbon footprint of AI itself. Training large-scale AI models require significant computational power, which, in turn, consumes vast amounts of energy. If not carefully managed, the environmental cost of developing and deploying AI could outweigh its benefits. It is essential to balance AI innovation with sustainability practices to ensure that the technologies we create do not exacerbate the environmental challenges we aim to solve.
                 </p>
-                <img src={require('./mod1images/Environmental.png')} alt="Environmental" className="environmental-img" />
+                <img src={require('./introimages/Environmental.png')} alt="Environmental" className="environmental-img" />
             </div>
             <h3>Why is AI Ethics Important?</h3>
             <p>
@@ -24,4 +24,4 @@ const Mod1Sec6 = () => {
     );
   };
   
-  export default Mod1Sec6;
+  export default IntroSec6;

@@ -1,14 +1,14 @@
 // lessonContents/Module1Lesson.js
 import React from 'react';
-import './mod1.css'
-import WhyAIEthicsMatters from './mod1images/WhyAIEthicsMatters.png'
-import transparancy from './mod1images/transparancy.png'
+import './intro.css'
+import WhyAIEthicsMatters from './introimages/WhyAIEthicsMatters.png'
+import transparancy from './introimages/transparancy.png'
 
-const Mod1Sec3 = () => {
+const IntroSec3 = () => {
     // js goes here
   return (
     <>
-        <div className="mod1sec3-container">
+        <div className="introsec3-container">
             <h2>Why AI Ethics Matters</h2>
 
             <div className="txt-img-container">
@@ -34,4 +34,4 @@ const Mod1Sec3 = () => {
   );
 };
 
-export default Mod1Sec3;
+export default IntroSec3;

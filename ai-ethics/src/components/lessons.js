@@ -4,13 +4,13 @@ import * as FaIcons from "react-icons/fa";
 import LessonTour from "./tours/LessonTour";
 
 // Import lesson components
-import Mod1Sec1 from "./lessonContents/module1/mod1sec1";
-import Mod1Sec2 from "./lessonContents/module1/mod1sec2";
-import Mod1Sec3 from "./lessonContents/module1/mod1sec3";
-import Mod1Sec4 from "./lessonContents/module1/mod1sec4";
-import Mod1Sec5 from "./lessonContents/module1/mod1sec5";
-import Mod1Sec6 from "./lessonContents/module1/mod1sec6";
-import Mod1Sec7 from "./lessonContents/module1/mod1sec7";
+import IntroSec1 from "./lessonContents/module1/introsec1";
+import IntroSec2 from "./lessonContents/module1/introsec2";
+import IntroSec3 from "./lessonContents/module1/introsec3";
+import IntroSec4 from "./lessonContents/module1/introsec4";
+import IntroSec5 from "./lessonContents/module1/Introsec5";
+import IntroSec6 from "./lessonContents/module1/introsec6";
+import IntroSec7 from "./lessonContents/module1/introsec7";
 
 // import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
 import Quiz from "./quiz";
@@ -22,13 +22,13 @@ const moduleData = [
     title: "AI Ethics: An Introduction",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod1Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec5 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec6 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec7 /> },
+      { type: "Lesson", contentComponent: <IntroSec1 /> },
+      { type: "Lesson", contentComponent: <IntroSec2 /> },
+      { type: "Lesson", contentComponent: <IntroSec3 /> },
+      { type: "Lesson", contentComponent: <IntroSec4 /> },
+      { type: "Lesson", contentComponent: <IntroSec5 /> },
+      { type: "Lesson", contentComponent: <IntroSec6 /> },
+      { type: "Lesson", contentComponent: <IntroSec7 /> },
       { type: "Quiz", contentComponent: <Quiz /> },
     ],
   },

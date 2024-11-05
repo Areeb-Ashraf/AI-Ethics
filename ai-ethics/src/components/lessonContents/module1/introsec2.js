@@ -1,10 +1,10 @@
 // lessonContents/Module1Lesson.js
 import React from 'react';
-import './mod1.css'
+import './intro.css'
 
-const Mod1Sec2 = () => {
+const IntroSec2 = () => {
     return (
-      <div className="mod1sec2-content">
+      <div className="introsec2-content">
             <h3>What is AI Ethics</h3>
             <p>
               Ethics may appear like an esoteric concept. So, before understanding “AI ethics,” let’s first focus on what ethics means.
@@ -24,4 +24,4 @@ const Mod1Sec2 = () => {
     );
   };
   
-  export default Mod1Sec2;
+  export default IntroSec2;

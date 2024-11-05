@@ -1,10 +1,10 @@
 import React from 'react';
-import './mod1.css'
+import './intro.css'
 
-const Mod1sec5 = () => {
+const Introsec5 = () => {
   return (
     <>
-      <div className="mod1sec5-container">
+      <div className="introsec5-container">
 
         <h2>The Impact of AI Ethics on Society</h2>
         <p>Adopting AI with a focus on ethics means creating technology that improves lives and contributes to the public good. When ethical guidelines are followed, AI can enhance innovation in industries such as healthcare, education, and environmental sustainability. However, neglecting these considerations could result in biased outcomes, data breaches, and loss of public trust.</p>
@@ -18,4 +18,4 @@ const Mod1sec5 = () => {
   )
 }
 
-export default Mod1sec5
+export default Introsec5

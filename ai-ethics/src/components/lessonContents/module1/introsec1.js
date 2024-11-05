@@ -1,8 +1,8 @@
 // lessonContents/Module1Lesson.js
 import React from 'react';
-import './mod1.css'
+import './intro.css'
 
-const Mod1Sec = () => {
+const IntroSec1 = () => {
     // js goes here
   return (
     <>
@@ -76,4 +76,4 @@ const Mod1Sec = () => {
   );
 };
 
-export default Mod1Sec;
+export default IntroSec1;

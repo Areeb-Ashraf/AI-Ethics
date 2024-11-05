@@ -1,10 +1,10 @@
 // lessonContents/Module1Lesson.js
 import React from 'react';
-import './mod1.css'
+import './intro.css'
 
-const Mod1Sec4 = () => {
+const IntroSec4 = () => {
     return (
-      <div className="mod1sec4-content">
+      <div className="introsec4-content">
 
             <h3>2. Accountability: Who Takes Responsibility?</h3>
             <div className="accountability-container">
@@ -13,7 +13,7 @@ const Mod1Sec4 = () => {
             In many cases, it is difficult to assign accountability due to the complexity and autonomy of AI systems. However, it is essential that developers and organizations take responsibility for the outcomes produced by their AI systems. This includes being proactive in monitoring and correcting any harmful impacts, as well as establishing clear guidelines for how AI should be used ethically.
             Moreover, governments and regulatory bodies need to establish policies that clearly define accountability in the context of AI. This might include setting standards for AI development, requiring regular audits, and enforcing penalties for harmful or unethical AI practices. Without clear accountability, organizations may be less motivated to address potential harms, leading to significant societal risks.
             </p>
-            <img src={require('./mod1images/Accountability.png')} alt="Accountability" className="accountability-img" />
+            <img src={require('./introimages/Accountability.png')} alt="Accountability" className="accountability-img" />
           </div>
 
             <h3>3. Safety: Ensuring No Harm</h3>
@@ -30,10 +30,10 @@ const Mod1Sec4 = () => {
               Lastly, AI ethics must address the issue of privacy. AI systems often rely on large amounts of personal data to function effectively, raising concerns about how this data is collected, stored, and used. Users must have control over their personal information, and data protection practices must be in place to prevent unauthorized access or misuse.
               Moreover, AI systems should be designed to minimize the amount of personal data they require, using techniques such as data anonymization and differential privacy. By respecting user privacy, AI systems can build trust and ensure that individuals feel safe and secure when interacting with the technology.
               </p>
-              <img src={require('./mod1images/Data Protection.png')} alt="DataProtection" className="dataprotect-img" />
+              <img src={require('./introimages/Data Protection.png')} alt="DataProtection" className="dataprotect-img" />
             </div>
         </div>
     );
   };
   
-  export default Mod1Sec4;
+  export default IntroSec4;
