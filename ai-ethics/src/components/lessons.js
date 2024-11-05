@@ -3,7 +3,7 @@ import "../styles/lessons.css";
 import * as FaIcons from "react-icons/fa";
 import LessonTour from "./tours/LessonTour";
 
-// Import lesson components
+// Intro
 import IntroSec1 from "./lessonContents/module1/introsec1";
 import IntroSec2 from "./lessonContents/module1/introsec2";
 import IntroSec3 from "./lessonContents/module1/introsec3";
@@ -11,6 +11,30 @@ import IntroSec4 from "./lessonContents/module1/introsec4";
 import IntroSec5 from "./lessonContents/module1/Introsec5";
 import IntroSec6 from "./lessonContents/module1/introsec6";
 import IntroSec7 from "./lessonContents/module1/introsec7";
+
+//Mod1
+import Mod1Sec1 from "./lessonContents/realModule1/mod1sec1";
+
+//Mod2
+import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
+
+//Mod3
+import Mod3Sec1 from "./lessonContents/module3/mod3sec1";
+
+//Mod4
+import Mod4Sec1 from "./lessonContents/module4/mod4sec1";
+
+//Mod5
+import Mod5Sec1 from "./lessonContents/module5/mod5sec1";
+
+//Mod6
+import Mod6Sec1 from "./lessonContents/module6/mod6sec1";
+
+//Mod7
+import Mod7Sec1 from "./lessonContents/module7/mod7sec1";
+
+//Mod8
+import Mod8Sec1 from "./lessonContents/module8/mod8sec1";
 
 // import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
 import Quiz from "./quiz";
@@ -32,16 +56,71 @@ const moduleData = [
       { type: "Quiz", contentComponent: <Quiz /> },
     ],
   },
-  // {
-  //   id: 2,
-  //   title: "Module 2",
-  //   time: "30min",
-  //   sections: [
-  //     { type: "Lesson", contentComponent: <Mod2Sec1 /> },
-  //     { type: "Quiz", contentComponent: <Quiz /> },
-  //   ],
-  // },
-  // Add more module data as necessary...
+  {
+    id: 2,
+    title: "Module 2",
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod2Sec1 /> },
+    ],
+  },
+  {
+    id: 3,
+    title: "Module 3",
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod3Sec1 /> },
+    ],
+  },
+  {
+    id: 4,
+    title: "Module 4",
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod4Sec1 /> },
+    ],
+  },
+  {
+    id: 5,
+    title: "Module 5",
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod5Sec1 /> },
+    ],
+  },
+  {
+    id: 6,
+    title: "Module 6",
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod6Sec1 /> },
+    ],
+  },
+  {
+    id: 7,
+    title: "Module 7",
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod7Sec1 /> },
+    ],
+  },
+  {
+    id: 8,
+    title: "Module 8",
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod8Sec1 /> },
+    ],
+  },
+  {
+    id: 9,
+    title: "Module 9", // module 1
+    time: "20min",
+    sections: [
+      { type: "Lesson", contentComponent: <Mod1Sec1 /> },
+    ],
+  },
+
 ];
 
 

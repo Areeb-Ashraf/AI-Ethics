@@ -1,5 +1,5 @@
 import React from "react";
-import future from "./mod1images/future.png";
+import future from "./introimages/future.png";
 import "./intro.css";
 import databaseManager from "../../../databaseManager";
 
