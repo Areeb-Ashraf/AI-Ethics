@@ -224,7 +224,7 @@ const Lessons = () => {
         {moduleData.map((module, moduleIndex) => (
           <div key={module.id}>
             <button
-              className={`accordion ${moduleIndex === 0 ? "first-accordion" : ""} ${activeAccordion === moduleIndex ? "active" : ""}`}
+              className={`accordion ${moduleIndex === 0 ? "first-accordion" : ""} ${activeAccordion === moduleIndex ? "panel-active" : ""}`}
               onClick={() => setActiveAccordion(activeAccordion === moduleIndex ? null : moduleIndex)}
             >
               Module {module.id}
