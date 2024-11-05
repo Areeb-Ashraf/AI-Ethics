@@ -27,8 +27,16 @@ ol > li::marker {
 
 .mod3sec1-container>ol>li>ul li {
   font-weight: normal;
-  width: 80%;
+}
 
+.mod3sec1-container>ol>li>p {
+  width: 100%;
+}
+
+.mod3sec1-container h1 {
+  width: 80%;
+  font-size: x-large;
+  text-align: left;
 }
 
 .mod3sec1-container h2 {
@@ -41,11 +49,31 @@ ol > li::marker {
   margin-bottom: 0px;
   font-size: 18px;
   width: 80%;
-
 }
 
-.mod3sec1-container h1 {
+.mod3sec1-container h4 {
+  font-size: 18px;
   width: 80%;
-  font-size: x-large;
-  text-align: left;
+}
+
+.mod3sec1-container .txt-img-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txt-img-container p {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ethical-img {
+  max-width: 30%;
+}
+
+@media (max-width: 1420px){
+  .mod3sec1-container .txt-img-container{
+      flex-direction: column;
+  }
 }
