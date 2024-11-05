@@ -1,0 +1,24 @@
+.mod2sec1-container {
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.mod2sec1-container h4 {
+    color: #1a73e8;
+}
+
+.mod2sec1-container p {
+    width: 80%;
+}
+
+.mod2sec1-container > ol {
+    width: 75%;
+}
+.mod2sec1-container > ul {
+    width: 75%;
+}
+
+.mod2sec1-container > ol > li > ul li {
+    font-weight: normal;
+}

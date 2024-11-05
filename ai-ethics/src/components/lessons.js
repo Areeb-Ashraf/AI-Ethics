@@ -114,7 +114,7 @@ const moduleData = [
   },
   {
     id: 9,
-    title: "Module 9", // module 1
+    title: "Module 1", // module 1
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod1Sec1 /> },
