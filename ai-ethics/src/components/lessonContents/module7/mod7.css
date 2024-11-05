@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.introduction-content {
+    margin: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.text-image-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Adds space between text and image */
+}
+
+.text-image-container p {
+    flex: 2; /* Takes up more space */
+    margin: 0;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.role-of-ai-img {
+    flex: 1; /* Adjusts image size relative to text */
+    max-width: 33%; /* Limits image width */
+    height: auto;
+}
+.introduction-content h3 {
+    color: #1a73e8; /* Main heading in black */
+    font-size: 22px;
+}
+
+.introduction-content h4 {
+    color: #000000; /* Use blue here for subheadings */
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .text-image-container {
+        flex-direction: column;
+        align-items: center; /* Centers content for smaller screens */
+    }
+
+    .role-of-ai-img {
+        max-width: 80%; /* Adjust for mobile */
+    }
+}
