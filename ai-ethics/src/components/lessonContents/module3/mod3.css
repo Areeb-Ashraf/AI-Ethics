@@ -46,14 +46,14 @@ ol > li::marker {
 }
 
 .mod3sec1-container h3 {
-  margin-bottom: 0px;
-  font-size: 18px;
+  font-size: 20px;
   width: 80%;
 }
 
 .mod3sec1-container h4 {
   font-size: 18px;
   width: 80%;
+  margin-bottom: 0px;
 }
 
 .mod3sec1-container .txt-img-container{

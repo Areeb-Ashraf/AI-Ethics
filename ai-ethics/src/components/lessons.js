@@ -28,6 +28,10 @@ import Mod3Sec5 from "./lessonContents/module3/mod3sec5";
 //Mod4
 import Mod4Sec1 from "./lessonContents/module4/mod4sec1";
 import Mod4Sec2 from "./lessonContents/module4/mod4sec2";
+import Mod4Sec3 from "./lessonContents/module4/mod4sec3";
+import Mod4Sec4 from "./lessonContents/module4/mod4sec4";
+import Mod4Sec5 from "./lessonContents/module4/mod4sec5";
+import Mod4Sec6 from "./lessonContents/module4/mod4sec6";
 
 //Mod5
 import Mod5Sec1 from "./lessonContents/module5/mod5sec1";
@@ -99,6 +103,11 @@ const moduleData = [
     sections: [
       { type: "Lesson", contentComponent: <Mod4Sec1 /> },
       { type: "Lesson", contentComponent: <Mod4Sec2 /> },
+      { type: "Lesson", contentComponent: <Mod4Sec3 /> },
+      { type: "Lesson", contentComponent: <Mod4Sec4 /> },
+      { type: "Lesson", contentComponent: <Mod4Sec5 /> },
+      { type: "Lesson", contentComponent: <Mod4Sec6 /> },
+
     ],
   },
   {
