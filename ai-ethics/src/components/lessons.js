@@ -14,6 +14,13 @@ import IntroSec7 from "./lessonContents/module1/introsec7";
 
 //Mod1
 import Mod1Sec1 from "./lessonContents/realModule1/mod1sec1";
+import Mod1Sec2 from "./lessonContents/realModule1/mod1sec2";
+import Mod1Sec3 from "./lessonContents/realModule1/mod1sec3"
+import Mod1Sec4 from "./lessonContents/realModule1/mod1sec4"
+import Mod1Sec5 from "./lessonContents/realModule1/mod1sec5"
+import Mod1Sec6 from "./lessonContents/realModule1/mod1sec6"
+import Mod1Sec7 from "./lessonContents/realModule1/mod1sec7"
+import Mod1Sec8 from "./lessonContents/realModule1/mod1sec8"
 
 //Mod2
 import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
@@ -74,6 +81,14 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod1Sec1 /> },
+      { type: "Lesson", contentComponent: <Mod1Sec2 /> },
+      { type: "Lesson", contentComponent: <Mod1Sec3 /> },
+      { type: "Lesson", contentComponent: <Mod1Sec4 /> },
+      { type: "Lesson", contentComponent: <Mod1Sec5 /> },
+      { type: "Lesson", contentComponent: <Mod1Sec6 /> },
+      { type: "Lesson", contentComponent: <Mod1Sec7 /> },
+      { type: "Lesson", contentComponent: <Mod1Sec8 /> },
+
     ],
   },
   {
