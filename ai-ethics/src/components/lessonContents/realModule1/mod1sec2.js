@@ -4,7 +4,7 @@ import "./mod1.css";
 const Mod1Sec2 = () => {
   return (
     <div className="mod1sec1-container">
-      <h2>Lesson 2: Regulatory Frameworks</h2>
+      <h1>Lesson 2: Regulatory Frameworks</h1>
       <h3>Introduction</h3>
       <p>
         In the evolving landscape of artificial intelligence (AI) and mobile applications, understanding regulatory frameworks is paramount for organizations seeking to ensure ethical data practices and protect user privacy. Various privacy regulations have been enacted worldwide to govern data collection, processing, and consent, providing a framework for responsible data management. This lesson explores key regulatory frameworks, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and the California Privacy Rights Act (CPRA), along with the importance of legal and regulatory compliance in data consent.

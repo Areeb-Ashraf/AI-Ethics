@@ -24,6 +24,13 @@ import Mod1Sec8 from "./lessonContents/realModule1/mod1sec8"
 
 //Mod2
 import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
+import Mod2Sec2 from "./lessonContents/module2/mod2sec2";
+import Mod2Sec3 from "./lessonContents/module2/mod2sec3";
+import Mod2Sec4 from "./lessonContents/module2/mod2sec4";
+import Mod2Sec5 from "./lessonContents/module2/mod2sec5";
+import Mod2Sec6 from "./lessonContents/module2/mod2sec6";
+import Mod2Sec7 from "./lessonContents/module2/mod2sec7";
+
 
 //Mod3
 import Mod3Sec1 from "./lessonContents/module3/mod3sec1";
@@ -86,8 +93,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod1Sec4 /> },
       { type: "Lesson", contentComponent: <Mod1Sec5 /> },
       { type: "Lesson", contentComponent: <Mod1Sec6 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec7 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec8 /> },
+
 
     ],
   },
@@ -97,6 +103,13 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod2Sec1 /> },
+      { type: "Lesson", contentComponent: <Mod2Sec2 /> },
+      { type: "Lesson", contentComponent: <Mod2Sec3 /> },
+      { type: "Lesson", contentComponent: <Mod2Sec4 /> },
+      { type: "Lesson", contentComponent: <Mod2Sec5 /> },
+      { type: "Lesson", contentComponent: <Mod2Sec6 /> },
+      { type: "Lesson", contentComponent: <Mod2Sec7 /> },
+
     ],
   },
   {

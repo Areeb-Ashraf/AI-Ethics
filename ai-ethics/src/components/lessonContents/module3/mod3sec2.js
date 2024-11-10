@@ -4,7 +4,7 @@ import './mod3.css';
 const Mod3Sec2 = () => {
     return (
         <div className="mod3sec1-container">
-            <h2>Lesson 2: Personalization and Autonomy</h2>
+            <h1>Lesson 2: Personalization and Autonomy</h1>
 
             <h3>Lesson Summary</h3>
             <p>

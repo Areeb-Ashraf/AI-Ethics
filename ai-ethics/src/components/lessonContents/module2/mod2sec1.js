@@ -5,9 +5,7 @@ import "./mod2.css";
 const Mod2Sec1 = () => {
   return (
     <div className="mod2sec1-container">
-      <h3>Module 2: Accessibility in AI Ethics</h3>
-
-      <h3>Lesson 1: Introduction to Accessibility in AI</h3>
+      <h1>Lesson 1: Introduction to Accessibility in AI</h1>
       <p>Accessibility in technology refers to the design of products, devices, services, or environments so that they are usable by people with disabilities. This concept ensures that everyone, regardless of their physical, sensory, or cognitive abilities, can interact with digital platforms in ways that meet their needs. As technology becomes more integral to daily life, ensuring that it is accessible to all has become a critical priority.
       </p>
 
@@ -33,9 +31,9 @@ const Mod2Sec1 = () => {
         </li>
       </ol>
 
-      <h4>Overview of Accessibility</h4>
+      <h2>Overview of Accessibility</h2>
 
-      <h5>Definition and Importance of Accessibility in Technology</h5>
+      <h3>Definition and Importance of Accessibility in Technology</h3>
       <p>Accessibility in technology refers to the design of products, devices, services, or environments so that they are usable by people with disabilities. This concept ensures that everyone, regardless of their physical, sensory, or cognitive abilities, can interact with digital platforms in ways that meet their needs. As technology becomes more integral to daily life, ensuring that it is accessible to all has become a critical priority.
       </p>
       <p>Historically, the digital divide has disproportionately affected people with disabilities, limiting their access to information, employment, and social participation. For example, websites that are not compatible with screen readers exclude visually impaired users from accessing critical content. As technology continues to evolve, ensuring inclusivity in the design and implementation of AI-driven tools is not just a moral obligation but also a legal one, as governments worldwide introduce more robust regulations around accessibility.
@@ -45,7 +43,7 @@ const Mod2Sec1 = () => {
       <p>However, if not properly designed, AI can also hinder accessibility. AI systems trained on biased datasets may unintentionally exclude people with disabilities or provide inaccurate outputs that further marginalize them. For example, facial recognition systems often fail to accurately identify people with visible physical disabilities or those from underrepresented demographic groups. Hence, it is essential to understand the dual-edged nature of AI in terms of accessibility.
       </p>
 
-      <h5>The Role of AI in Enhancing or Hindering Accessibility</h5>
+      <h3>The Role of AI in Enhancing or Hindering Accessibility</h3>
       <p>AI can transform accessibility by developing innovative solutions to overcome barriers that people with disabilities face. Technologies like machine learning (ML), natural language processing (NLP), and computer vision are helping create tools that break new ground in making digital experiences more accessible.
       </p>
       <ul>
@@ -59,7 +57,7 @@ const Mod2Sec1 = () => {
       <p>Despite these advances, there are significant risks associated with AI if accessibility isn't prioritized. One of the major concerns is the lack of diversity in training data. AI models are often trained on datasets that do not adequately represent people with disabilities, leading to skewed results. For example, automated captioning services may misinterpret speech from individuals with speech impairments, resulting in inaccurate or unusable outputs. Additionally, there is the risk of over-reliance on AI, where developers might see AI as a quick fix for accessibility, rather than ensuring comprehensive design approaches that accommodate all users.
       </p>
 
-      <h4>Why Accessibility Matters</h4>
+      <h3>Why Accessibility Matters</h3>
       <p>Accessibility is not just a legal requirement; it is a fundamental aspect of human rights and social justice. Every individual, regardless of their abilities, deserves to participate fully in society. The significance of accessibility in AI encompasses various dimensions, each underscoring its vital importance:
       </p>
       <ol>
@@ -76,9 +74,9 @@ const Mod2Sec1 = () => {
         </li>
       </ol>
 
-      <h4>Understanding User Needs</h4>
+      <h2>Understanding User Needs</h2>
 
-      <h5>Types of Disabilities</h5>
+      <h3>Types of Disabilities</h3>
       <p>To create truly accessible AI systems, it’s essential to understand the diversity of disabilities and how they affect user interaction with technology. Disabilities can be classified into several types, including:
       </p>
       <ul>
@@ -93,10 +91,10 @@ const Mod2Sec1 = () => {
       <p>Understanding the diverse range of user needs is crucial when designing AI systems for accessibility. Each disability presents unique challenges, and AI must be trained and tested with these diverse user needs in mind. For instance, a visually impaired user may need detailed descriptions of images, while a user with cognitive impairments may need simplified instructions for navigating an app.
       </p>
 
-      <h5>
+      <h3>
         Principles of User-Centered Design and the Importance of Empathy in
         Accessibility
-      </h5>
+      </h3>
       <p>User-centered design (UCD) is a design philosophy that places the needs, preferences, and limitations of end users at the heart of the design process. For AI-driven technologies to be truly accessible, UCD must guide every phase of development—from ideation to deployment.
       </p>
       <ul>
@@ -112,7 +110,7 @@ const Mod2Sec1 = () => {
         resulting in more effective solutions for users with disabilities.
       </p>
 
-      <h4>Conclusion</h4>
+      <h2>Conclusion</h2>
       <p>Accessibility in AI is both an opportunity and a challenge. The ability of AI to assist people with disabilities through voice recognition, natural language processing, and personalized interfaces holds incredible promise for making technology more inclusive. However, if not developed with care, AI can also reinforce existing barriers or create new ones.
       </p>
       <p>As AI continues to evolve, understanding the needs of users with disabilities is crucial. By incorporating user-centered design principles and placing empathy at the forefront, developers can create AI-driven solutions that enhance accessibility and ensure that everyone has equal access to technology. It’s not just about adhering to legal standards but about recognizing the humanity behind each user and designing AI systems that work for all.
