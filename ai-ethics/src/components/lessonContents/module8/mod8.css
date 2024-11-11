@@ -1,64 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-.introduction-content {
-    margin: 20px;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+.mod8sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
 }
 
-.text-image-container {
+ol > li::marker {
+  font-weight: bold;
+}
+
+.mod8sec1-container .img-container{
     display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Adds space between text and image */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
-.text-image-container p {
-    flex: 2; /* Takes up more space */
-    margin: 0;
-    max-width: 600px; /* Adjust as needed */
+.mod8sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
 }
 
-.role-of-ai-img {
-    flex: 1; /* Adjusts image size relative to text */
-    max-width: 33%; /* Limits image width */
-    height: auto;
-}
-.introduction-content h5 {
-    font-size: 15px; /* Larger font size for h5 */
-    font-weight: bold; /* Optional for emphasis */
+ol > li::marker {
+  font-weight: bold;
 }
 
-.introduction-content h3 {
-    color: #000000; /* Main heading in blue */
-    font-size: 22px;
+.mod8sec1-container p {
+  width: 80%;
+  margin-top: 0px;
 }
 
-.introduction-content h4 {
-    color: #000000; /* Subheadings in black */
-    font-size: 18px;
+.mod8sec1-container>ol {
+  width: 75%;
 }
 
-.analysis-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Adjust spacing between columns */
-    margin-top: 20px;
+.mod8sec1-container>ul {
+  width: 75%;
 }
 
-.analysis-item {
-    flex: 1; /* Adjust column width */
-    margin: 0 10px;
-    text-align: left;
+
+.mod8sec1-container>ol>li>ul li {
+  font-weight: normal;
 }
 
-.analysis-item h5 {
-    font-size: 18px; /* Adjust as needed */
-    margin-bottom: 10px; /* Add space between header and text */
+.mod8sec1-container>ol>li>p {
+  width: 100%;
 }
 
-.analysis-item p {
-    line-height: 1.6; /* Adjust for readability */
+.mod8sec1-container h1 {
+  width: 80%;
+  font-size: x-large;
+  text-align: left;
+}
+
+.mod8sec1-container h2 {
+  margin-top: 50px;
+  width: 80%;
+
+}
+
+.mod8sec1-container h3 {
+  font-size: 20px;
+  width: 80%;
+}
+
+.mod8sec1-container h4 {
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 0px;
 }
 
 @media (max-width: 768px) {

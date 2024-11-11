@@ -69,6 +69,10 @@ import Mod7Sec4 from "./lessonContents/module7/mod7sec4";
 
 //Mod8
 import Mod8Sec1 from "./lessonContents/module8/mod8sec1";
+import Mod8Sec2 from "./lessonContents/module8/mod8sec2";
+import Mod8Sec3 from "./lessonContents/module8/mod8sec3";
+import Mod8Sec4 from "./lessonContents/module8/mod8sec4";
+import Mod8Sec5 from "./lessonContents/module8/mod8sec5";
 
 // import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
 import Quiz from "./quiz";
@@ -187,6 +191,11 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod8Sec1 /> },
+      { type: "Lesson", contentComponent: <Mod8Sec2 /> },
+      { type: "Lesson", contentComponent: <Mod8Sec3 /> },
+      { type: "Lesson", contentComponent: <Mod8Sec4 /> },
+      { type: "Lesson", contentComponent: <Mod8Sec5 /> },
+
     ],
   },
 

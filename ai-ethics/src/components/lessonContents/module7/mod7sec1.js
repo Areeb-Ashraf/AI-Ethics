@@ -58,7 +58,7 @@ const Mod7Sec1 = () => {
           <p><strong>Definition of Privacy in the Context of AI:</strong> Privacy, in the context of artificial intelligence (AI), refers to the right of individuals to control their personal information and how it is collected, used, and shared by AI systems. As AI technologies become increasingly integrated into daily life—from social media platforms to smart home devices—the implications for personal privacy have become more pronounced. The significance of privacy in AI extends beyond mere data protection; it encompasses issues of trust, autonomy, and individual agency. When users feel their privacy is respected, they are more likely to engage with AI systems, share their data, and trust the technologies that affect their lives. Conversely, violations of privacy can lead to mistrust, disengagement, and adverse societal consequences.</p>
 
           {/* Image placed on the right side */}
-          <img src={mod7image_one} alt="Role of AI in Privacy & Security" className="role-of-ai-img" />
+          {/* <img src={mod7image_one} alt="Role of AI in Privacy & Security" className="role-of-ai-img" /> */}
         </div>
 
         <h4>Historical Evolution of Privacy Concepts</h4>
