@@ -1,5 +1,5 @@
 import { db } from './firebase';
-import { collection, getDocs, doc, setDoc } from "firebase/firestore"; // Import doc and setDoc
+import { collection, getDocs, doc, setDoc, Timestamp } from "firebase/firestore"; // Import doc and setDoc
 
 class QuizDatabase {
   // Function to get 10 random quiz questions from any module
@@ -79,15 +79,7 @@ class QuizDatabase {
         accuracy, // Percentage score
         duration, // Duration taken for the quiz
         quizID,
-        timestamp: new Intl.DateTimeFormat('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          hour: 'numeric',
-          minute: 'numeric',
-          second: 'numeric',
-          timeZoneName: 'short',
-        }).format(new Date()) // Store the timestamp
+        timestamp: Timestamp.now()
       };
 
       await setDoc(newScoreRef, scoreEntry);
