@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.mod6sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+.mod6sec1-container .img-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.mod6sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+.mod6sec1-container p {
+  width: 80%;
+  margin-top: 0px;
+}
+
+.mod6sec1-container>ol {
+  width: 75%;
+}
+
+.mod6sec1-container>ul {
+  width: 75%;
+}
+
+
+.mod6sec1-container>ol>li>ul li {
+  font-weight: normal;
+}
+
+.mod6sec1-container>ol>li>p {
+  width: 100%;
+}
+
+.mod6sec1-container h1 {
+  width: 80%;
+  font-size: x-large;
+  text-align: left;
+}
+
+.mod6sec1-container h2 {
+  margin-top: 50px;
+  width: 80%;
+
+}
+
+.mod6sec1-container h3 {
+  font-size: 20px;
+  width: 80%;
+}
+
+.mod6sec1-container h4 {
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 0px;
+}
+
+.mod6sec1-container .txt-img-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txt-img-container p {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1420px){
+  .mod6sec1-container .txt-img-container{
+      flex-direction: column;
+  }
+}

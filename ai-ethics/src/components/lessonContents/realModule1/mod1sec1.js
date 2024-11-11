@@ -6,9 +6,8 @@ import "./mod1.css";
 const Mod1Sec1 = () => {
   return (
     <div className="mod1sec1-container">
-      <h3>Module 1: Data Consent</h3>
 
-      <h3>Lesson 1: Introduction to Data Consent in AI Ethics</h3>
+      <h1>Lesson 1: Introduction to Data Consent in AI Ethics</h1>
       <p>This lesson provides a comprehensive introduction to the concept of data consent in artificial intelligence (AI) and mobile applications. It highlights the critical importance of establishing ethical frameworks that prioritize user rights and privacy in the rapidly evolving landscape of AI technology. The lesson covers key principles of data consent, including the need for consent to be freely given, specific, informed, and revocable. It emphasizes the significance of informed consent, addressing the challenges associated with complex privacy policies and legal jargon that often hinder user understanding.      </p>
       <p>The lesson further explores the concept of granular consent, which allows users to maintain greater control over their data by specifying what types of information they are comfortable sharing. Finally, the lesson discusses the importance of revoking consent, focusing on user rights and the technical challenges that come with implementing effective revocation mechanisms. Overall, the lesson equips participants with the foundational knowledge needed to navigate ethical considerations in AI and mobile applications, fostering a more responsible and user-centric approach to data collection.      </p>
 
@@ -53,7 +52,7 @@ const Mod1Sec1 = () => {
         </li>
       </ol>
 
-      <h4>Overview of Data Consent in AI</h4>
+      <h2>Overview of Data Consent in AI</h2>
       <p>Artificial Intelligence (AI) has evolved to be an integral part of our everyday lives, powering systems that influence decisions in healthcare, finance, education, and more. One of the cornerstones of ethical AI development is data consent. Data consent refers to the explicit permission granted by individuals for the collection, processing, and usage of their personal data by AI systems. This topic has gained significant importance because AI systems often rely on vast amounts of data to learn, predict, and make decisions. As these systems become more pervasive, the issue of data consent has moved to the forefront of discussions on ethics, privacy, and user rights.
       </p>
       <p>In AI, data is often collected from diverse sources, ranging from public databases and social media to medical records and smart devices. This data, once aggregated and processed by AI algorithms, can reveal sensitive information about individuals, making consent a vital consideration. Data consent in AI is about ensuring that individuals are fully informed about how their data will be used, have the option to grant or deny permission, and understand the implications of their decision. Moreover, consent should be freely given, specific, informed, and revocable, aligning with modern data protection laws like the General Data Protection Regulation (GDPR).
@@ -61,7 +60,7 @@ const Mod1Sec1 = () => {
       <p>With AI applications spanning multiple industries, the way data is collected, processed, and used raises several ethical concerns. Data consent is not just about legality but about maintaining trust between users and AI developers. Without clear consent mechanisms, users might feel exploited or deceived, and this can lead to a significant erosion of public trust in AI technologies. This makes the establishment of robust data consent frameworks a critical part of ethical AI practices, ensuring that individuals' autonomy is respected in a data-driven world.
       </p>
 
-      <h4>History of Data Consent</h4>
+      <h2>History of Data Consent</h2>
       <p>The concept of data consent has evolved over time, closely linked to the development of privacy laws and data protection frameworks. As early as the 1970s, the digital age began raising concerns about how organizations collected and used personal information. In the U.S., the Privacy Act of 1974 was one of the first laws to regulate how federal agencies handled personal data, providing individuals with rights to access and correct their records.
       </p>
       <p>In the 1990s, with the rise of the internet and the increasing use of digital technologies, data privacy concerns became more prominent. The European Union’s Data Protection Directive (1995) was a key milestone, introducing the principle that personal data could only be processed with the explicit consent of the individual. This directive laid the groundwork for the later development of the General Data Protection Regulation (GDPR), which came into effect in 2018. GDPR set a global standard for data protection and consent, mandating that data collection must be transparent, freely given, and informed. It also introduced strict requirements for consent withdrawal and penalties for non-compliance, which have had a profound impact on global data protection practices.
@@ -71,7 +70,7 @@ const Mod1Sec1 = () => {
       <p>With each technological advance—from the rise of social media to the advent of AI and machine learning—data consent frameworks have evolved to address new privacy challenges. The increasing complexity of data collection, combined with the rise of global data flows, has necessitated stronger, more nuanced consent mechanisms.
       </p>
 
-      <h4>Why Data Consent Matters</h4>
+      <h2>Why Data Consent Matters</h2>
       <p>Data consent is a critical aspect of ethical practices in artificial intelligence (AI) and mobile applications, directly influencing the relationship between technology providers and users. Understanding the importance of data consent involves recognizing its implications for user rights, trust, and the ethical development of technology. Here are several key reasons why data consent matters:
       </p>
       <ol>
@@ -123,7 +122,7 @@ const Mod1Sec1 = () => {
         </li>
       </ol>
 
-      <h4>Types of Data Consent</h4>
+      <h2>Types of Data Consent</h2>
       <p>Data consent can take various forms, depending on the context in which personal information is collected and the sensitivity of the data. Below are the primary types of data consent used today:</p>
       <ol>
         <li>
@@ -174,7 +173,7 @@ const Mod1Sec1 = () => {
         </li>
       </ol>
 
-      <h4>Revoking Consent: User Rights and Technical Challenges</h4>
+      <h2>Revoking Consent: User Rights and Technical Challenges</h2>
       <p>The ability to revoke consent is a fundamental right under many data protection laws, including the GDPR. It allows users to withdraw their consent for data processing at any time, either partially or entirely. This concept is critical because it gives users ongoing control over their data, even after they have initially agreed to its collection and use.
       </p>
       <p>Revoking consent is particularly important in AI systems because of the continuous nature of data processing. AI algorithms are often fed new data in real-time, and models can be updated or retrained on an ongoing basis. As such, users must have the ability to revoke their consent if they no longer feel comfortable with how their data is being used or if they no longer trust the organization handling their data.
@@ -189,7 +188,7 @@ const Mod1Sec1 = () => {
       </p>
 
 
-      <h4>Scenarios</h4>
+      <h2>Scenarios</h2>
       <ol>
         <li>
           Healthcare Wearables:
@@ -229,7 +228,7 @@ const Mod1Sec1 = () => {
         </li>
       </ol>
 
-      <h4>Conclusion</h4>
+      <h2>Conclusion</h2>
       <p>Data consent in AI is a foundational element of ethical AI development and use, ensuring that individuals retain control over their personal information. Informed consent, granular consent, and the ability to revoke consent are all vital components of a robust consent framework. In AI systems and mobile applications, these principles are essential for building trust and protecting user privacy. As AI continues to evolve and integrate into every aspect of daily life, ensuring that 
       </p>
     </div>

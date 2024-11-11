@@ -1,47 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-.introduction-content {
-    margin: 20px;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+.mod7sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
 }
 
-.text-image-container {
+ol > li::marker {
+  font-weight: bold;
+}
+
+.mod7sec1-container .img-container{
     display: flex;
-    align-items: flex-start;
-    gap: 20px; /* Adds space between text and image */
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
-.text-image-container p {
-    flex: 2; /* Takes up more space */
-    margin: 0;
-    max-width: 600px; /* Adjust as needed */
+.mod7sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
 }
 
-.role-of-ai-img {
-    flex: 1; /* Adjusts image size relative to text */
-    max-width: 33%; /* Limits image width */
-    height: auto;
-}
-.introduction-content h3 {
-    color: #1a73e8; /* Main heading in black */
-    font-size: 22px;
+ol > li::marker {
+  font-weight: bold;
 }
 
-.introduction-content h4 {
-    color: #000000; /* Use blue here for subheadings */
-    font-size: 18px;
+.mod7sec1-container p {
+  width: 80%;
+  margin-top: 0px;
+}
+
+.mod7sec1-container>ol {
+  width: 75%;
+}
+
+.mod7sec1-container>ul {
+  width: 75%;
 }
 
 
-@media (max-width: 768px) {
-    .text-image-container {
-        flex-direction: column;
-        align-items: center; /* Centers content for smaller screens */
-    }
+.mod7sec1-container>ol>li>ul li {
+  font-weight: normal;
+}
 
-    .role-of-ai-img {
-        max-width: 80%; /* Adjust for mobile */
-    }
+.mod7sec1-container>ol>li>p {
+  width: 100%;
+}
+
+.mod7sec1-container h1 {
+  width: 80%;
+  font-size: x-large;
+  text-align: left;
+}
+
+.mod7sec1-container h2 {
+  margin-top: 50px;
+  width: 80%;
+
+}
+
+.mod7sec1-container h3 {
+  font-size: 20px;
+  width: 80%;
+}
+
+.mod7sec1-container h4 {
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 0px;
+}
+
+.mod7sec1-container .txt-img-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txt-img-container p {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1420px){
+  .mod7sec1-container .txt-img-container{
+      flex-direction: column;
+  }
 }
