@@ -155,13 +155,13 @@
   
   .quiz-num{
     color: white;
-    font-size: 24px;
     font-weight: 700;
     margin: 20px 0px 5px 20px;
     display: flex;
     /* justify-content: center; */
     align-items: center;
-    gap: 5px
+    gap: 5px;
+    
   }
 
   .check-mark{
@@ -176,6 +176,7 @@
     align-items: center;
     color: #0056D1;
     font-size: 20px;
+    flex-shrink: 0;
   }
   
   .quiz-course-name{

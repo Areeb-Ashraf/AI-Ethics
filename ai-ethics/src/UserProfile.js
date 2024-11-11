@@ -97,12 +97,12 @@ function UserProfile({ userProfile, setUserProfile }) {
               minLength="1"
               maxLength="18"
               name="fname"
-              value={name? name : "Noname"}
+              value={name}
               onChange={(e) => setName(e.target.value)}
             />
           </label>
-          
-            <label className="account-label">
+
+          <label className="account-label">
             Username:
             <input
               type="text"
@@ -110,17 +110,17 @@ function UserProfile({ userProfile, setUserProfile }) {
               minLength="1"
               maxLength="18"
               name="username"
-              value={username? username : "Noname"}
+              value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
           </label>
           <div className="PP-label">
-            Profile Pic: 
-              <input
-                type="file"
-                accept="image/*"
-                onChange={(e) => setPhoto(e.target.files[0])}
-              />
+            Profile Pic:
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => setPhoto(e.target.files[0])}
+            />
           </div>
           <div className="account-actions-row">
             <button className="action-button" onClick={handleSaveChanges}>
@@ -154,7 +154,9 @@ function UserProfile({ userProfile, setUserProfile }) {
         </div>
         <div className="right-section">
           <div className="name">Name: {userProfile?.name || "Noname"}</div>
-          <div className="username2">Username: {userProfile?.username || "Noname"}</div>
+          <div className="username2">
+            Username: {userProfile?.username || "Noname"}
+          </div>
         </div>
       </div>
       <div className="spaced-box" />
