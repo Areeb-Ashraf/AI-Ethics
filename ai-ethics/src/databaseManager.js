@@ -347,10 +347,11 @@ class DatabaseManager {
 
       if (!querySnapshot.empty) {
         // Document exists, update progress
-        let completed = querySnapshot.docs[0].data().completed || new Set();
+        // let completed = querySnapshot.docs[0].data().completed || new Set();
+        let completed = querySnapshot.docs[0].data().completed || [];
 
-        if (!completed.contains(newProgress)) {
-          completed.add(newProgress);
+        if (!completed.includes(newProgress)) {
+          completed.push(newProgress);
           await setDoc(
             querySnapshot.docs[0].ref,
             { completed: completed },
@@ -361,12 +362,13 @@ class DatabaseManager {
         }
       } else {
         // Document does not exist, create it
-        let completed = new Set();
-        completed.add(newProgress);
-        await setDoc(collection(db, "lessonProgress"), {
+        let completed = [];
+        completed.push(newProgress);
+        await setDoc(doc(db, "lessonProgress", userID), {
           userID: userID,
-          completed,
+          completed: completed,
         });
+        console.log("Lesson progress document created");
       }
     } catch (error) {
       console.error("Error updating lesson progress: ", error);

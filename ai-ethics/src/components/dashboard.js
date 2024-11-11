@@ -8,6 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
 import ModuleBadge from "../styles/Badges/ModuleBadge.svg";
 import { Timestamp } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
 
 /*
 Notes For Backend
@@ -65,6 +66,11 @@ const Dashboard = () => {
   const [currentXP, setCurrentXP] = useState(0);
   const [lastThreeCompleted, setLastThreeCompleted] = useState([]);
   const [completedQuizzes, setCompletedQuizzes] = useState([]);
+  const navigate = useNavigate();
+
+  function toModules(path) {
+    navigate(path);
+  }
 
   // useEffect(() => {
   //   setTimeout(() => {
@@ -197,7 +203,14 @@ const Dashboard = () => {
                     9 Modules | 9 Quizzes | 10 Hours
                   </div>
                   {/* TODO once the mid-module progress is implemented*/}
-                  <button className="resume-btn">Resume</button>{" "}
+                  <button
+                    className="resume-btn"
+                    onClick={() => {
+                      toModules("/modules");
+                    }}
+                  >
+                    Resume
+                  </button>{" "}
                 </div>
                 <div className="db-img">
                   <img src={beginner} alt="randon-img" />
@@ -216,8 +229,8 @@ const Dashboard = () => {
             {/* so, have a for loop over all the users completed lessons, find the soonest incomplete*/}
             {/* and then have a for loop over all the quizzes, find the soonest not taken quiz*/}
             {/* and then display those two */}
-            <h4>Upcoming Tasks</h4>
-            <div className="upcoming-task-container">
+            <h4></h4>
+            {/* <div className="upcoming-task-container">
               {next2tasks.map((task, index) => (
                 <div
                   key={index}
@@ -233,6 +246,15 @@ const Dashboard = () => {
                   <div className="gtsymb">&gt;</div>
                 </div>
               ))}
+            </div> */}
+            <div className="statxp-contaner">
+              <div className="statbadge-container">
+                <img src={statxpbadge} alt="statxpbadge-img" />
+              </div>
+              <div className="stat-xp">
+                <div className="state-user-xp">{currentXP}</div>
+                <div>points</div>
+              </div>
             </div>
           </div>
         </div>

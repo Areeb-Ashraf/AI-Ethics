@@ -60,6 +60,17 @@ function DatabaseManTester() {
     console.log(leaderboard);
   }
 
+  // function that adds a mid-module progress update to the database
+  async function addMidModule() {
+    databaseManager.updateLessonProgress("b.1");
+  }
+
+  // gets mid-modules progressess
+  async function getMidModule() {
+    const progress = await databaseManager.getLessonProgress();
+    console.log(progress);
+  }
+
   const Tooltip = () => {
     const [definition, setDefinition] = useState("Loading...");
 
@@ -128,6 +139,12 @@ function DatabaseManTester() {
       </button>
       <button onClick={fetchLeaderboard}>
         Click me to retrieve leaderboard data
+      </button>
+      <button onClick={addMidModule}>
+        Click me to add a mid-module progress update to the database
+      </button>
+      <button onClick={getMidModule}>
+        Click me to get mid-module progress updates
       </button>
 
       <ResetAllCookies />
