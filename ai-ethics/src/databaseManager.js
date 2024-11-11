@@ -335,6 +335,64 @@ class DatabaseManager {
       throw error;
     }
   }
+
+  async updateLessonProgress(newProgress) {
+    try {
+      const userID = await this.getCurrentUserId();
+      const q = query(
+        collection(db, "lessonProgress"),
+        where("userID", "==", userID)
+      );
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        // Document exists, update progress
+        let completed = querySnapshot.docs[0].data().completed || new Set();
+
+        if (!completed.contains(newProgress)) {
+          completed.add(newProgress);
+          await setDoc(
+            querySnapshot.docs[0].ref,
+            { completed: completed },
+            { merge: true }
+          );
+        } else {
+          console.log("Lesson already completed");
+        }
+      } else {
+        // Document does not exist, create it
+        let completed = new Set();
+        completed.add(newProgress);
+        await setDoc(collection(db, "lessonProgress"), {
+          userID: userID,
+          completed,
+        });
+      }
+    } catch (error) {
+      console.error("Error updating lesson progress: ", error);
+      throw error;
+    }
+  }
+
+  async getLessonProgress() {
+    try {
+      const userID = await this.getCurrentUserId();
+      const q = query(
+        collection(db, "lessonProgress"),
+        where("userID", "==", userID)
+      );
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        return querySnapshot.docs[0].data().completed;
+      } else {
+        return new Set();
+      }
+    } catch (error) {
+      console.error("Error fetching lesson progress: ", error);
+      throw error;
+    }
+  }
 }
 
 export default DatabaseManager = new DatabaseManager();
