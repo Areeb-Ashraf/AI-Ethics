@@ -3,16 +3,13 @@ import './mod6.css';
 
 const Mod6Sec3 = () => {
     return (
-        <div className="module-container">
+        <div className="mod6sec1-container">
                 <h1>Lesson 3: Future Trends and Collective Responsibility</h1>
-                <section>
-                <h2>Overview</h2> 
+                <h3>Overview</h3> 
                 <p>
                     As artificial intelligence (AI) continues to permeate various aspects of society, the importance of accountability and collective responsibility becomes increasingly pronounced. This lesson explores emerging trends in AI accountability and the collaborative approaches necessary for fostering responsible AI governance. By understanding the dynamics shaping the future of accountability in AI, we can better navigate the challenges and opportunities presented by these technologies.
                 </p>
-            </section>
 
-            <section className="learning-objectives">
                 <h3>Learning Objectives</h3>
                 <ul>
                     <li>Identify Emerging Trends: Understand the key innovations and trends shaping the future of accountability in AI.</li>
@@ -21,9 +18,7 @@ const Mod6Sec3 = () => {
                     <li>Evaluate Successful Partnerships: Analyze successful examples of partnerships that promote accountability in AI systems.</li>
                     <li>Foster Collective Responsibility: Understand the significance of collective responsibility in creating ethical and accountable AI technologies.</li>
                 </ul>
-            </section>
 
-            <section className="emerging-trends">
                 <h3>I. Emerging Trends in AI Accountability</h3>
                 <h4>Innovations and Trends Shaping the Future of Accountability in AI</h4>
                 <ul>
@@ -43,9 +38,7 @@ const Mod6Sec3 = () => {
                         <strong>Public Engagement and Crowdsourcing:</strong> Engaging the public in AI development and accountability initiatives is an emerging trend.
                     </li>
                 </ul>
-            </section>
 
-            <section className="public-expectations">
                 <h4>The Role of Public Expectations and Societal Values in AI Development</h4>
                 <ul>
                     <li><strong>Demand for Ethical AI:</strong> As public awareness of AI's impact grows, individuals increasingly demand ethical AI practices.</li>
@@ -54,9 +47,7 @@ const Mod6Sec3 = () => {
                     <li><strong>Regulatory Pressure:</strong> Governments and regulatory bodies are increasingly holding organizations accountable for their AI practices.</li>
                     <li><strong>Ethical Consumerism:</strong> Consumers are becoming more discerning about the products and services they use, favoring companies that prioritize ethical practices.</li>
                 </ul>
-            </section>
 
-            <section className="collaborative-approaches">
                 <h3>II. Collaborative Approaches to Responsibility</h3>
                 <h4>Importance of Stakeholder Engagement in AI Governance</h4>
                 <ul>
@@ -73,9 +64,7 @@ const Mod6Sec3 = () => {
                         <strong>Community Engagement:</strong> Engaging local communities in discussions about AI accountability can lead to more responsible practices.
                     </li>
                 </ul>
-            </section>
 
-            <section className="real-life-implications">
                 <h3>Real-Life Implications of Accountability and Responsibility in AI</h3>
                 <ul>
                     <li>
@@ -88,9 +77,7 @@ const Mod6Sec3 = () => {
                         <strong>Facial Recognition Technology and Racial Bias:</strong> Numerous studies have shown that facial recognition technology exhibits racial bias.
                     </li>
                 </ul>
-            </section>
 
-            <section className="collective-responsibility">
                 <h3>III. Fostering Collective Responsibility in AI</h3>
                 <h4>Understanding the Significance of Collective Responsibility in Ethical AI</h4>
                 <ul>
@@ -107,7 +94,6 @@ const Mod6Sec3 = () => {
                         <strong>Advocating for Policy Changes:</strong> Organizations can take collective action to advocate for policy changes that promote accountability and ethical AI practices.
                     </li>
                 </ul>
-            </section>
         </div>
     );
 };

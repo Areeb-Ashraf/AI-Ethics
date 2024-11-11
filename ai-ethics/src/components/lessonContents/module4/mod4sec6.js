@@ -18,7 +18,7 @@ function Mod4Sec6() {
         This lesson delves into the future trends and societal challenges posed by emerging AI technologies. It highlights the potential risks and ethical dilemmas associated with advancements such as deepfakes and autonomous systems. Additionally, the lesson examines global perspectives on AI's social implications, emphasizing how cultural and political contexts influence responses to these challenges. Finally, it underscores the importance of collaborative approaches involving technologists, policymakers, and communities to effectively address the complex social challenges that arise from AI technologies.
       </p>
 
-      <h2>1. Emerging Technologies and Societal Challenges</h2>
+      <h2>Emerging Technologies and Societal Challenges</h2>
       <h4>Deepfakes and Misinformation</h4>
       <p>
         Deepfakes are synthetic media in which a person's likeness is replaced with someone else's, typically created using AI algorithms. While this technology has creative applications, it also poses significant societal challenges:
@@ -56,7 +56,7 @@ function Mod4Sec6() {
         The potential for surveillance technologies to be used for social control poses ethical dilemmas regarding freedom of expression and civil liberties. The balance between security and individual rights is a critical consideration for policymakers, as excessive surveillance can lead to a chilling effect on public dissent.
       </p>
 
-      <h2>2. Global Perspectives on AI and Social Implications</h2>
+      <h2>Global Perspectives on AI and Social Implications</h2>
       <h3>Regional Approaches to AI Governance</h3>
       <h4>United States: Innovation vs. Regulation</h4>
       <p>
@@ -84,7 +84,7 @@ function Mod4Sec6() {
         Societies with high levels of trust in government and technology may be more accepting of AI-driven initiatives, while those with historical skepticism may resist such measures. Understanding these cultural nuances is vital for implementing AI solutions that resonate with different populations.
       </p>
 
-      <h2>3. Collaborative Approaches to Addressing Social Challenges</h2>
+      <h2>Collaborative Approaches to Addressing Social Challenges</h2>
       <h4>Multi-Stakeholder Collaboration</h4>
       <p>
         Addressing the societal challenges posed by AI requires collaboration among various stakeholders:

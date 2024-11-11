@@ -3,16 +3,13 @@ import './mod6.css';
 
 const Mod6Sec2 = () => {
     return (
-        <div className="module-container">
+        <div className="mod6sec1-container">
             <h1>Lesson 2: Data Stewardship and Responsibility</h1>
 
-            <section className="overview-section">
-                <h2>Overview</h2>
+                <h3>Overview</h3>
                 <p>In today's data-driven world, where Artificial Intelligence (AI) significantly influences decision-making, understanding data stewardship and responsibility has become paramount. This lesson explores two foundational components of data stewardship: data ownership and rights and data quality and integrity. By delving into these topics, we aim to provide learners with a comprehensive understanding of their responsibilities regarding data management in AI systems, emphasizing both ethical considerations and practical mechanisms.</p>
-            </section>
 
-            <section className="learning-objectives-section">
-                <h2>Learning Objectives</h2>
+                <h3>Learning Objectives</h3>
                 <ul>
                     <li><strong>Define Data Ownership:</strong> Understand the concept of data ownership in AI systems and the implications it has for organizations and users.</li>
                     <li><strong>Explore User Rights:</strong> Identify and explain the various rights users have regarding their data and the importance of respecting these rights.</li>
@@ -20,9 +17,7 @@ const Mod6Sec2 = () => {
                     <li><strong>Implement Mechanisms:</strong> Learn about mechanisms that can be implemented to ensure data quality and integrity in AI applications.</li>
                     <li><strong>Foster Trust:</strong> Understand how data stewardship practices contribute to building trust between users and AI systems, ultimately leading to more ethical and responsible AI development.</li>
                 </ul>
-            </section>
 
-            <section className="data-ownership-section">
                 <h2>I. Data Ownership and Rights</h2>
                 
                 <h3>Understanding Data Ownership in AI Systems</h3>
@@ -45,9 +40,7 @@ const Mod6Sec2 = () => {
                     <li><strong>Right to Object:</strong> Users should have the ability to object to the processing of their data, particularly for purposes such as direct marketing or profiling. This right empowers users to protect their data from potential misuse.</li>
                 </ul>
                 <p>Understanding and implementing these user rights is crucial for fostering trust between users and AI systems. Organizations must establish clear policies and practices to respect and uphold these rights, integrating them into their data management frameworks.</p>
-            </section>
 
-            <section className="data-quality-section">
                 <h2>II. Data Quality and Integrity</h2>
                 
                 <h3>Responsibilities Related to Data Collection and Processing</h3>
@@ -70,12 +63,9 @@ const Mod6Sec2 = () => {
                     <li><strong>Regular Audits and Reviews:</strong> Conducting periodic audits of data quality and integrity can help organizations identify areas for improvement and ensure compliance with regulations. These audits should assess the data lifecycle, from collection through processing and storage, to ensure adherence to best practices.</li>
                     <li><strong>Data Governance Frameworks:</strong> Establishing clear data governance policies and frameworks can help organizations define roles and responsibilities related to data management. This includes appointing data stewards, establishing data quality metrics, and implementing processes for ongoing monitoring and improvement.</li>
                 </ul>
-            </section>
 
-            <section className="conclusion-section">
                 <h2>Conclusion</h2>
                 <p>In this lesson, we explored the principles of data stewardship and responsibility in the context of AI. We examined the complexities of data ownership and user rights, emphasizing the need for transparency and ethical practices in data management. Additionally, we discussed the importance of data quality and integrity, outlining the responsibilities organizations hold regarding data collection, processing, and security. By understanding and implementing these concepts, learners can contribute to a more ethical and responsible approach to AI development, fostering trust between users and technology.</p>
-            </section>
         </div>
     );
 };

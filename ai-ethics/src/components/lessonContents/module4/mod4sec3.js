@@ -96,8 +96,11 @@ function Mod4Sec3() {
       <p>
         AI as a Tool: AI technologies can serve as powerful tools to enhance human performance. For example, in marketing, AI-driven analytics platforms can help marketers analyze consumer behavior and develop highly targeted campaigns. Similarly, in creative industries, AI-powered design tools can assist graphic designers in crafting more engaging visuals.
       </p>
+      <h4>
+      Improving Decision-Making
+      </h4>
       <p>
-        Improving Decision-Making: In sectors such as healthcare and finance, AI can assist professionals in making data-driven decisions. For instance, AI algorithms can analyze vast amounts of patient data to recommend treatment options, allowing doctors to make better-informed decisions. Similarly, financial analysts can leverage AI to process complex datasets and generate predictive insights.
+         In sectors such as healthcare and finance, AI can assist professionals in making data-driven decisions. For instance, AI algorithms can analyze vast amounts of patient data to recommend treatment options, allowing doctors to make better-informed decisions. Similarly, financial analysts can leverage AI to process complex datasets and generate predictive insights.
       </p>
 
       <h4>New Job Roles</h4>

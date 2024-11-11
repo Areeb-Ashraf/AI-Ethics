@@ -6,8 +6,8 @@ import mod7image_one from "./mod7images/mod7image_one.png";
 const Mod7Sec1 = () => {
   return (
     <>
-      <div className="introduction-content">
-        <h3>Lesson 1: The Ethical Foundation of Privacy in AI</h3>
+      <div className="mod7sec1-container">
+        <h1>Lesson 1: The Ethical Foundation of Privacy in AI</h1>
 
         <p>This lesson delves into the ethical foundation of privacy within the realm of artificial intelligence (AI), emphasizing its critical role in fostering trust and respect for user rights. It begins with a comprehensive definition of privacy, particularly in the context of AI, highlighting its significance for individuals and society as a whole. The historical evolution of privacy concepts is examined, tracing the development of privacy laws and regulations that have shaped the modern understanding of data protection.</p>
 
@@ -16,44 +16,44 @@ const Mod7Sec1 = () => {
         <h4>Learning Objectives for Lesson 1</h4>
         <ol>
           <li>
-            Define Privacy in AI Context:
-            <ul>
+          <strong>Define Privacy in AI Context:</strong>
+          <ul>
               <li>Articulate the definition of privacy in relation to artificial intelligence and its significance for individuals and society.</li>
             </ul>
           </li>
           <li>
-            Trace Historical Evolution:
-            <ul>
+          <strong>Trace Historical Evolution:</strong>
+          <ul>
               <li>Explain the historical evolution of privacy concepts and the development of key data protection regulations, such as GDPR and Fair Information Practices.</li>
             </ul>
           </li>
           <li>
-            Identify Key Ethical Principles:
-            <ul>
+          <strong>Identify Key Ethical Principles:</strong>
+          <ul>
               <li>Identify and describe the ethical principles relevant to privacy, including respect for persons, justice, and beneficence.</li>
             </ul>
           </li>
           <li>
-            Assess Moral Obligations:
-            <ul>
+          <strong>Assess Moral Obligations:</strong>
+          <ul>
               <li>Evaluate the moral obligations of AI developers and organizations regarding user privacy, including transparency, informed consent, and accountability.</li>
             </ul>
           </li>
           <li>
-            Discuss the Impact of AI on Privacy:
-            <ul>
+          <strong>Discuss the Impact of AI on Privacy:</strong>
+          <ul>
               <li>Analyze the implications of AI technologies on privacy and how they necessitate ethical considerations in data handling practices.</li>
             </ul>
           </li>
           <li>
-            Promote Ethical Practices:
-            <ul>
+          <strong>Promote Ethical Practices:</strong>
+          <ul>
               <li>Propose strategies for embedding ethical practices related to privacy in the development and deployment of AI systems.</li>
             </ul>
           </li>
         </ol>
 
-        <h4>Overview of Privacy Ethics</h4>
+        <h2>Overview of Privacy Ethics</h2>
         <div className="text-image-container">
           <p><strong>Definition of Privacy in the Context of AI:</strong> Privacy, in the context of artificial intelligence (AI), refers to the right of individuals to control their personal information and how it is collected, used, and shared by AI systems. As AI technologies become increasingly integrated into daily life—from social media platforms to smart home devices—the implications for personal privacy have become more pronounced. The significance of privacy in AI extends beyond mere data protection; it encompasses issues of trust, autonomy, and individual agency. When users feel their privacy is respected, they are more likely to engage with AI systems, share their data, and trust the technologies that affect their lives. Conversely, violations of privacy can lead to mistrust, disengagement, and adverse societal consequences.</p>
 

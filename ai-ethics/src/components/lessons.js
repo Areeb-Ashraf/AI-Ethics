@@ -19,8 +19,7 @@ import Mod1Sec3 from "./lessonContents/realModule1/mod1sec3"
 import Mod1Sec4 from "./lessonContents/realModule1/mod1sec4"
 import Mod1Sec5 from "./lessonContents/realModule1/mod1sec5"
 import Mod1Sec6 from "./lessonContents/realModule1/mod1sec6"
-import Mod1Sec7 from "./lessonContents/realModule1/mod1sec7"
-import Mod1Sec8 from "./lessonContents/realModule1/mod1sec8"
+
 
 //Mod2
 import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
@@ -29,7 +28,6 @@ import Mod2Sec3 from "./lessonContents/module2/mod2sec3";
 import Mod2Sec4 from "./lessonContents/module2/mod2sec4";
 import Mod2Sec5 from "./lessonContents/module2/mod2sec5";
 import Mod2Sec6 from "./lessonContents/module2/mod2sec6";
-import Mod2Sec7 from "./lessonContents/module2/mod2sec7";
 
 
 //Mod3
@@ -49,15 +47,25 @@ import Mod4Sec6 from "./lessonContents/module4/mod4sec6";
 
 //Mod5
 import Mod5Sec1 from "./lessonContents/module5/mod5sec1";
+import Mod5Sec2 from "./lessonContents/module5/mod5sec2";
+import Mod5Sec3 from "./lessonContents/module5/mod5sec3";
+import Mod5Sec4 from "./lessonContents/module5/mod5sec4";
+import Mod5Sec5 from "./lessonContents/module5/mod5sec5";
+
 
 
 //Mod6
 import Mod6Sec1 from "./lessonContents/module6/mod6sec1";
 import Mod6Sec2 from "./lessonContents/module6/mod6sec2";
 import Mod6Sec3 from "./lessonContents/module6/mod6sec3";
+import Mod6Scenes from "./lessonContents/module6/mod6scenes";
 
 //Mod7
 import Mod7Sec1 from "./lessonContents/module7/mod7sec1";
+import Mod7Sec2 from "./lessonContents/module7/mod7sec2";
+import Mod7Sec3 from "./lessonContents/module7/mod7sec3";
+import Mod7Scenes from "./lessonContents/module7/mod7scenes";
+import Mod7Sec4 from "./lessonContents/module7/mod7sec4";
 
 //Mod8
 import Mod8Sec1 from "./lessonContents/module8/mod8sec1";
@@ -108,7 +116,6 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod2Sec4 /> },
       { type: "Lesson", contentComponent: <Mod2Sec5 /> },
       { type: "Lesson", contentComponent: <Mod2Sec6 /> },
-      { type: "Lesson", contentComponent: <Mod2Sec7 /> },
 
     ],
   },
@@ -144,6 +151,11 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod5Sec1 /> },
+      { type: "Lesson", contentComponent: <Mod5Sec2 /> },
+      { type: "Lesson", contentComponent: <Mod5Sec3 /> },
+      { type: "Lesson", contentComponent: <Mod5Sec4 /> },
+      { type: "Lesson", contentComponent: <Mod5Sec5 /> },
+
     ],
   },
   {
@@ -152,6 +164,7 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod6Sec1 /> },
+      { type: "Lesson", contentComponent: <Mod6Scenes /> },
       { type: "Lesson", contentComponent: <Mod6Sec2 /> },
       { type: "Lesson", contentComponent: <Mod6Sec3 /> },
     ],
@@ -162,7 +175,11 @@ const moduleData = [
     time: "20min",
     sections: [
       { type: "Lesson", contentComponent: <Mod7Sec1 /> },
-    ],
+      { type: "Lesson", contentComponent: <Mod7Scenes /> },
+      { type: "Lesson", contentComponent: <Mod7Sec2 /> },
+      { type: "Lesson", contentComponent: <Mod7Sec3 /> },   
+      { type: "Lesson", contentComponent: <Mod7Sec4 /> },  
+     ],
   },
   {
     id: 8,

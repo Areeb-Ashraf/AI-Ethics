@@ -18,13 +18,13 @@ function Mod4Sec4() {
         This lesson focuses on the intersection of AI and public policy, exploring how artificial intelligence is transforming governance through data-driven decision-making processes. The lesson examines the ethical implications of AI in surveillance and law enforcement, highlighting the need for transparency and accountability. Finally, the lesson addresses the importance of public engagement in discussions about AI's role in governance, emphasizing the need for inclusive policy-making that reflects the values and concerns of diverse communities.
       </p>
 
-      <h2>1. Data-Driven Decision Making</h2>
+      <h2>Data-Driven Decision Making</h2>
       <h4>The Role of AI in Public Policy</h4>
       <p>
         Governments around the world are increasingly integrating AI technologies into their policymaking processes. By leveraging AI’s ability to analyze vast datasets, identify patterns, and make predictions, public institutions can make more informed decisions. This can result in more effective and efficient governance, as AI-powered tools allow for real-time data analysis and dynamic responses to complex issues.
       </p>
 
-      <h4>Applications of AI in Governance</h4>
+      <h3>Applications of AI in Governance</h3>
       <p>
         <b>Predictive Analytics:</b> Governments can use AI to anticipate and address social, economic, and environmental trends. For example, predictive models can forecast housing demands, predict the impact of new policies on the economy, or project the spread of diseases during a pandemic. Such tools provide a robust foundation for evidence-based policymaking.
       </p>
@@ -46,7 +46,7 @@ function Mod4Sec4() {
         <b>Transparency and Accountability:</b> Another significant concern is transparency. AI models, especially those built on machine learning algorithms, can function as “black boxes,” meaning that even their developers may not fully understand how they arrive at certain decisions. This lack of transparency can erode trust in public institutions. Policymakers must ensure that AI-driven decisions are explainable, justifiable, and subject to oversight to maintain public accountability.
       </p>
 
-      <h2>2. Ethics of Surveillance</h2>
+      <h2>Ethics of Surveillance</h2>
       <h4>The Use of AI in Surveillance</h4>
       <p>
         AI technologies are becoming integral tools in surveillance and law enforcement, with applications ranging from facial recognition to predictive policing. These technologies can offer significant benefits, such as enhancing public safety, identifying criminals, and preventing crimes before they happen. However, they also raise significant ethical concerns, particularly in relation to privacy, civil liberties, and fairness.
@@ -74,7 +74,7 @@ function Mod4Sec4() {
         <b>Public Oversight:</b> Transparency and public oversight are essential in ensuring that AI technologies used for surveillance align with societal values. This can be achieved by involving civil society organizations, human rights advocates, and other stakeholders in decisions about surveillance practices. Moreover, citizens should have the ability to challenge and review AI-based surveillance systems through public forums and oversight bodies.
       </p>
 
-      <h2>3. Public Engagement</h2>
+      <h2>Public Engagement</h2>
       <h4>Importance of Public Participation</h4>
       <p>
         The deployment of AI in governance has far-reaching implications for society, and public participation is critical in ensuring that these technologies are implemented in a way that reflects the needs, values, and concerns of the broader population. Inclusive decision-making helps build trust between governments and citizens and ensures that AI technologies serve the public good rather than the interests of a select few.

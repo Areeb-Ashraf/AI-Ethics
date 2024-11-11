@@ -1,106 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-.module-container {
-    margin: 20px;
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    color: #000;
+.mod6sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
 }
 
-.module-container h1,
-.module-container h2,
-.module-container h3 {
-    color: #000307;
+ol > li::marker {
+  font-weight: bold;
 }
 
-.module-container h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.module-container h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-
-.module-container h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.module-container p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.module-container ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.module-container li {
-    margin-bottom: 8px;
-}
-
-.module-container li strong {
-    font-weight: bold;
-}
-
-/* Flex containers for sections with images */
-.flex-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-
-.flex-container img {
-    max-width: 20%;
-    height: auto;
-    display: block;
-}
-
-@media (max-width: 1420px) {
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .flex-container img {
-        max-width: 100%;
-    }
-}
-
-/* Button styling for interactive elements */
-.action-button {
-    padding: 10px 20px;
-    background-color: #0056D1;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.action-button:hover {
-    background-color: #0041A1;
-}
-
-.continuous-page {
+.mod6sec1-container .img-container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
+    width: 100%;
+    align-items: center;
+}
+
+.mod6sec1-container {
+  margin: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  
+}
+
+ol > li::marker {
+  font-weight: bold;
+}
+
+.mod6sec1-container p {
+  width: 80%;
+  margin-top: 0px;
+}
+
+.mod6sec1-container>ol {
+  width: 75%;
+}
+
+.mod6sec1-container>ul {
+  width: 75%;
+}
+
+
+.mod6sec1-container>ol>li>ul li {
+  font-weight: normal;
+}
+
+.mod6sec1-container>ol>li>p {
+  width: 100%;
+}
+
+.mod6sec1-container h1 {
+  width: 80%;
+  font-size: x-large;
+  text-align: left;
+}
+
+.mod6sec1-container h2 {
+  margin-top: 50px;
+  width: 80%;
+
+}
+
+.mod6sec1-container h3 {
+  font-size: 20px;
+  width: 80%;
+}
+
+.mod6sec1-container h4 {
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 0px;
+}
+
+.mod6sec1-container .txt-img-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.txt-img-container p {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1420px){
+  .mod6sec1-container .txt-img-container{
+      flex-direction: column;
+  }
 }

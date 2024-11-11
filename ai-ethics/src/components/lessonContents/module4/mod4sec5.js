@@ -18,7 +18,7 @@ function Mod4Sec5() {
         This lesson focuses on the intersection of artificial intelligence (AI) and social justice, examining how AI technologies can be harnessed for positive social impact. It highlights the importance of community engagement in the development and implementation of AI solutions, ensuring they address the needs of marginalized populations. Additionally, the lesson explores the role of AI in activism and advocacy, showcasing successful examples of how these technologies are being used to drive social change.
       </p>
 
-      <h2>1. AI for Social Good</h2>
+      <h2>AI for Social Good</h2>
       <h4>Leveraging AI for Social Justice Initiatives</h4>
       <p>
         AI technologies have the potential to address various social justice issues by providing innovative solutions that enhance access to resources, improve services, and promote equality. Here are several key areas where AI can make a meaningful impact:
@@ -48,7 +48,7 @@ function Mod4Sec5() {
         <b>Climate Action Projects:</b> AI platforms like Climate.ai analyze climate data to help businesses and governments make informed decisions regarding climate adaptation and resilience strategies. By using AI to model climate impacts, organizations can better prepare for and mitigate the effects of climate change, demonstrating AI's capacity to support sustainable development goals.
       </p>
 
-      <h2>2. Community Engagement</h2>
+      <h2>Community Engagement</h2>
       <h4>Importance of Involving Communities in AI Development</h4>
       <p>
         To ensure that AI technologies effectively address the needs of diverse populations, it is crucial to involve communities in the development process. Community engagement fosters inclusivity, builds trust, and ensures that AI solutions are culturally sensitive and contextually relevant.
@@ -73,7 +73,7 @@ function Mod4Sec5() {
         <b>Urban Planning:</b> Cities like Barcelona have engaged residents in urban planning projects that utilize AI to analyze data related to traffic, pollution, and public services. This participatory approach has led to more equitable urban development, ensuring that infrastructure improvements benefit all community members.
       </p>
 
-      <h2>3. Activism and Advocacy</h2>
+      <h2>Activism and Advocacy</h2>
       <h4>AI in Activism</h4>
       <p>
         Activists and advocacy groups are increasingly leveraging AI to promote social change and address systemic injustices. AI technologies provide tools for organizing, mobilizing, and amplifying voices that might otherwise go unheard.
