@@ -8,7 +8,7 @@ import quizStart from './images/quizStart.svg';
 import { quizDatabase } from '../QuizDatabase';
 import { getAuth } from 'firebase/auth';
 
-const Quiz = () => {
+const Quiz = ({ quizID }) => {
   const [startPage, setStartPage] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -18,9 +18,23 @@ const Quiz = () => {
   const [timeLeft, setTimeLeft] = useState(10 * 60); // 10 minutes in seconds
   const [timeTaken, setTimeTaken] = useState(0); // Stores the time taken to complete the quiz
 
-  const fetchQuizQuestions = async () => {
+  // Map quizID to a title
+  const quizTitles = {
+    'Introduction': 'Introduction Quiz',
+    'ModuleOne': 'Quiz 1',
+    'ModuleTwo': 'Quiz 2',
+    'ModuleThree': 'Quiz 3',
+    'ModuleFour': 'Quiz 4',
+    'ModuleFive': 'Quiz 5',
+    'ModuleSix': 'Quiz 6',
+    'ModuleSeven': 'Quiz 7',
+    'ModuleEight': 'Quiz 8',
+    
+  };
+
+  const fetchQuizQuestions = useCallback(async () => {
     try {
-      const fetchedQuestions = await quizDatabase.getRandomQuizQuestions('Introduction');
+      const fetchedQuestions = await quizDatabase.getRandomQuizQuestions(quizID);
       setQuizQuestions(fetchedQuestions);
       setResults(prevResults => ({
         ...prevResults,
@@ -29,11 +43,11 @@ const Quiz = () => {
     } catch (error) {
       console.error('Error fetching quiz questions:', error);
     }
-  };
+  }, [quizID]);
 
   useEffect(() => {
     fetchQuizQuestions();
-  }, []);
+  }, [fetchQuizQuestions]);
 
   const startQuiz = () => {
     setStartPage(false);
@@ -52,8 +66,6 @@ const Quiz = () => {
 
     const accuracy = Math.round((correctAnswers / quizQuestions.length) * 100);
     const duration = 10 * 60 - timeLeft;
-    const quizID = 'Introduction';
-
     setResults({ correctAnswers, totalQuestions: quizQuestions.length });
     setIsSubmitted(true);
     setTimeTaken(duration); // Store the time taken
@@ -71,7 +83,7 @@ const Quiz = () => {
     } catch (error) {
       console.error('Error uploading quiz score:', error);
     }
-  }, [quizQuestions, selectedOptions, timeLeft]);
+  }, [quizQuestions, selectedOptions, timeLeft, quizID]);
 
   useEffect(() => {
     if (!startPage && timeLeft > 0 && !isSubmitted) {
@@ -123,7 +135,7 @@ const Quiz = () => {
         <div className="quiz-start-page-container">
           <div className="start-title-container">
             <img src={quizStart} alt="quizStart-img" />
-            <div className="start-title">Quiz 1</div>
+            <div className="start-title">{quizTitles[quizID] || 'Quiz'}</div>
           </div>
           <div className="start-quiz-deets-container">
             <div className="num-of-questions">{quizQuestions.length} Questions</div>

@@ -91,7 +91,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <IntroSec5 /> },
       { type: "Lesson", contentComponent: <IntroSec6 /> },
       { type: "Lesson", contentComponent: <IntroSec7 /> },
-      { type: "Quiz", contentComponent: <Quiz /> },
+      { type: "Quiz", contentComponent: <Quiz quizID="Introduction" /> },
     ],
   },
   {
@@ -105,8 +105,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod1Sec4 /> },
       { type: "Lesson", contentComponent: <Mod1Sec5 /> },
       { type: "Lesson", contentComponent: <Mod1Sec6 /> },
-
-
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleOne" /> },
     ],
   },
   {
@@ -120,7 +119,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod2Sec4 /> },
       { type: "Lesson", contentComponent: <Mod2Sec5 /> },
       { type: "Lesson", contentComponent: <Mod2Sec6 /> },
-
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleTwo" /> },
     ],
   },
   {
@@ -133,6 +132,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod3Sec3 /> },
       { type: "Lesson", contentComponent: <Mod3Sec4 /> },
       { type: "Lesson", contentComponent: <Mod3Sec5 /> },
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleThree" /> },
     ],
   },
   {
@@ -146,7 +146,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod4Sec4 /> },
       { type: "Lesson", contentComponent: <Mod4Sec5 /> },
       { type: "Lesson", contentComponent: <Mod4Sec6 /> },
-
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleFour" /> },
     ],
   },
   {
@@ -159,7 +159,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod5Sec3 /> },
       { type: "Lesson", contentComponent: <Mod5Sec4 /> },
       { type: "Lesson", contentComponent: <Mod5Sec5 /> },
-
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleFive" /> },
     ],
   },
   {
@@ -171,6 +171,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod6Scenes /> },
       { type: "Lesson", contentComponent: <Mod6Sec2 /> },
       { type: "Lesson", contentComponent: <Mod6Sec3 /> },
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleSix" /> },
     ],
   },
   {
@@ -182,7 +183,8 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod7Scenes /> },
       { type: "Lesson", contentComponent: <Mod7Sec2 /> },
       { type: "Lesson", contentComponent: <Mod7Sec3 /> },   
-      { type: "Lesson", contentComponent: <Mod7Sec4 /> },  
+      { type: "Lesson", contentComponent: <Mod7Sec4 /> },
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleSeven" /> },  
      ],
   },
   {
@@ -195,7 +197,7 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod8Sec3 /> },
       { type: "Lesson", contentComponent: <Mod8Sec4 /> },
       { type: "Lesson", contentComponent: <Mod8Sec5 /> },
-
+      { type: "Quiz", contentComponent: <Quiz quizID="ModuleEight" /> },
     ],
   },
 
