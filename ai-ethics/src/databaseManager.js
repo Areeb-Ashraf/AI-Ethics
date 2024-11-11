@@ -7,6 +7,8 @@ import {
   doc,
   setDoc,
   getDoc,
+  orderBy,
+  Timestamp,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 function calculateQuizScore(duration, accuracy) {
@@ -315,6 +317,21 @@ class DatabaseManager {
       }
     } catch (error) {
       console.error("Error adding completed lesson: ", error);
+      throw error;
+    }
+  }
+
+  // returns all of a users completed lessons from user profile
+  async fetchCompletedLessonsByUser(userID) {
+    try {
+      const userProfile = await this.fetchUserProfile(userID);
+      if (userProfile && userProfile.completedLessons) {
+        return userProfile.completedLessons;
+      } else {
+        return [];
+      }
+    } catch (error) {
+      console.error("Error fetching completed lessons: ", error);
       throw error;
     }
   }
