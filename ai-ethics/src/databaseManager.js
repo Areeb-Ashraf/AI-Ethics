@@ -12,7 +12,7 @@ import {
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 function calculateQuizScore(duration, accuracy) {
-  return Math.min((90 / duration) * 100, 100) + accuracy;
+  return Math.round(Math.min((90 / duration) * 100, 100) + accuracy);
 }
 
 class DatabaseManager {

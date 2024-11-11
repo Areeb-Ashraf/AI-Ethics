@@ -188,8 +188,7 @@ const Dashboard = () => {
             <h1>Dashboard</h1>
             <div className="db-text-container">
               <div className="db-user-name">
-                Hey{" "}
-                {userProfile.username ? userProfile.username : userProfile.name}
+                Hey {userProfile && (userProfile.username || userProfile.name)}!
                 ! <div className="hand">👋</div>
               </div>
               Let's get back to learning
