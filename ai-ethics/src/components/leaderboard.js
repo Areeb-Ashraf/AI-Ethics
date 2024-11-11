@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/leaderboard.css";
 import databaseManager from "../databaseManager";
 
@@ -11,6 +11,13 @@ const Leaderboard = () => {
   const sortedData = [...leaderboardData].sort((a, b) => b.score - a.score);
   const top3 = [sortedData[1], sortedData[0], sortedData[2]]; // Swap rank 1 and 2 to display in correct containers
   const rest = sortedData.slice(3);
+
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Filter players based on the search query
+  const filteredPlayers = rest.filter(player =>
+    player.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
   return (
     <div className="leaderboard-container">
@@ -44,9 +51,11 @@ const Leaderboard = () => {
             className="list-container-search"
             type="text"
             placeholder="&#x1F50E;&#xFE0E; Search rank"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
           />
           <div className="list-items-container">
-            {rest.map((player, index) => (
+            {filteredPlayers.map((player, index) => (
               <div key={index} className="list-box">
                 <div className="list-rank">{index + 4}</div>
                 <div className="list-name">{player.name}</div>
