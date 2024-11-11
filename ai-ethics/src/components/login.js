@@ -3,6 +3,8 @@ import { useNavigate, Link } from 'react-router-dom';
 import { authManager } from '../firebase';
 import googleLogo from '../google.png';
 import eyeIcon from '../eye.png';
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content';
 import "../styles/account.css";
 
 const Login = ({ setIsLoggedIn }) => {
@@ -10,51 +12,104 @@ const Login = ({ setIsLoggedIn }) => {
   const [password, setPassword] = useState('');
   const [passwordVisible, setPasswordVisible] = useState(false);
   const navigate = useNavigate();
+  const Alert = withReactContent(Swal);
 
   const handleLogin = async (e) => {
     e.preventDefault();
     if (!email || !password) {
-      alert('Please enter both email and password.');
+      Alert.fire({
+        title: 'Please enter both email and password.',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1'
+      })
       return;
     }
     try {
       const isRegistered = await authManager.isUserRegistered(email);
       if (!isRegistered) {
-        alert('User not registered. Please sign up.');
+        Alert.fire({
+          title: 'User not registered. Please sign up.',
+          confirmButtonText: 'OK',
+          confirmButtonColor: '#0056D1'
+        })
         return;
       }
       await authManager.logInWithEmailAndPassword(email, password);
-      alert('Login successful!');
-      setIsLoggedIn(true);
-      navigate('/');
+      // alert('Login successful!');
+      Alert.fire({
+        title: 'Login successful!',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          setIsLoggedIn(true);
+          navigate('/dashboard');
+        }
+      });
     } catch (err) {
-      alert(err.message);
+      Alert.fire({
+        title: 'Oops...',
+        icon: 'error',
+        text: "Login failed",
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1',
+        footer: err.message
+      })
     }
   };
 
   const handleGoogleLogin = async () => {
     try {
       await authManager.loginWithGoogle();
-      alert('Google login successful!');
-      setIsLoggedIn(true);
-      navigate('/');
+      Alert.fire({
+        title: 'Google login successful!',
+        icon: 'success',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          setIsLoggedIn(true);
+          navigate('/dashboard');
+        }
+      });
     } catch (err) {
       console.error('Google login failed:', err.message);
-      alert('Google login failed: ' + err.message);
+      Alert.fire({
+        title: 'Oops...',
+        icon: 'error',
+        text: "Google login failed",
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1',
+        footer: err.message
+      })
     }
   };
 
   const handleForgotPassword = async () => {
     if (!email) {
-      alert('Please enter your email address to reset your password.');
+      Alert.fire({
+        title: 'Please enter your email address to reset your password.',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1'
+      })
       return;
     }
     try {
       await authManager.sendPasswordReset(email);
-      alert('If an account with that email exists, a password reset link has been sent.');
+      Alert.fire({
+        title: 'If an account with that email exists, a password reset link has been sent.',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1'
+      })
     } catch (err) {
       console.error('Password reset failed:', err.message);
-      alert('Error sending password reset email: ' + err.message);
+      Alert.fire({
+        title: 'Error sending password reset email',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#0056D1',
+        footer: err.message
+      })
     }
   };
 
