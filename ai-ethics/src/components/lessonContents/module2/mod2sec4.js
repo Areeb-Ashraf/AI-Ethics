@@ -20,6 +20,7 @@ const Mod2Sec4 = () => {
       <p>
         Accessibility regulations are essential for ensuring that technology is usable by individuals with disabilities. These regulations set the standards for inclusive design, guiding organizations in creating products that accommodate diverse user needs. In the context of AI development, understanding and adhering to these regulations is crucial for fostering inclusivity and avoiding legal repercussions.
       </p>
+      <img src={require('./mod2images/webaccessibility.png')} alt="webaccessibility" className="webaccessibility-img" />
 
       <h2>Key Laws and Standards Related to Accessibility</h2>
       <ol>
@@ -171,6 +172,7 @@ const Mod2Sec4 = () => {
       <p>
         Ensuring accessibility in AI applications involves employing various tools and techniques that help identify and address accessibility issues. Here are some effective methods for testing accessibility:
       </p>
+      <img src={require('./mod2images/accessibility-testing.png')} alt="accessibilitytesting" className="accessibilitytesting" />
 
       <ol>
         <li>

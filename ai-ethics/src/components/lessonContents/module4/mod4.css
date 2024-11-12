@@ -74,6 +74,27 @@ ol > li::marker {
   margin-bottom: 0px;
 }
 
+.whatissocialimpact-img {
+  width: 70%;
+}
+.accessibilitytriangle-img {
+  width: 40%;
+}
+.jobimpact-img {
+  width: 50%;
+}
+.aigovern-img {
+  width: 70%;
+}
+.securitysystems-img {
+  width: 60%;
+}
+.aihealthcare-img {
+  width: 50%;
+}
+. {
+  width: 50%;
+}
 .mod4sec1-container .txt-img-container{
   display: flex;
   flex-direction: column;

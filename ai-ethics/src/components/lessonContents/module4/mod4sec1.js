@@ -32,6 +32,7 @@ const Mod4Sec1 = () => {
       <p>
         Social impact refers to the effect that an action, project, or technology has on the well-being of individuals and communities. In the context of AI, social impact encompasses the positive and negative effects that AI technologies can have on various aspects of society, including economy, culture, environment, and public health.
       </p>
+      <img src={require('./mod4images/whatissocialimpact.jpeg')} alt="whatissocialimpact" className="whatissocialimpact-img" />
 
       <h3>Key Aspects of Social Impact:</h3>
 

@@ -124,6 +124,9 @@ const Mod1Sec1 = () => {
 
       <h2>Types of Data Consent</h2>
       <p>Data consent can take various forms, depending on the context in which personal information is collected and the sensitivity of the data. Below are the primary types of data consent used today:</p>
+      <img src={require('./mod1images/unambiguous.png')} alt="unambiguous" className="unambiguous-img" />
+
+      
       <ol>
         <li>
         <strong>Explicit Consent</strong>
@@ -140,6 +143,7 @@ const Mod1Sec1 = () => {
             </li>
           </ul>
         </li>
+        <img src={require('./mod1images/implicitandexplicit.png')} alt="implicitandexplicit" className="implicitandexplicit-img" />
 
         <li>
         <strong>Granular Consent</strong>
@@ -148,6 +152,7 @@ const Mod1Sec1 = () => {
             </li>
           </ul>
         </li>
+        <img src={require('./mod1images/TermsConditions.png')} alt="TermsConditions" className="TermsConditions-img" />
 
         <li>
         <strong>Opt-In Consent</strong>
@@ -156,6 +161,7 @@ const Mod1Sec1 = () => {
             </li>
           </ul>
         </li>
+        <img src={require('./mod1images/signupcorrect.png')} alt="signupcorrect" className="signupcorrect-img" />
 
         <li>
         <strong>Opt-Out Consent</strong>
@@ -163,6 +169,7 @@ const Mod1Sec1 = () => {
             <li>Opt-out consent assumes that individuals agree to data collection unless they actively decline or opt-out. While this type of consent was more common in the past, it has become less acceptable under modern privacy regulations, as it may not give users full control over their personal information. Opt-out consent is still used in some contexts, such as cookie consent banners, but stricter regulations often require clear, opt-in consent mechanisms</li>
           </ul>
         </li>
+        <img src={require('./mod1images/signupwrong.png')} alt="signupwrong" className="signupwrong-img" />
 
         <li>
         <strong>Informed Consent</strong>
@@ -171,7 +178,10 @@ const Mod1Sec1 = () => {
             </li>
           </ul>
         </li>
+        <img src={require('./mod1images/locationprivacy.png')} alt="locationprivacy" className="locationprivacy-img" />
+
       </ol>
+
 
       <h2>Revoking Consent: User Rights and Technical Challenges</h2>
       <p>The ability to revoke consent is a fundamental right under many data protection laws, including the GDPR. It allows users to withdraw their consent for data processing at any time, either partially or entirely. This concept is critical because it gives users ongoing control over their data, even after they have initially agreed to its collection and use.

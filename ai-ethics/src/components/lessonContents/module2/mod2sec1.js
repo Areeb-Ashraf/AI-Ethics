@@ -38,6 +38,8 @@ const Mod2Sec1 = () => {
       </p>
       <p>Historically, the digital divide has disproportionately affected people with disabilities, limiting their access to information, employment, and social participation. For example, websites that are not compatible with screen readers exclude visually impaired users from accessing critical content. As technology continues to evolve, ensuring inclusivity in the design and implementation of AI-driven tools is not just a moral obligation but also a legal one, as governments worldwide introduce more robust regulations around accessibility.
       </p>
+      <img src={require('./mod2images/greenlocks.jpg')} alt="greenlocks" className="greenlocks-img" />
+
       <p>AI holds the potential to greatly enhance accessibility by automating processes and providing adaptive interfaces tailored to individual user needs. For example, AI-powered voice assistants such as Siri and Google Assistant enable hands-free navigation of devices, making it easier for individuals with mobility impairments to interact with their smartphones or computers. Similarly, real-time transcription tools using AI allow those who are hard of hearing to participate more fully in conversations and meetings.
       </p>
       <p>However, if not properly designed, AI can also hinder accessibility. AI systems trained on biased datasets may unintentionally exclude people with disabilities or provide inaccurate outputs that further marginalize them. For example, facial recognition systems often fail to accurately identify people with visible physical disabilities or those from underrepresented demographic groups. Hence, it is essential to understand the dual-edged nature of AI in terms of accessibility.
@@ -79,6 +81,8 @@ const Mod2Sec1 = () => {
       <h3>Types of Disabilities</h3>
       <p>To create truly accessible AI systems, it’s essential to understand the diversity of disabilities and how they affect user interaction with technology. Disabilities can be classified into several types, including:
       </p>
+      <img src={require('./mod2images/disabilitytypes.png')} alt="disabilitytypes" className="disabilitytypes-img" />
+
       <ul>
         <li>Visual Disabilities: This category includes individuals who are blind, have low vision, or are colorblind. AI can help by offering alternatives to visual information (such as text descriptions of images or tactile feedback).</li>
         <li>Hearing Disabilities: People who are deaf or hard of hearing require alternatives to audio-based information. AI-powered captioning tools and visual alerts can make auditory content more accessible.

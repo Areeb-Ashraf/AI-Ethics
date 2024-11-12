@@ -7,6 +7,7 @@
   
 }
 
+
 ol > li::marker {
   font-weight: bold;
 }
@@ -73,6 +74,92 @@ ol > li::marker {
   font-size: 18px;
   width: 80%;
   margin-bottom: 0px;
+}
+
+.unambiguous-img{
+  width: 50%;
+}
+
+.implicitandexplicit-img {
+  width: 70%;
+}
+
+.TermsConditions-img{
+  width: 70%;
+}
+
+.signupcorrect-img {
+  width: 40%;
+}
+
+.signupwrong-img {
+  width: 40%;
+}
+.locationprivacy-img {
+  width: 60%;
+}
+.GDPRimage-img{
+  width: 40%;
+}
+.sevenprinciples-img {
+  width: 50%;
+}
+.CPRA-img {
+  width: 30%;
+}
+.CPRARights-img{
+  width: 70%;
+}
+.compliancesecurity-img{
+  width: 50%;
+}
+.DataSharing-img{
+  width: 50%;
+}
+.ProsCons-img {
+  width: 50%;
+}
+.personaldata-img {
+  width: 60%;
+}
+.consentmanagementitsystems-img {
+  width: 70%;
+}
+.LawfulBasis-img {
+  width: 80%;
+}
+.hexagons-img {
+  width: 80%;
+}
+.impliedcookie-img {
+  width: 60%;
+}
+.GDPRchart-img{
+  width: 60%;
+}
+.dataconsenttictactoe-img{
+  width: 70%;
+}
+.locationdata-img {
+  width: 50%;
+}
+.askapptotrack-img {
+  width: 70%;
+}
+.prepermission-img {
+  width: 70%;
+}
+.locationalaccess-img {
+  width: 50%;
+}
+.tictactoe-img {
+  width: 25%;
+}
+.crossbordercompliance-img {
+  width: 50%;
+}
+.iab-img{
+  width: 50%;
 }
 
 .mod1sec1-container .txt-img-container{
