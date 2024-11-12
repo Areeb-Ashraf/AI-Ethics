@@ -1,6 +1,6 @@
 import React from 'react';
 import './mod7.css';
-
+import dataExplain from "./mod7images/dataExplain.png";
 const Mod7Sec2 = () => {
   return (
     <div className="mod7sec1-container">
@@ -22,6 +22,7 @@ const Mod7Sec2 = () => {
     </ul>
   </li>
   <li>
+
     <strong>Ethical Implications</strong>
     <ul>
       <li>Explore the ethical implications of collecting only the necessary data.</li>
@@ -69,6 +70,9 @@ const Mod7Sec2 = () => {
       <p>
         The significance of data minimization extends beyond compliance with legal requirements; it also reflects a commitment to ethical practices that respect individual privacy. By limiting data collection, organizations can mitigate the risks associated with data breaches and misuse, ultimately fostering a culture of trust between users and AI systems.
       </p>
+      <div className="text-image-container">
+            { <img src={dataExplain} alt="Data Explained" className="data-ai-img" /> }
+    </div>
       <h3>Ethical Implications</h3>
       <p>
         The ethical implications of data minimization are profound. When organizations collect only the data necessary for their operations, they demonstrate respect for user autonomy and privacy. This approach enhances user trust, as individuals are more likely to engage with AI systems that prioritize their privacy and limit unnecessary data exposure.
