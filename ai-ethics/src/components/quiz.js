@@ -16,7 +16,8 @@ const Quiz = ({ quizID }) => {
   const [results, setResults] = useState({ correctAnswers: 0, totalQuestions: 0 });
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [timeLeft, setTimeLeft] = useState(10 * 60); // 10 minutes in seconds
-  const [timeTaken, setTimeTaken] = useState(0); // Stores the time taken to complete the quiz
+  const [timeTaken, setTimeTaken] = useState(0); // Stores the time taken
+  const [xp, setXp] = useState(0); // Store XP
 
   // Map quizID to a title
   const quizTitles = {
@@ -28,8 +29,7 @@ const Quiz = ({ quizID }) => {
     'ModuleFive': 'Quiz 5',
     'ModuleSix': 'Quiz 6',
     'ModuleSeven': 'Quiz 7',
-    'ModuleEight': 'Quiz 8',
-    
+    'ModuleEight': 'Quiz 8'
   };
 
   const fetchQuizQuestions = useCallback(async () => {
@@ -58,6 +58,10 @@ const Quiz = ({ quizID }) => {
     setTimeLeft(10 * 60); // reset timer to 10 minutes
   };
 
+  const calculateQuizScore = (duration, accuracy) => {
+    return Math.min((90 / duration) * 100, 100) + accuracy;
+  };
+
   const handleSubmit = useCallback(async () => {
     const correctAnswers = quizQuestions.reduce((total, question, index) => {
       const selectedOption = selectedOptions[index];
@@ -69,6 +73,10 @@ const Quiz = ({ quizID }) => {
     setResults({ correctAnswers, totalQuestions: quizQuestions.length });
     setIsSubmitted(true);
     setTimeTaken(duration); // Store the time taken
+
+    // Calculate XP
+    const xpEarned = calculateQuizScore(duration, accuracy);
+    setXp(xpEarned);
 
     try {
       const auth = getAuth();
@@ -153,6 +161,7 @@ const Quiz = ({ quizID }) => {
           </div>
           <div className="Great-Job">Great Job!</div>
           <div className="result-text">You finished the quiz in {formatTime(timeTaken)}.</div>
+          <div className="result-text">XP Earned: {xp}</div> {/* Display XP */}
           <div className="result-buttons-container">
             <div className="result-finish-btn">
               <img className='resultFinishSym-img' src={resultFinishSym} alt="resultFinishSym-img" />
@@ -207,12 +216,8 @@ const Quiz = ({ quizID }) => {
             })}
 
             <div className="quiz-nav-container">
-              <button className="quiz-prev-btn" disabled={currentQuestionIndex === 0} onClick={handlePrevious}>
-                Previous
-              </button>
-              <button className="quiz-next-btn" onClick={handleNext}>
-                {currentQuestionIndex < quizQuestions.length - 1 ? 'Next' : 'Submit'}
-              </button>
+              <button className="quiz-prev-btn" onClick={handlePrevious}>Previous</button>
+              <button className="quiz-next-btn" onClick={handleNext}>Next</button>
             </div>
           </div>
         </>

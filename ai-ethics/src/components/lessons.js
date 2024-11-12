@@ -321,17 +321,17 @@ const Lessons = () => {
         </div>
 
         {moduleData.map((module, moduleIndex) => (
-          <div key={module.id}>
-            <button
-              className={`accordion ${moduleIndex === 0 ? "first-accordion" : ""} ${activeAccordion === moduleIndex ? "panel-active" : ""}`}
-              onClick={() => setActiveAccordion(activeAccordion === moduleIndex ? null : moduleIndex)}
-            >
-              Module {module.id}
-            </button>
-            <div className="panel" style={{ maxHeight: activeAccordion === moduleIndex ? "300px" : "0" }}>
-              {renderPanelButtons(module, moduleIndex)}
-            </div>
-          </div>
+  <div key={module.id}>
+    <button
+      className={`accordion ${moduleIndex === 0 ? "first-accordion" : ""} ${activeAccordion === moduleIndex ? "panel-active" : ""}`}
+      onClick={() => setActiveAccordion(activeAccordion === moduleIndex ? null : moduleIndex)}
+    >
+      {module.id === 0 ? "Introduction" : `Module ${module.id}`}
+    </button>
+    <div className="panel" style={{ maxHeight: activeAccordion === moduleIndex ? "300px" : "0" }}>
+      {renderPanelButtons(module, moduleIndex)}
+    </div>
+  </div>
         ))}
       </div>
 
