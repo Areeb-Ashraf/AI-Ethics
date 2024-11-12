@@ -223,6 +223,18 @@ const Lessons = () => {
   const [isLessonStarted, setIsLessonStarted] = useState(false);
   const [activeAccordion, setActiveAccordion] = useState(null);
 
+  // Calculate progress percentage for the current module
+  const calculateProgressPercentage = () => {
+    const { moduleIndex, sectionIndex } = currentSection;
+    const module = moduleData[moduleIndex];
+    const totalSections = module.sections.length;
+    const percentage = ((sectionIndex + 1) / totalSections) * 100;
+    return Math.round(percentage);
+  };
+
+    // Use the calculated percentage in JSX
+    const progressPercentage = calculateProgressPercentage();
+
   const handleNextClick = () => {
     const { moduleIndex, sectionIndex } = currentSection;
     const module = moduleData[moduleIndex];
@@ -327,7 +339,24 @@ const Lessons = () => {
               >
                 &lt; Prev
               </button>
-              <div className="module-title">{module.title}</div>
+              <div className="center-div">
+                  <div className="lesson-progress-bar-container"
+                  style={{
+                    display: currentSection && module.sections[currentSection.sectionIndex].type === "Quiz" ? "none" : "",
+                  }}>
+                  <div className="lesson-progress-bar">
+                    <div
+                      className="lesson-progress"
+                      style={{
+                        width: `${progressPercentage}%`,
+                        backgroundColor: "#0056D1",
+                      }}
+                    ></div>
+                  </div>
+                  <div className="lesson-progress-percentage">{progressPercentage}%</div>
+                </div>
+                  <div className="module-title">{module.title}</div>
+              </div>
               <button
                 id="next-button"
                 className="module-navigation-buttons"
