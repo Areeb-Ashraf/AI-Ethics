@@ -344,7 +344,7 @@ const Lessons = () => {
                 )
               }
             >
-              Module {module.id}
+              {module.id === 0 ? "Introduction" : `Module ${module.id}`}
             </button>
             <div
               className="panel"

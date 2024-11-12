@@ -1,6 +1,8 @@
 import React from 'react';
 import './mod7.css';
-
+import unsecureddata from "./mod7images/unsecureddata.png"
+import appledataprivacy from "./mod7images/appledataprivacy.png"
+import datastorage from "./mod7images/datastorage.png"
 const Mod7Sec3 = () => {
   return (
     <div className="mod7sec1-container">
@@ -37,7 +39,9 @@ const Mod7Sec3 = () => {
       <p>
         AI systems can inadvertently compromise user privacy through excessive data collection or inadequate anonymization techniques. For instance, machine learning models trained on sensitive data may retain identifiable information, making it vulnerable to re-identification attacks. Organizations must be vigilant about privacy practices to protect users from such invasions.
       </p>
-
+      <div className="text-image-container">
+            { <img src={unsecureddata} alt="Outcomes of unsecured mobile app data" className="unsecured-ai-img" /> }
+      </div>
       <h2>Best Practices for Data Protection</h2>
       <h3>Ethical Guidelines for Implementing Data Protection Measures</h3>
       <p>
@@ -53,6 +57,10 @@ const Mod7Sec3 = () => {
         Data encryption is a critical component of data protection measures. By encrypting sensitive data, organizations can safeguard it from unauthorized access, even if it is intercepted or compromised. Both data at rest (stored data) and data in transit (data being transmitted) should be encrypted to ensure comprehensive protection.
       </p>
 
+      <div className="text-image-container">
+            { <img src={appledataprivacy} alt="Apple data privacy" className="apple-ai-img" /> }
+      </div>
+
       <h4>Access Controls</h4>
       <p>
         Implementing strict access controls is essential for limiting who can access sensitive data. Organizations should employ role-based access controls, granting data access only to individuals who need it for their roles. Additionally, regular reviews of access permissions should be conducted to ensure that access levels remain appropriate.
@@ -62,6 +70,10 @@ const Mod7Sec3 = () => {
       <p>
         Developers must prioritize secure coding practices when creating AI systems. This includes conducting code reviews, employing static and dynamic code analysis tools, and following best practices for secure software development. By addressing security concerns during the development phase, organizations can reduce the risk of vulnerabilities in deployed systems.
       </p>
+
+      <div className="text-image-container">
+            { <img src={datastorage} alt="Data storage" className="storage-ai-img" /> }
+      </div>
 
       <h2>Case Studies of Ethical Lapses in Data Security</h2>
       <h4>1. Equifax Data Breach (2017)</h4>

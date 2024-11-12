@@ -22,6 +22,8 @@ const Mod2Sec3 = () => {
       </p>
 
       <h2>Key Methodologies for Developing Inclusive AI Applications</h2>
+      <img src={require('./mod2images/designcircles.png')} alt="designcircles" className="designcircles-img" />
+
       <ol>
         <li>
           <h4>User-Centered Design (UCD)</h4>

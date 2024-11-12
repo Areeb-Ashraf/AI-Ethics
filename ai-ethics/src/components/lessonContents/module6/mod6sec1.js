@@ -1,6 +1,6 @@
 import React from 'react';
 import './mod6.css';
-
+import accountability from "./mod6images/accountability.png";
 const Mod6Sec1 = () => {
   return (
     <div className="mod6sec1-container">
@@ -13,6 +13,9 @@ const Mod6Sec1 = () => {
         domains, such as healthcare, finance, law enforcement, and public services, accountability ensures that these 
         systems operate transparently, ethically, and responsibly.
       </p>
+      <div className="text-image-container">
+            { <img src={accountability} alt="Accountability" className="acc-ai-img" /> }
+      </div>
 
       <p>
         The significance of accountability in AI can be articulated through several critical dimensions:

@@ -26,7 +26,8 @@ const Mod2Sec2 = () => {
           <p>
             AI-driven assistive technologies leverage machine learning algorithms, natural language processing, and computer vision to improve user experiences and outcomes. Here are some key examples:
           </p>
-    
+          <img src={require('./mod2images/aisolutions.png')} alt="aisolutions" className="aisolutions-img" />
+
           <h4>Speech Recognition Software</h4>
           <p>
             AI-powered speech recognition technologies, such as Dragon NaturallySpeaking or Google Voice, enable users to control devices and input text using their voice. This is particularly beneficial for individuals with motor disabilities who may find traditional input methods challenging. Speech recognition can also assist individuals with learning disabilities, providing a more intuitive means of communication.
@@ -36,7 +37,8 @@ const Mod2Sec2 = () => {
           <p>
             Screen readers like JAWS (Job Access With Speech) and NVDA (NonVisual Desktop Access) utilize AI algorithms to convert text on a screen into synthesized speech. These tools are essential for visually impaired users, allowing them to access digital content and navigate websites efficiently. Some modern screen readers also include features such as OCR (optical character recognition) that can read printed text aloud.
           </p>
-    
+          <img src={require('./mod2images/mobile.png')} alt="mobile" className="mobile-img" />
+
           <h4>AI-Powered Hearing Aids</h4>
           <p>
             Advanced hearing aids now incorporate AI to improve sound processing and user customization. These devices can adapt to different environments, distinguishing between background noise and speech to enhance clarity. Users can personalize their hearing experience through companion apps, adjusting settings based on individual preferences and real-time feedback.

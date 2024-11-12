@@ -75,9 +75,30 @@ ol > li::marker {
   margin-bottom: 0px;
 }
 
+.greenlocks-img{
+  width: 60%;
+}
+.disabilitytypes-img{
+  width: 60%;
+}
+.aisolutions-img {
+  width: 60%;
+}
+.mobile-img {
+  width: 70%;
+}
+.designcircles-img {
+  width: 70%;
+}
+.webaccessibility-img {
+  width: 30%;
+}
+.accessibilitytesting {
+  width: 50%;
+}
 .mod2sec1-container .txt-img-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
 }
 

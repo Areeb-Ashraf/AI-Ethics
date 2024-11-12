@@ -25,6 +25,8 @@ function Mod4Sec5() {
       </p>
 
       <h3>Improving Healthcare Access</h3>
+      <img src={require('./mod4images/aihealthcare.png')} alt="aihealthcare" className="aihealthcare-img" />
+
       <p>
         <b>Telemedicine and AI Diagnostics:</b> AI-driven telemedicine platforms can enhance healthcare access, especially in underserved communities. By leveraging machine learning algorithms, these platforms can provide remote diagnostics, monitor patients' health, and offer personalized treatment plans. This is particularly important in rural areas where access to healthcare facilities is limited. For instance, a study published in the Journal of Telemedicine and Telecare found that AI tools used in telemedicine significantly improved the diagnostic accuracy for chronic diseases, allowing healthcare providers to intervene sooner.
       </p>

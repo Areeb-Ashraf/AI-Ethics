@@ -85,6 +85,30 @@ ol > li::marker {
   display: flex;
   flex-direction: column;
 }
+.acc-ai-img{
+  width: 70%;
+  height: auto;
+}
+.owner-ai-img{
+  width: 70%;
+  height: auto;
+}
+.rights-ai-img{
+  width: 70%;
+  height: auto;
+}
+.quality-ai-img{
+  width: 70%;
+  height: auto;
+}
+.res-ai-img{
+  width: 70%;
+  height: auto;
+}
+.stake-ai-img{
+  width: 70%;
+  height: auto;
+}
 
 @media (max-width: 1420px){
   .mod6sec1-container .txt-img-container{

@@ -61,6 +61,11 @@ const Mod7Sec1 = () => {
           {/* <img src={mod7image_one} alt="Role of AI in Privacy & Security" className="role-of-ai-img" /> */}
         </div>
 
+        <div className="text-image-container">
+            { <img src={mod7image_one} alt="Role of AI in Privacy and Security" className="privacy-ai-img" /> }
+        </div>
+
+
         <h4>Historical Evolution of Privacy Concepts</h4>
         <p>The concept of privacy has evolved over time, influenced by technological advancements and societal values. Initially, privacy was largely understood in terms of physical space—such as the home—where individuals could control who accessed their personal lives. However, with the advent of the internet and digital technologies, the understanding of privacy shifted to encompass information privacy, focusing on personal data collected through various digital interactions.</p>
         <p><strong>Key milestones in the evolution of privacy concepts include:</strong></p>

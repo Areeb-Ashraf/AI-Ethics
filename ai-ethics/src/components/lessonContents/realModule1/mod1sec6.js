@@ -53,6 +53,7 @@ const Mod1Sec6 = () => {
       <p>
         Cross-border data transfer refers to the movement of personal data across international boundaries for processing or storage. This practice is increasingly common in the context of globalized AI systems, where data may be sent to data centers located in different countries.
       </p>
+      <img src={require('./mod1images/crossbordercompliance.png')} alt="crossbordercompliance" className="crossbordercompliance-img" />
 
       <h3>Importance of Obtaining Consent for Cross-Border Transfers</h3>
       <ul>
@@ -73,6 +74,8 @@ const Mod1Sec6 = () => {
       <p>
         Cross-device data syncing involves the sharing of user data across multiple devices (e.g., smartphones, tablets, and computers) to create a seamless user experience. This practice enables users to access their data and preferences from different devices, enhancing convenience and usability.
       </p>
+      <img src={require('./mod1images/iab.png')} alt="iab" className="iab-img" />
+
 
       <h3>Importance of Obtaining Consent for Cross-Device Data Syncing</h3>
       <ul>

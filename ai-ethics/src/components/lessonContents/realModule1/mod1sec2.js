@@ -25,6 +25,8 @@ const Mod1Sec2 = () => {
       </ul>
 
       <h2>General Data Protection Regulation (GDPR)</h2>
+    <img src={require('./mod1images/GDPRimage.png')} alt="GDPRimage" className="GDPRimage-img" />
+
       <h3>Overview of GDPR</h3>
       <p>
         The General Data Protection Regulation (GDPR) is a comprehensive data protection regulation enacted by the European Union (EU) in May 2018. It represents a significant shift in how organizations handle personal data, establishing strict requirements for data processing and user consent.
@@ -40,6 +42,7 @@ const Mod1Sec2 = () => {
         <li><b>Integrity and Confidentiality:</b> Organizations must implement appropriate security measures to protect personal data from unauthorized access, disclosure, or loss.</li>
         <li><b>Accountability:</b> Organizations must demonstrate compliance with GDPR principles and be able to show how they uphold users' rights.</li>
       </ul>
+      <img src={require('./mod1images/7principles.png')} alt="7principles" className="sevenprinciples-img" />
 
       <h4>User Rights under GDPR</h4>
       <ul>
@@ -57,6 +60,7 @@ const Mod1Sec2 = () => {
       </p>
 
       <h2>California Consumer Privacy Act (CCPA)</h2>
+
       
       <h3>Overview of CCPA</h3>
       <p>
@@ -85,6 +89,8 @@ const Mod1Sec2 = () => {
       </p>
 
       <h2>California Privacy Rights Act (CPRA)</h2>
+      <img src={require('./mod1images/CPRA.jpg')} alt="CPRA" className="CPRA-img" />
+
 
       <h3>Overview of CPRA</h3>
       <p>
@@ -106,6 +112,7 @@ const Mod1Sec2 = () => {
           <strong>Establishment of the CPPA:</strong> The CPPA is responsible for enforcing privacy rights and ensuring compliance with California privacy laws. It has the authority to investigate violations and impose fines.
         </li>
       </ol>
+      <img src={require('./mod1images/CPRARights.png')} alt="CPRARights" className="CPRARights-img" />
 
       <h2>Implications for Organizations</h2>
       <p>
@@ -194,6 +201,8 @@ const Mod1Sec2 = () => {
       <p>
         Legal and regulatory compliance in data consent is crucial for organizations that handle personal data. Compliance ensures that organizations adhere to established legal frameworks, safeguarding user rights and minimizing the risk of data breaches or misuse. Here are several reasons why compliance matters:
       </p>
+      <img src={require('./mod1images/compliancesecurity.png')} alt="compliancesecurity" className="compliancesecurity-img" />
+
       <ul>
         <li>Protecting User Rights: Compliance with privacy regulations empowers users by upholding their rights to control their personal information and understand how it is used.</li>
         <li>Mitigating Legal Risks: Non-compliance can lead to legal repercussions, including fines, penalties, and reputational damage. By ensuring compliance, organizations can mitigate these risks and protect their interests.</li>

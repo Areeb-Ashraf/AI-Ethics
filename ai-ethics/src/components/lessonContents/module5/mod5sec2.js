@@ -1,6 +1,7 @@
 import React from 'react';
 import './mod5.css';
-
+import explained from './mod5images/aiexplainability.png';
+import standard from './mod5images/designpatterns.png';
 const Mod5Sec2 = () => {
   return (
     <div className="mod5sec1-container">
@@ -26,6 +27,10 @@ const Mod5Sec2 = () => {
       <p>
         For example, an AI system may be transparent about its data sources and algorithms, but explainability involves breaking down individual decisions—such as why a particular person was denied a loan or why a medical diagnosis was recommended. It answers questions like “why did the AI make this particular choice?” in a way that non-experts can comprehend.
       </p>
+      
+      <div className="text-image-container">
+            { <img src={explained} alt="Explained data" className="explain-ai-img" /> }
+      </div>  
 
       <h4>Why Explainability is Crucial</h4>
       <p>
@@ -43,7 +48,9 @@ const Mod5Sec2 = () => {
           <strong>Regulatory Compliance:</strong> Many regulations, such as the European Union’s General Data Protection Regulation (GDPR), require AI systems to provide explanations for decisions that affect individuals, especially when those decisions are automated.
         </li>
       </ul>
-
+      <div className="text-image-container">
+            { <img src={standard} alt="Standard Design Patterns" className="standard-ai-img" /> }
+      </div>
       <h4>Explainable AI (XAI)</h4>
       <p>
         Explainable AI (XAI) is an emerging field of research focused on making AI systems more interpretable and understandable. As AI models become more complex, particularly in deep learning and neural networks, the decisions they make can be difficult to interpret even for experts. XAI aims to address this challenge by developing methodologies and tools that make AI decision-making processes more transparent and explainable.

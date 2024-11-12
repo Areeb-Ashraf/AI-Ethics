@@ -16,6 +16,8 @@ const Mod1Sec4 = () => {
         AI-driven profiling and automated decisions.
       </p>
 
+      <img src={require('./mod1images/hexagons.png')} alt="hexagons" className="hexagons-img" />
+
       <h2>Overview of AI Development and Ethical Consent</h2>
       <h4>The Role of Consent in AI Development</h4>
       <ul>
@@ -98,6 +100,8 @@ const Mod1Sec4 = () => {
         mention data collection, their consent may be considered implied.
       </p>
 
+      <img src={require('./mod1images/impliedcookie.png')} alt="impliedcookie" className="impliedcookie-img" />
+
       <h4>Ethical Concerns Surrounding Implied or Passive Consent</h4>
       <ul>
         <li>
@@ -169,6 +173,8 @@ const Mod1Sec4 = () => {
         profiles based on behavior, preferences, and characteristics. This process can 
         lead to automated decisions, such as personalized recommendations or targeted advertising.
       </p>
+
+      <img src={require('./mod1images/GDPRchart.jpg')} alt="GDPRchart" className="GDPRchart-img" />
 
       <h4>Importance of Consent for Profiling and Automated Decisions</h4>
       <ul>

@@ -23,6 +23,8 @@ function Mod4Sec3() {
         Automation, driven by AI technologies, refers to machines and software performing tasks once handled by humans. This has raised alarms in various industries, as businesses seek to improve productivity while reducing labor costs. The most notable impact is seen in industries such as manufacturing, retail, and transportation. However, AI’s influence extends to many other sectors, as even knowledge-based work is being increasingly affected.
       </p>
 
+      <img src={require('./mod4images/jobimpact.png')} alt="jobimpact" className="jobimpact-img" />
+
       <h3>Job Displacement</h3>
       <h4>Industries Most Affected:</h4>
       <p>

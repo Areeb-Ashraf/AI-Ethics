@@ -24,6 +24,8 @@ function Mod4Sec4() {
         Governments around the world are increasingly integrating AI technologies into their policymaking processes. By leveraging AI’s ability to analyze vast datasets, identify patterns, and make predictions, public institutions can make more informed decisions. This can result in more effective and efficient governance, as AI-powered tools allow for real-time data analysis and dynamic responses to complex issues.
       </p>
 
+      <img src={require('./mod4images/aigovern.png')} alt="aigovern" className="aigovern-img" />
+
       <h3>Applications of AI in Governance</h3>
       <p>
         <b>Predictive Analytics:</b> Governments can use AI to anticipate and address social, economic, and environmental trends. For example, predictive models can forecast housing demands, predict the impact of new policies on the economy, or project the spread of diseases during a pandemic. Such tools provide a robust foundation for evidence-based policymaking.
@@ -51,6 +53,8 @@ function Mod4Sec4() {
       <p>
         AI technologies are becoming integral tools in surveillance and law enforcement, with applications ranging from facial recognition to predictive policing. These technologies can offer significant benefits, such as enhancing public safety, identifying criminals, and preventing crimes before they happen. However, they also raise significant ethical concerns, particularly in relation to privacy, civil liberties, and fairness.
       </p>
+      <img src={require('./mod4images/securitysystems.jpg')} alt="securitysystems" className="securitysystems-img" />
+
 
       <h3>Ethical Implications</h3>
       <p>
