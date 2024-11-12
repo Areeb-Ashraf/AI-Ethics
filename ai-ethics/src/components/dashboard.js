@@ -87,8 +87,8 @@ const Dashboard = () => {
           setCurrentXP((await databaseManager.fetchXPforUser(user.uid)) || 0);
           if (profile) {
             setUserProfile(profile);
-            calculateModuleProgress(profile);
             populateCompletedThings(profile);
+            calculateModuleProgress(profile);
           } else {
             console.error("Error fetching profile: Profile is null");
           }
@@ -138,18 +138,25 @@ const Dashboard = () => {
     LcompletedQuizzes.sort(
       (a, b) => new Date(a.timestamp) - new Date(b.timestamp)
     );
-    for (let i = 0; i < 3; i++) {
+    let limit = 0;
+    if (LcompletedQuizzes.length > 3) {
+      limit = 3;
+    } else {
+      limit = LcompletedQuizzes.length;
+    }
+    for (let i = 0; i < limit; i++) {
       let quiz = LcompletedQuizzes[i];
       threeCompletedQuizzes.push(
         quiz.quizID + " Quiz\n" + quiz.accuracy + "% " + quiz.duration + "s"
       );
     }
-    console.log(threeCompletedQuizzes);
     setCompletedQuizzes(threeCompletedQuizzes);
 
     // Get the last 3 completed lessons
     // given how we add lessons as completed in the db this should be the last 3 completed lessons
-    const LlastThreeCompleted = completedLessons.slice(-3);
+    const LlastThreeCompleted = Array.isArray(completedLessons)
+      ? completedLessons.slice(-3)
+      : [];
 
     setLastThreeCompleted(LlastThreeCompleted);
   }

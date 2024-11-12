@@ -21,11 +21,12 @@ const Mod4Sec1 = () => {
       </ol>
 
 
-      Summary
+      <h4>Summary</h4>
+
+      <p>
       This lesson aims to provide an in-depth understanding of the social impact of AI, beginning with a clear definition of social impact in the technology realm. By exploring historical advancements, students will gain insights into how technologies have shaped societal norms and behaviors, creating a framework for understanding AI's potential implications. The lesson will conclude by examining the current landscape influenced by AI, highlighting both its benefits and challenges, which will serve as a foundation for future discussions on AI's role in society.
+      </p>
 
-
-      <h2>Definition of Social Impact</h2>
 
       <h4>Understanding Social Impact</h4>
       <p>
@@ -44,7 +45,7 @@ const Mod4Sec1 = () => {
         Conversely, AI technologies can also lead to social inequalities, job displacement, and ethical concerns related to privacy and surveillance. For instance, algorithmic bias—when an AI system reflects societal biases present in the data it was trained on—can exacerbate existing social injustices. The hiring algorithms used by companies like Amazon have faced scrutiny for favoring male candidates over female candidates due to historical data bias, demonstrating how AI can inadvertently perpetuate discrimination.
       </p>
 
-      <h3>Importance of Understanding Social Impact</h3>
+      <h4>Importance of Understanding Social Impact</h4>
       <p>
         Understanding social impact is crucial for policymakers, technologists, and society at large. It enables stakeholders to make informed decisions about AI development and implementation, ensuring that technologies serve the greater good while minimizing harm. By critically assessing AI's potential social implications, we can identify areas where intervention is needed to promote equity and justice. As AI continues to evolve, a comprehensive understanding of its social implications will be essential for fostering equitable and inclusive technological advancement.
       </p>

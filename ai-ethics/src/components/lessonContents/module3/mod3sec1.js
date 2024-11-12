@@ -83,7 +83,7 @@ const Mod3Sec1 = () => {
         </li>
       </ul>
 
-      <h3>Conclusion</h3>
+      <h2>Conclusion</h2>
       <p>
         Understanding user autonomy is essential in the context of AI and digital technologies. As we navigate an increasingly complex digital landscape, promoting user autonomy fosters trust, enhances privacy protection, and empowers individuals to take control of their digital lives. By recognizing the historical context of user autonomy and its evolution alongside technological advancements, we can better appreciate the importance of prioritizing user choices in the development of ethical and responsible AI systems. In the following lessons, we will explore how to further empower users and design inclusive technologies that respect and uphold user autonomy.
       </p>
