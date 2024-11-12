@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import "../styles/quiz.css";
 import quizTimer from './images/quizTimer.svg';
 import resultTrophy from './images/resultTrophy.svg';
-import resultFinishSym from './images/resultFinishSym.svg';
+//import resultFinishSym from './images/resultFinishSym.svg';
 import retake from './images/retake.svg';
 import quizStart from './images/quizStart.svg';
 import { quizDatabase } from '../QuizDatabase';
@@ -160,13 +160,14 @@ const Quiz = ({ quizID }) => {
             </div>
           </div>
           <div className="Great-Job">Great Job!</div>
+          <div className="Great-Job"> You Earned: {xp} XP!!</div> {/* Display XP */}
+          <p></p>
           <div className="result-text">You finished the quiz in {formatTime(timeTaken)}.</div>
-          <div className="result-text">XP Earned: {xp}</div> {/* Display XP */}
           <div className="result-buttons-container">
-            <div className="result-finish-btn">
-              <img className='resultFinishSym-img' src={resultFinishSym} alt="resultFinishSym-img" />
-              Finish Module
-            </div>
+          {/* <div className="result-finish-btn">
+    <img className='resultFinishSym-img' src={resultFinishSym} alt="resultFinishSym-img" />
+    Finish Module
+  </div> */}
             <div className="result-retake-btn" onClick={handleRetakeQuiz}>
               <img className='retake-img' src={retake} alt="retake-img" />
               Retake

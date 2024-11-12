@@ -314,6 +314,7 @@ const Lessons = () => {
 
   return (
     <div className="lesson-container">
+      
       <div className="module-navigation-container">
         <div className="module-header-container">
           <div className="main-header">Modules</div>
