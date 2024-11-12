@@ -260,6 +260,44 @@
   margin-right: auto;
   font-size: 30px;
   font-weight: 700;
+  text-align: center;
+}
+
+/* Lesson prog bar styling */
+
+.center-div{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.lesson-progress-bar-container{
+  display: flex;
+  align-items: center;
+}
+
+.lesson-progress-bar{
+  width: 100%;
+  height: 10px;
+  margin: 10px 10px 5px 10px ;
+  background-color: #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.lesson-progress{
+  width: 80%;
+  height: 10px;
+  background-color: #0056D1;
+  border-radius: 50px;
+}
+
+.lesson-progress-percentage{
+  margin: 5px 5px 5px 0px ;
+  color: #0056D1;
+  font-weight: 800;
+  font-size: 18px;
 }
 
 /* Responsive styling */
