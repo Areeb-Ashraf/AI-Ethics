@@ -27,7 +27,6 @@ import Mod2Sec2 from "./lessonContents/module2/mod2sec2";
 import Mod2Sec3 from "./lessonContents/module2/mod2sec3";
 import Mod2Sec4 from "./lessonContents/module2/mod2sec4";
 import Mod2Sec5 from "./lessonContents/module2/mod2sec5";
-import Mod2Sec6 from "./lessonContents/module2/mod2sec6";
 
 
 //Mod3
@@ -118,7 +117,6 @@ const moduleData = [
       { type: "Lesson", contentComponent: <Mod2Sec3 /> },
       { type: "Lesson", contentComponent: <Mod2Sec4 /> },
       { type: "Lesson", contentComponent: <Mod2Sec5 /> },
-      { type: "Lesson", contentComponent: <Mod2Sec6 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleTwo" /> },
     ],
   },

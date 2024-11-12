@@ -7,10 +7,12 @@ import {
   doc,
   setDoc,
   getDoc,
+  orderBy,
+  Timestamp,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 function calculateQuizScore(duration, accuracy) {
-  return Math.min((90 / duration) * 100, 100) + accuracy;
+  return Math.round(Math.min((90 / duration) * 100, 100) + accuracy);
 }
 
 class DatabaseManager {
@@ -315,6 +317,81 @@ class DatabaseManager {
       }
     } catch (error) {
       console.error("Error adding completed lesson: ", error);
+      throw error;
+    }
+  }
+
+  // returns all of a users completed lessons from user profile
+  async fetchCompletedLessonsByUser(userID) {
+    try {
+      const userProfile = await this.fetchUserProfile(userID);
+      if (userProfile && userProfile.completedLessons) {
+        return userProfile.completedLessons;
+      } else {
+        return [];
+      }
+    } catch (error) {
+      console.error("Error fetching completed lessons: ", error);
+      throw error;
+    }
+  }
+
+  async updateLessonProgress(newProgress) {
+    try {
+      const userID = await this.getCurrentUserId();
+      const q = query(
+        collection(db, "lessonProgress"),
+        where("userID", "==", userID)
+      );
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        // Document exists, update progress
+        // let completed = querySnapshot.docs[0].data().completed || new Set();
+        let completed = querySnapshot.docs[0].data().completed || [];
+
+        if (!completed.includes(newProgress)) {
+          completed.push(newProgress);
+          await setDoc(
+            querySnapshot.docs[0].ref,
+            { completed: completed },
+            { merge: true }
+          );
+        } else {
+          console.log("Lesson already completed");
+        }
+      } else {
+        // Document does not exist, create it
+        let completed = [];
+        completed.push(newProgress);
+        await setDoc(doc(db, "lessonProgress", userID), {
+          userID: userID,
+          completed: completed,
+        });
+        console.log("Lesson progress document created");
+      }
+    } catch (error) {
+      console.error("Error updating lesson progress: ", error);
+      throw error;
+    }
+  }
+
+  async getLessonProgress() {
+    try {
+      const userID = await this.getCurrentUserId();
+      const q = query(
+        collection(db, "lessonProgress"),
+        where("userID", "==", userID)
+      );
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        return querySnapshot.docs[0].data().completed;
+      } else {
+        return new Set();
+      }
+    } catch (error) {
+      console.error("Error fetching lesson progress: ", error);
       throw error;
     }
   }

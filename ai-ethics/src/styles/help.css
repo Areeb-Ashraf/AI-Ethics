@@ -2,7 +2,7 @@
 .help-container{
     margin-left: 25px;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 .help-container h1{
     font-size: 60px;
