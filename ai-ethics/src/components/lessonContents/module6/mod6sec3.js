@@ -1,6 +1,7 @@
 import React from 'react';
 import './mod6.css';
-
+import responseibleai from './mod6images/responsibleai.png';
+import stakeholders from './mod6images/stakeholders.png';
 const Mod6Sec3 = () => {
     return (
         <div className="mod6sec1-container">
@@ -40,6 +41,9 @@ const Mod6Sec3 = () => {
                 </ul>
 
                 <h4>The Role of Public Expectations and Societal Values in AI Development</h4>
+                <div className="text-image-container">
+                     { <img src={responseibleai} alt="Responsible AI" className="res-ai-img" /> }
+                </div>               
                 <ul>
                     <li><strong>Demand for Ethical AI:</strong> As public awareness of AI's impact grows, individuals increasingly demand ethical AI practices.</li>
                     <li><strong>Social Impact Considerations:</strong> Societal values influence AI development by emphasizing the importance of social impact.</li>
@@ -50,6 +54,9 @@ const Mod6Sec3 = () => {
 
                 <h3>II. Collaborative Approaches to Responsibility</h3>
                 <h4>Importance of Stakeholder Engagement in AI Governance</h4>
+                <div className="text-image-container">
+                     { <img src={stakeholders} alt="Importance of Stakeholders" className="stake-ai-img" /> }
+                </div>                      
                 <ul>
                     <li>
                         <strong>Multi-Stakeholder Collaborations:</strong> Engaging diverse stakeholders is essential for creating a comprehensive framework for AI accountability.
