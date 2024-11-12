@@ -73,6 +73,23 @@ ol > li::marker {
   width: 80%;
   margin-bottom: 0px;
 }
+.role-of-ai-img {
+  width: 70%; /* Adjust to your preferred width */
+  height: auto; /* Maintains the aspect ratio */
+}
+.inclusive-ai-img{
+  width: 70%;
+  height: auto; 
+}
+.responsible-ai-img{
+  width:70%;
+  height:auto;
+}
+.design-ai-img{
+  width: 70%;
+  height: auto;
+}
+
 
 @media (max-width: 768px) {
     .text-image-container {

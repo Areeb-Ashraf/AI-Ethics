@@ -26,15 +26,17 @@ const Mod8Sec1 = () => {
         <p>
             Diversity in AI refers to the variety of perspectives, experiences, and backgrounds represented in the development and deployment of AI technologies. This includes, but is not limited to, diversity in terms of race, ethnicity, gender, age, socioeconomic status, ability, and cultural background. A diverse team is better equipped to create AI systems that are comprehensive, equitable, and sensitive to the needs of all users.
         </p>
+        <div className="text-image-container">
+            { <img src={collectDataImage} alt="Collect Data Process" className="role-of-ai-img" /> }
+        </div>
 
         <h4> Defining Inclusivity in AI</h4>
             <p>
                 Inclusivity in AI goes a step further by ensuring that all individuals, particularly those from marginalized or underrepresented groups, have the opportunity to participate in and benefit from AI technologies. It focuses on creating environments where diverse voices are not just present but actively engaged in the design, development, and decision-making processes surrounding AI.
             </p>
-    
-         <div className="text-image-container">
-            {/* <img src={collectDataImage} alt="Collect Data Process" className="role-of-ai-img" /> */}
-        </div>
+            <div className="text-image-container">
+            { <img src={inclusiveAIToolsImage} alt="AI Tools for Inclusive Workplaces" className="inclusive-ai-img" /> }
+            </div>
 
         <h3> Significance of Diversity and Inclusivity in AI Development</h3>
         <ul>
@@ -62,9 +64,6 @@ const Mod8Sec1 = () => {
                 <h4>Erosion of Trust:</h4>
                 <p>The historical exclusion of diverse voices can lead to skepticism and distrust among marginalized communities regarding AI technologies. When these communities see their experiences and needs overlooked, it diminishes their confidence in technology as a whole.</p>
 
-        <div className="text-image-container">
-            {/* <img src={inclusiveAIToolsImage} alt="AI Tools for Inclusive Workplaces" className="role-of-ai-img" /> */}
-        </div>
 
         <h2>Conclusion</h2>
         <p>

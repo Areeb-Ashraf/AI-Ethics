@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/lessons.css";
 import * as FaIcons from "react-icons/fa";
 import LessonTour from "./tours/LessonTour";
+import databaseManager from "../databaseManager";
 
 // Intro
 import IntroSec1 from "./lessonContents/module1/introsec1";
@@ -83,13 +84,13 @@ const moduleData = [
     title: "Introduction",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <IntroSec1 /> },
-      { type: "Lesson", contentComponent: <IntroSec2 /> },
-      { type: "Lesson", contentComponent: <IntroSec3 /> },
-      { type: "Lesson", contentComponent: <IntroSec4 /> },
-      { type: "Lesson", contentComponent: <IntroSec5 /> },
-      { type: "Lesson", contentComponent: <IntroSec6 /> },
-      { type: "Lesson", contentComponent: <IntroSec7 /> },
+      { secID: "0.1", type: "Lesson", contentComponent: <IntroSec1 /> },
+      { secID: "0.2", type: "Lesson", contentComponent: <IntroSec2 /> },
+      { secID: "0.3", type: "Lesson", contentComponent: <IntroSec3 /> },
+      { secID: "0.4", type: "Lesson", contentComponent: <IntroSec4 /> },
+      { secID: "0.5", type: "Lesson", contentComponent: <IntroSec5 /> },
+      { secID: "0.6", type: "Lesson", contentComponent: <IntroSec6 /> },
+      { secID: "0.7", type: "Lesson", contentComponent: <IntroSec7 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="Introduction" /> },
     ],
   },
@@ -98,12 +99,12 @@ const moduleData = [
     title: "Module 1", // module 1
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod1Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec5 /> },
-      { type: "Lesson", contentComponent: <Mod1Sec6 /> },
+      { secID: "1.1", type: "Lesson", contentComponent: <Mod1Sec1 /> },
+      { secID: "1.2", type: "Lesson", contentComponent: <Mod1Sec2 /> },
+      { secID: "1.3", type: "Lesson", contentComponent: <Mod1Sec3 /> },
+      { secID: "1.4", type: "Lesson", contentComponent: <Mod1Sec4 /> },
+      { secID: "1.5", type: "Lesson", contentComponent: <Mod1Sec5 /> },
+      { secID: "1.6", type: "Lesson", contentComponent: <Mod1Sec6 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleOne" /> },
     ],
   },
@@ -112,11 +113,11 @@ const moduleData = [
     title: "Module 2",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod2Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod2Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod2Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod2Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod2Sec5 /> },
+      { secID: "2.1", type: "Lesson", contentComponent: <Mod2Sec1 /> },
+      { secID: "2.2", type: "Lesson", contentComponent: <Mod2Sec2 /> },
+      { secID: "2.3", type: "Lesson", contentComponent: <Mod2Sec3 /> },
+      { secID: "2.4", type: "Lesson", contentComponent: <Mod2Sec4 /> },
+      { secID: "2.5", type: "Lesson", contentComponent: <Mod2Sec5 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleTwo" /> },
     ],
   },
@@ -125,11 +126,11 @@ const moduleData = [
     title: "Module 3",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod3Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod3Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod3Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod3Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod3Sec5 /> },
+      { secID: "3.1", type: "Lesson", contentComponent: <Mod3Sec1 /> },
+      { secID: "3.2", type: "Lesson", contentComponent: <Mod3Sec2 /> },
+      { secID: "3.3", type: "Lesson", contentComponent: <Mod3Sec3 /> },
+      { secID: "3.4", type: "Lesson", contentComponent: <Mod3Sec4 /> },
+      { secID: "3.5", type: "Lesson", contentComponent: <Mod3Sec5 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleThree" /> },
     ],
   },
@@ -138,13 +139,13 @@ const moduleData = [
     title: "Module 4",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod4Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod4Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod4Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod4Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod4Sec5 /> },
-      { type: "Lesson", contentComponent: <Mod4Sec6 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleFour" /> },
+      { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec1 /> },
+      { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec2 /> },
+      { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec3 /> },
+      { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec4 /> },
+      { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec5 /> },
+      { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec6 /> },
+      { secID: "4.1", type: "Quiz", contentComponent: <Quiz quizID="ModuleFour" /> },
     ],
   },
   {
@@ -152,11 +153,11 @@ const moduleData = [
     title: "Module 5",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod5Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod5Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod5Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod5Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod5Sec5 /> },
+      { secID: "5.1", type: "Lesson", contentComponent: <Mod5Sec1 /> },
+      { secID: "5.2", type: "Lesson", contentComponent: <Mod5Sec2 /> },
+      { secID: "5.3", type: "Lesson", contentComponent: <Mod5Sec3 /> },
+      { secID: "5.4", type: "Lesson", contentComponent: <Mod5Sec4 /> },
+      { secID: "5.5", type: "Lesson", contentComponent: <Mod5Sec5 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleFive" /> },
     ],
   },
@@ -165,10 +166,10 @@ const moduleData = [
     title: "Module 6",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod6Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod6Scenes /> },
-      { type: "Lesson", contentComponent: <Mod6Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod6Sec3 /> },
+      { secID: "6.1", type: "Lesson", contentComponent: <Mod6Sec1 /> },
+      { secID: "6.2", type: "Lesson", contentComponent: <Mod6Scenes /> },
+      { secID: "6.3", type: "Lesson", contentComponent: <Mod6Sec2 /> },
+      { secID: "6.4", type: "Lesson", contentComponent: <Mod6Sec3 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleSix" /> },
     ],
   },
@@ -177,11 +178,11 @@ const moduleData = [
     title: "Module 7",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod7Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod7Scenes /> },
-      { type: "Lesson", contentComponent: <Mod7Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod7Sec3 /> },   
-      { type: "Lesson", contentComponent: <Mod7Sec4 /> },
+      { secID: "7.1", type: "Lesson", contentComponent: <Mod7Sec1 /> },
+      { secID: "7.2", type: "Lesson", contentComponent: <Mod7Scenes /> },
+      { secID: "7.3", type: "Lesson", contentComponent: <Mod7Sec2 /> },
+      { secID: "7.4", type: "Lesson", contentComponent: <Mod7Sec3 /> },   
+      { secID: "7.5", type: "Lesson", contentComponent: <Mod7Sec4 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleSeven" /> },  
      ],
   },
@@ -190,11 +191,11 @@ const moduleData = [
     title: "Module 8",
     time: "20min",
     sections: [
-      { type: "Lesson", contentComponent: <Mod8Sec1 /> },
-      { type: "Lesson", contentComponent: <Mod8Sec2 /> },
-      { type: "Lesson", contentComponent: <Mod8Sec3 /> },
-      { type: "Lesson", contentComponent: <Mod8Sec4 /> },
-      { type: "Lesson", contentComponent: <Mod8Sec5 /> },
+      { secID: "8.1", type: "Lesson", contentComponent: <Mod8Sec1 /> },
+      { secID: "8.2", type: "Lesson", contentComponent: <Mod8Sec2 /> },
+      { secID: "8.3", type: "Lesson", contentComponent: <Mod8Sec3 /> },
+      { secID: "8.4", type: "Lesson", contentComponent: <Mod8Sec4 /> },
+      { secID: "8.5", type: "Lesson", contentComponent: <Mod8Sec5 /> },
       { type: "Quiz", contentComponent: <Quiz quizID="ModuleEight" /> },
     ],
   },
@@ -236,6 +237,12 @@ const Lessons = () => {
   const handleNextClick = () => {
     const { moduleIndex, sectionIndex } = currentSection;
     const module = moduleData[moduleIndex];
+    const currentLesson = module.sections[sectionIndex];
+
+  // Call updateLessonProgress with the current lesson's secID before updating the section
+  if (currentLesson.type === "Lesson") {
+    databaseManager.updateLessonProgress(currentLesson.secID);
+  }
 
     if (sectionIndex < module.sections.length - 1) {
       setCurrentSection({ moduleIndex, sectionIndex: sectionIndex + 1 });
@@ -248,6 +255,12 @@ const Lessons = () => {
 
   const handlePrevClick = () => {
     const { moduleIndex, sectionIndex } = currentSection;
+    const currentLesson = module.sections[sectionIndex];
+
+  // Call updateLessonProgress with the current lesson's secID before updating the section
+  if (currentLesson.type === "Lesson") {
+    databaseManager.updateLessonProgress(currentLesson.secID);
+  }
 
     if (sectionIndex > 0) {
       setCurrentSection({ moduleIndex, sectionIndex: sectionIndex - 1 });

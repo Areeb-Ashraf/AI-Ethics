@@ -1,6 +1,6 @@
 import React from 'react';
 import './mod8.css';
-
+import responsible from "./mod8images/responsible.png"
 const Mod8Sec2 = () => {
     return (
         <div className="mod8sec1-container">
@@ -25,6 +25,9 @@ const Mod8Sec2 = () => {
             <p>
                 Data bias occurs when the data used to train AI systems is unrepresentative of the population it aims to serve. This can happen for various reasons, including:
             </p>
+            <div className="text-image-container">
+            { <img src={responsible} alt="Responsible AI" className="responsible-ai-img" /> }
+             </div>
             <ul>
                 <li>
                     <strong>Historical Bias:</strong> Historical bias arises from pre-existing societal inequalities reflected in the data. For example, if historical crime data is used to train a predictive policing model, it may reflect systemic biases in law enforcement practices, leading to disproportionate targeting of marginalized communities.
