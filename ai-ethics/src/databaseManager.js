@@ -6,11 +6,9 @@ import {
   where,
   doc,
   setDoc,
-  getDoc,
-  orderBy,
-  Timestamp,
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { moduleData } from "./components/lessons";
 function calculateQuizScore(duration, accuracy) {
   return Math.round(Math.min((90 / duration) * 100, 100) + accuracy);
 }
@@ -159,23 +157,6 @@ class DatabaseManager {
     });
   }
 
-  // // function to modify the userProfile object to include the completion of a new lesson
-  // async completeLesson(userID, lessonID) {
-  //   try {
-  //     const userProfile = await this.fetchUserProfile(userID);
-  //     const completedLessons = userProfile.completedLessons;
-  //     if (!completedLessons.includes(lessonID)) {
-  //       completedLessons.push(lessonID);
-  //       await db.collection("userProfile").doc(userID).update({
-  //         completedLessons: completedLessons,
-  //       });
-  //     }
-  //   } catch (error) {
-  //     console.error("Error completing lesson: ", error);
-  //     throw error;
-  //   }
-  // }
-
   // uploads an image to the firebase storage and returns the download URL
   // TODO: add a way to delete images
   async uploadImage(file) {
@@ -263,6 +244,7 @@ class DatabaseManager {
         leaderboardData.push({
           name: name,
           score: xp,
+          img: userProfile ? userProfile.imgURL : null,
         });
 
         // console.log("Adding user: ", user.name, " with XP: ", xp);
@@ -337,63 +319,85 @@ class DatabaseManager {
   }
 
   async updateLessonProgress(newProgress) {
-    try {
-      const userID = await this.getCurrentUserId();
-      const q = query(
-        collection(db, "lessonProgress"),
-        where("userID", "==", userID)
-      );
-      const querySnapshot = await getDocs(q);
+    throw new Error("databaseManager.updateLessonProgress is deprecated!");
+    // try {
+    //   const userID = await this.getCurrentUserId();
+    //   const q = query(
+    //     collection(db, "lessonProgress"),
+    //     where("userID", "==", userID)
+    //   );
+    //   const querySnapshot = await getDocs(q);
 
-      if (!querySnapshot.empty) {
-        // Document exists, update progress
-        // let completed = querySnapshot.docs[0].data().completed || new Set();
-        let completed = querySnapshot.docs[0].data().completed || [];
+    //   let completed = querySnapshot.empty
+    //     ? []
+    //     : querySnapshot.docs[0].data().completed || [];
 
-        if (!completed.includes(newProgress)) {
-          completed.push(newProgress);
-          await setDoc(
-            querySnapshot.docs[0].ref,
-            { completed: completed },
-            { merge: true }
-          );
-        } else {
-          console.log("Lesson already completed");
-        }
-      } else {
-        // Document does not exist, create it
-        let completed = [];
-        completed.push(newProgress);
-        await setDoc(doc(db, "lessonProgress", userID), {
-          userID: userID,
-          completed: completed,
-        });
-        console.log("Lesson progress document created");
-      }
-    } catch (error) {
-      console.error("Error updating lesson progress: ", error);
-      throw error;
-    }
+    //   if (!completed.includes(newProgress)) {
+    //     completed.push(newProgress);
+
+    //     // Update the database with the new completed section
+    //     if (!querySnapshot.empty) {
+    //       await setDoc(
+    //         querySnapshot.docs[0].ref,
+    //         { completed: completed },
+    //         { merge: true }
+    //       );
+    //       console.log("check 0");
+    //     } else {
+    //       await setDoc(doc(db, "lessonProgress", userID), {
+    //         userID: userID,
+    //         completed: completed,
+    //       });
+    //       console.log("Lesson progress document created");
+    //     }
+
+    //     console.log("check 1");
+    //     // Check if a module is completed
+    //     for (const module of moduleData) {
+    //       console.log("module", module);
+
+    //       const moduleSections = module.sections
+    //         .filter((section) => section.secID)
+    //         .map((section) => section.secID);
+
+    //       console.log("sections", moduleSections);
+
+    //       const isModuleComplete = moduleSections.every((secID) =>
+    //         completed.includes(secID)
+    //       );
+
+    //       if (isModuleComplete) {
+    //         this.addCompletedLesson(module.title);
+    //         console.log(`Module completed: ${module.title}`);
+    //       }
+    //     }
+    //   } else {
+    //     console.log("Section already completed");
+    //   }
+    // } catch (error) {
+    //   console.error("Error updating lesson progress: ", error);
+    //   throw error;
+    // }
   }
 
   async getLessonProgress() {
-    try {
-      const userID = await this.getCurrentUserId();
-      const q = query(
-        collection(db, "lessonProgress"),
-        where("userID", "==", userID)
-      );
-      const querySnapshot = await getDocs(q);
-
-      if (!querySnapshot.empty) {
-        return querySnapshot.docs[0].data().completed;
-      } else {
-        return new Set();
-      }
-    } catch (error) {
-      console.error("Error fetching lesson progress: ", error);
-      throw error;
-    }
+    throw new Error("databaseManager.getLessonProgress is deprecated!");
+    // try {
+    //   const userID = await this.getCurrentUserId();
+    //   const q = query(
+    //     collection(db, "lessonProgress"),
+    //     where("userID", "==", userID)
+    //   );
+    //   const querySnapshot = await getDocs(q);
+    //   if (!querySnapshot.empty) {
+    //     return querySnapshot.docs[0].data().completed;
+    //   } else {
+    //     return new Set();
+    //   }
+    // } catch (error) {
+    //   console.error("Error fetching lesson progress: ", error);
+    //   throw error;
+    // }
   }
 }
 
