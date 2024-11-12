@@ -125,7 +125,7 @@ const Dashboard = () => {
 
     let LcompletedQuizzes = await databaseManager.fetchScoresByUserID(user.uid);
 
-    calculateModuleProgress(profile, LcompletedQuizzes);
+    await calculateModuleProgress(profile, LcompletedQuizzes);
 
     /*
     TODO:
@@ -133,9 +133,25 @@ const Dashboard = () => {
     will very likely need to rework this to accomadate the new timestamp format, esspecially if we are
       keeping the old entries as well
     */
-    LcompletedQuizzes.sort(
-      (a, b) => new Date(a.timestamp) - new Date(b.timestamp)
-    );
+    // console.log("pre sort: ", LcompletedQuizzes);
+
+    LcompletedQuizzes.sort((a, b) => {
+      let dateA =
+        a.timestamp instanceof Timestamp
+          ? a.timestamp.toDate()
+          : new Date(a.timestamp);
+      let dateB =
+        b.timestamp instanceof Timestamp
+          ? b.timestamp.toDate()
+          : new Date(b.timestamp);
+
+      if (isNaN(dateA)) return 1; // `a` is invalid, place after `b`
+      if (isNaN(dateB)) return -1; // `b` is invalid, place after `a`
+
+      return dateA - dateB;
+    });
+    // console.log("post sort: ", LcompletedQuizzes);
+
     let limit = 0;
     if (LcompletedQuizzes.length > 3) {
       limit = 3;
@@ -159,7 +175,7 @@ const Dashboard = () => {
   }
 
   // doing this verbosely so that it is obvious what the logic is...
-  function calculateModuleProgress(profile, completedQuizzes) {
+  async function calculateModuleProgress(profile, completedQuizzes) {
     let numModules = 18;
     let numCompletedLessons = 0;
 
@@ -390,7 +406,7 @@ const Dashboard = () => {
                     </div>
                     <div className="quiz-lower">
                       <div className="quiz-prog">
-                        <span className="quiz-prog-percent">100%</span>
+                        <span className="quiz-prog-percent"></span>
                       </div>
                     </div>
                   </div>
