@@ -1,6 +1,6 @@
 import React from 'react';
 import './mod8.css';
-
+import designcirclces from "./mod8images/designcircles.png"
 const Mod8Sec3 = () => {
     return (
         <div className="mod8sec1-container">
@@ -20,6 +20,10 @@ const Mod8Sec3 = () => {
             </ul>
 
             <h2>Frameworks for Inclusive Design</h2>
+
+            <div className="text-image-container">
+            { <img src={designcirclces} alt="Design Circles" className="design-ai-img" /> }
+            </div>
 
             <h4>Universal Design</h4>
             <p>
