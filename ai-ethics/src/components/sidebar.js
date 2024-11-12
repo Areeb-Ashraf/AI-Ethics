@@ -7,9 +7,10 @@ import {
   AiOutlineLogout,
 } from "react-icons/ai";
 import { FaBook, FaTrophy } from "react-icons/fa";
-import { GiArtificialIntelligence } from "react-icons/gi";
 import { FaUserCircle } from "react-icons/fa";
 import { auth } from "../firebase"; // Import auth for logout functionality
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content';
 import "../styles/sidebar.css";
 
 const Sidebar = ({ setIsLoggedIn }) => {
@@ -26,13 +27,41 @@ const Sidebar = ({ setIsLoggedIn }) => {
     setSidebarVisible(false);
   };
 
+  const Alert = withReactContent(Swal);
+
   const handleLogout = async () => {
     try {
-      await auth.signOut(); // Sign out the user
-      setIsLoggedIn(false); // Update the logged-in state
-      navigate("/login"); // Redirect to login after logout
+      Alert.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#0056D1",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Logout!"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          auth.signOut(); // Sign out the user
+          setIsLoggedIn(false); // Update the logged-in state
+          navigate("/login"); // Redirect to login after logout
+          Alert.fire({
+            title: "Logged Out!",
+            text: "You have been logged out",
+            icon: "success"
+          });
+        }
+      });
+      // await auth.signOut(); // Sign out the user
+      // setIsLoggedIn(false); // Update the logged-in state
+      // navigate("/login"); // Redirect to login after logout
     } catch (err) {
       console.error("Logout error:", err.message);
+      Alert.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+        footer: err.message
+      });
     }
   };
 
