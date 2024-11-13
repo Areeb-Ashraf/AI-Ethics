@@ -399,6 +399,30 @@ class DatabaseManager {
     //   throw error;
     // }
   }
+
+  // fetches the users completed lessons and quizzes
+  async fetchUsersProgress() {
+    let uniqueCompletedItems = new Set();
+
+    try {
+      const userID = await this.getCurrentUserId();
+      const [lessons, scores] = await Promise.all([
+        this.fetchCompletedLessonsByUser(userID),
+        this.fetchScoresByUserID(userID),
+      ]);
+
+      // console.log("Completed lessons: ", lessons);
+      // console.log("Completed quizzes: ", scores);
+
+      lessons.forEach((lesson) => uniqueCompletedItems.add(lesson));
+      scores.forEach((score) => uniqueCompletedItems.add(score.quizID));
+    } catch (error) {
+      console.error("Error fetching user progress: ", error);
+      throw error;
+    }
+
+    return Array.from(uniqueCompletedItems);
+  }
 }
 
 export default DatabaseManager = new DatabaseManager();
