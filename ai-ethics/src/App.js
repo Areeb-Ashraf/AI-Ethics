@@ -1,25 +1,27 @@
 import "./App.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate,
 } from "react-router-dom";
+
 import Sidebar from "./components/sidebar";
-import DatabaseManTester from "./DatabaseManTester";
 import AIGlossary from "./aiGlossary";
-import Homepage from "./components/homepage";
+// import Homepage from "./components/homepage";
 import UserProfile from "./UserProfile";
 import LoginForm from "./components/login";
 import Signup from "./components/signup";
 import { auth } from "./firebase";
 import Lessons from "./components/lessons";
-import Leaderboard from "./components/leaderboard";
 import Welcome from "./components/welcome";
 import Help from "./components/help";
 import Profile from "./components/profile";
 import Dashboard from "./components/dashboard";
+
+const Leaderboard = lazy(() => import("./components/leaderboard"));
+const DatabaseManTester = lazy(() => import("./DatabaseManTester"));
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -96,7 +98,9 @@ function App() {
             path="/leaderboard"
             element={
               <ProtectedRoute>
-                <Leaderboard />
+                <Suspense fallback={<div>Loading...</div>}>
+                  <Leaderboard />
+                </Suspense>
               </ProtectedRoute>
             }
           />
@@ -128,7 +132,9 @@ function App() {
             path="/databaseTest"
             element={
               <ProtectedRoute>
-                <DatabaseManTester />
+                <Suspense fallback={<div>Loading...</div>}>
+                  <DatabaseManTester />
+                </Suspense>
               </ProtectedRoute>
             }
           />

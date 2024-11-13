@@ -1,4 +1,5 @@
-import { auth, db, imagesRef } from "./firebase";
+import { auth, db, imagesRef, analytics } from "./firebase";
+import { logEvent } from "firebase/analytics";
 import {
   query,
   collection,
@@ -35,29 +36,49 @@ class DatabaseManager {
   //   }
 
   async fetchScoresByQuizID(quizID) {
-    const scoresRef = collection(db, "Scores");
-    const q = query(scoresRef, where("quizID", "==", quizID));
-
     try {
+      logEvent(analytics, "fetch_scores_by_quiz_id_start", { quizID });
+      const scoresRef = collection(db, "Scores");
+      const q = query(scoresRef, where("quizID", "==", quizID));
+
       const querySnapshot = await getDocs(q);
       const results = querySnapshot.docs.map((doc) => doc.data());
+
+      logEvent(analytics, "fetch_scores_by_quiz_id_success", {
+        quizID,
+        resultCount: results.length,
+      });
       return results;
     } catch (error) {
       console.error("Error fetching scores: ", error);
+      logEvent(analytics, "fetch_scores_by_quiz_id_error", {
+        quizID,
+        error: error.message,
+      });
       throw error;
     }
   }
 
   async fetchScoresByUserID(userID) {
-    const scoresRef = collection(db, "Scores");
-    const q = query(scoresRef, where("uid", "==", userID));
-
     try {
+      logEvent(analytics, "fetch_scores_by_user_id_start", { userID });
+      const scoresRef = collection(db, "Scores");
+      const q = query(scoresRef, where("uid", "==", userID));
+
       const querySnapshot = await getDocs(q);
       const results = querySnapshot.docs.map((doc) => doc.data());
+
+      logEvent(analytics, "fetch_scores_by_user_id_success", {
+        userID,
+        resultCount: results.length,
+      });
       return results;
     } catch (error) {
       console.error("Error fetching scores: ", error);
+      logEvent(analytics, "fetch_scores_by_user_id_error", {
+        userID,
+        error: error.message,
+      });
       throw error;
     }
   }
@@ -65,6 +86,7 @@ class DatabaseManager {
   // Fetches a word from the glossary
   async fetchGlossary(word) {
     try {
+      logEvent(analytics, "fetch_glossary_start", { word });
       const q = query(
         collection(db, "glossaryWord"),
         where("title", "==", word)
@@ -72,13 +94,22 @@ class DatabaseManager {
       const querySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
+        logEvent(analytics, "fetch_glossary_success", {
+          word,
+          resultCount: querySnapshot.docs.length,
+        });
         return querySnapshot.docs[0].data();
       } else {
         console.error("No matching glossary word found");
+        logEvent(analytics, "fetch_glossary_not_found", { word });
         return null;
       }
     } catch (error) {
       console.error("Error fetching glossary: ", error);
+      logEvent(analytics, "fetch_glossary_error", {
+        word,
+        error: error.message,
+      });
       throw error;
     }
   }
@@ -86,17 +117,23 @@ class DatabaseManager {
   // fetches all words from the glossary
   async fetchAllGlossary() {
     try {
+      logEvent(analytics, "fetch_all_glossary_start");
       const q = query(collection(db, "glossaryWord"));
       const querySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
+        logEvent(analytics, "fetch_all_glossary_success", {
+          resultCount: querySnapshot.docs.length,
+        });
         return querySnapshot.docs.map((doc) => doc.data());
       } else {
         console.error("No glossary words found");
+        logEvent(analytics, "fetch_all_glossary_not_found");
         return null;
       }
     } catch (error) {
       console.error("Error fetching glossary: ", error);
+      logEvent(analytics, "fetch_all_glossary_error", { error: error.message });
       throw error;
     }
   }
@@ -104,6 +141,7 @@ class DatabaseManager {
   // Fetches a user profile from the database
   async fetchUserProfile(userID) {
     try {
+      logEvent(analytics, "fetch_user_profile_start", { userID });
       const q = query(
         collection(db, "userProfile"),
         where("userID", "==", userID)
@@ -113,13 +151,22 @@ class DatabaseManager {
       if (!querySnapshot.empty) {
         const profile = querySnapshot.docs[0].data();
         profile["id"] = querySnapshot.docs[0].id;
+        logEvent(analytics, "fetch_user_profile_success", {
+          userID,
+          resultCount: 1,
+        });
         return profile;
       } else {
         console.error("No matching user found");
+        logEvent(analytics, "fetch_user_profile_not_found", { userID });
         return null;
       }
     } catch (error) {
       console.error("Error fetching user profile: ", error);
+      logEvent(analytics, "fetch_user_profile_error", {
+        userID,
+        error: error.message,
+      });
       throw error;
     }
   }
@@ -127,19 +174,25 @@ class DatabaseManager {
   // Fetches a user document (not the profile!)
   async getUserDocumentIdByUid(uid) {
     try {
+      logEvent(analytics, "get_user_document_by_uid_start", { uid });
       const q = query(collection(db, "users"), where("uid", "==", uid));
       const querySnapshot = await getDocs(q);
 
       if (querySnapshot.empty) {
         console.error("User document not found for UID:", uid);
+        logEvent(analytics, "get_user_document_by_uid_not_found", { uid });
         return null;
       }
 
-      // Assuming there's only one user document per UID
       const userDoc = querySnapshot.docs[0].data();
+      logEvent(analytics, "get_user_document_by_uid_success", { uid });
       return userDoc;
     } catch (error) {
       console.error("Error fetching user document ID:", error);
+      logEvent(analytics, "get_user_document_by_uid_error", {
+        uid,
+        error: error.message,
+      });
       return null;
     }
   }
@@ -158,21 +211,28 @@ class DatabaseManager {
   }
 
   // uploads an image to the firebase storage and returns the download URL
-  // TODO: add a way to delete images
+  // TODO: add a way to delete images, if the user changes their image
   async uploadImage(file) {
-    const storageRef = ref(imagesRef, file.name);
     try {
+      logEvent(analytics, "upload_image_start", { fileName: file.name });
+      const storageRef = ref(imagesRef, file.name);
       const snapshot = await uploadBytes(storageRef, file);
       console.log("Uploaded a blob or file!");
-    } catch (error) {
-      console.error(error);
-    }
 
-    // Upload completed successfully, now we can get the download URL
-    return getDownloadURL(ref(imagesRef, file.name)).then((url) => {
-      console.log("File available at", url);
+      logEvent(analytics, "upload_image_success", { fileName: file.name });
+      const url = await getDownloadURL(ref(imagesRef, file.name));
+      logEvent(analytics, "upload_image_url_fetched", {
+        fileName: file.name,
+        url,
+      });
       return url;
-    });
+    } catch (error) {
+      console.error("Error uploading image:", error);
+      logEvent(analytics, "upload_image_error", {
+        fileName: file.name,
+        error: error.message,
+      });
+    }
   }
 
   /**
@@ -184,6 +244,8 @@ class DatabaseManager {
    */
   async fetchXPforUser(userID) {
     try {
+      logEvent(analytics, "fetchXPforUser_start", { userID });
+
       const userProfile = await this.fetchUserProfile(userID);
       const scores = await this.fetchScoresByUserID(userID);
 
@@ -208,9 +270,9 @@ class DatabaseManager {
 
       for (const quizID in maxScores) {
         xp += maxScores[quizID];
-        // console.log("Adding score: ", maxScores[quizID], " for quiz: ", quizID);
       }
 
+      logEvent(analytics, "fetchXPforUser_end", { userID, xp });
       return xp;
     } catch (error) {
       console.error("Error fetching XP: ", error);
@@ -223,12 +285,12 @@ class DatabaseManager {
   // curently rather inefficient, but should be fine for now
   async fetchLeaderboardData() {
     try {
-      // fetch all user objects
+      logEvent(analytics, "fetchLeaderboardData_start");
+
       const q = query(collection(db, "users"));
       const querySnapshot = await getDocs(q);
       const users = querySnapshot.docs.map((doc) => doc.data());
 
-      // for each user, fetch scores
       const leaderboardData = [];
       for (const user of users) {
         const userProfile = await this.fetchUserProfile(user.uid);
@@ -246,12 +308,13 @@ class DatabaseManager {
           score: xp,
           img: userProfile ? userProfile.imgURL : null,
         });
-
-        // console.log("Adding user: ", user.name, " with XP: ", xp);
       }
 
-      // sort by xp
       leaderboardData.sort((a, b) => b.score - a.score);
+
+      logEvent(analytics, "fetchLeaderboardData_end", {
+        leaderboardCount: leaderboardData.length,
+      });
       return leaderboardData;
     } catch (error) {
       console.error("Error fetching leaderboard data: ", error);
@@ -268,13 +331,10 @@ class DatabaseManager {
         where("userID", "==", userID)
       );
       const querySnapshot = await getDocs(q);
-      // const docRef = doc(db, "userProfile", userID);
+
       let userProfile = null;
       if (querySnapshot) {
         userProfile = querySnapshot.docs[0].data();
-      } else {
-        console.error("User profile not found");
-        return;
       }
 
       let completedLessons = [];
@@ -297,6 +357,8 @@ class DatabaseManager {
       } else {
         console.log("Lesson already completed");
       }
+
+      logEvent(analytics, "addCompletedLesson", { userID, lessonID });
     } catch (error) {
       console.error("Error adding completed lesson: ", error);
       throw error;
@@ -307,7 +369,12 @@ class DatabaseManager {
   async fetchCompletedLessonsByUser(userID) {
     try {
       const userProfile = await this.fetchUserProfile(userID);
+
       if (userProfile && userProfile.completedLessons) {
+        logEvent(analytics, "fetchCompletedLessonsByUser", {
+          userID,
+          lessonCount: userProfile.completedLessons.length,
+        });
         return userProfile.completedLessons;
       } else {
         return [];
@@ -411,11 +478,13 @@ class DatabaseManager {
         this.fetchScoresByUserID(userID),
       ]);
 
-      // console.log("Completed lessons: ", lessons);
-      // console.log("Completed quizzes: ", scores);
-
       lessons.forEach((lesson) => uniqueCompletedItems.add(lesson));
       scores.forEach((score) => uniqueCompletedItems.add(score.quizID));
+
+      logEvent(analytics, "fetchUsersProgress", {
+        userID,
+        progressCount: uniqueCompletedItems.size,
+      });
     } catch (error) {
       console.error("Error fetching user progress: ", error);
       throw error;

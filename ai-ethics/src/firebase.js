@@ -19,6 +19,7 @@ import {
   addDoc,
 } from "firebase/firestore";
 import { getStorage, ref } from "firebase/storage";
+import { getPerformance } from "firebase/performance";
 
 // the firebase creds as pulled from .env file
 const firebaseConfig = {
@@ -39,6 +40,8 @@ const db = getFirestore(app);
 const googsProvider = new GoogleAuthProvider();
 const storage = getStorage(app);
 const imagesRef = ref(storage, "images");
+// Initialize Performance Monitoring and get a reference to the service
+const perf = getPerformance(app);
 
 /*********************************************************
  * handle authentication through this class
@@ -158,4 +161,4 @@ class AuthManager {
 
 const authManager = new AuthManager();
 
-export { auth, db, authManager, imagesRef };
+export { auth, db, authManager, imagesRef, perf, analytics };
