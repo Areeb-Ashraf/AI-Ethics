@@ -12,10 +12,10 @@ const Leaderboard = () => {
   const top3 = [sortedData[1], sortedData[0], sortedData[2]]; // Swap rank 1 and 2 to display in correct containers
   const rest = sortedData.slice(3);
 
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState("");
 
   // Filter players based on the search query
-  const filteredPlayers = rest.filter(player =>
+  const filteredPlayers = rest.filter((player) =>
     player.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -31,7 +31,9 @@ const Leaderboard = () => {
               className="rank-container"
               id={`rank-${index === 0 ? 2 : index === 1 ? 1 : 3}-container`} // Makes sure the first one has rank 2 container since it was swapped before
             >
-              <div className="rank-icon"></div>
+              <div className="rank-icon profile-picture-2">
+                <img src={player.img} alt="Profile" />
+              </div>
               <div className="rank-name">{player.name}</div>
               <div className="rank-score">{player.score} XP</div>
               <div className="rank-platform">

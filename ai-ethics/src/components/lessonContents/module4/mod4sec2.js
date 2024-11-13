@@ -31,6 +31,8 @@ const Mod4Sec2 = () => {
         Social equity refers to the fair and just distribution of resources, opportunities, and privileges within a society. It emphasizes that all individuals, regardless of their background, should have equal access to services, education, and opportunities. In the context of AI, equity and access are critical considerations, as AI technologies can significantly impact individuals' ability to access essential services, participate in the economy, and engage with technology.
       </p>
 
+      <img src={require('./mod4images/accessibilitytriangle.png')} alt="accessibilitytriangle" className="accessibilitytriangle-img" />
+
       <h3>Promoting Social Equity Through AI</h3>
       <p>AI has the potential to promote social equity in several ways:</p>
       <ul>

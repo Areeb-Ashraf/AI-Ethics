@@ -141,6 +141,14 @@
     border-radius: 50%;
     margin-left: auto;
   }
+
+  .panel-button-status-false {
+    font-size: 12px;
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    margin-left: auto;
+  }
   
   .panel-button-time {
     font-size: 11px;

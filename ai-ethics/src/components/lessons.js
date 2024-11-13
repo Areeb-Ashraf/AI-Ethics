@@ -16,11 +16,10 @@ import IntroSec7 from "./lessonContents/module1/introsec7";
 //Mod1
 import Mod1Sec1 from "./lessonContents/realModule1/mod1sec1";
 import Mod1Sec2 from "./lessonContents/realModule1/mod1sec2";
-import Mod1Sec3 from "./lessonContents/realModule1/mod1sec3"
-import Mod1Sec4 from "./lessonContents/realModule1/mod1sec4"
-import Mod1Sec5 from "./lessonContents/realModule1/mod1sec5"
-import Mod1Sec6 from "./lessonContents/realModule1/mod1sec6"
-
+import Mod1Sec3 from "./lessonContents/realModule1/mod1sec3";
+import Mod1Sec4 from "./lessonContents/realModule1/mod1sec4";
+import Mod1Sec5 from "./lessonContents/realModule1/mod1sec5";
+import Mod1Sec6 from "./lessonContents/realModule1/mod1sec6";
 
 //Mod2
 import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
@@ -28,7 +27,6 @@ import Mod2Sec2 from "./lessonContents/module2/mod2sec2";
 import Mod2Sec3 from "./lessonContents/module2/mod2sec3";
 import Mod2Sec4 from "./lessonContents/module2/mod2sec4";
 import Mod2Sec5 from "./lessonContents/module2/mod2sec5";
-
 
 //Mod3
 import Mod3Sec1 from "./lessonContents/module3/mod3sec1";
@@ -51,8 +49,6 @@ import Mod5Sec2 from "./lessonContents/module5/mod5sec2";
 import Mod5Sec3 from "./lessonContents/module5/mod5sec3";
 import Mod5Sec4 from "./lessonContents/module5/mod5sec4";
 import Mod5Sec5 from "./lessonContents/module5/mod5sec5";
-
-
 
 //Mod6
 import Mod6Sec1 from "./lessonContents/module6/mod6sec1";
@@ -91,7 +87,11 @@ const moduleData = [
       { secID: "0.5", type: "Lesson", contentComponent: <IntroSec5 /> },
       { secID: "0.6", type: "Lesson", contentComponent: <IntroSec6 /> },
       { secID: "0.7", type: "Lesson", contentComponent: <IntroSec7 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="Introduction" /> },
+      {
+        type: "Quiz",
+        quizID: "Introduction",
+        contentComponent: <Quiz quizID="Introduction" />,
+      },
     ],
   },
   {
@@ -105,7 +105,11 @@ const moduleData = [
       { secID: "1.4", type: "Lesson", contentComponent: <Mod1Sec4 /> },
       { secID: "1.5", type: "Lesson", contentComponent: <Mod1Sec5 /> },
       { secID: "1.6", type: "Lesson", contentComponent: <Mod1Sec6 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleOne" /> },
+      {
+        type: "Quiz",
+        quizID: "ModuleOne",
+        contentComponent: <Quiz quizID="ModuleOne" />,
+      },
     ],
   },
   {
@@ -118,7 +122,11 @@ const moduleData = [
       { secID: "2.3", type: "Lesson", contentComponent: <Mod2Sec3 /> },
       { secID: "2.4", type: "Lesson", contentComponent: <Mod2Sec4 /> },
       { secID: "2.5", type: "Lesson", contentComponent: <Mod2Sec5 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleTwo" /> },
+      {
+        type: "Quiz",
+        quizID: "ModuleTwo",
+        contentComponent: <Quiz quizID="ModuleTwo" />,
+      },
     ],
   },
   {
@@ -131,7 +139,11 @@ const moduleData = [
       { secID: "3.3", type: "Lesson", contentComponent: <Mod3Sec3 /> },
       { secID: "3.4", type: "Lesson", contentComponent: <Mod3Sec4 /> },
       { secID: "3.5", type: "Lesson", contentComponent: <Mod3Sec5 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleThree" /> },
+      {
+        type: "Quiz",
+        quizID: "ModuleThree",
+        contentComponent: <Quiz quizID="ModuleThree" />,
+      },
     ],
   },
   {
@@ -145,7 +157,12 @@ const moduleData = [
       { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec4 /> },
       { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec5 /> },
       { secID: "4.1", type: "Lesson", contentComponent: <Mod4Sec6 /> },
-      { secID: "4.1", type: "Quiz", contentComponent: <Quiz quizID="ModuleFour" /> },
+      {
+        secID: "4.1",
+        type: "Quiz",
+        quizID: "ModuleFour",
+        contentComponent: <Quiz quizID="ModuleFour" />,
+      },
     ],
   },
   {
@@ -158,7 +175,11 @@ const moduleData = [
       { secID: "5.3", type: "Lesson", contentComponent: <Mod5Sec3 /> },
       { secID: "5.4", type: "Lesson", contentComponent: <Mod5Sec4 /> },
       { secID: "5.5", type: "Lesson", contentComponent: <Mod5Sec5 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleFive" /> },
+      {
+        type: "Quiz",
+        quizID: "ModuleFive",
+        contentComponent: <Quiz quizID="ModuleFive" />,
+      },
     ],
   },
   {
@@ -170,7 +191,11 @@ const moduleData = [
       { secID: "6.2", type: "Lesson", contentComponent: <Mod6Scenes /> },
       { secID: "6.3", type: "Lesson", contentComponent: <Mod6Sec2 /> },
       { secID: "6.4", type: "Lesson", contentComponent: <Mod6Sec3 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleSix" /> },
+      {
+        type: "Quiz",
+        quizID: "ModuleSix",
+        contentComponent: <Quiz quizID="ModuleSix" />,
+      },
     ],
   },
   {
@@ -181,10 +206,14 @@ const moduleData = [
       { secID: "7.1", type: "Lesson", contentComponent: <Mod7Sec1 /> },
       { secID: "7.2", type: "Lesson", contentComponent: <Mod7Scenes /> },
       { secID: "7.3", type: "Lesson", contentComponent: <Mod7Sec2 /> },
-      { secID: "7.4", type: "Lesson", contentComponent: <Mod7Sec3 /> },   
+      { secID: "7.4", type: "Lesson", contentComponent: <Mod7Sec3 /> },
       { secID: "7.5", type: "Lesson", contentComponent: <Mod7Sec4 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleSeven" /> },  
-     ],
+      {
+        type: "Quiz",
+        quizID: "ModuleSeven",
+        contentComponent: <Quiz quizID="ModuleSeven" />,
+      },
+    ],
   },
   {
     id: 8,
@@ -196,12 +225,14 @@ const moduleData = [
       { secID: "8.3", type: "Lesson", contentComponent: <Mod8Sec3 /> },
       { secID: "8.4", type: "Lesson", contentComponent: <Mod8Sec4 /> },
       { secID: "8.5", type: "Lesson", contentComponent: <Mod8Sec5 /> },
-      { type: "Quiz", contentComponent: <Quiz quizID="ModuleEight" /> },
+      {
+        type: "Quiz",
+        quizID: "ModuleEight",
+        contentComponent: <Quiz quizID="ModuleEight" />,
+      },
     ],
   },
-
 ];
-
 
 // Helper function to return icon and label based on type
 const getSectionIconAndLabel = (type) => {
@@ -218,9 +249,18 @@ const getSectionIconAndLabel = (type) => {
 };
 
 const Lessons = () => {
-  const [currentSection, setCurrentSection] = useState({ moduleIndex: 0, sectionIndex: 0 });
+  const [currentSection, setCurrentSection] = useState({
+    moduleIndex: 0,
+    sectionIndex: 0,
+  });
   const [isLessonStarted, setIsLessonStarted] = useState(false);
   const [activeAccordion, setActiveAccordion] = useState(null);
+  const [completed, setCompleted] = useState([]);
+
+  // Get the completed lessons from the database
+  databaseManager.fetchUsersProgress().then((completedLessons) => {
+    setCompleted(completedLessons);
+  });
 
   // Calculate progress percentage for the current module
   const calculateProgressPercentage = () => {
@@ -231,18 +271,18 @@ const Lessons = () => {
     return Math.round(percentage);
   };
 
-    // Use the calculated percentage in JSX
-    const progressPercentage = calculateProgressPercentage();
+  // Use the calculated percentage in JSX
+  const progressPercentage = calculateProgressPercentage();
 
   const handleNextClick = () => {
     const { moduleIndex, sectionIndex } = currentSection;
     const module = moduleData[moduleIndex];
     const currentLesson = module.sections[sectionIndex];
 
-  // Call updateLessonProgress with the current lesson's secID before updating the section
-  if (currentLesson.type === "Lesson") {
-    databaseManager.updateLessonProgress(currentLesson.secID);
-  }
+    // Call updateLessonProgress with the current lesson's secID before updating the section
+    if (currentLesson.type === "Lesson") {
+      databaseManager.updateLessonProgress(currentLesson.secID);
+    }
 
     if (sectionIndex < module.sections.length - 1) {
       setCurrentSection({ moduleIndex, sectionIndex: sectionIndex + 1 });
@@ -257,38 +297,48 @@ const Lessons = () => {
     const { moduleIndex, sectionIndex } = currentSection;
     const currentLesson = module.sections[sectionIndex];
 
-  // Call updateLessonProgress with the current lesson's secID before updating the section
-  if (currentLesson.type === "Lesson") {
-    databaseManager.updateLessonProgress(currentLesson.secID);
-  }
+    // Call updateLessonProgress with the current lesson's secID before updating the section
+    if (currentLesson.type === "Lesson") {
+      databaseManager.updateLessonProgress(currentLesson.secID);
+    }
 
     if (sectionIndex > 0) {
       setCurrentSection({ moduleIndex, sectionIndex: sectionIndex - 1 });
     } else if (moduleIndex > 0) {
       // Move to the last section of the previous module
       const prevModule = moduleData[moduleIndex - 1];
-      setCurrentSection({ moduleIndex: moduleIndex - 1, sectionIndex: prevModule.sections.length - 1 });
+      setCurrentSection({
+        moduleIndex: moduleIndex - 1,
+        sectionIndex: prevModule.sections.length - 1,
+      });
       setActiveAccordion(moduleIndex - 1); // Expand the previous module
     }
   };
 
   const renderPanelButtons = (module, moduleIndex) => {
-    const uniqueSectionTypes = [...new Set(module.sections.map((section) => section.type))];
-    
+    const uniqueSectionTypes = [
+      ...new Set(module.sections.map((section) => section.type)),
+    ];
+
     return uniqueSectionTypes.map((type) => {
       const { icon, label } = getSectionIconAndLabel(type);
-  
+
       // Check if the current section type matches to apply active styling
-      const isActiveType = currentSection.moduleIndex === moduleIndex &&
-                           module.sections[currentSection.sectionIndex].type === type;
-  
+      const isActiveType =
+        currentSection.moduleIndex === moduleIndex &&
+        module.sections[currentSection.sectionIndex].type === type;
+
       return (
         <button
           key={type}
-          className={`panel-button ${isActiveType ? "active-panel-button" : ""}`}
+          className={`panel-button ${
+            isActiveType ? "active-panel-button" : ""
+          }`}
           onClick={() => {
             // Find the first index of the section matching the type (Lesson or Quiz)
-            const sectionIndex = module.sections.findIndex(section => section.type === type);
+            const sectionIndex = module.sections.findIndex(
+              (section) => section.type === type
+            );
             // Set the current section based on the found index
             if (sectionIndex !== -1) {
               setCurrentSection({ moduleIndex, sectionIndex });
@@ -298,14 +348,33 @@ const Lessons = () => {
         >
           <span className="panel-button-icon">{icon}</span>
           <span className="panel-button-text">
-            {label === "Quiz" ? `${module.title}: Quiz` : module.title}<br />
+            {label === "Quiz" ? `${module.title}: Quiz` : module.title}
+            <br />
             <span className="panel-button-time">{module.time}</span>
           </span>
-          <span className="panel-button-status">&#10003;</span>
+          {/* if the lesson or quiz is completed, display a checkmark */}
+          {type === "Quiz" ? (
+            completed.some(
+              (completedTitle) =>
+                completedTitle ===
+                module.sections[module.sections.length - 1].quizID
+            ) ? (
+              <span className="panel-button-status">&#10003;</span>
+            ) : (
+              <span className="panel-button-status-false"></span>
+            )
+          ) : // console.log("quiz ", module)
+          completed.some(
+              (completedTitle) => completedTitle === module.title
+            ) ? (
+            <span className="panel-button-status">&#10003;</span>
+          ) : (
+            <span className="panel-button-status-false"></span>
+          )}
         </button>
       );
     });
-  };   
+  };
 
   const { moduleIndex, sectionIndex } = currentSection;
   const module = moduleData[moduleIndex];
@@ -323,12 +392,23 @@ const Lessons = () => {
         {moduleData.map((module, moduleIndex) => (
           <div key={module.id}>
             <button
-              className={`accordion ${moduleIndex === 0 ? "first-accordion" : ""} ${activeAccordion === moduleIndex ? "panel-active" : ""}`}
-              onClick={() => setActiveAccordion(activeAccordion === moduleIndex ? null : moduleIndex)}
+              className={`accordion ${
+                moduleIndex === 0 ? "first-accordion" : ""
+              } ${activeAccordion === moduleIndex ? "panel-active" : ""}`}
+              onClick={() =>
+                setActiveAccordion(
+                  activeAccordion === moduleIndex ? null : moduleIndex
+                )
+              }
             >
-              Module {module.id}
+              {module.id === 0 ? "Introduction" : `Module ${module.id}`}
             </button>
-            <div className="panel" style={{ maxHeight: activeAccordion === moduleIndex ? "300px" : "0" }}>
+            <div
+              className="panel"
+              style={{
+                maxHeight: activeAccordion === moduleIndex ? "300px" : "0",
+              }}
+            >
               {renderPanelButtons(module, moduleIndex)}
             </div>
           </div>
@@ -338,10 +418,16 @@ const Lessons = () => {
       <div className="module-content-container">
         {isLessonStarted && module ? (
           <>
-            <div className="buttons-div" 
-             style={{
-              background: currentSection && module.sections[currentSection.sectionIndex].type === "Quiz" ? "#0056D121" : "transparent",
-            }}>
+            <div
+              className="buttons-div"
+              style={{
+                background:
+                  currentSection &&
+                  module.sections[currentSection.sectionIndex].type === "Quiz"
+                    ? "#0056D121"
+                    : "transparent",
+              }}
+            >
               <button
                 id="prev-button"
                 className="module-navigation-buttons"
@@ -351,10 +437,17 @@ const Lessons = () => {
                 &lt; Prev
               </button>
               <div className="center-div">
-                  <div className="lesson-progress-bar-container"
+                <div
+                  className="lesson-progress-bar-container"
                   style={{
-                    display: currentSection && module.sections[currentSection.sectionIndex].type === "Quiz" ? "none" : "",
-                  }}>
+                    display:
+                      currentSection &&
+                      module.sections[currentSection.sectionIndex].type ===
+                        "Quiz"
+                        ? "none"
+                        : "",
+                  }}
+                >
                   <div className="lesson-progress-bar">
                     <div
                       className="lesson-progress"
@@ -364,24 +457,35 @@ const Lessons = () => {
                       }}
                     ></div>
                   </div>
-                  <div className="lesson-progress-percentage">{progressPercentage}%</div>
+                  <div className="lesson-progress-percentage">
+                    {progressPercentage}%
+                  </div>
                 </div>
-                  <div className="module-title">{module.title}</div>
+                <div className="module-title">{module.title}</div>
               </div>
               <button
                 id="next-button"
                 className="module-navigation-buttons"
                 onClick={handleNextClick}
-                disabled={moduleIndex === moduleData.length - 1 && isLastSectionInModule}
+                disabled={
+                  moduleIndex === moduleData.length - 1 && isLastSectionInModule
+                }
               >
                 {isLastSectionInModule ? "Next Module" : "Next"} &gt;
               </button>
             </div>
-            <div className="inner-module-container" 
-            style={{
-                    background: currentSection && module.sections[currentSection.sectionIndex].type === "Quiz" ? "#0056D121" : "transparent",
-                  }}
-        >{section.contentComponent}</div>
+            <div
+              className="inner-module-container"
+              style={{
+                background:
+                  currentSection &&
+                  module.sections[currentSection.sectionIndex].type === "Quiz"
+                    ? "#0056D121"
+                    : "transparent",
+              }}
+            >
+              {section.contentComponent}
+            </div>
           </>
         ) : (
           <div>Select a lesson to begin</div>
@@ -394,3 +498,4 @@ const Lessons = () => {
 };
 
 export default Lessons;
+export { moduleData };

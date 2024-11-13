@@ -10,6 +10,7 @@ const Mod1Sec5 = () => {
       <p>
         In the rapidly evolving mobile landscape, managing user consent has become more crucial than ever. With the advent of smartphones and mobile applications, organizations can collect and process vast amounts of user data, including sensitive information. This lesson will explore the intricacies of mobile-specific data consent, focusing on key areas such as location data consent, app permissions, push notifications, in-app advertising, and personalized ads. By understanding these aspects, organizations can develop robust consent management strategies that prioritize user privacy and compliance with regulatory frameworks.
       </p>
+      <img src={require('./mod1images/dataconsenttictactoe.jpg')} alt="dataconsenttictactoe" className="dataconsenttictactoe-img" />
 
       <h2>Overview of Mobile-Specific Data Consent</h2>
       
@@ -33,6 +34,8 @@ const Mod1Sec5 = () => {
       <p>
         Location data refers to information that indicates a user's geographic position. This data can be collected through GPS, Wi-Fi signals, or cellular networks and is utilized for various purposes, such as providing location-based services, enhancing navigation, and delivering targeted advertisements.
       </p>
+      <img src={require('./mod1images/locationdata.png')} alt="locationdata" className="locationdata-img" />
+
 
       <h3>Importance of Obtaining Location Data Consent</h3>
       <ul>
@@ -55,6 +58,8 @@ const Mod1Sec5 = () => {
       <p>
         Mobile applications often require access to device features such as the camera, microphone, contacts, and storage. These permissions are essential for the app's functionality but can also raise privacy concerns if not managed appropriately.
       </p>
+      <img src={require('./mod1images/askapptotrack.png')} alt="askapptotrack" className="askapptotrack-img" />
+
 
       <h3>Importance of Obtaining App Permissions Consent</h3>
       <ul>
@@ -77,6 +82,7 @@ const Mod1Sec5 = () => {
       <p>
         Push notifications are messages sent by applications to users' devices, providing updates, alerts, or promotional content. While these notifications can enhance user engagement, they also raise concerns about privacy and user consent.
       </p>
+      <img src={require('./mod1images/prepermission.png')} alt="prepermission" className="prepermission-img" />
 
       <h3>Importance of Obtaining Consent for Push Notifications</h3>
       <ul>
@@ -104,6 +110,9 @@ const Mod1Sec5 = () => {
       <p><strong>Lesson:</strong> Apple’s ATT framework demonstrates the importance of giving users direct control over their data consent decisions, especially when tracking technologies are involved. Providing transparency and making consent mechanisms clear not only complies with privacy regulations but also aligns with user expectations for data privacy.</p>
 
       <h3>Best Practices for App Tracking Consent</h3>
+      <img src={require('./mod1images/locationalaccess.png')} alt="locationalaccess" className="locationalaccess-img" />
+
+
       <ul>
         <li><strong>Transparent Tracking Practices:</strong> Clearly inform users about what data is being tracked and for what purposes. Transparency helps users understand the rationale behind tracking practices and allows them to make informed decisions.</li>
         <li><strong>Granular Consent Options:</strong> Allow users to choose what aspects of their behavior they want to share, such as browsing history or in-app purchases. This level of granularity enables users to tailor their consent based on their comfort level with data sharing.</li>
@@ -115,6 +124,7 @@ const Mod1Sec5 = () => {
       <p>
         In-app advertising allows organizations to generate revenue by displaying ads within mobile applications. Personalized ads use user data to tailor advertising content, enhancing user engagement and conversion rates.
       </p>
+      <img src={require('./mod1images/tictactoe.png')} alt="tictactoe" className="tictactoe-img" />
 
       <h3>Importance of Obtaining Consent for In-app Advertising</h3>
       <ul>

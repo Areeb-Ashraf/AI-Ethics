@@ -9,9 +9,10 @@ import AddQuestions from "./firebaseAddBatchScript";
 function DatabaseManTester() {
   // function that console fetches then logs the glossary word
   async function fetchGlossary(word) {
-    const glossaryWord = await databaseManager.fetchGlossary(word);
-    console.log(glossaryWord);
-    return glossaryWord;
+    // const glossaryWord = await databaseManager.fetchGlossary(word);
+    // console.log(glossaryWord);
+    // return glossaryWord;
+    console.log("Fetching glossary word...");
   }
 
   // function that fetches then logs all score entries by quiz ID
@@ -44,8 +45,9 @@ function DatabaseManTester() {
 
   // function that fetches then logs all words from the glossary
   async function fetchAllWords() {
-    const allWords = await databaseManager.fetchAllGlossary();
-    console.log(allWords);
+    // const allWords = await databaseManager.fetchAllGlossary();
+    // console.log(allWords);
+    console.log("Fetching all words from the glossary...");
   }
 
   // function that fetches xp for a user
@@ -60,16 +62,23 @@ function DatabaseManTester() {
     console.log(leaderboard);
   }
 
-  // function that adds a mid-module progress update to the database
-  async function addMidModule() {
-    databaseManager.updateLessonProgress("b.1");
+  // fetches and logs the users completed quizzes and lessons
+  async function fetchUsersProgress() {
+    const completedQuizzesAndLessons =
+      await databaseManager.fetchUsersProgress();
+    console.log(completedQuizzesAndLessons);
   }
 
-  // gets mid-modules progressess
-  async function getMidModule() {
-    const progress = await databaseManager.getLessonProgress();
-    console.log(progress);
-  }
+  // // function that adds a mid-module progress update to the database
+  // async function addMidModule() {
+  //   databaseManager.updateLessonProgress("b.1");
+  // }
+
+  // // gets mid-modules progressess
+  // async function getMidModule() {
+  //   const progress = await databaseManager.getLessonProgress();
+  //   console.log(progress);
+  // }
 
   const Tooltip = () => {
     const [definition, setDefinition] = useState("Loading...");
@@ -140,12 +149,15 @@ function DatabaseManTester() {
       <button onClick={fetchLeaderboard}>
         Click me to retrieve leaderboard data
       </button>
-      <button onClick={addMidModule}>
+      <button onClick={fetchUsersProgress}>
+        Click me to print the users completed quizzes and lessons
+      </button>
+      {/* <button onClick={addMidModule}>
         Click me to add a mid-module progress update to the database
       </button>
       <button onClick={getMidModule}>
         Click me to get mid-module progress updates
-      </button>
+      </button> */}
 
       <ResetAllCookies />
       <AddQuestions />

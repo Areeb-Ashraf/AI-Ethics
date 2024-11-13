@@ -1,4 +1,4 @@
-import { auth, db } from "./firebase";
+import { auth, db, analytics } from "./firebase";
 import {
   query,
   collection,
@@ -13,6 +13,7 @@ import databaseManager from "./databaseManager";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
+import { logEvent } from "firebase/analytics";
 
 function UserProfile({ userProfile, setUserProfile }) {
   const [isEditMode, setIsEditMode] = useState(false);
@@ -30,6 +31,10 @@ function UserProfile({ userProfile, setUserProfile }) {
   };
 
   async function handleSaveChanges() {
+    logEvent(analytics, "beginning_of_save_changes_in_profile", {
+      source: "handleSaveChanges",
+    });
+
     try {
       let dataToUpdate = {};
 
@@ -66,17 +71,6 @@ function UserProfile({ userProfile, setUserProfile }) {
       alert("There was an error saving your profile.");
     }
   }
-
-  useEffect(() => {
-    // if (loading) return;
-    // if (!user) return navigate("/");
-    // console.log("not logged in");
-    if (!user) {
-      console.log("not logged in");
-    } else {
-      console.log("logged in");
-    }
-  }, [user, loading]);
 
   // This function will toggle between edit and view modes
   function toggleEditMode() {

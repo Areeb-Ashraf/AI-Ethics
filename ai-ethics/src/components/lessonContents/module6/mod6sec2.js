@@ -1,6 +1,8 @@
 import React from 'react';
 import './mod6.css';
-
+import dataowner from "./mod6images/dataownership.png";
+import eightrights from "./mod6images/eightrights.png";
+import dataquality from "./mod6images/dataquality.png";
 const Mod6Sec2 = () => {
     return (
         <div className="mod6sec1-container">
@@ -17,20 +19,29 @@ const Mod6Sec2 = () => {
                     <li><strong>Implement Mechanisms:</strong> Learn about mechanisms that can be implemented to ensure data quality and integrity in AI applications.</li>
                     <li><strong>Foster Trust:</strong> Understand how data stewardship practices contribute to building trust between users and AI systems, ultimately leading to more ethical and responsible AI development.</li>
                 </ul>
+                <div className="text-image-container">
+                     { <img src={dataowner} alt="Data Ownership" className="owner-ai-img" /> }
+                </div>
 
                 <h2>I. Data Ownership and Rights</h2>
                 
                 <h3>Understanding Data Ownership in AI Systems</h3>
                 <p>Data ownership in AI encompasses the legal, ethical, and social implications of who owns, controls, and has access to data generated and utilized by AI systems. As AI technologies evolve, the concept of ownership becomes increasingly complex, with several key dimensions to consider:</p>
+                
                 <ul>
                     <li><strong>Creator Ownership:</strong> Individuals or organizations that generate data, such as users interacting with a mobile app or a company collecting consumer behavior data, often claim ownership of that data. This ownership encompasses the right to control, use, and share the data created during these interactions. However, the extent of this ownership can be ambiguous, especially when users agree to terms of service that grant companies extensive rights over the data.</li>
                     <li><strong>User Ownership:</strong> Users increasingly assert their ownership over personal data, emphasizing the need for transparency regarding how their data is collected and used. This includes personal information, such as social media interactions, health records, and location data. The challenge lies in balancing user rights with organizational needs, as organizations must use data to drive innovation and improve services while respecting individual privacy.</li>
                     <li><strong>Shared Ownership:</strong> In many cases, data ownership can be shared among multiple parties. For instance, in collaborative projects or data-sharing initiatives, different stakeholders may have rights and responsibilities regarding the data. Clear agreements outlining ownership rights, responsibilities, and how data can be used are essential in these scenarios.</li>
                 </ul>
                 <p>Understanding data ownership is crucial for ensuring accountability in AI systems. Organizations must adopt transparent practices, clearly communicating to users how their data will be used, stored, and shared.</p>
+               
+                <div className="text-image-container">
+                     { <img src={eightrights} alt="Eight Rights" className="rights-ai-img" /> }
+                </div>
 
                 <h3>User Rights Regarding Their Data</h3>
                 <p>As AI systems increasingly utilize personal data, user rights have gained prominence. Key rights include:</p>
+
                 <ul>
                     <li><strong>Right to Access:</strong> Users should have the right to access their data held by organizations. This access allows users to understand what information is collected and how it is utilized, enabling them to make informed decisions about their data.</li>
                     <li><strong>Right to Rectification:</strong> Users must be able to request corrections to their data if they believe it to be inaccurate or outdated. This right ensures that organizations maintain accurate records and minimize the risks of relying on flawed information.</li>
@@ -45,6 +56,9 @@ const Mod6Sec2 = () => {
                 
                 <h3>Responsibilities Related to Data Collection and Processing</h3>
                 <p>Data quality and integrity are foundational to the successful implementation of AI systems. Poor data quality can lead to inaccurate predictions, biases in decision-making, and ultimately undermine user trust in AI technologies. Organizations bear significant responsibilities in ensuring data quality throughout the data lifecycle, which includes:</p>
+                <div className="text-image-container">
+                     { <img src={dataquality} alt="Data Quality" className="quality-ai-img" /> }
+                </div>                
                 <ul>
                     <li><strong>Data Collection:</strong> Organizations must collect data ethically and transparently. This involves obtaining informed consent from users, clearly stating the purpose of data collection, and ensuring that users understand what data will be collected and how it will be used.</li>
                     <li><strong>Data Accuracy:</strong> Maintaining data accuracy is essential to ensure that AI systems function correctly and ethically. Organizations must implement processes to verify and validate the accuracy of the data collected. This includes techniques such as cross-referencing data with established sources, employing algorithms to identify anomalies, and correcting inaccuracies promptly.</li>

@@ -85,6 +85,22 @@ ol > li::marker {
   display: flex;
   flex-direction: column;
 }
+.explain-ai-img{
+  width: 50%;
+  height: auto;
+}
+.standard-ai-img{
+  width: 30%;
+  height: auto;
+}
+.aiSystems-ai-img{
+  width: 50%;
+  height: auto;
+}
+.shap-ai-img{
+  width: 50%;
+  height: auto;
+}
 
 @media (max-width: 1420px){
   .mod5sec1-container .txt-img-container{

@@ -1,6 +1,7 @@
 import React from 'react';
 import './mod5.css';
-
+import aiSystems from './mod5images/transparencyandexplainability.png';
+import shap from './mod5images/SHAP.png';
 const Mod5Sec3 = () => {
   return (
     <div className="mod5sec1-container">
@@ -23,7 +24,9 @@ const Mod5Sec3 = () => {
       <p>
         Ethical considerations form the backbone of transparency and explainability in AI. Various ethical frameworks have been proposed to guide the development and deployment of AI systems, particularly when it comes to decision-making that impacts individuals and society.
       </p>
-
+      <div className="text-image-container">
+            { <img src={aiSystems} alt="Transparency and Explainability in AI Systems" className="aiSystems-ai-img" /> }
+      </div>        
       <h3>Utilitarianism and Explainability</h3>
       <p>
         Utilitarianism focuses on maximizing overall happiness and reducing harm. In the context of AI, ensuring that AI systems are explainable aligns with the utilitarian principle by promoting informed decisions that reduce harm. When AI systems make decisions that affect healthcare, financial standing, or individual freedoms, explainability ensures that users and stakeholders understand how decisions are made, leading to fewer harmful outcomes.
@@ -212,6 +215,9 @@ const Mod5Sec3 = () => {
       </p>
 
       <h3>Why is SHAP Important for Transparency and Explainability?</h3>
+      <div className="text-image-container">
+            { <img src={shap} alt="Welcome to the SHAP" className="shap-ai-img" /> }
+      </div>  
       <p>
         One of the greatest challenges in AI, especially with complex models like deep learning and random forests, is explaining how the model arrives at its predictions. Without explainability, users may struggle to trust AI decisions, especially in high-stakes scenarios like healthcare, finance, and criminal justice.
       </p>

@@ -69,6 +69,8 @@ const Mod1Sec3 = () => {
         parties raises significant privacy concerns, making effective consent
         management essential.
       </p>
+      <img src={require('./mod1images/DataSharing.jpg')} alt="DataSharing" className="DataSharing-img" />
+
 
       <h4>Key Considerations for Third-Party Data Sharing</h4>
       <ul>
@@ -83,7 +85,10 @@ const Mod1Sec3 = () => {
         </li>
       </ul>
 
-      <h4>Best Practices for Third-Party Data Sharing</h4>
+      <h3>Best Practices for Third-Party Data Sharing</h3>
+      <img src={require('./mod1images/ProsCons.jpg')} alt="ProsCons" className="ProsCons-img" />
+
+
       <ul>
         <li>
           <strong>Transparent Policies:</strong> Organizations should have clear privacy policies that outline their data sharing practices, including third-party relationships and data usage. This helps users understand what to expect and what they are agreeing to.
@@ -98,6 +103,8 @@ const Mod1Sec3 = () => {
 
       <h2>Dynamic or Continuous Consent</h2>
       <h4>Understanding Dynamic Consent</h4>
+      <img src={require('./mod1images/personaldata.png')} alt="personaldata" className="personaldata-img" />
+
       <p>
       Dynamic or continuous consent is an approach that allows users to provide ongoing consent for data processing rather than a one-time agreement. This model acknowledges that users’ preferences may change over time and provides them with the flexibility to modify their consent as needed.
       </p>
@@ -122,6 +129,8 @@ const Mod1Sec3 = () => {
         Consent Management Platforms (CMPs) are specialized tools designed to
         help organizations manage user consent for data processing and sharing.
       </p>
+      <img src={require('./mod1images/consentmanagementitsystems.png')} alt="consentmanagementitsystems" className="consentmanagementitsystems-img" />
+
 
       <h4>Key Features of CMPs</h4>
       <ul>
@@ -131,6 +140,8 @@ const Mod1Sec3 = () => {
       </ul>
 
       <h4>Benefits of Using CMPs</h4>
+      <img src={require('./mod1images/LawfulBasis.png')} alt="LawfulBasis" className="LawfulBasis-img" />
+
       <ul>
         <li><strong>Efficiency:</strong>  CMPs automate consent management processes, reducing administrative burdens and allowing organizations to focus on core activities. This efficiency is particularly beneficial for organizations with large user bases.</li>
         <li><strong>Enhanced User Experience:</strong> CMPs improve the user experience by providing intuitive interfaces for managing consent preferences, fostering user engagement. A positive user experience can lead to increased user satisfaction and retention.</li>

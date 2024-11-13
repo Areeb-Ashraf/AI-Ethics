@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { db } from "./firebase";
+import { db, analytics } from "./firebase";
 import { writeBatch, collection, doc } from "firebase/firestore";
+import { logEvent } from "firebase/analytics";
 
 const AddQuestions = () => {
   const [loading, setLoading] = useState(false);
@@ -11,6 +12,10 @@ const AddQuestions = () => {
     setLoading(true);
     setError(null);
     setSuccess(false);
+
+    logEvent(analytics, "add_quiz_questions_via_batch", {
+      source: "firebaseAddBatchScript",
+    });
 
     try {
       const batch = writeBatch(db);
@@ -183,6 +188,9 @@ const AddQuestions = () => {
       await batch.commit();
       setSuccess(true);
       console.log("Questions added successfully!");
+      logEvent(analytics, "successful_add_quiz_questions_via_batch", {
+        source: "firebaseAddBatchScript",
+      });
     } catch (error) {
       setError("Error adding questions: " + error.message);
       console.error("Error adding questions: ", error);
