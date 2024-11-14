@@ -9,10 +9,9 @@ import AddQuestions from "./firebaseAddBatchScript";
 function DatabaseManTester() {
   // function that console fetches then logs the glossary word
   async function fetchGlossary(word) {
-    // const glossaryWord = await databaseManager.fetchGlossary(word);
-    // console.log(glossaryWord);
-    // return glossaryWord;
-    console.log("Fetching glossary word...");
+    const glossaryWord = await databaseManager.fetchGlossary(word);
+    console.log(glossaryWord);
+    return glossaryWord;
   }
 
   // function that fetches then logs all score entries by quiz ID
@@ -45,9 +44,8 @@ function DatabaseManTester() {
 
   // function that fetches then logs all words from the glossary
   async function fetchAllWords() {
-    // const allWords = await databaseManager.fetchAllGlossary();
-    // console.log(allWords);
-    console.log("Fetching all words from the glossary...");
+    const allWords = await databaseManager.fetchAllGlossary();
+    console.log(allWords);
   }
 
   // function that fetches xp for a user
@@ -121,7 +119,7 @@ function DatabaseManTester() {
       ></div>
       <Tooltip />
       <button onClick={() => fetchGlossary("API")}>
-        Click me to retrieve "LLM" glossary word
+        Click me to retrieve "API" glossary word
       </button>
       <button onClick={() => fetchScoresByQuizID("Module1")}>
         Click me to retrieve scores by quiz ID Module1
