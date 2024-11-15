@@ -9,6 +9,7 @@ import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
   signInWithPopup,
+  connectAuthEmulator,
 } from "firebase/auth";
 import {
   getFirestore,
@@ -17,8 +18,9 @@ import {
   where,
   getDocs,
   addDoc,
+  connectFirestoreEmulator,
 } from "firebase/firestore";
-import { getStorage, ref } from "firebase/storage";
+import { getStorage, ref, connectStorageEmulator } from "firebase/storage";
 import { getPerformance } from "firebase/performance";
 
 // the firebase creds as pulled from .env file
@@ -42,6 +44,20 @@ const storage = getStorage(app);
 const imagesRef = ref(storage, "images");
 // Initialize Performance Monitoring and get a reference to the service
 const perf = getPerformance(app);
+
+// firestore emulator
+if (process.env.NODE_ENV === "development") {
+  connectFirestoreEmulator(db, "localhost", 8080);
+}
+
+// storage emulator
+if (process.env.NODE_ENV === "development") {
+  connectStorageEmulator(storage, "localhost", 9199);
+}
+// auth emulator
+if (process.env.NODE_ENV === "development") {
+  connectAuthEmulator(auth, "http://localhost:9099");
+}
 
 /*********************************************************
  * handle authentication through this class
