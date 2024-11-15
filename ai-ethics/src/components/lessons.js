@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "../styles/lessons.css";
 import * as FaIcons from "react-icons/fa";
 import LessonTour from "./tours/LessonTour";
@@ -258,9 +258,11 @@ const Lessons = () => {
   const [completed, setCompleted] = useState([]);
 
   // Get the completed lessons from the database
-  databaseManager.fetchUsersProgress().then((completedLessons) => {
-    setCompleted(completedLessons);
-  });
+  useEffect(() => {
+    databaseManager.fetchUsersProgress().then((completedLessons) => {
+      setCompleted(completedLessons);
+    });
+  }, []);
 
   // Calculate progress percentage for the current module
   const calculateProgressPercentage = () => {
@@ -272,7 +274,11 @@ const Lessons = () => {
   };
 
   // Use the calculated percentage in JSX
-  const progressPercentage = calculateProgressPercentage();
+  // const progressPercentage = calculateProgressPercentage();
+  const progressPercentage = useMemo(
+    () => calculateProgressPercentage(),
+    [currentSection, moduleData]
+  );
 
   const handleNextClick = () => {
     const { moduleIndex, sectionIndex } = currentSection;
