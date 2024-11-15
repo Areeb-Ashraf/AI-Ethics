@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/welcome.css"
 import { useNavigate, Link } from 'react-router-dom'
+import welcomeLogo from "./images/welcomeLogo.svg";
 
 const Welcome = () => {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ const Welcome = () => {
   return (
     <>
       <div className="welcome-container">
-        <div className="welcome-logo">C</div>{/* placeholder for logo */}
+        <div className="welcome-logo"><img src={welcomeLogo} alt="welcomeLogo-img" /></div>
         <div className="welcome-title">Welcome to AI Ethics</div>
         <div className="welcome-subtitle">We teach the future of AI, responsibly!</div>
         <button className="create-account-button" onClick={goToSignup}>

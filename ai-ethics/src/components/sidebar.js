@@ -11,6 +11,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { auth } from "../firebase"; // Import auth for logout functionality
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content';
+import logoSidebar from "./images/logoSidebar.svg";
 import "../styles/sidebar.css";
 
 const Sidebar = ({ setIsLoggedIn }) => {
@@ -47,7 +48,10 @@ const Sidebar = ({ setIsLoggedIn }) => {
           Alert.fire({
             title: "Logged Out!",
             text: "You have been logged out",
-            icon: "success"
+            icon: "success",
+            confirmButtonText: 'OK',
+            confirmButtonColor: "#0056D1",
+
           });
         }
       });
@@ -93,10 +97,11 @@ const Sidebar = ({ setIsLoggedIn }) => {
           isSidebarVisible ? "sidebar-visible" : ""
         }`}
       >
-        {/* <div className="sidebar-item-logo" onClick={() => navigate('/')}>
-          <div className="sidebar-item-icon"><GiArtificialIntelligence /></div>
-          <div className="sidebar-item-name">AI</div>
-        </div> */}
+        <div className="sidebar-item-logo" >
+          <div className="logoimg">
+            <img src={logoSidebar} alt="logoSidebar-img" />
+          </div>
+        </div>
 
         <NavLink
           to="/dashboard"
@@ -173,10 +178,10 @@ const Sidebar = ({ setIsLoggedIn }) => {
 
         {/* Logout button */}
         <div className="sidebar-item" onClick={handleLogout}>
-          <div className="sidebar-item-icon">
+          <div id="logout-btn" className="sidebar-item-icon">
             <AiOutlineLogout />
           </div>
-          <div className="sidebar-item-name">Logout</div>
+          <div id="logout-btn" className="sidebar-item-name">Logout</div>
         </div>
       </div>
     </>

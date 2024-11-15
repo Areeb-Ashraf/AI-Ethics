@@ -11,7 +11,8 @@
 
 .welcome-logo{
     margin-top: 150px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+    margin-left: 40px;
     font-size: 70px;
     font-weight: 700;
 }
@@ -71,7 +72,7 @@ right: 0;
 
 .login-text{
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .login-link{
