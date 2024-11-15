@@ -5,6 +5,8 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import Cookies from "js-cookie";
 import AddQuestions from "./firebaseAddBatchScript";
+import { setLogLevel } from "firebase/firestore";
+setLogLevel("debug");
 
 function DatabaseManTester() {
   // function that console fetches then logs the glossary word
