@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 48,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Data breaches have no impact on user trust or organizational reputation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 34,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A technology firm conducts regular audits of its data practices to ensure compliance with purpose limitation principles. What best practice are they following?",
+    "options": [
+      "Regular Audits",
+      "Data Aggregation",
+      "User Profiling",
+      "Data Anonymization"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 54,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Following a data breach, a financial institution suffers reputational damage and legal repercussions. What does this illustrate?",
+    "options": [
+      "Implications of data breaches for organizations",
+      "Benefits of data collection",
+      "User engagement strategies",
+      "Data retention policies"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 42,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which of the following is a common risk associated with AI systems?",
+    "options": [
+      "Data redundancy",
+      "Data manipulation",
+      "Over-collection of data",
+      "Enhanced user experience"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 12,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A government uses AI for surveillance but lacks a clear privacy policy. What is a potential consequence of this oversight?",
+    "options": [
+      "Enhanced public trust",
+      "Misuse of personal data",
+      "Increased efficiency",
+      "Improved public services"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 29,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: User profiling can enhance user experience but may also reinforce biases.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 61,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What are some emerging technologies discussed in the lesson?",
+    "options": [
+      "Blockchain and Quantum Computing",
+      "Social Media and Email",
+      "AI, big data, and IoT",
+      "Virtual Reality and Gaming"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 7,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: AI systems can analyze data without users’ explicit consent, raising ethical concerns.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 73,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A company is found to have racial profiling issues due to its facial recognition technology. This highlights the ethical concerns of:",
+    "options": [
+      "Data monetization",
+      "Surveillance and accountability",
+      "User consent",
+      "Data aggregation"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 38,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An organization gathers excessive personal data that is not relevant to its operations. What ethical principle is being ignored?",
+    "options": [
+      "Data Minimization",
+      "Purpose Limitation",
+      "User Trust",
+      "Transparency"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 21,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What is data minimization?",
+    "options": [
+      "Collecting as much data as possible",
+      "Collecting only the data necessary for a specific purpose",
+      "Storing data indefinitely",
+      "Analyzing data without user consent"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 59,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A company provides clear communication about how user data is collected and used. What ethical principle does this reflect?",
+    "options": [
+      "Transparency",
+      "User consent",
+      "Data minimization",
+      "Purpose limitation"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 66,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: The Internet of Things (IoT) does not pose any privacy risks.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 43,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What was a significant consequence of the Equifax data breach?",
+    "options": [
+      "A settlement of up to $700 million",
+      "A merger with another company",
+      "Expansion of services",
+      "Increase in stock prices"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 18,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A company’s AI system unintentionally discriminates against a minority group in hiring practices. What principle does this scenario violate?",
+    "options": [
+      "Beneficence",
+      "Respect for Persons",
+      "Justice",
+      "Accountability"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 30,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Organizations should avoid communicating the purposes for data collection to users.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 13,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An online retailer shares user browsing data with third-party advertisers without consent. Which ethical principle have they violated?",
+    "options": [
+      "Justice",
+      "Respect for Persons",
+      "Beneficence",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 78,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A tech company is criticized for not being transparent about its data handling procedures. What ethical principle is being neglected?",
+    "options": [
+      "Transparency",
+      "User autonomy",
+      "Data minimization",
+      "Ethical sourcing"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 24,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What does purpose limitation ensure in data usage?",
+    "options": [
+      "Data is used only for clearly defined purposes",
+      "Data can be used for any purpose",
+      "Data can be shared freely with third parties",
+      "Data must be stored indefinitely"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 75,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A regulatory body is creating new policies that balance innovation and privacy. What ethical consideration is critical in this process?",
+    "options": [
+      "Balancing innovation and privacy rights",
+      "Maximizing data collection",
+      "Enhancing user profiling",
+      "Minimizing costs"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 20,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A tech company implements a feature to allow users to manage their data settings. What ethical principle are they fulfilling?",
+    "options": [
+      "User Empowerment",
+      "Justice",
+      "Non-maleficence",
+      "Beneficence"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 53,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An AI system is compromised due to poor coding practices, leading to data manipulation. This highlights the importance of:",
+    "options": [
+      "Data aggregation",
+      "Secure coding practices",
+      "User profiling",
+      "Excessive data collection"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 77,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An organization develops encryption methods to protect user data from breaches. This illustrates the potential positive effect of:",
+    "options": [
+      "Data exploitation",
+      "User consent",
+      "Emerging technologies on privacy",
+      "Surveillance systems"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 26,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Data minimization only pertains to legal compliance and has no ethical implications.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 36,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A social media platform uses users' data to create targeted advertisements without their explicit consent. What ethical concern does this scenario highlight?",
+    "options": [
+      "Ethical Dilemmas of Secondary Data Use",
+      "Data Minimization",
+      "User Trust",
+      "Data Utility"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 67,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Advocacy groups are working to strengthen privacy protections in the context of AI.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 31,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A company collects user data for a fitness app. They later use the same data to sell advertisements without informing users. What ethical principle have they violated?",
+    "options": [
+      "Data Minimization",
+      "Purpose Limitation",
+      "Transparency",
+      "User Consent"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 22,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which regulation emphasizes the principle of data minimization?",
+    "options": [
+      "HIPAA",
+      "GDPR",
+      "CCPA",
+      "FERPA"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 23,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What is a key benefit of data minimization for organizations?",
+    "options": [
+      "Increased data storage costs",
+      "Higher chances of data breaches",
+      "Enhanced user trust and privacy",
+      "Greater data redundancy"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 16,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An AI startup develops a tool that tracks user behavior but does not offer an option for users to delete their data. Which ethical principle is compromised?",
+    "options": [
+      "Justice",
+      "User Empowerment",
+      "Beneficence",
+      "Respect for Persons"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 46,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Organizations are only legally required to protect user data, not ethically obligated.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 79,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A user feels pressured to share personal information to access a service. This situation reflects issues of:",
+    "options": [
+      "User autonomy",
+      "Informed consent",
+      "Data security",
+      "Data aggregation"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 4,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What does the principle of justice in AI privacy imply?",
+    "options": [
+      "Equal access to AI technologies",
+      "Fair treatment and prevention of bias",
+      "The right to privacy for all",
+      "Transparency in data collection"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 35,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A mobile app informs users that their data will be used for improving app functionality. What principle does this illustrate?",
+    "options": [
+      "Purpose Limitation",
+      "Data Minimization",
+      "User Consent",
+      "Data Security"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 58,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An organization’s security team identifies potential vulnerabilities through regular security audits. What is this practice aimed at?",
+    "options": [
+      "Ensuring compliance with security protocols",
+      "Reducing data storage costs",
+      "Enhancing user experience",
+      "Increasing data collection"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 49,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Secure coding practices help reduce vulnerabilities in deployed AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 15,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A cloud service provider processes data across multiple countries without addressing regional privacy laws. What is a potential risk?",
+    "options": [
+      "Increased data security",
+      "Legal penalties",
+      "Enhanced user trust",
+      "Cost savings"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 17,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A smart home device collects user data without clearly stating how it will be used. What should the company prioritize?",
+    "options": [
+      "Transparency",
+      "Maximizing data collection",
+      "Enhancing product features",
+      "Minimizing user notifications"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 28,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Transparency is a best practice for implementing purpose limitation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 27,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Purpose limitation allows for secondary data use without user consent.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 76,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "During a public consultation, diverse stakeholders discuss the implications of a new AI technology. What is this an example of?",
+    "options": [
+      "Stakeholder engagement",
+      "Corporate lobbying",
+      "Market research",
+      "User feedback"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 69,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Collaboration among different stakeholders is essential for effective privacy regulations.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 55,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An organization regularly reviews its access permissions to sensitive data. What best practice does this illustrate?",
+    "options": [
+      "Access control management",
+      "Data anonymization",
+      "Data collection expansion",
+      "User education programs"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 50,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: The Facebook Cambridge Analytica scandal did not affect Facebook’s reputation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 45,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What ethical principle does implementing access controls support?",
+    "options": [
+      "Limiting access to sensitive data",
+      "Maximizing data collection",
+      "Promoting data sharing",
+      "Reducing operational costs"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 44,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which security measure involves converting sensitive data into a code to prevent unauthorized access?",
+    "options": [
+      "Access control",
+      "Data encryption",
+      "Data anonymization",
+      "Data aggregation"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 14,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A financial institution uses an AI system to detect fraudulent activities but does not inform users about how their data is monitored. What ethical issue does this raise?",
+    "options": [
+      "Beneficence",
+      "Justice",
+      "Lack of Transparency",
+      "User Empowerment"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 41,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What is the primary ethical obligation of organizations regarding user data?",
+    "options": [
+      "To sell the data to third parties",
+      "To safeguard user data from unauthorized access and misuse",
+      "To collect as much data as possible",
+      "To share data with government agencies"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 25,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which of the following is a practical approach to balance data utility and user privacy?",
+    "options": [
+      "Collecting all available data",
+      "Data anonymization",
+      "Publicly sharing all collected data",
+      "Reducing data storage capacity"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 47,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Unauthorized access is a significant risk in AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 51,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An organization fails to implement two-factor authentication and experiences a data breach. What ethical principle have they violated?",
+    "options": [
+      "Moral obligation to safeguard user data",
+      "Data minimization",
+      "Purpose limitation",
+      "User consent"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 63,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What ethical issue is raised by the use of facial recognition technology?",
+    "options": [
+      "Increased public safety",
+      "Mass surveillance and racial profiling",
+      "Improved customer service",
+      "Enhanced advertising techniques"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 68,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: User consent is optional in data practices according to ethical standards.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 70,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Emerging technologies always lead to positive outcomes for user privacy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 37,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A company educates users on their rights regarding data usage and purpose limitation. What is this practice aimed at achieving?",
+    "options": [
+      "User Empowerment",
+      "Data Maximization",
+      "Legal Compliance",
+      "Data Collection"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 62,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which of the following is a potential negative effect of big data on privacy?",
+    "options": [
+      "Intrusive surveillance",
+      "Improved user experience",
+      "Enhanced security measures",
+      "Data accuracy"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 64,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What advocacy effort emphasizes transparency in data practices?",
+    "options": [
+      "Data Encryption Campaign",
+      "“Stop Spying” Campaign",
+      "User Rights Initiative",
+      "Data Sharing Network"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 40,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A fitness app offers users the option to control their data and how it is used. What best practice does this demonstrate?",
+    "options": [
+      "User Consent",
+      "Data Minimization",
+      "Purpose Limitation",
+      "Transparency"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 19,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A user is unaware that their health data is being analyzed by an AI system for research purposes. What ethical issue arises here?",
+    "options": [
+      "Beneficence",
+      "Informed Consent",
+      "Justice",
+      "Transparency"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 1,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What is the primary definition of privacy in the context of AI?",
+    "options": [
+      "The right to remain anonymous online",
+      "The right to control personal information and its collection, use, and sharing",
+      "The ability to choose friends on social media",
+      "None of the above"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 10,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Privacy is considered a fundamental human right under GDPR.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 9,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: All AI developers have the same level of accountability for user privacy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 57,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A tech company experiences a data breach due to not updating their software. This incident serves as a reminder of the importance of:",
+    "options": [
+      "Timely security updates",
+      "User feedback",
+      "Marketing strategies",
+      "Product diversification"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 72,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An organization uses data from surveillance cameras for targeted marketing without informing users. What ethical concern does this raise?",
+    "options": [
+      "Lack of transparency",
+      "Excessive data collection",
+      "Data retention",
+      "User engagement"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 8,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: Privacy policies in e-commerce should clearly state how consumer data will be used.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 6,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "True or False: The concept of privacy has remained unchanged since the 19th century.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 74,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A grassroots movement seeks to raise awareness about invasive surveillance practices. What type of advocacy is this?",
+    "options": [
+      "Grassroots advocacy",
+      "Corporate advocacy",
+      "Political lobbying",
+      "User engagement campaigns"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 33,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A healthcare app collects patient data solely for treatment purposes but later uses it for marketing without consent. This practice raises concerns about:",
+    "options": [
+      "Secondary Data Use",
+      "Data Minimization",
+      "User Education",
+      "Data Utility"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 65,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "What is one ethical concern regarding data exploitation?",
+    "options": [
+      "Informed consent",
+      "Data retention",
+      "Data ownership",
+      "Data monetization"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 5,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which of the following is NOT a moral obligation of AI developers regarding privacy?",
+    "options": [
+      "Transparency",
+      "User Empowerment",
+      "Profit Maximization",
+      "Accountability"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 60,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "After the Facebook Cambridge Analytica scandal, Facebook faced substantial fines and public outrage. This underscores the need for:",
+    "options": [
+      "More data collection",
+      "Ethical data practices",
+      "Enhanced marketing strategies",
+      "User profiling"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 71,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A user’s data is collected without their knowledge through IoT devices. What ethical principle is being violated?",
+    "options": [
+      "Informed consent",
+      "Data minimization",
+      "Purpose limitation",
+      "User autonomy"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 2,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which regulation is considered a landmark in data protection in the European Union?",
+    "options": [
+      "HIPAA",
+      "CCPA",
+      "GDPR",
+      "COPPA"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 80,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A country implements strict privacy laws like the GDPR. This is an example of:",
+    "options": [
+      "Advocacy for privacy rights",
+      "Erosion of user privacy",
+      "Expansion of surveillance technologies",
+      "Data monetization"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 11,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A hospital implements an AI system for diagnostics that uses patient health records. What is a crucial privacy measure they must adopt?",
+    "options": [
+      "Encrypting patient data",
+      "Ignoring patient consent",
+      "Publicly sharing all patient data",
+      "Collecting data without limitation"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 52,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A company encrypts all sensitive data both at rest and in transit. What best practice are they following?",
+    "options": [
+      "Data encryption",
+      "Access control",
+      "Incident response planning",
+      "Regular audits"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 39,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A bank uses anonymized transaction data to improve its fraud detection system. What is the ethical approach taken here?",
+    "options": [
+      "Anonymization",
+      "Excessive Data Collection",
+      "Purpose Limitation",
+      "User Profiling"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 3,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "Which ethical principle emphasizes obtaining informed consent from users?",
+    "options": [
+      "Justice",
+      "Beneficence",
+      "Respect for Persons",
+      "Non-maleficence"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 56,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "A user’s personal information is exposed due to inadequate security measures. What type of ethical failure is this an example of?",
+    "options": [
+      "Failure to safeguard user data",
+      "Excessive data usage",
+      "Ineffective user consent processes",
+      "Poor data analysis practices"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 32,
+    "quizID": "ModuleSevenQuizzes",
+    "question": "An AI system anonymizes user data to analyze trends without identifying individuals. What technique is being used to balance data utility and user privacy?",
+    "options": [
+      "Anonymization",
+      "Aggregation",
+      "Data retention",
+      "Direct identification"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  }
+]

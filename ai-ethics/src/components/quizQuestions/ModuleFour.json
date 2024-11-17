@@ -1,0 +1,1670 @@
+[
+  {
+    "id": 127,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: What can be done to prevent similar bias in AI systems?",
+    "options": [
+      "Use a diverse range of datasets and continuously monitor algorithms for fairness.",
+      "Implement the same algorithms without changes.",
+      "Use only one dataset to train the AI.",
+      "Ignore the issue of bias in favor of efficiency."
+    ]
+  },
+  {
+    "id": 116,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is meant by the 'chilling effect' in the context of surveillance?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Increased government efficiency",
+      "Fear that deters individuals from exercising their rights",
+      "Enhanced civil liberties",
+      "Greater public engagement in governance"
+    ]
+  },
+  {
+    "id": 115,
+    "quizID": "ModuleFourQuizzes",
+    "question": "AI technologies in surveillance can lead to which ethical concern?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Increased transparency",
+      "Improved public safety",
+      "Invasion of privacy",
+      "Higher employment rates"
+    ]
+  },
+  {
+    "id": 56,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Collaboration between technologists, policymakers, and communities is essential for addressing AI challenges."
+  },
+  {
+    "id": 101,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is an application of AI in activism?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Personalized shopping recommendations",
+      "Data analysis to identify patterns of discrimination",
+      "Virtual reality gaming",
+      "Automated email responses"
+    ]
+  },
+  {
+    "id": 35,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Activists are using AI solely for data storage purposes."
+  },
+  {
+    "id": 38,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: AI can be leveraged to enhance the efficiency of advocacy campaigns."
+  },
+  {
+    "id": 67,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Predictive policing algorithms have been criticized for disproportionately targeting marginalized communities.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 3,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What was a significant outcome of the Industrial Revolution?",
+    "options": [
+      "Equal distribution of wealth",
+      "Harsh working conditions and environmental degradation",
+      "Universal access to education",
+      "The rise of digital technologies"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 41,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What are deepfakes primarily used for?",
+    "options": [
+      "Creating artistic videos",
+      "Spreading misinformation and manipulating public opinion",
+      "Developing educational content",
+      "Enhancing video game graphics"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 70,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which industry is most vulnerable to job displacement due to AI and automation?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Healthcare",
+      "Manufacturing",
+      "Education",
+      "Hospitality"
+    ]
+  },
+  {
+    "id": 14,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI technologies can both empower and harm individuals and communities.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 78,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI will only displace jobs and will not create any new employment opportunities.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 117,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Why is public engagement important in the context of AI governance?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "It reduces the costs of AI implementation.",
+      "It ensures that AI technologies reflect the needs and values of the population.",
+      "It minimizes the use of AI in government.",
+      "It centralizes decision-making power in government."
+    ]
+  },
+  {
+    "id": 32,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Community engagement is not necessary when developing AI solutions."
+  },
+  {
+    "id": 60,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Surveillance technologies can enhance civil liberties without any ethical concerns."
+  },
+  {
+    "id": 104,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which organization has utilized AI to track environmental violations and hold corporations accountable?",
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Greenpeace",
+      "World Health Organization",
+      "United Nations",
+      "International Monetary Fund"
+    ]
+  },
+  {
+    "id": 6,
+    "quizID": "ModuleFourQuizzes",
+    "question": "How can AI improve accessibility for individuals with disabilities?",
+    "options": [
+      "By limiting access to information",
+      "Through tools like speech recognition and navigation systems",
+      "By automating all jobs",
+      "By increasing digital divides"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 108,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: How can this training benefit the bank’s employees?",
+    "options": [
+      "It helps them manage the AI systems, securing their roles.",
+      "It forces them to leave the company due to overqualification.",
+      "It makes them redundant as all tasks will be automated.",
+      "It offers no benefits because AI will take over all jobs."
+    ]
+  },
+  {
+    "id": 114,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is a challenge associated with AI in governance?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      " Improved data quality",
+      " Increased public trust",
+      "Data bias and quality issues",
+      "Enhanced decision-making speed"
+    ]
+  },
+  {
+    "id": 61,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "Remove the video and issue an apology.",
+      "Allow users to comment and discuss the video to clarify misinformation.",
+      "Develop and implement advanced AI algorithms to detect and label deepfake content.",
+      "Ignore the situation and let it play out in public discourse."
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: Deepfake Manipulation A deepfake video of a popular celebrity making inflammatory remarks is released, causing public outrage and protests."
+  },
+  {
+    "id": 100,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is a key strategy for effective community engagement in AI initiatives?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Sole reliance on expert opinions",
+      "Participatory design workshops",
+      "Limiting feedback opportunities",
+      "Avoiding public consultations"
+    ]
+  },
+  {
+    "id": 39,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: The Movement for Black Lives has utilized AI to support evidence-based advocacy efforts."
+  },
+  {
+    "id": 66,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI always promotes social equity by providing equal opportunities for all individuals.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 122,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is a key ethical implication of AI in law enforcement?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Improved accuracy in investigations",
+      "Potential for racial profiling and discrimination",
+      "Enhanced community trust",
+      "Elimination of human oversight"
+    ]
+  },
+  {
+    "id": 113,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is one key application of AI in public policy?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Reducing taxes",
+      "Predictive analytics for forecasting trends",
+      "Eliminating government jobs",
+      "Increasing bureaucracy"
+    ]
+  },
+  {
+    "id": 28,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What was one of the key findings of the study by MIT Media Lab on facial recognition?",
+    "options": [
+      "Error rates were consistent across all skin tones",
+      "Darker-skinned females experienced higher error rates",
+      "Males had higher error rates than females",
+      "There was no significant bias in the algorithm"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 119,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which framework should governments establish for the ethical use of AI in surveillance?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "No regulations at all",
+      "Regulatory frameworks for data collection and usage",
+      "Sole reliance on private companies",
+      "Complete transparency with no limitations"
+    ]
+  },
+  {
+    "id": 45,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which country is known for using AI technologies for state control and surveillance?",
+    "options": [
+      "Canada",
+      "Japan",
+      "China",
+      "Germany"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 63,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "Focus solely on the cost savings and ignore the displaced workers.",
+      "Implement retraining programs for the displaced workers and offer transition assistance.",
+      "Ignore the workers' concerns and promote the company’s efficiency gains.",
+      "Offer small severance packages to the displaced workers."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: AI in Job Automation A large manufacturing company deploys AI robots that replace 1,000 factory workers. What should the company consider to address the social impact?"
+  },
+  {
+    "id": 90,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Public engagement in discussions about AI governance can help build trust between citizens and government institutions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 89,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Data bias can lead to unequal treatment of different demographic groups when using AI in governance.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 94,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Regulatory frameworks for AI in surveillance should prioritize transparency and accountability.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 92,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Governments should avoid public consultations when implementing AI technologies to maintain control over the process.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 4,
+    "quizID": "ModuleFourQuizzes",
+    "question": "The Internet Age is characterized by:",
+    "options": [
+      "Decreased communication among individuals",
+      "The democratization of access to information",
+      "The reduction of global commerce",
+      "Limited access to social media"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 1,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is social impact in the context of AI?",
+    "options": [
+      "The financial profit generated by AI technologies",
+      "The effect of AI technologies on individual and community well-being",
+      "The technological complexity of AI systems",
+      "The efficiency of AI algorithms"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 25,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which case study highlights the failure of AI in promoting social equity?",
+    "options": [
+      "COMPAS (Correctional Offender Management Profiling for Alternative Sanctions)",
+      "Microsoft AI for Accessibility",
+      "AI-powered translation tools",
+      "Predictive analytics in healthcare"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 49,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is the main purpose of AI ethics boards?",
+    "options": [
+      "To maximize profits for tech companies",
+      "To oversee the ethical implications of AI technologies",
+      "To limit public input in AI development",
+      "To develop new AI technologies"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 109,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: What is the best reason for the company to offer this transition?",
+    "options": [
+      "It reduces the company’s workforce.",
+      "It ensures that experienced workers continue to contribute to the company.",
+      "It eliminates the need for any human oversight.",
+      "It discourages workers from pursuing other careers."
+    ]
+  },
+  {
+    "id": 110,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: How can AI complement the doctors' work in this scenario?",
+    "options": [
+      "By making human doctors unnecessary for patient care.",
+      "By automating all decision-making, eliminating human input.",
+      "By handling repetitive tasks so doctors can focus on complex cases and patient interaction.",
+      "By replacing doctors with AI systems that work independently."
+    ]
+  },
+  {
+    "id": 82,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI can only be used to enhance technical skills, not soft skills like creativity and emotional intelligence.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 120,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What role do civil society organizations play in AI governance?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "They hinder public participation.",
+      "They advocate for public rights and transparency.",
+      "They only represent corporate interests.",
+      "They discourage citizen engagement."
+    ]
+  },
+  {
+    "id": 84,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Upskilling refers to acquiring new skills for a different industry.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 33,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: AI technologies have no impact on environmental monitoring."
+  },
+  {
+    "id": 98,
+    "quizID": "ModuleFourQuizzes",
+    "question": "AI technologies can help monitor environmental changes. Which of the following is an example of this application?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Data entry automation",
+      "Social media advertising",
+      "Satellite imaging for deforestation detection",
+      "Personal finance management"
+    ]
+  },
+  {
+    "id": 57,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Community engagement in AI development can lead to more equitable outcomes."
+  },
+  {
+    "id": 51,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Deepfakes can only be used for harmless entertainment purposes."
+  },
+  {
+    "id": 11,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Social impact includes only positive effects of AI technologies.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 88,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: The use of AI in surveillance does not raise any ethical concerns.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 10,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is a key challenge posed by job automation?",
+    "options": [
+      "Increased job satisfaction",
+      "Job displacement and economic inequality",
+      "Reduced need for skills training",
+      "Higher wages for all workers"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 95,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: It is not necessary for AI systems to be explainable, as long as they are efficient.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 53,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: The U.S. regulatory environment for AI often lags behind rapid technological advancements."
+  },
+  {
+    "id": 13,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: The Industrial Revolution led to improved working conditions for all workers.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 23,
+    "quizID": "ModuleFourQuizzes",
+    "question": "How can AI exacerbate the digital divide?",
+    "options": [
+      "By providing equal access to services across all regions",
+      "By empowering rural communities with AI-driven resources",
+      "By leaving behind communities with limited access to technology",
+      "By helping marginalized groups participate in the economy"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 27,
+    "quizID": "ModuleFourQuizzes",
+    "question": "How can AI empower marginalized communities?",
+    "options": [
+      "By automating exclusionary practices",
+      "By providing personalized learning experiences and job training",
+      "By reducing access to education for rural communities",
+      "By reinforcing traditional job placement methods"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 126,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: What is the primary benefit of this health-focused AI tool for low-income communities?",
+    "options": [
+      "It helps create targeted interventions to reduce health disparities.",
+      "It eliminates the need for any further health policies.",
+      "It has no effect on public health outcomes.",
+      "It focuses only on urban populations."
+    ]
+  },
+  {
+    "id": 71,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What percentage of employees will require significant reskilling by 2022 according to the OECD?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "20%",
+      "35%",
+      "54%",
+      "70%"
+    ]
+  },
+  {
+    "id": 111,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "AI will fully replace human marketers, making their roles redundant.",
+      "AI will help marketers by providing insights, while they focus on creative strategies and campaign execution.",
+      "Marketers will be demoted to technical support roles.",
+      "AI will cause marketing jobs to disappear across the industry."
+    ],
+    "question": "Scenario: What is the most likely impact of the AI software on the marketing professionals’ roles?"
+  },
+  {
+    "id": 50,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Why is understanding cultural differences important in AI governance?",
+    "options": [
+      "It has no impact on AI development.",
+      "It helps ensure AI solutions resonate with different populations.",
+      "It complicates the regulatory process.",
+      "It focuses solely on economic factors."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 79,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Reskilling refers to training workers for entirely new roles.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 97,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which organization utilized AI models during the COVID-19 pandemic to track the spread of the virus?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "NASA",
+      "Bill & Melinda Gates Foundation",
+      "World Health Organization (WHO)",
+      "United Nations (UN)"
+    ]
+  },
+  {
+    "id": 2,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is a positive effect of AI?",
+    "options": [
+      "Job displacement",
+      "Algorithmic bias",
+      "Improved healthcare outcomes",
+      "Increased surveillance"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 118,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What strategy can be employed to enhance public engagement in AI governance?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Limiting public consultations",
+      "Promoting exclusive decision-making processes",
+      "Providing education on AI technologies",
+      "Disregarding public opinion"
+    ]
+  },
+  {
+    "id": 76,
+    "quizID": "ModuleFourQuizzes",
+    "question": "AI can help human workers in which of the following ways?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Completely replace them",
+      "Perform repetitive tasks, allowing humans to focus on higher-order tasks",
+      "Reduce human creativity",
+      "Prevent the need for reskilling"
+    ]
+  },
+  {
+    "id": 34,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Participatory design workshops can enhance the effectiveness of AI solutions."
+  },
+  {
+    "id": 17,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "Increased food waste",
+      "Reduced efficiency in resource distribution",
+      "Enhanced ability to address hunger",
+      "Heightened competition among NGOs"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: An organization uses AI to improve resource allocation for food security. What positive social impact could this have?"
+  },
+  {
+    "id": 30,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is an example of AI promoting inclusivity?",
+    "options": [
+      "Exclusionary lending algorithms",
+      "AI-driven translation services breaking language barriers",
+      "Biased hiring algorithms",
+      "Predictive policing algorithms"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 102,
+    "quizID": "ModuleFourQuizzes",
+    "question": "AI algorithms can be used to monitor social media for what purpose?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "To sell advertising space",
+      "To analyze public sentiment on social justice issues",
+      "To track personal user data",
+      "To block inappropriate content"
+    ]
+  },
+  {
+    "id": 55,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Cultural perspectives do not influence societal attitudes toward AI."
+  },
+  {
+    "id": 43,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is one potential risk of AI-driven surveillance technologies?",
+    "options": [
+      "Improved public safety",
+      "Enhanced personal privacy",
+      "Discriminatory practices against marginalized communities",
+      "Greater freedom of expression"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 72,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is a new job role emerging due to AI?",
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "AI Ethicist",
+      "Manual Laborer",
+      "Cashier",
+      "Travel Agent"
+    ]
+  },
+  {
+    "id": 52,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: The deployment of autonomous systems raises questions about safety and accountability."
+  },
+  {
+    "id": 75,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is a consequence of job displacement caused by AI?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Increased wages for low-skilled workers",
+      "Widening economic inequality",
+      "Increase in manual labor jobs",
+      "Decrease in automation"
+    ]
+  },
+  {
+    "id": 86,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI can improve the efficiency of resource allocation in public services by analyzing data patterns.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 9,
+    "quizID": "ModuleFourQuizzes",
+    "question": "The Cambridge Analytica scandal raised concerns about:",
+    "options": [
+      "The effectiveness of social media campaigns",
+      "The misuse of personal data in political contexts",
+      "The rise of digital advertising",
+      "Increased voter participation"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 123,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: What is the best approach for the city council to address these concerns?",
+    "options": [
+      "Ignore community feedback and proceed with implementation.",
+      "Ensure transparency and involve community stakeholders in discussions about algorithm development.",
+      "Keep all algorithm details confidential to avoid public backlash.",
+      "Limit police presence in areas identified by AI."
+    ]
+  },
+  {
+    "id": 37,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: The Global Forest Watch initiative focuses on urban planning rather than environmental monitoring."
+  },
+  {
+    "id": 48,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is one of the societal challenges associated with job displacement due to automation?",
+    "options": [
+      "Increased employment opportunities",
+      "Economic inequality",
+      "Improved job satisfaction",
+      "Enhanced worker productivity"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 16,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "Promoting equal opportunity in hiring",
+      "Perpetuating discrimination in hiring",
+      "Enhancing candidate selection",
+      "Reducing hiring costs"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: A new AI system is developed to analyze hiring processes. If it reflects historical data biases, what risk does this pose?"
+  },
+  {
+    "id": 81,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Lifelong learning is becoming increasingly important in an AI-driven economy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 42,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is a significant concern regarding the use of autonomous systems?",
+    "options": [
+      "Increased entertainment options",
+      "Enhanced productivity in all sectors",
+      "Safety and accountability in case of accidents",
+      "Improved customer service"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 69,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: The COMPAS system demonstrated how transparency and accountability in AI systems can prevent racial biases.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 121,
+    "quizID": "ModuleFourQuizzes",
+    "question": "In Canada’s Digital Charter initiative, what is emphasized?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Increased government surveillance",
+      "Transparency and accountability in the use of digital technologies",
+      "Elimination of personal privacy",
+      "Reduction of public consultations"
+    ]
+  },
+  {
+    "id": 54,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: AI-driven surveillance technologies do not pose any privacy concerns."
+  },
+  {
+    "id": 85,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: The future of work will involve more collaboration between humans and AI rather than complete automation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 44,
+    "quizID": "ModuleFourQuizzes",
+    "question": "How does the European Union approach AI regulation compared to the United States?",
+    "options": [
+      "The EU focuses on rapid innovation, while the U.S. prioritizes ethical considerations.",
+      "The U.S. has strict guidelines, while the EU has a more flexible approach.",
+      "The EU emphasizes ethical considerations and human rights, while the U.S. prioritizes innovation.",
+      "Both regions have the same regulatory frameworks."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 87,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Predictive analytics in AI is solely used for military purposes and has no applications in public policy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 8,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What does the term 'algorithmic bias' refer to?",
+    "options": [
+      "Bias in human decision-making",
+      "Systematic prejudice in AI outputs",
+      "AI's ability to learn without data",
+      "Fairness in AI systems"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 40,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: AI technologies can only benefit affluent communities."
+  },
+  {
+    "id": 107,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "It helps workers transition to higher-paying jobs in the same company.",
+      "It encourages workers to look for jobs in a different industry.",
+      "It leads to reduced work hours and lower wages.",
+      "It eliminates the need for human workers entirely."
+    ],
+    "question": "Scenario: What is the most likely benefit of the reskilling program for workers like Emily?"
+  },
+  {
+    "id": 112,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Lawyers will have more time for client relations and high-level strategic work.",
+      "Lawyers will need to switch careers due to AI taking over all legal tasks.",
+      "AI will handle all legal work, making lawyers redundant.",
+      "AI will fully replace lawyers in courtrooms and legal negotiations."
+    ],
+    "question": "Scenario: What is the main benefit of this AI integration for the lawyers?"
+  },
+  {
+    "id": 24,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is algorithmic bias most often caused by?",
+    "options": [
+      "Inadequate training data",
+      "Proper testing of AI models",
+      "An AI system’s ability to self-correct",
+      "Overrepresentation of diverse populations in the data"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 7,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is one of the negative outcomes of AI's influence on society?",
+    "options": [
+      "Enhanced decision-making",
+      "Job creation",
+      "Algorithmic bias",
+      "Improved healthcare"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 31,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: AI can be utilized to improve healthcare access in underserved communities."
+  },
+  {
+    "id": 64,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "The increased safety of public spaces without any privacy risks.",
+      "The lack of transparency and accountability in the surveillance practices.",
+      "The financial cost of implementing surveillance technology.",
+      "The limited effectiveness of AI surveillance in preventing crime."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: AI Surveillance in Public Spaces A city implements AI-powered surveillance cameras to monitor public spaces for safety. What is a potential ethical concern?"
+  },
+  {
+    "id": 62,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "Ignore the incident and continue operating the vehicle.",
+      "Conduct a thorough investigation, address accountability, and improve safety features.",
+      "Disband the development team to avoid further issues.",
+      "Deny the fault of the vehicle and place blame on the pedestrians."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: Autonomous Vehicle Accident An autonomous vehicle causes an accident by failing to stop at a red light, leading to injuries. How should the developers respond?"
+  },
+  {
+    "id": 36,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: AI can help identify public sentiment regarding social justice issues through social media analysis."
+  },
+  {
+    "id": 58,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: Autonomous systems are expected to create more jobs than they displace."
+  },
+  {
+    "id": 21,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is one way AI can promote social equity?",
+    "options": [
+      "Limiting access to education",
+      "Improving access to essential services",
+      "Reinforcing hiring biases",
+      "Restricting job opportunities"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 22,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is an example of algorithmic bias?",
+    "options": [
+      "AI translating languages accurately",
+      "Facial recognition systems performing poorly for people of color",
+      "AI systems improving healthcare outcomes equally for all patients",
+      "Predictive analytics being used for disaster relief"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 91,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: The 'chilling effect' refers to the positive impact of surveillance on civil liberties.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 47,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following is a collaborative approach to addressing social challenges posed by AI?",
+    "options": [
+      "Sole reliance on government regulation",
+      "Community-based research initiatives",
+      "Ignoring community feedback",
+      "Limiting stakeholder involvement"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 124,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: What should the government do to address these ethical concerns?",
+    "options": [
+      "Implement the technology without public consultation.",
+      "Develop clear regulations governing its use, including privacy protections.",
+      "Allow private companies to manage the surveillance systems independently.",
+      "Abandon the technology entirely."
+    ]
+  },
+  {
+    "id": 105,
+    "quizID": "ModuleFourQuizzes",
+    "question": "The Movement for Black Lives used AI to:",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Create entertainment content",
+      "Analyze data on police violence for advocacy",
+      "Develop financial models",
+      "Promote tourism"
+    ]
+  },
+  {
+    "id": 5,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which of the following social movements was amplified through social media?",
+    "options": [
+      "The Industrial Revolution",
+      "The Civil Rights Movement",
+      "The #MeToo movement",
+      "The Enlightenment"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 77,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which sector is predicted to be significantly impacted by autonomous vehicles?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Education",
+      "Transportation",
+      "Agriculture",
+      "Banking"
+    ]
+  },
+  {
+    "id": 59,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "question": "True or False: AI ethics boards are established to promote responsible AI development."
+  },
+  {
+    "id": 12,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Understanding the social impact of AI is essential for informed decision-making.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 65,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI systems that use biased training data will likely reproduce those biases in their predictions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 46,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What role do community engagement and collaboration play in addressing AI challenges?",
+    "options": [
+      "They complicate the regulatory process.",
+      "They foster trust and ensure diverse perspectives are considered.",
+      "They have no significant impact.",
+      "They are solely the responsibility of technologists."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 18,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "To increase data collection",
+      "To protect individuals' privacy rights",
+      "To reduce transparency in data usage",
+      "To facilitate surveillance"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: A new privacy regulation is introduced in response to data misuse. What is its primary aim?"
+  },
+  {
+    "id": 96,
+    "quizID": "ModuleFourQuizzes",
+    "question": "How can AI-driven telemedicine platforms enhance healthcare access?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "By replacing doctors entirely",
+      "By providing remote diagnostics and monitoring",
+      "By charging higher fees for services",
+      "By limiting access to urban areas"
+    ]
+  },
+  {
+    "id": 19,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "Ignoring demographic data",
+      "Conducting extensive testing on diverse populations",
+      "Focusing solely on technical performance",
+      "Minimizing public feedback"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: A tech company is developing a facial recognition system. To address potential bias, what should they prioritize?"
+  },
+  {
+    "id": 99,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Why is community engagement important in AI development?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "To increase profits for tech companies",
+      "To ensure AI solutions are culturally sensitive and relevant",
+      "To simplify the development process",
+      "To replace local knowledge with expert opinions"
+    ]
+  },
+  {
+    "id": 74,
+    "quizID": "ModuleFourQuizzes",
+    "question": "AI-driven job creation is most likely to occur in which of the following fields?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Retail",
+      "Data science",
+      "Coal mining",
+      "Postal services"
+    ]
+  },
+  {
+    "id": 93,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI-driven surveillance technologies can improve public safety without raising concerns about privacy violations.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 125,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: What is a potential consequence of using this biased dataset?",
+    "options": [
+      "Improved public health outcomes for all demographics",
+      "Ineffective health interventions for underrepresented groups",
+      "Enhanced accuracy in predictive analytics",
+      "Increased funding for healthcare programs"
+    ]
+  },
+  {
+    "id": 83,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: The rise of AI can exacerbate existing economic inequalities.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 68,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI-driven translation services like Google Translate can help promote inclusivity by breaking down language barriers.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 26,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What is a critical concern raised by facial recognition technologies?",
+    "options": [
+      "Their use in improving accessibility",
+      "Their accuracy across all demographic groups",
+      "Their higher error rates for individuals with darker skin tones",
+      "Their positive impact on privacy protection"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 80,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: AI-driven technologies have no impact on knowledge-based industries.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 73,
+    "quizID": "ModuleFourQuizzes",
+    "question": "Which company launched the 'Upskilling 2025' program?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "Google",
+      "Amazon",
+      "Microsoft",
+      "IBM"
+    ]
+  },
+  {
+    "id": 15,
+    "quizID": "ModuleFourQuizzes",
+    "question": "True or False: Social media has no impact on social movements today.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 29,
+    "quizID": "ModuleFourQuizzes",
+    "question": "In what field did AI fail in the COMPAS case study?",
+    "options": [
+      "Criminal justice",
+      "Healthcare",
+      "Education",
+      "Transportation"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 103,
+    "quizID": "ModuleFourQuizzes",
+    "question": "What role does the Global Forest Watch initiative play in environmental monitoring?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple",
+    "options": [
+      "It prevents climate change.",
+      "It analyzes financial data.",
+      "It detects deforestation in real-time.",
+      "It promotes corporate investment."
+    ]
+  },
+  {
+    "id": 20,
+    "quizID": "ModuleFourQuizzes",
+    "options": [
+      "AI has no impact on patient outcomes",
+      "AI can improve diagnostic accuracy and treatment effectiveness",
+      "AI increases the cost of healthcare",
+      "AI should be avoided in healthcare settings"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "Scenario: A student studies the social implications of AI in healthcare. What key outcome should they consider?"
+  }
+]

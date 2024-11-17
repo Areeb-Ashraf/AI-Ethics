@@ -1,0 +1,1356 @@
+[
+  {
+    "id": 26,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What ethical consideration is essential for developers when creating personalized experiences?",
+    "options": [
+      "Maximizing data usage",
+      "User agency and responsible data handling",
+      "Profit maximization",
+      "Simplifying user experiences"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 55,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Facial recognition technology is universally accepted without any ethical concerns.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 34,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Over-personalization can expose users to a wider range of viewpoints.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 74,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: The CCPA allows California residents to opt-out of the sale of their personal information.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 69,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following is a potential future direction for user rights and data protection?",
+    "options": [
+      "Decreased regulatory oversight",
+      "Global cooperation for unified data protection standards",
+      "Reduced focus on user education",
+      "Limiting user autonomy"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 20,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is an implication of increased public awareness of data privacy issues for user autonomy?",
+    "options": [
+      "Users demand less control over their data.",
+      "Organizations ignore user concerns.",
+      "Users expect more transparency and control over their information.",
+      "Users have no influence on data practices."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 57,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A user discovers that their personal information was used without their knowledge in a political campaign. This situation demonstrates:",
+    "options": [
+      "Ethical AI development",
+      "Respect for user autonomy",
+      "A breach of user trust and autonomy",
+      "Effective data management"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 5,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: User autonomy is less significant in the context of AI compared to other digital technologies.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 4,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: The early internet era had strong protections in place for user data and privacy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 14,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What effect does promoting user autonomy have on user trust?",
+    "options": [
+      "It diminishes trust and creates skepticism.",
+      "It has no impact on trust.",
+      "It enhances trust by allowing users to control their data.",
+      "It reduces user engagement with technology."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 77,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A tech company implements a system where AI models are trained on user devices without sending data to the cloud. This approach exemplifies:",
+    "options": [
+      "Traditional machine learning",
+      "Centralized data processing",
+      "Federated learning",
+      "Data mining"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 19,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Why is understanding user autonomy critical for technology providers?",
+    "options": [
+      "It allows them to design products that ignore user preferences.",
+      "It helps them comply with regulations without considering user needs.",
+      "It ensures that products foster user trust and ethical responsibility.",
+      "It reduces the importance of user feedback in development."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 3,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Ethical responsibility in technology development is enhanced by prioritizing user autonomy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 1,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: User autonomy is only important for privacy and has no impact on user engagement.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 87,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Best practices for collaborative approaches include:",
+    "options": [
+      "Engaging only a select group of stakeholders",
+      "Prioritizing user-centric design",
+      "Minimizing feedback loops",
+      "Reducing stakeholder communication"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 59,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A government implements facial recognition technology without informing citizens about data collection practices. This situation raises concerns about:",
+    "options": [
+      "Increased security",
+      "User autonomy and privacy",
+      "Enhanced user engagement",
+      "Data accuracy"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 97,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Mozilla wants to address privacy concerns raised by users. Which of the following actions would best reflect community engagement?",
+    "options": [
+      "Ignoring user feedback",
+      "Publishing the Internet Health Report without stakeholder input",
+      "Holding public consultations to discuss privacy issues",
+      "Increasing advertising for their products"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 62,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which feature of blockchain helps ensure transparency and trust?",
+    "options": [
+      "Smart Contracts",
+      "Centralization",
+      "Encryption",
+      "User Authentication"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 73,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: GDPR is one of the least comprehensive data protection regulations in the world.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 72,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Federated learning enhances user privacy by keeping data on users' devices.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 16,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What significant change occurred with the rise of social media platforms concerning user autonomy?",
+    "options": [
+      "Users gained complete control over their data.",
+      "Users became more aware of the complexities of privacy settings.",
+      "Users stopped sharing personal information online.",
+      "User autonomy remained static and unchanged."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 21,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is personalization in AI systems primarily aimed at?",
+    "options": [
+      "Standardizing user experiences",
+      "Tailoring content to individual user preferences",
+      "Collecting more user data",
+      "Reducing user engagement"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 6,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A user downloads a new app that collects health data but does not provide clear information about how the data will be used. Which aspect of user autonomy is being violated in this situation?",
+    "options": [
+      "Users are empowered to manage their own data.",
+      "Users lack the ability to give informed consent.",
+      "Users have full control over their data.",
+      "Users are encouraged to engage with the app."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 44,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Dynamic consent allows users to:",
+    "options": [
+      "Always opt out of data collection",
+      "Revise their consent as their preferences change",
+      "Provide consent once for all future data use",
+      "Ignore consent requirements"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 83,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Mozilla's Internet Health Report primarily aims to:",
+    "options": [
+      "Promote the Firefox browser",
+      "Highlight issues affecting internet users",
+      "Increase corporate profits",
+      "Limit user engagement"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 66,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "The California Consumer Privacy Act (CCPA) is significant because it:",
+    "options": [
+      "Eliminates data privacy rights",
+      "Grants users rights over their personal information",
+      "Focuses solely on corporate data",
+      "Increases penalties for data breaches"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 64,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What does GDPR stand for?",
+    "options": [
+      "General Data Privacy Regulation",
+      "General Data Protection Regulation",
+      "Global Data Protection Regulation",
+      "Government Data Privacy Regulation"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 68,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Federated learning allows for collaboration between users while ensuring that:",
+    "options": [
+      "User data is transmitted to a central server",
+      "Raw data is shared with third parties",
+      "Data remains localized on users' devices",
+      "All data is public"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 7,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A streaming service allows users to customize their content recommendations based on their viewing preferences. This feature enhances user autonomy by:",
+    "options": [
+      "Reducing user control over data sharing.",
+      "Providing users with limited options for recommendations.",
+      "Allowing users to actively shape their viewing experiences.",
+      "Automating all content selection without user input."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 48,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Facial recognition technology raises significant concerns about:",
+    "options": [
+      "Increased personalization",
+      "User surveillance and lack of control",
+      "Enhanced user engagement",
+      "Improved security measures"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 90,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Public consultations are important because they:",
+    "options": [
+      "Limit stakeholder involvement",
+      "Foster transparency and accountability",
+      "Suppress dissenting opinions",
+      "Focus only on legal compliance"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 82,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following is a method of community engagement?",
+    "options": [
+      "Internal company meetings",
+      "Surveys and questionnaires",
+      "Private consultations",
+      "Closed forums"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 37,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "An e-commerce website allows users to adjust their settings to receive recommendations only from eco-friendly brands. This feature represents:",
+    "options": [
+      "Lack of user control",
+      "User empowerment and control",
+      "Mandatory preferences",
+      "Unrelated data practices"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 38,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A healthcare app uses patient data to create tailored wellness plans but does not inform users about data usage. This practice raises concerns about:",
+    "options": [
+      "User satisfaction",
+      "Transparency and ethical responsibility",
+      "Increased engagement",
+      "Improved health outcomes"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": "Nrno8I3YvZYU6mEtVqOH",
+    "quizID": "ModuleThreeQuizzes"
+  },
+  {
+    "id": 58,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A technology firm allows users to participate in a survey to adjust their consent settings regularly. This is an example of:",
+    "options": [
+      "Dynamic consent",
+      "Informed consent",
+      "Data minimization",
+      "Lack of transparency"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 75,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Technical complexity is a challenge associated with implementing federated learning.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 47,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What ethical dilemma was associated with Google's Project Dragonfly?",
+    "options": [
+      "Enhancing user privacy",
+      "Compromising user autonomy and freedom of information",
+      "Increasing data collection for better services",
+      "Improving AI algorithms"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 61,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What emerging technology allows users to maintain ownership of their data?",
+    "options": [
+      "Cloud Computing",
+      "Blockchain",
+      "Artificial Intelligence",
+      "Big Data"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 67,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which challenge does blockchain technology face that may hinder its adoption?",
+    "options": [
+      "Excessive data privacy",
+      "Complexity and usability",
+      "Lack of transparency",
+      "High operational costs"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 35,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Providing educational resources about personalization can help users make informed decisions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 94,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Engaging users in the design process can enhance trust in technology.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 25,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is a key benefit of personalization in AI systems?",
+    "options": [
+      "Decreased user engagement",
+      "Uniform experiences for all users",
+      "Enhanced user experience",
+      "Increased complexity of systems"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 8,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "After receiving user feedback about privacy concerns, a company updates its app to allow users to easily opt-out of data collection. What principle of user autonomy does this reflect?",
+    "options": [
+      "Passive consent",
+      "User empowerment and active choice",
+      "Limited user control",
+      "Informed ignorance"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 54,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: The Cambridge Analytica scandal had no impact on user trust in data practices.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 88,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Community engagement helps identify barriers to user autonomy that may not be apparent to:",
+    "options": [
+      "Users only",
+      "Developers and organizations",
+      "Investors",
+      "Regulators"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 71,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Blockchain technology is solely used for cryptocurrencies.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 49,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which principle enhances users' sense of autonomy and privacy when interacting with AI systems?",
+    "options": [
+      "Data Minimization",
+      "Anonymity and Pseudonymity",
+      "Dynamic Consent",
+      "User Engagement"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 39,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A music streaming service implements a feature that allows users to provide feedback on recommendations. This is an example of:",
+    "options": [
+      "Ignoring user input",
+      "Enhancing user control",
+      "Reducing personalization",
+      "Minimizing user autonomy"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 92,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Mozilla's Internet Health Report has led to increased awareness of user autonomy issues.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 27,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following platforms is known for providing personalized content recommendations?",
+    "options": [
+      "Wikipedia",
+      "Spotify",
+      "LinkedIn",
+      "GitHub"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 95,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Microsoft’s AI for Accessibility program only focuses on profit generation.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 51,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Agency is an essential principle that empowers users to make choices in AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 12,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which historical event significantly improved user autonomy by emphasizing informed consent?",
+    "options": [
+      "The rise of social media platforms.",
+      "The implementation of GDPR.",
+      "The advent of smartphones.",
+      "The launch of the internet."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 80,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A government is collaborating with other countries to establish unified data protection standards. This effort represents:",
+    "options": [
+      "Isolated regulation",
+      "Global cooperation",
+      "Reduced user rights",
+      "Localized compliance"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 56,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A company collects user data for targeted advertising without informing users. This scenario illustrates a violation of:",
+    "options": [
+      "User engagement",
+      "Informed consent",
+      "Agency",
+      "Privacy"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 36,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A user frequently watches romantic comedies on a streaming platform. Over time, the platform only suggests similar movies, ignoring other genres the user occasionally enjoys. This situation exemplifies:",
+    "options": [
+      "Effective personalization",
+      "Erosion of user autonomy",
+      "Diverse content exposure",
+      "Enhanced user satisfaction"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 86,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "One of the outcomes of the Partnership on AI is:",
+    "options": [
+      "Increasing user data collection",
+      "Developing guidelines for responsible AI development",
+      "Limiting user rights",
+      "Promoting monopolistic practices"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 28,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which mechanism allows users to customize their recommendations in a streaming service?",
+    "options": [
+      "User ratings",
+      "Mandatory data sharing",
+      "Standard profiles",
+      "Uniform suggestions"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 79,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A user is concerned about data breaches when using an app that shares personal information with a central server. A potential solution could be:",
+    "options": [
+      "Switching to a blockchain-based app",
+      "Ignoring privacy settings",
+      "Allowing all data to be shared",
+      "Using a different centralized service"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 29,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is a potential consequence of biased algorithms in personalization?",
+    "options": [
+      "Improved user satisfaction",
+      "Fair treatment of all user groups",
+      "Discrimination against certain user demographics",
+      "Increased engagement across diverse user bases"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 43,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Informed consent requires that users receive:",
+    "options": [
+      "Complicated legal documents",
+      "Clear information about how their data will be used",
+      "Only verbal agreements",
+      "Automatic approval for all data collection"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 31,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Personalization can lead to increased user satisfaction, but it must be balanced with user autonomy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 89,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is one benefit of fostering inclusivity in community engagement?",
+    "options": [
+      "It reduces the number of participants.",
+      "It ensures that diverse perspectives are considered.",
+      "It complicates the decision-making process.",
+      "It focuses solely on user feedback."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 18,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "How can technological innovations support user autonomy?",
+    "options": [
+      "By making data practices more complicated for users.",
+      "By providing users with privacy-enhancing technologies and consent management tools.",
+      "By limiting user input in digital experiences.",
+      "By automating user decisions without input."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 40,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A user wants to opt out of targeted advertisements on a social media platform but finds the option hidden deep within the settings. This situation indicates:",
+    "options": [
+      "Excellent user experience",
+      "Transparency in user choices",
+      "Lack of accessibility in user control mechanisms",
+      "Enhanced personalization"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 33,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: The term 'privacy by design' refers to the practice of considering privacy in the development of technologies from the outset.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 98,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A nonprofit organization partners with a tech company to develop AI tools for individuals with disabilities. This partnership exemplifies:",
+    "options": [
+      "Corporate monopolization",
+      "A collaborative approach to enhancing user autonomy",
+      "Sole reliance on user input",
+      "A lack of stakeholder engagement"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 46,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "The Cambridge Analytica scandal highlighted issues related to:",
+    "options": [
+      "User engagement",
+      "Transparency in advertising",
+      "Disregarding user autonomy and consent",
+      "The effectiveness of political campaigns"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 100,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "An organization is assessing the effectiveness of its collaborative initiatives. What is a crucial step in this evaluation?",
+    "options": [
+      "Collecting feedback from stakeholders",
+      "Focusing only on financial outcomes",
+      "Ignoring user input",
+      "Limiting communication with the public"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 22,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following is a potential risk of over-personalization?",
+    "options": [
+      "Improved user engagement",
+      "Erosion of user autonomy",
+      "Enhanced user satisfaction",
+      "Increased data security"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 52,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Users should never be allowed to change their consent once it has been given.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 42,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which principle refers to an individual's capacity to act independently and make choices?",
+    "options": [
+      "Consent",
+      "Privacy",
+      "Agency",
+      "Transparency"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 30,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following practices helps to minimize privacy concerns related to personalization?",
+    "options": [
+      "Collecting all available user data",
+      "Privacy by design",
+      "Lack of user control",
+      "Extensive data sharing"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 2,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: The rise of social media platforms has simplified users' understanding of their privacy settings.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 17,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is a potential challenge to user autonomy posed by AI technologies?",
+    "options": [
+      "Increased user control over data management.",
+      "Simplified consent processes for data sharing.",
+      "Complex algorithms that may obscure user choices.",
+      "Enhanced user trust in technology."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 84,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "The Partnership on AI includes which of the following stakeholders?",
+    "options": [
+      "Only technology companies",
+      "Academia, civil society organizations, and tech companies",
+      "Only government entities",
+      "Individual users only"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 63,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Federated learning primarily enhances user autonomy by:",
+    "options": [
+      "Sending all data to a central server",
+      "Keeping user data on their devices",
+      "Using only public data for training models",
+      "Aggregating data without user consent"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 85,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Microsoft's AI for Accessibility program focuses on:",
+    "options": [
+      "Enhancing corporate efficiency",
+      "Developing solutions for individuals with disabilities",
+      "Reducing technology costs",
+      "Promoting general AI usage"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 24,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following enhances user trust in personalization?",
+    "options": [
+      "Lack of transparency",
+      "Clear opt-in/opt-out options",
+      "Complex data practices",
+      "Standardized settings"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 45,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What does data minimization advocate for?",
+    "options": [
+      "Collecting as much data as possible",
+      "Collecting only necessary data for a specific purpose",
+      "Using data for multiple unrelated purposes",
+      "Avoiding data collection altogether"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 9,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "An online platform requires users to consent to data collection in order to access basic features but makes it difficult to withdraw consent later. This approach to user autonomy can be described as:",
+    "options": [
+      "Ethical and transparent",
+      "Restrictive and manipulative",
+      "Empowering and user-friendly",
+      "Clear and straightforward"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 23,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What does a 'filter bubble' refer to?",
+    "options": [
+      "A way to enhance user engagement",
+      "An environment where users are exposed only to content that matches their existing preferences",
+      "A method for protecting user data",
+      "A tool for creating diverse content"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 13,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "User autonomy is closely linked to which of the following concepts?",
+    "options": [
+      "Increased data collection without consent.",
+      "Users feeling confused about privacy settings.",
+      "The right of users to control their personal data.",
+      "Developers making all decisions for users."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 78,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A regulation requires companies to obtain explicit consent from users before collecting their data. This is an example of:",
+    "options": [
+      "Data mining",
+      "GDPR compliance",
+      "Centralized control",
+      "Minimal data collection"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 91,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Community engagement involves only users with technical expertise.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 41,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is the primary focus of the lesson on ethical implications of user autonomy?",
+    "options": [
+      "Enhancing AI capabilities",
+      "Balancing profit and ethics in AI",
+      "Understanding ethical frameworks like agency, consent, and privacy",
+      "Increasing user engagement with technology"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 99,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A government agency is developing a new policy for AI use in public services. They want to ensure diverse community input. What should they do?",
+    "options": [
+      "Rely solely on expert opinions",
+      "Ignore public consultations",
+      "Conduct surveys and hold public forums",
+      "Publish the policy without feedback"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 10,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A company offers a user-friendly interface that allows individuals to manage their data preferences easily. How does this feature contribute to user autonomy?",
+    "options": [
+      "It complicates the data management process.",
+      "It promotes transparency and informed decision-making.",
+      "It eliminates the need for user consent.",
+      "It restricts user access to data."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 53,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: The principle of privacy includes the right to control personal information.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 15,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following best defines the term 'informed consent' in the context of user autonomy?",
+    "options": [
+      "Users agree to data collection without understanding the implications.",
+      "Users have a clear understanding of what data is collected and how it will be used before consenting.",
+      "Users are forced to accept terms without choice.",
+      "Users have no say in the data collection process."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 60,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "After a scandal involving unauthorized data use, a tech company revises its policies to ensure greater transparency and user control. This response reflects:",
+    "options": [
+      "Ignoring ethical considerations",
+      "Acknowledging the importance of user autonomy",
+      "Increasing data collection",
+      "Prioritizing profit over ethics"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 65,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following is NOT a user right granted by GDPR?",
+    "options": [
+      "Right to access",
+      "Right to data portability",
+      "Right to be forgotten",
+      "Right to unlimited data sharing"
+    ],
+    "correctAnswer": "D",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 32,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: Users should not have any control over their personalization settings to ensure a seamless experience.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 93,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "True or False: The Partnership on AI operates independently of public input.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 81,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is the primary focus of community engagement in the context of user autonomy?",
+    "options": [
+      "Maximizing profits",
+      "Involving users in decision-making processes",
+      "Enhancing corporate control",
+      "Streamlining technology deployment"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 11,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is a key characteristic of user autonomy in digital technologies?",
+    "options": [
+      "Users must follow predefined paths dictated by technology.",
+      "Users have limited control over their personal information.",
+      "Users can make informed decisions regarding their interactions with technology.",
+      "Users are encouraged to avoid engaging with technology."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 96,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A tech company is looking to improve user autonomy by incorporating feedback from a diverse group of stakeholders. What is the best initial step they should take?",
+    "options": [
+      "Conduct a single internal meeting",
+      "Organize focus groups with users from different backgrounds",
+      "Release a product without user input",
+      "Limit feedback to a select few experts"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 50,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What is a key takeaway from the ethical implications of user autonomy?",
+    "options": [
+      "User autonomy is less important than technological advancement",
+      "Ethical frameworks should guide technology development",
+      "Data collection should be prioritized over user rights",
+      "Transparency can be disregarded in AI development"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 76,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "A user wants to control who accesses their health data for research. Which technology can they utilize?",
+    "options": [
+      "Centralized databases",
+      "Federated learning",
+      "Blockchain",
+      "Internet of Things"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 70,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "What do smart contracts facilitate in the context of blockchain?",
+    "options": [
+      "Automatic updates of user data",
+      "Self-executing agreements for data sharing",
+      "Public sharing of personal data",
+      "Increased data ownership complexity"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  }
+]
