@@ -1,35 +1,77 @@
 [
   {
-    "id": 14,
-    "question": "What is the primary purpose of assistive technologies?",
+    "id": 1,
+    "question": "What is the primary goal of accessibility in technology?",
     "options": [
-      "To enhance productivity in the workplace",
-      "To support individuals with disabilities in performing tasks",
-      "To reduce costs for healthcare providers",
-      "To automate household chores"
+      "To reduce the cost of technology development.",
+      "To design products and services that are usable by people with disabilities.",
+      "To limit access to technology for certain user groups.",
+      "To make technology exclusive to visually impaired users."
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "b",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
   },
   {
-    "id": 30,
-    "question": "Tom has difficulty hearing in crowded places and wants a hearing aid that adjusts automatically. Which device should he consider?",
+    "id": 2,
+    "question": "Which of the following is an example of how AI can enhance accessibility?",
     "options": [
-      "JAWS",
-      "Oticon More",
-      "Be My Eyes",
-      "MindMate"
+      "Requiring manual interaction with devices for all users.",
+      "AI-powered voice assistants enabling hands-free navigation for people with mobility impairments.",
+      "AI systems only serving users with high technical expertise.",
+      "Providing AI systems that work exclusively for visually able users."
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "b",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
   },
   {
-    "id": 27,
-    "question": "True or False: AI-powered hearing aids can enhance the listening experience by reducing background noise.",
+    "id": 3,
+    "question": "Which of the following disabilities is addressed by AI-powered real-time transcription tools?",
+    "options": [
+      "Visual disabilities.",
+      "Cognitive disabilities.",
+      "Hearing disabilities.",
+      "Motor disabilities."
+    ],
+    "correctAnswer": "c",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 4,
+    "question": "Why is user-centered design (UCD) critical in creating accessible AI systems?",
+    "options": [
+      "It focuses solely on the developer’s perspective.",
+      "It places the needs and limitations of end users at the center of the design process.",
+      "It prioritizes cost-effectiveness over usability.",
+      "It ignores user feedback during the design process."
+    ],
+    "correctAnswer": "b",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 5,
+    "question": "What risk does AI pose to accessibility if not developed with proper care?",
+    "options": [
+      "It may increase market reach for technology companies.",
+      "It could unintentionally exclude people with disabilities through biased datasets.",
+      "It can ensure equal access to technology for everyone.",
+      "It eliminates the need for manual accessibility features."
+    ],
+    "correctAnswer": "b",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 6,
+    "question": "True or False: AI systems trained on biased datasets can unintentionally exclude people with disabilities or produce inaccurate outputs.",
     "options": [
       "True",
       "False"
@@ -40,8 +82,8 @@
     "quizID": "ModuleTwoQuizzes"
   },
   {
-    "id": 44,
-    "question": "True or False: Universal Design aims to create products that require specialized adaptations for different user groups.",
+    "id": 7,
+    "question": "True or False: User-centered design (UCD) does not involve user feedback during the development of AI systems.",
     "options": [
       "True",
       "False"
@@ -52,13 +94,91 @@
     "quizID": "ModuleTwoQuizzes"
   },
   {
-    "id": 81,
-    "question": "In promoting awareness about accessibility within the tech industry, which strategy would be most effective?",
+    "id": 8,
+    "question": "True or False: AI-driven tools like screen readers and real-time transcription services help enhance accessibility for visually and hearing-impaired individuals.",
     "options": [
-      "Hosting exclusive meetings for executives only",
-      "Conducting training workshops for all employees on accessibility best practices",
-      "Limiting discussions to technical teams",
-      "Focusing only on regulatory compliance"
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 9,
+    "question": "True or False: Designing AI systems for accessibility is not just a legal requirement but also promotes social inclusion and equity.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 10,
+    "question": "True or False: AI can completely replace the need for comprehensive accessibility design approaches.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 11,
+    "question": "A new app uses AI-driven speech recognition to provide real-time transcriptions for virtual meetings. How could this feature improve accessibility for users with hearing impairments?",
+    "options": [
+      "By offering a visual representation of spoken content, enabling users with hearing impairments to follow conversations.",
+      "By enhancing audio quality for users with visual impairments.",
+      "By allowing users to interact only with voice commands.",
+      "By automatically disabling the app for users with hearing impairments."
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 12,
+    "question": "A website aims to improve accessibility for users with cognitive disabilities. Which AI feature would be most beneficial in helping these users navigate complex forms?",
+    "options": [
+      "AI that provides voice descriptions of images on the website.",
+      "AI-based chatbots offering step-by-step instructions to simplify the form completion process.",
+      "AI that disables form submission for users with cognitive disabilities.",
+      "AI that automatically fills out forms for all users."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 13,
+    "question": "A company is developing a new mobile app with accessibility in mind. How should they incorporate user-centered design (UCD) to ensure accessibility for users with different disabilities?",
+    "options": [
+      "Focus on gathering feedback only from users without disabilities.",
+      "Design the app based on assumptions about what users with disabilities need.",
+      "Conduct user testing with individuals from various disability groups to gather feedback and make iterative design improvements.",
+      "Implement accessibility features without testing them with real users."
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 14,
+    "question": "What is the primary purpose of assistive technologies?",
+    "options": [
+      "To enhance productivity in the workplace",
+      "To support individuals with disabilities in performing tasks",
+      "To reduce costs for healthcare providers",
+      "To automate household chores"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -80,37 +200,13 @@
     "questionType": "multiple"
   },
   {
-    "id": 60,
-    "question": "True or False: Continuous monitoring of AI systems is unnecessary after they have been deployed.",
+    "id": 16,
+    "question": "What feature do modern screen readers often include to assist users?",
     "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 24,
-    "question": "True or False: AI-driven assistive technologies can help users communicate more effectively.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 40,
-    "question": "What is the purpose of using personas in design?",
-    "options": [
-      "To identify only expert users",
-      "To represent diverse user archetypes, including those with disabilities",
-      "To focus on a single demographic",
-      "To promote a product's marketing"
+      "Video playback",
+      "Optical Character Recognition (OCR)",
+      "Speech-to-text functionality",
+      "Augmented reality"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -118,27 +214,41 @@
     "questionType": "multiple"
   },
   {
-    "id": 4,
-    "question": "Why is user-centered design (UCD) critical in creating accessible AI systems?",
+    "id": 17,
+    "question": "Which of the following technologies helps individuals with hearing impairments by adapting to different environments?",
     "options": [
-      "It focuses solely on the developer’s perspective.",
-      "It places the needs and limitations of end users at the center of the design process.",
-      "It prioritizes cost-effectiveness over usability.",
-      "It ignores user feedback during the design process."
+      "Visual recognition technologies",
+      "Smart home devices",
+      "AI-powered hearing aids",
+      "Augmented reality applications"
     ],
-    "correctAnswer": "b",
+    "correctAnswer": "C",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
   },
   {
-    "id": 76,
-    "question": "A tech company notices that its products are not compliant with accessibility standards, which has led to negative feedback from users. To address this issue, what should be their first action?",
+    "id": 18,
+    "question": "What technology does the app Microsoft Seeing AI primarily use?",
     "options": [
-      "Launch a public relations campaign to counteract the negative feedback",
-      "Conduct accessibility audits to identify specific compliance gaps",
-      "Ignore the feedback, as most users are satisfied",
-      "Hire a new marketing team"
+      "Machine learning",
+      "Natural language processing",
+      "Computer vision",
+      "Data mining"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 19,
+    "question": "Which AI-driven technology connects visually impaired users with volunteers?",
+    "options": [
+      "Google Assistant",
+      "Be My Eyes",
+      "JAWS",
+      "Oticon More"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -146,16 +256,32 @@
     "questionType": "multiple"
   },
   {
-    "id": 28,
-    "question": "True or False: Screen readers can only read text that is displayed on a computer screen.",
+    "id": 20,
+    "question": "What type of assistive technology uses eye-tracking to facilitate communication?",
     "options": [
-      "True",
-      "False"
+      "Screen readers",
+      "Voice-activated devices",
+      "Tobii Dynavox",
+      "Speech recognition software"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 21,
+    "question": "Which AI-driven system allows users to control home devices using voice commands?",
+    "options": [
+      "Zoom",
+      "Amazon Alexa",
+      "Microsoft Excel",
+      "Google Docs"
     ],
     "correctAnswer": "B",
-    "questionType": "true_false",
     "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
   },
   {
     "id": 22,
@@ -172,6 +298,338 @@
     "questionType": "multiple"
   },
   {
+    "id": 23,
+    "question": "What is one major benefit of using AI in assistive technologies?",
+    "options": [
+      "Higher costs",
+      "Increased complexity",
+      "Personalized and adaptive solutions",
+      "Reduced user engagement"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 24,
+    "question": "True or False: AI-driven assistive technologies can help users communicate more effectively.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 25,
+    "question": "True or False: The only purpose of assistive technologies is to aid individuals with physical disabilities.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 26,
+    "question": "True or False: Be My Eyes is a paid service for visually impaired individuals.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 27,
+    "question": "True or False: AI-powered hearing aids can enhance the listening experience by reducing background noise.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 28,
+    "question": "True or False: Screen readers can only read text that is displayed on a computer screen.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 29,
+    "question": "Maria is a visually impaired student who needs help reading her textbooks. What technology would best assist her?",
+    "options": [
+      "Google Nest",
+      "Microsoft Seeing AI",
+      "Dragon NaturallySpeaking",
+      "Smart home systems"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 30,
+    "question": "Tom has difficulty hearing in crowded places and wants a hearing aid that adjusts automatically. Which device should he consider?",
+    "options": [
+      "JAWS",
+      "Oticon More",
+      "Be My Eyes",
+      "MindMate"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 31,
+    "question": "Emily, who has a cognitive disability, often forgets her daily tasks. Which technology can help her stay organized?",
+    "options": [
+      "Screen reader",
+      "MindMate",
+      "AI-powered hearing aid",
+      "Voice-activated smart home assistant"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 32,
+    "question": "Jake, a person with limited mobility, wants to control his home environment without using his hands. What would be the best solution?",
+    "options": [
+      "Eye-tracking devices",
+      "Smart home technologies with voice control",
+      "Screen readers",
+      "Traditional remote controls"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 33,
+    "question": "Sarah uses a communication device that allows her to select words using her eyes. What technology is she likely using?",
+    "options": [
+      "Be My Eyes",
+      "Tobii Dynavox",
+      "Google Assistant",
+      "Microsoft Seeing AI"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 34,
+    "question": "Which of the following best describes inclusive design?",
+    "options": [
+      "Design focused solely on aesthetics",
+      "Design that is only for individuals without disabilities",
+      "Design that ensures accessibility for all users, regardless of ability",
+      "Design that prioritizes cost over usability"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 35,
+    "question": "What does User-Centered Design (UCD) emphasize?",
+    "options": [
+      "Designing for profit",
+      "Understanding users' needs and preferences",
+      "Using advanced technology without user input",
+      "Designing only for technical experts"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 36,
+    "question": "Empathy mapping is used to:",
+    "options": [
+      "Visualize users' experiences and emotions",
+      "Create user personas",
+      "Test AI algorithms",
+      "Develop marketing strategies"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 37,
+    "question": "Which principle advocates for creating products that are inherently accessible to all users?",
+    "options": [
+      "Flexible Solutions",
+      "Participatory Design",
+      "Universal Design",
+      "Error Prevention"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 38,
+    "question": "Participatory design involves:",
+    "options": [
+      "Only user testing after completion",
+      "Users as co-designers providing input throughout the process",
+      "Excluding users from the design process",
+      "Focusing solely on technical requirements"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 39,
+    "question": "Which of the following is an example of a technique for gathering user feedback?",
+    "options": [
+      "Avoiding user input",
+      "Conducting usability testing",
+      "Ignoring analytics data",
+      "Focusing on personal opinions of designers"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 40,
+    "question": "What is the purpose of using personas in design?",
+    "options": [
+      "To identify only expert users",
+      "To represent diverse user archetypes, including those with disabilities",
+      "To focus on a single demographic",
+      "To promote a product's marketing"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 41,
+    "question": "Which of the following is NOT a key methodology for developing inclusive AI applications?",
+    "options": [
+      "Bias Mitigation",
+      "Usability Testing",
+      "Profit Maximization",
+      "Flexible Solutions"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 42,
+    "question": "What role does automated accessibility checking play in the design process?",
+    "options": [
+      "It replaces user testing entirely",
+      "It helps identify accessibility issues before user feedback",
+      "It only focuses on aesthetic aspects",
+      "It is irrelevant to the design process"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 43,
+    "question": "Why is it important to involve users with disabilities in the design and testing phases?",
+    "options": [
+      "To reduce development costs",
+      "To ensure the product meets their specific needs",
+      "To speed up the design process",
+      "To focus on market trends"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 44,
+    "question": "True or False: Universal Design aims to create products that require specialized adaptations for different user groups.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 45,
+    "question": "True or False: Continuous monitoring of AI systems can help identify and address biases that may emerge after deployment.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 46,
+    "question": "True or False: Feedback loops are unnecessary after a product has been launched.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 47,
+    "question": "True or False: Inclusive design can only be achieved by using the latest technology.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
     "id": 48,
     "question": "True or False: Involving users with disabilities in the design process can foster trust and credibility in technology.",
     "options": [
@@ -184,15 +642,71 @@
     "quizID": "ModuleTwoQuizzes"
   },
   {
-    "id": 67,
-    "question": "What technology is being used to enhance communication for individuals with speech or language impairments?",
+    "id": 49,
+    "question": "A designer is creating a new AI-powered app for visually impaired users. They decide to hold focus groups with users who have visual impairments to gather feedback on their ideas. What principle of inclusive design are they applying?",
     "options": [
-      "Computer Vision",
-      "Natural Language Processing (NLP)",
-      "Predictive Text",
-      "Augmented Reality"
+      "Error Prevention",
+      "User-Centered Design",
+      "Flexibility",
+      "Empathy Mapping"
     ],
     "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 50,
+    "question": "An AI system is designed to assist individuals with cognitive disabilities. The designers notice users frequently struggle with navigating the interface. Which technique should the designers use to understand the issue better?",
+    "options": [
+      "Ignore user feedback",
+      "Conduct usability testing",
+      "Focus solely on coding improvements",
+      "Eliminate features"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 51,
+    "question": "A company is developing a voice-controlled smart home device and wants to ensure that individuals with motor impairments can use it effectively. What approach should they prioritize in their design?",
+    "options": [
+      "Prioritize aesthetic design",
+      "Ensure multiple interaction methods (voice, touch, etc.)",
+      "Limit accessibility options",
+      "Focus only on advanced features"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 52,
+    "question": "After launching an AI application, a company wants to identify any remaining accessibility issues. What method would be most effective for gathering feedback from users with disabilities?",
+    "options": [
+      "Conducting beta testing with users",
+      "Assuming the product is perfect",
+      "Focusing on user demographics only",
+      "Avoiding feedback altogether"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 53,
+    "question": "A new AI communication device uses eye-tracking technology for individuals with speech impairments. Which principle is crucial for ensuring its success?",
+    "options": [
+      "User-Centered Design",
+      "Aesthetic Design",
+      "Profit Maximization",
+      "Disregard for user feedback"
+    ],
+    "correctAnswer": "A",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
@@ -212,8 +726,76 @@
     "questionType": "multiple"
   },
   {
-    "id": 47,
-    "question": "True or False: Inclusive design can only be achieved by using the latest technology.",
+    "id": 55,
+    "question": "What is the primary purpose of empathy mapping in inclusive design?",
+    "options": [
+      "To gather user feedback",
+      "To visualize users' experiences and needs",
+      "To develop user personas",
+      "To create prototypes"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 56,
+    "question": "Which of the following is a key law that requires federal agencies in the U.S. to make electronic information accessible?",
+    "options": [
+      "Americans with Disabilities Act (ADA)",
+      "Section 508 of the Rehabilitation Act",
+      "Web Content Accessibility Guidelines (WCAG)",
+      "European Accessibility Act (EAA)"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 57,
+    "question": "What does the acronym WCAG stand for?",
+    "options": [
+      "Web Content Accessibility Guidelines",
+      "Web Compliance Accessibility Guidelines",
+      "Website Content Access Guide",
+      "Web Care Accessibility Group"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 58,
+    "question": "Which of the following best describes participatory design?",
+    "options": [
+      "Designing products without user input",
+      "Involving users as co-designers in the design process",
+      "Conducting focus groups for feedback",
+      "Developing user personas"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 59,
+    "question": "True or False: Accessibility regulations apply only to physical products and not to digital technology.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 60,
+    "question": "True or False: Continuous monitoring of AI systems is unnecessary after they have been deployed.",
     "options": [
       "True",
       "False"
@@ -236,13 +818,25 @@
     "quizID": "ModuleTwoQuizzes"
   },
   {
-    "id": 80,
-    "question": "What is a critical factor in the success of AI technologies aimed at enhancing accessibility?",
+    "id": 62,
+    "question": "True or False: User feedback is not crucial during the iterative design process for AI systems.",
     "options": [
-      "Speed of implementation",
-      "User involvement throughout the design and testing phases",
-      "Complexity of the technology",
-      "Focus on aesthetics"
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
+  },
+  {
+    "id": 63,
+    "question": "A tech company wants to improve its mobile app's accessibility features. They decide to involve users with disabilities in the design phase. What methodology are they using?",
+    "options": [
+      "User Testing",
+      "Participatory Design",
+      "Empathy Mapping",
+      "A/B Testing"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -250,18 +844,114 @@
     "questionType": "multiple"
   },
   {
-    "id": 38,
-    "question": "Participatory design involves:",
+    "id": 64,
+    "question": "During a usability testing session, users with visual impairments struggle to navigate a new AI application. Which technique would help the development team address this issue?",
     "options": [
-      "Only user testing after completion",
-      "Users as co-designers providing input throughout the process",
-      "Excluding users from the design process",
-      "Focusing solely on technical requirements"
+      "Task Analysis",
+      "Surveys",
+      "Focus Groups",
+      "A/B Testing"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 65,
+    "question": "A software company must ensure its application complies with the European Accessibility Act. Which of the following should they prioritize?",
+    "options": [
+      "User feedback only",
+      "Automated testing tools only",
+      "A combination of user feedback and compliance with accessibility standards",
+      "Ignoring regulations if the product is visually appealing"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 66,
+    "question": "A developer realizes that their AI application does not meet the color contrast requirements specified in WCAG. What is the most immediate action they should take?",
+    "options": [
+      "Ignore the issue",
+      "Conduct a manual accessibility audit",
+      "Launch the application anyway",
+      "Consult with graphic designers only"
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
+  },
+  {
+    "id": 67,
+    "question": "What technology is being used to enhance communication for individuals with speech or language impairments?",
+    "options": [
+      "Computer Vision",
+      "Natural Language Processing (NLP)",
+      "Predictive Text",
+      "Augmented Reality"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 68,
+    "question": "Which of the following best describes the goal of inclusive design principles?",
+    "options": [
+      "To design products for specific user groups",
+      "To create products usable by all people, regardless of their abilities",
+      "To simplify product design for easier manufacturing",
+      "To enhance the aesthetic appeal of products"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 69,
+    "question": "What does IoT stand for?",
+    "options": [
+      "Internet of Technology",
+      "Internet of Things",
+      "Interconnected Online Tools",
+      "Intelligent Object Transfer"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 70,
+    "question": "Which company is known for its Accessibility Partner Program?",
+    "options": [
+      "Microsoft",
+      "Apple",
+      "Google",
+      "IBM"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 71,
+    "question": "True or False: Collaboration among developers, designers, and users with disabilities is essential for creating accessible AI technologies.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes"
   },
   {
     "id": 72,
@@ -276,121 +966,13 @@
     "quizID": "ModuleTwoQuizzes"
   },
   {
-    "id": 57,
-    "question": "What does the acronym WCAG stand for?",
+    "id": 73,
+    "question": "A software development team is designing an AI-powered navigation app for individuals with visual impairments. They want to ensure the app is user-friendly. What is the most effective first step they should take?",
     "options": [
-      "Web Content Accessibility Guidelines",
-      "Web Compliance Accessibility Guidelines",
-      "Website Content Access Guide",
-      "Web Care Accessibility Group"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 17,
-    "question": "Which of the following technologies helps individuals with hearing impairments by adapting to different environments?",
-    "options": [
-      "Visual recognition technologies",
-      "Smart home devices",
-      "AI-powered hearing aids",
-      "Augmented reality applications"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 41,
-    "question": "Which of the following is NOT a key methodology for developing inclusive AI applications?",
-    "options": [
-      "Bias Mitigation",
-      "Usability Testing",
-      "Profit Maximization",
-      "Flexible Solutions"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 16,
-    "question": "What feature do modern screen readers often include to assist users?",
-    "options": [
-      "Video playback",
-      "Optical Character Recognition (OCR)",
-      "Speech-to-text functionality",
-      "Augmented reality"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 13,
-    "question": "A company is developing a new mobile app with accessibility in mind. How should they incorporate user-centered design (UCD) to ensure accessibility for users with different disabilities?",
-    "options": [
-      "Focus on gathering feedback only from users without disabilities.",
-      "Design the app based on assumptions about what users with disabilities need.",
-      "Conduct user testing with individuals from various disability groups to gather feedback and make iterative design improvements.",
-      "Implement accessibility features without testing them with real users."
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 46,
-    "question": "True or False: Feedback loops are unnecessary after a product has been launched.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 25,
-    "question": "True or False: The only purpose of assistive technologies is to aid individuals with physical disabilities.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 36,
-    "question": "Empathy mapping is used to:",
-    "options": [
-      "Visualize users' experiences and emotions",
-      "Create user personas",
-      "Test AI algorithms",
-      "Develop marketing strategies"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 19,
-    "question": "Which AI-driven technology connects visually impaired users with volunteers?",
-    "options": [
-      "Google Assistant",
-      "Be My Eyes",
-      "JAWS",
-      "Oticon More"
+      "Hire more developers to speed up the process",
+      "Conduct user testing with individuals who have visual impairments",
+      "Create a marketing plan to promote the app",
+      "Focus solely on the technical aspects of the app"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -412,13 +994,13 @@
     "questionType": "multiple"
   },
   {
-    "id": 58,
-    "question": "Which of the following best describes participatory design?",
+    "id": 75,
+    "question": "An organization is looking to enhance its digital products’ accessibility and has decided to hold a hackathon focused on innovative accessibility solutions. Which outcome should they prioritize to ensure long-term impact?",
     "options": [
-      "Designing products without user input",
-      "Involving users as co-designers in the design process",
-      "Conducting focus groups for feedback",
-      "Developing user personas"
+      "Generate a large number of prototypes without testing",
+      "Create a few well-tested, feasible solutions that can be implemented",
+      "Focus only on ideas that appeal to the majority",
+      "Ensure every participant receives a prize for their contributions"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -426,44 +1008,18 @@
     "questionType": "multiple"
   },
   {
-    "id": 56,
-    "question": "Which of the following is a key law that requires federal agencies in the U.S. to make electronic information accessible?",
+    "id": 76,
+    "question": "A tech company notices that its products are not compliant with accessibility standards, which has led to negative feedback from users. To address this issue, what should be their first action?",
     "options": [
-      "Americans with Disabilities Act (ADA)",
-      "Section 508 of the Rehabilitation Act",
-      "Web Content Accessibility Guidelines (WCAG)",
-      "European Accessibility Act (EAA)"
+      "Launch a public relations campaign to counteract the negative feedback",
+      "Conduct accessibility audits to identify specific compliance gaps",
+      "Ignore the feedback, as most users are satisfied",
+      "Hire a new marketing team"
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
-  },
-  {
-    "id": 49,
-    "question": "A designer is creating a new AI-powered app for visually impaired users. They decide to hold focus groups with users who have visual impairments to gather feedback on their ideas. What principle of inclusive design are they applying?",
-    "options": [
-      "Error Prevention",
-      "User-Centered Design",
-      "Flexibility",
-      "Empathy Mapping"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 62,
-    "question": "True or False: User feedback is not crucial during the iterative design process for AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
   },
   {
     "id": 77,
@@ -475,508 +1031,6 @@
       "It focuses solely on improving aesthetics."
     ],
     "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 6,
-    "question": "True or False: AI systems trained on biased datasets can unintentionally exclude people with disabilities or produce inaccurate outputs.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 43,
-    "question": "Why is it important to involve users with disabilities in the design and testing phases?",
-    "options": [
-      "To reduce development costs",
-      "To ensure the product meets their specific needs",
-      "To speed up the design process",
-      "To focus on market trends"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 33,
-    "question": "Sarah uses a communication device that allows her to select words using her eyes. What technology is she likely using?",
-    "options": [
-      "Be My Eyes",
-      "Tobii Dynavox",
-      "Google Assistant",
-      "Microsoft Seeing AI"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 11,
-    "question": "A new app uses AI-driven speech recognition to provide real-time transcriptions for virtual meetings. How could this feature improve accessibility for users with hearing impairments?",
-    "options": [
-      "By offering a visual representation of spoken content, enabling users with hearing impairments to follow conversations.",
-      "By enhancing audio quality for users with visual impairments.",
-      "By allowing users to interact only with voice commands.",
-      "By automatically disabling the app for users with hearing impairments."
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 73,
-    "question": "A software development team is designing an AI-powered navigation app for individuals with visual impairments. They want to ensure the app is user-friendly. What is the most effective first step they should take?",
-    "options": [
-      "Hire more developers to speed up the process",
-      "Conduct user testing with individuals who have visual impairments",
-      "Create a marketing plan to promote the app",
-      "Focus solely on the technical aspects of the app"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 65,
-    "question": "A software company must ensure its application complies with the European Accessibility Act. Which of the following should they prioritize?",
-    "options": [
-      "User feedback only",
-      "Automated testing tools only",
-      "A combination of user feedback and compliance with accessibility standards",
-      "Ignoring regulations if the product is visually appealing"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 51,
-    "question": "A company is developing a voice-controlled smart home device and wants to ensure that individuals with motor impairments can use it effectively. What approach should they prioritize in their design?",
-    "options": [
-      "Prioritize aesthetic design",
-      "Ensure multiple interaction methods (voice, touch, etc.)",
-      "Limit accessibility options",
-      "Focus only on advanced features"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 71,
-    "question": "True or False: Collaboration among developers, designers, and users with disabilities is essential for creating accessible AI technologies.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 32,
-    "question": "Jake, a person with limited mobility, wants to control his home environment without using his hands. What would be the best solution?",
-    "options": [
-      "Eye-tracking devices",
-      "Smart home technologies with voice control",
-      "Screen readers",
-      "Traditional remote controls"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 20,
-    "question": "What type of assistive technology uses eye-tracking to facilitate communication?",
-    "options": [
-      "Screen readers",
-      "Voice-activated devices",
-      "Tobii Dynavox",
-      "Speech recognition software"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 59,
-    "question": "True or False: Accessibility regulations apply only to physical products and not to digital technology.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 70,
-    "question": "Which company is known for its Accessibility Partner Program?",
-    "options": [
-      "Microsoft",
-      "Apple",
-      "Google",
-      "IBM"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 69,
-    "question": "What does IoT stand for?",
-    "options": [
-      "Internet of Technology",
-      "Internet of Things",
-      "Interconnected Online Tools",
-      "Intelligent Object Transfer"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 39,
-    "question": "Which of the following is an example of a technique for gathering user feedback?",
-    "options": [
-      "Avoiding user input",
-      "Conducting usability testing",
-      "Ignoring analytics data",
-      "Focusing on personal opinions of designers"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 55,
-    "question": "What is the primary purpose of empathy mapping in inclusive design?",
-    "options": [
-      "To gather user feedback",
-      "To visualize users' experiences and needs",
-      "To develop user personas",
-      "To create prototypes"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 5,
-    "question": "What risk does AI pose to accessibility if not developed with proper care?",
-    "options": [
-      "It may increase market reach for technology companies.",
-      "It could unintentionally exclude people with disabilities through biased datasets.",
-      "It can ensure equal access to technology for everyone.",
-      "It eliminates the need for manual accessibility features."
-    ],
-    "correctAnswer": "b",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 8,
-    "question": "True or False: AI-driven tools like screen readers and real-time transcription services help enhance accessibility for visually and hearing-impaired individuals.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 53,
-    "question": "A new AI communication device uses eye-tracking technology for individuals with speech impairments. Which principle is crucial for ensuring its success?",
-    "options": [
-      "User-Centered Design",
-      "Aesthetic Design",
-      "Profit Maximization",
-      "Disregard for user feedback"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 9,
-    "question": "True or False: Designing AI systems for accessibility is not just a legal requirement but also promotes social inclusion and equity.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 64,
-    "question": "During a usability testing session, users with visual impairments struggle to navigate a new AI application. Which technique would help the development team address this issue?",
-    "options": [
-      "Task Analysis",
-      "Surveys",
-      "Focus Groups",
-      "A/B Testing"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 10,
-    "question": "True or False: AI can completely replace the need for comprehensive accessibility design approaches.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 31,
-    "question": "Emily, who has a cognitive disability, often forgets her daily tasks. Which technology can help her stay organized?",
-    "options": [
-      "Screen reader",
-      "MindMate",
-      "AI-powered hearing aid",
-      "Voice-activated smart home assistant"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 21,
-    "question": "Which AI-driven system allows users to control home devices using voice commands?",
-    "options": [
-      "Zoom",
-      "Amazon Alexa",
-      "Microsoft Excel",
-      "Google Docs"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 50,
-    "question": "An AI system is designed to assist individuals with cognitive disabilities. The designers notice users frequently struggle with navigating the interface. Which technique should the designers use to understand the issue better?",
-    "options": [
-      "Ignore user feedback",
-      "Conduct usability testing",
-      "Focus solely on coding improvements",
-      "Eliminate features"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 37,
-    "question": "Which principle advocates for creating products that are inherently accessible to all users?",
-    "options": [
-      "Flexible Solutions",
-      "Participatory Design",
-      "Universal Design",
-      "Error Prevention"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 7,
-    "question": "True or False: User-centered design (UCD) does not involve user feedback during the development of AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 68,
-    "question": "Which of the following best describes the goal of inclusive design principles?",
-    "options": [
-      "To design products for specific user groups",
-      "To create products usable by all people, regardless of their abilities",
-      "To simplify product design for easier manufacturing",
-      "To enhance the aesthetic appeal of products"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 2,
-    "question": "Which of the following is an example of how AI can enhance accessibility?",
-    "options": [
-      "Requiring manual interaction with devices for all users.",
-      "AI-powered voice assistants enabling hands-free navigation for people with mobility impairments.",
-      "AI systems only serving users with high technical expertise.",
-      "Providing AI systems that work exclusively for visually able users."
-    ],
-    "correctAnswer": "b",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 18,
-    "question": "What technology does the app Microsoft Seeing AI primarily use?",
-    "options": [
-      "Machine learning",
-      "Natural language processing",
-      "Computer vision",
-      "Data mining"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 79,
-    "question": "A development team is integrating AI into their product to provide real-time navigation assistance for individuals with visual impairments. Which feature would be most beneficial?",
-    "options": [
-      "Textual descriptions of destinations",
-      "Visual maps of the area",
-      "Audio cues and voice instructions",
-      "3D animations of the surroundings"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 23,
-    "question": "What is one major benefit of using AI in assistive technologies?",
-    "options": [
-      "Higher costs",
-      "Increased complexity",
-      "Personalized and adaptive solutions",
-      "Reduced user engagement"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 1,
-    "question": "What is the primary goal of accessibility in technology?",
-    "options": [
-      "To reduce the cost of technology development.",
-      "To design products and services that are usable by people with disabilities.",
-      "To limit access to technology for certain user groups.",
-      "To make technology exclusive to visually impaired users."
-    ],
-    "correctAnswer": "b",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 45,
-    "question": "True or False: Continuous monitoring of AI systems can help identify and address biases that may emerge after deployment.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 35,
-    "question": "What does User-Centered Design (UCD) emphasize?",
-    "options": [
-      "Designing for profit",
-      "Understanding users' needs and preferences",
-      "Using advanced technology without user input",
-      "Designing only for technical experts"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 52,
-    "question": "After launching an AI application, a company wants to identify any remaining accessibility issues. What method would be most effective for gathering feedback from users with disabilities?",
-    "options": [
-      "Conducting beta testing with users",
-      "Assuming the product is perfect",
-      "Focusing on user demographics only",
-      "Avoiding feedback altogether"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 63,
-    "question": "A tech company wants to improve its mobile app's accessibility features. They decide to involve users with disabilities in the design phase. What methodology are they using?",
-    "options": [
-      "User Testing",
-      "Participatory Design",
-      "Empathy Mapping",
-      "A/B Testing"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 3,
-    "question": "Which of the following disabilities is addressed by AI-powered real-time transcription tools?",
-    "options": [
-      "Visual disabilities.",
-      "Cognitive disabilities.",
-      "Hearing disabilities.",
-      "Motor disabilities."
-    ],
-    "correctAnswer": "c",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
@@ -996,13 +1050,27 @@
     "questionType": "multiple"
   },
   {
-    "id": 29,
-    "question": "Maria is a visually impaired student who needs help reading her textbooks. What technology would best assist her?",
+    "id": 79,
+    "question": "A development team is integrating AI into their product to provide real-time navigation assistance for individuals with visual impairments. Which feature would be most beneficial?",
     "options": [
-      "Google Nest",
-      "Microsoft Seeing AI",
-      "Dragon NaturallySpeaking",
-      "Smart home systems"
+      "Textual descriptions of destinations",
+      "Visual maps of the area",
+      "Audio cues and voice instructions",
+      "3D animations of the surroundings"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 80,
+    "question": "What is a critical factor in the success of AI technologies aimed at enhancing accessibility?",
+    "options": [
+      "Speed of implementation",
+      "User involvement throughout the design and testing phases",
+      "Complexity of the technology",
+      "Focus on aesthetics"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -1010,27 +1078,13 @@
     "questionType": "multiple"
   },
   {
-    "id": 12,
-    "question": "A website aims to improve accessibility for users with cognitive disabilities. Which AI feature would be most beneficial in helping these users navigate complex forms?",
+    "id": 81,
+    "question": "In promoting awareness about accessibility within the tech industry, which strategy would be most effective?",
     "options": [
-      "AI that provides voice descriptions of images on the website.",
-      "AI-based chatbots offering step-by-step instructions to simplify the form completion process.",
-      "AI that disables form submission for users with cognitive disabilities.",
-      "AI that automatically fills out forms for all users."
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 75,
-    "question": "An organization is looking to enhance its digital products’ accessibility and has decided to hold a hackathon focused on innovative accessibility solutions. Which outcome should they prioritize to ensure long-term impact?",
-    "options": [
-      "Generate a large number of prototypes without testing",
-      "Create a few well-tested, feasible solutions that can be implemented",
-      "Focus only on ideas that appeal to the majority",
-      "Ensure every participant receives a prize for their contributions"
+      "Hosting exclusive meetings for executives only",
+      "Conducting training workshops for all employees on accessibility best practices",
+      "Limiting discussions to technical teams",
+      "Focusing only on regulatory compliance"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -1047,60 +1101,6 @@
       "Only communicate through email to maintain formality"
     ],
     "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 42,
-    "question": "What role does automated accessibility checking play in the design process?",
-    "options": [
-      "It replaces user testing entirely",
-      "It helps identify accessibility issues before user feedback",
-      "It only focuses on aesthetic aspects",
-      "It is irrelevant to the design process"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 66,
-    "question": "A developer realizes that their AI application does not meet the color contrast requirements specified in WCAG. What is the most immediate action they should take?",
-    "options": [
-      "Ignore the issue",
-      "Conduct a manual accessibility audit",
-      "Launch the application anyway",
-      "Consult with graphic designers only"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes",
-    "questionType": "multiple"
-  },
-  {
-    "id": 26,
-    "question": "True or False: Be My Eyes is a paid service for visually impaired individuals.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null,
-    "quizID": "ModuleTwoQuizzes"
-  },
-  {
-    "id": 34,
-    "question": "Which of the following best describes inclusive design?",
-    "options": [
-      "Design focused solely on aesthetics",
-      "Design that is only for individuals without disabilities",
-      "Design that ensures accessibility for all users, regardless of ability",
-      "Design that prioritizes cost over usability"
-    ],
-    "correctAnswer": "C",
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"

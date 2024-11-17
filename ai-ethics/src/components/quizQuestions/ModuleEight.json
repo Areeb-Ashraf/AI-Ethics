@@ -1,275 +1,5 @@
 [
   {
-    "id": 16,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: The California Consumer Privacy Act (CCPA) focuses solely on AI diversity.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 6,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A company is developing a framework to ensure fairness and transparency in AI. What trend is this an example of?",
-    "options": [
-      "Ethical AI Frameworks",
-      "Market Expansion",
-      "Competitive Analysis",
-      "Cost-Cutting Measures"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 39,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Community engagement is an important strategy for reaching underrepresented users in design.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 74,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A health app collects data only from users with access to smartphones. What issue does this create?",
-    "options": [
-      "Oversampling",
-      "Measurement Bias",
-      "Historical Bias",
-      "Algorithmic Bias"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 24,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A coalition of organizations calls for accountability and transparency in data practices. What movement does this represent?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
-    "options": [
-      "#OurDataDeservesJustice",
-      "Algorithmic Justice League",
-      "Data for Black Lives",
-      "Partnership on AI"
-    ]
-  },
-  {
-    "id": 61,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Inclusive data collection is unimportant for creating fair AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 96,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A new AI product is designed with input from various demographic groups. What advantage does this provide?",
-    "options": [
-      "Increased bias",
-      "More equitable outcomes",
-      "Higher costs",
-      "Decreased efficiency"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 17,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Advocacy groups can play a role in holding organizations accountable for ethical lapses in AI.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 36,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Human-Centered Design focuses on the needs of the users throughout the design process.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 73,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A hiring algorithm is found to favor male candidates based on historical data. What type of bias is at play?",
-    "options": [
-      "Historical Bias",
-      "Measurement Bias",
-      "Sampling Bias",
-      "Confirmation Bias"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 58,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What is one consequence of using biased data sets in AI systems?",
-    "options": [
-      "Increased efficiency in processing",
-      "Discriminatory outcomes",
-      "Improved user experience",
-      "Lower operational costs"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 60,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Which AI application has been criticized for disproportionately targeting minority communities?",
-    "options": [
-      "Facial Recognition",
-      "Predictive Policing",
-      "Recommendation Systems",
-      "Chatbots"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 71,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech company assesses its AI system's performance across different demographic groups. What process are they engaging in?",
-    "options": [
-      "Fairness audits",
-      "Data collection",
-      "Needs assessments",
-      "Algorithm design"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 13,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A group is focusing on ethical considerations in AI by studying social implications. What type of research is this?",
-    "options": [
-      "Ethical AI Research",
-      "Market Analysis",
-      "Behavioral Research",
-      "Technical Feasibility Study"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 68,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A facial recognition system performs poorly on individuals from diverse backgrounds. What is a likely reason for this?",
-    "options": [
-      "Historical data accuracy",
-      "Algorithm design",
-      "Lack of representative training data",
-      "User engagement"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 9,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A group aims to share resources and best practices for AI development. What initiative might this represent?",
-    "options": [
-      "The AI Commons",
-      "The Algorithmic Justice League",
-      "Data for Good",
-      "AI for Social Justice"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 99,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A company receives feedback that its AI products do not serve all user demographics. What historical issue does this highlight?",
-    "options": [
-      "Exclusion of diverse voices",
-      "Technological advancement",
-      "Market competition",
-      "Cost reduction"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 55,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Which organization aims to eliminate bias in AI systems through research and public engagement?",
-    "options": [
-      "Partnership on AI",
-      "Data for Black Lives",
-      "Algorithmic Justice League",
-      "#OurDataDeservesJustice"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 48,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A company is assessing how effectively their AI application meets user needs. What should they conduct to ensure this?",
-    "options": [
-      "Market Research",
-      "Usability Testing",
-      "Cost-Benefit Analysis",
-      "Trend Analysis"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 15,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A non-profit organization aims to use AI to tackle healthcare disparities. What type of application is this?",
-    "options": [
-      "AI for Social Good",
-      "Commercial AI",
-      "Technical AI",
-      "Proprietary AI"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
     "id": 1,
     "quizID": "ModuleEightQuizzes",
     "question": "True or False: Collaborative efforts are not necessary for achieving equitable AI outcomes.",
@@ -278,238 +8,6 @@
       "False"
     ],
     "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 83,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Why is diversity important in AI development?",
-    "options": [
-      "It simplifies the development process.",
-      "It leads to more creative solutions and reduces bias.",
-      "It increases profits for tech companies.",
-      "It eliminates the need for regulations."
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 82,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Inclusivity in AI focuses on:",
-    "options": [
-      "Making AI systems more efficient",
-      "Ensuring marginalized groups can participate in AI technologies",
-      "Reducing the cost of AI development",
-      "Increasing the market share of AI companies"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 14,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An initiative works to ensure diverse perspectives are included in AI decision-making processes. What is this an example of?",
-    "options": [
-      "Successful Collaborative Models",
-      "Isolated Efforts",
-      "Competitive Intelligence",
-      "Individual Research Projects"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 21,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An organization wants to ensure that its AI practices are compliant with regulations emphasizing data privacy and user consent. Which regulation should they refer to?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
-    "options": [
-      "General Data Protection Regulation (GDPR)",
-      "Algorithmic Accountability Act",
-      "California Consumer Privacy Act (CCPA)",
-      "OECD Principles on AI"
-    ]
-  },
-  {
-    "id": 80,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What is a key technique for involving diverse users in the design process?",
-    "options": [
-      "Expert Reviews",
-      "Participatory Design",
-      "A/B Testing",
-      "Market Analysis"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 76,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What is the primary goal of Universal Design?",
-    "options": [
-      "To create products for the wealthy",
-      "To ensure accessibility for all individuals",
-      "To focus solely on aesthetics",
-      "To design for a specific demographic"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 30,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A new initiative focuses on educating developers about diversity in AI. What is the primary goal of this initiative?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
-    "options": [
-      "Education and Training",
-      "Data Collection",
-      "Market Expansion",
-      "Product Development"
-    ]
-  },
-  {
-    "id": 54,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What is a significant challenge in implementing regulations promoting diversity in AI?",
-    "options": [
-      "Overwhelming public support",
-      "Lack of awareness",
-      "Abundance of resources",
-      "Uniform interpretation"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 56,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What is data bias?",
-    "options": [
-      "The use of outdated data",
-      "The inability to collect data",
-      "When data used to train AI systems is unrepresentative of the population",
-      "The reliance on automated data collection tools"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 45,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech company focuses on collecting feedback from diverse users even after launching their product. What practice are they employing?",
-    "options": [
-      "Feedback Loops",
-      "Usability Testing",
-      "Market Analysis",
-      "Needs Assessment"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 93,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A facial recognition system has higher error rates for people with darker skin tones. What implication does this illustrate?",
-    "options": [
-      "Algorithmic bias",
-      "Inclusivity",
-      "Data security",
-      "User engagement"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 19,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: The OECD Principles on AI advocate for inclusive growth and fairness.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 7,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An organization uses third-party auditors to assess its AI algorithms for biases. What practice is this illustrating?",
-    "options": [
-      "Algorithmic Auditing",
-      "Data Mining",
-      "User Testing",
-      "Market Research"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 69,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An organization uses oversampling techniques to ensure that underrepresented groups are adequately represented in their data. What best practice are they following?",
-    "options": [
-      "Fair sampling techniques",
-      "Measurement bias correction",
-      "Bias detection",
-      "Historical analysis"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 18,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Resource constraints pose no challenge to smaller organizations in complying with AI regulations.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 31,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What is a key trend in AI ethics that supports diversity and inclusivity?",
-    "correctAnswer": "B",
-    "questionPic": null,
-    "options": [
-      "Proprietary Algorithms",
-      "Ethical AI Frameworks",
-      "Market-Driven Approaches",
-      "Focus on Profitability"
-    ],
-    "questionType": "multiple"
-  },
-  {
-    "id": 64,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Continuous monitoring and evaluation of data collection practices can help mitigate bias.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
     "questionType": "true_false",
     "questionPic": null
   },
@@ -526,236 +24,6 @@
     "questionPic": null
   },
   {
-    "id": 95,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: Marginalized communities express skepticism towards AI technologies due to historical exclusion. What does this reflect?",
-    "options": [
-      "Erosion of trust",
-      "Increased innovation",
-      "Enhanced engagement",
-      "Higher adoption rates"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 100,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: AI technologies that are developed without considering diverse needs may result in products that:",
-    "options": [
-      "Harm certain populations",
-      "Meet all user requirements",
-      "Increase profit margins",
-      "Simplify user experience"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 44,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A developer wants to minimize the physical effort required to use their AI application. Which principle of Universal Design should they prioritize?",
-    "options": [
-      "Low Physical Effort",
-      "Flexibility in Use",
-      "Simple and Intuitive Use",
-      "Size and Space for Approach and Use"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 62,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Sampling bias can occur when certain groups are overrepresented in data collection.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 28,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An organization struggles with varying interpretations of AI regulations. What might be a result of this challenge?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
-    "options": [
-      "Inconsistencies in application",
-      "Increased compliance",
-      "Unified stakeholder response",
-      "Enhanced user trust"
-    ]
-  },
-  {
-    "id": 87,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: A diverse team is less likely to create biased AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 42,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A team gathers insights from various users to understand their experiences and challenges. Which stage of Human-Centered Design are they in?",
-    "options": [
-      "Empathize",
-      "Define",
-      "Ideate",
-      "Test"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 47,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: During the design process, a team defines the specific problems users face based on collected insights. Which Human-Centered Design stage are they in?",
-    "options": [
-      "Define",
-      "Empathize",
-      "Ideate",
-      "Test"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 67,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A company conducts a survey but only includes responses from individuals who use social media. What issue does this illustrate?",
-    "options": [
-      "Sampling Bias",
-      "Measurement Bias",
-      "Historical Bias",
-      "Algorithmic Bias"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 40,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Inclusive design principles do not need to consider legal and ethical standards.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 59,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Which of the following is an example of measurement bias?",
-    "options": [
-      "Training a model on diverse data",
-      "A survey that only reaches individuals with internet access",
-      "An algorithm that favors specific demographics",
-      "An analysis of historical hiring data"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 89,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Trust and adoption of AI technologies can be enhanced by inclusivity.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 57,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What type of bias arises from pre-existing societal inequalities reflected in data?",
-    "options": [
-      "Sampling Bias",
-      "Measurement Bias",
-      "Historical Bias",
-      "Confirmation Bias"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 43,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: Designers hold workshops where users can provide input on design concepts. What technique are they using?",
-    "options": [
-      "Participatory Design",
-      "Usability Testing",
-      "User Research",
-      "Community Engagement"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 25,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A new policy aims to include diverse global perspectives in AI governance. What should advocates focus on?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
-    "options": [
-      "Global Perspectives",
-      "Local Market Trends",
-      "Historical Context",
-      "Corporate Interests"
-    ]
-  },
-  {
-    "id": 53,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What international initiative emphasizes ethical principles for AI development?",
-    "options": [
-      "UNESCO’s Recommendation on the Ethics of AI",
-      "OECD Principles on AI",
-      "General Data Protection Regulation (GDPR)",
-      "California Consumer Privacy Act (CCPA)"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 94,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A product is developed without consulting diverse communities, resulting in features that do not meet their needs. What is a likely outcome?",
-    "options": [
-      "Limited use cases",
-      "Increased market share",
-      "Enhanced user satisfaction",
-      "Reduced costs"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
     "id": 3,
     "quizID": "ModuleEightQuizzes",
     "question": "True or False: Inclusive work environments help retain diverse talent in AI.",
@@ -768,181 +36,9 @@
     "questionPic": null
   },
   {
-    "id": 81,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What does diversity in AI refer to?",
-    "options": [
-      "The variety of programming languages used",
-      "The range of algorithms applied",
-      "The variety of perspectives, experiences, and backgrounds in AI development",
-      "The number of AI systems deployed"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 66,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An AI system is trained on historical crime data that reflects systemic biases. What type of bias does this represent?",
-    "options": [
-      "Measurement Bias",
-      "Sampling Bias",
-      "Historical Bias",
-      "Confirmation Bias"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 52,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Which act aims to require companies to assess the impact of their automated decision-making systems?",
-    "options": [
-      "California Consumer Privacy Act (CCPA)",
-      "Algorithmic Accountability Act",
-      "AI Ethics Guidelines",
-      "Fair Housing Act"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 77,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Which principle of Universal Design emphasizes minimizing hazards and adverse consequences of user actions?",
-    "options": [
-      "Flexibility in Use",
-      "Tolerance for Error",
-      "Simple and Intuitive Use",
-      "Size and Space for Approach and Use"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 90,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: AI systems developed without diverse input can address the needs of all populations effectively.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 86,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Inclusivity means that diverse voices are merely present in AI development.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
     "id": 4,
     "quizID": "ModuleEightQuizzes",
     "question": "True or False: AI technologies are being leveraged exclusively for commercial purposes.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 92,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech company implements programs to mentor underrepresented groups in STEM. What issue is this addressing?",
-    "options": [
-      "Educational barriers",
-      "Workplace culture",
-      "Algorithmic bias",
-      "Market competition"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 38,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Usability testing should only be conducted with a homogenous group of users to ensure consistency.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 10,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A community organization wants to drive its own projects addressing local needs in AI. What type of initiative should it prioritize?",
-    "options": [
-      "Community-Driven Initiatives",
-      "Corporate Sponsorships",
-      "Research Grants",
-      "Regulatory Compliance"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 49,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: Designers consider the diverse sensory abilities of users when creating an AI system. Which principle are they addressing?",
-    "options": [
-      "Perceptible Information",
-      "Simple and Intuitive Use",
-      "Flexibility in Use",
-      "Size and Space for Approach and Use"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 65,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Implementing bias detection tools is unnecessary for ethical AI development.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 8,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech company partners with universities to create internship programs for underrepresented students. This reflects what kind of practice?",
-    "options": [
-      "Partnerships with Educational Institutions",
-      "Aggressive Recruitment",
-      "Freelance Hiring",
-      "Remote Work Initiatives"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 63,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: The consequences of biased data sets only affect specific demographic groups.",
     "options": [
       "True",
       "False"
@@ -964,42 +60,84 @@
     "questionPic": null
   },
   {
-    "id": 29,
+    "id": 6,
     "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech company collaborates with various stakeholders to promote inclusive governance. What strategy are they employing?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
+    "question": "Scenario: A company is developing a framework to ensure fairness and transparency in AI. What trend is this an example of?",
     "options": [
-      "Stakeholder Collaboration",
+      "Ethical AI Frameworks",
+      "Market Expansion",
       "Competitive Analysis",
-      "Solo Development",
-      "Regulatory Avoidance"
-    ]
-  },
-  {
-    "id": 78,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What is the first stage of the Human-Centered Design process?",
-    "options": [
-      "Empathize",
-      "Define",
-      "Ideate",
-      "Test"
+      "Cost-Cutting Measures"
     ],
     "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
+    "questionType": "scenario",
+    "questionPic": null
   },
   {
-    "id": 70,
+    "id": 7,
     "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A community outreach program aims to raise awareness about inclusive data collection. What is a key goal of this initiative?",
+    "question": "Scenario: An organization uses third-party auditors to assess its AI algorithms for biases. What practice is this illustrating?",
     "options": [
-      "Foster trust among underrepresented communities",
-      "Increase profits",
-      "Simplify data collection processes",
-      "Reduce workforce requirements"
+      "Algorithmic Auditing",
+      "Data Mining",
+      "User Testing",
+      "Market Research"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 8,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech company partners with universities to create internship programs for underrepresented students. This reflects what kind of practice?",
+    "options": [
+      "Partnerships with Educational Institutions",
+      "Aggressive Recruitment",
+      "Freelance Hiring",
+      "Remote Work Initiatives"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 9,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A group aims to share resources and best practices for AI development. What initiative might this represent?",
+    "options": [
+      "The AI Commons",
+      "The Algorithmic Justice League",
+      "Data for Good",
+      "AI for Social Justice"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 10,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A community organization wants to drive its own projects addressing local needs in AI. What type of initiative should it prioritize?",
+    "options": [
+      "Community-Driven Initiatives",
+      "Corporate Sponsorships",
+      "Research Grants",
+      "Regulatory Compliance"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 11,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A policymaker is considering public consultations to shape AI regulations. What approach is being utilized?",
+    "options": [
+      "Inclusive Policy Development",
+      "Top-Down Approach",
+      "Expert Panels Only",
+      "Market Research Focus"
     ],
     "correctAnswer": "A",
     "questionType": "scenario",
@@ -1020,6 +158,448 @@
     "questionPic": null
   },
   {
+    "id": 13,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A group is focusing on ethical considerations in AI by studying social implications. What type of research is this?",
+    "options": [
+      "Ethical AI Research",
+      "Market Analysis",
+      "Behavioral Research",
+      "Technical Feasibility Study"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 14,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An initiative works to ensure diverse perspectives are included in AI decision-making processes. What is this an example of?",
+    "options": [
+      "Successful Collaborative Models",
+      "Isolated Efforts",
+      "Competitive Intelligence",
+      "Individual Research Projects"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 15,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A non-profit organization aims to use AI to tackle healthcare disparities. What type of application is this?",
+    "options": [
+      "AI for Social Good",
+      "Commercial AI",
+      "Technical AI",
+      "Proprietary AI"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 16,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: The California Consumer Privacy Act (CCPA) focuses solely on AI diversity.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 17,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Advocacy groups can play a role in holding organizations accountable for ethical lapses in AI.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 18,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Resource constraints pose no challenge to smaller organizations in complying with AI regulations.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 19,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: The OECD Principles on AI advocate for inclusive growth and fairness.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 20,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Intersectionality is not a consideration for future advocacy efforts in AI.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 21,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An organization wants to ensure that its AI practices are compliant with regulations emphasizing data privacy and user consent. Which regulation should they refer to?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "General Data Protection Regulation (GDPR)",
+      "Algorithmic Accountability Act",
+      "California Consumer Privacy Act (CCPA)",
+      "OECD Principles on AI"
+    ]
+  },
+  {
+    "id": 22,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A group is working to raise awareness about biases in AI and advocating for more equitable practices. Which role are they fulfilling?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Advocacy Group",
+      "Regulatory Body",
+      "Research Institution",
+      "Tech Company"
+    ]
+  },
+  {
+    "id": 23,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech company fails to prioritize inclusivity in its AI system. What type of organization might hold them accountable?",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Regulatory Agency",
+      "Advocacy Group",
+      "Consulting Firm",
+      "Marketing Agency"
+    ]
+  },
+  {
+    "id": 24,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A coalition of organizations calls for accountability and transparency in data practices. What movement does this represent?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "#OurDataDeservesJustice",
+      "Algorithmic Justice League",
+      "Data for Black Lives",
+      "Partnership on AI"
+    ]
+  },
+  {
+    "id": 25,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A new policy aims to include diverse global perspectives in AI governance. What should advocates focus on?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Global Perspectives",
+      "Local Market Trends",
+      "Historical Context",
+      "Corporate Interests"
+    ]
+  },
+  {
+    "id": 26,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A grassroots organization seeks to leverage data for social justice, particularly for marginalized communities. Which organization is it?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Data for Black Lives",
+      "Algorithmic Justice League",
+      "Partnership on AI",
+      "OECD"
+    ]
+  },
+  {
+    "id": 27,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A policymaker wants to understand how regulations impact diverse communities. What approach should they consider?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Intersectionality",
+      "Standardization",
+      "Market Analysis",
+      "User Feedback"
+    ]
+  },
+  {
+    "id": 28,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An organization struggles with varying interpretations of AI regulations. What might be a result of this challenge?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Inconsistencies in application",
+      "Increased compliance",
+      "Unified stakeholder response",
+      "Enhanced user trust"
+    ]
+  },
+  {
+    "id": 29,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech company collaborates with various stakeholders to promote inclusive governance. What strategy are they employing?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Stakeholder Collaboration",
+      "Competitive Analysis",
+      "Solo Development",
+      "Regulatory Avoidance"
+    ]
+  },
+  {
+    "id": 30,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A new initiative focuses on educating developers about diversity in AI. What is the primary goal of this initiative?",
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null,
+    "options": [
+      "Education and Training",
+      "Data Collection",
+      "Market Expansion",
+      "Product Development"
+    ]
+  },
+  {
+    "id": 31,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What is a key trend in AI ethics that supports diversity and inclusivity?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "options": [
+      "Proprietary Algorithms",
+      "Ethical AI Frameworks",
+      "Market-Driven Approaches",
+      "Focus on Profitability"
+    ],
+    "questionType": "multiple"
+  },
+  {
+    "id": 32,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Which practice involves evaluating AI systems to identify biases?",
+    "correctAnswer": "B",
+    "questionPic": null,
+    "options": [
+      "User Experience Design",
+      "Algorithmic Auditing",
+      "Agile Development",
+      "Market Research"
+    ],
+    "questionType": "multiple"
+  },
+  {
+    "id": 33,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What role do diverse hiring practices play in AI development?",
+    "correctAnswer": "C",
+    "questionPic": null,
+    "options": [
+      "They reduce costs.",
+      "They enhance marketing strategies.",
+      "They create inclusive systems.",
+      "They limit innovation."
+    ],
+    "questionType": "multiple"
+  },
+  {
+    "id": 34,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Which of the following is an example of an inclusive design tool?",
+    "correctAnswer": "A",
+    "questionPic": null,
+    "options": [
+      "Microsoft’s Inclusive Design Toolkit",
+      "Adobe Photoshop",
+      "Google Analytics",
+      "Microsoft Word"
+    ],
+    "questionType": "multiple"
+  },
+  {
+    "id": 35,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What do open data initiatives aim to provide?",
+    "correctAnswer": "A",
+    "questionPic": null,
+    "options": [
+      "Access to diverse datasets",
+      "Proprietary information",
+      "User analytics",
+      "Marketing insights"
+    ],
+    "questionType": "multiple"
+  },
+  {
+    "id": 36,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Human-Centered Design focuses on the needs of the users throughout the design process.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 37,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: The principle of Flexibility in Use allows users to customize their experiences.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 38,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Usability testing should only be conducted with a homogenous group of users to ensure consistency.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 39,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Community engagement is an important strategy for reaching underrepresented users in design.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 40,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Inclusive design principles do not need to consider legal and ethical standards.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 41,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A product is designed to be useful for a wide range of users, including those with different abilities. What design principle does this represent?",
+    "options": [
+      "Tolerance for Error",
+      "Equitable Use",
+      "Simple and Intuitive Use",
+      "Perceptible Information"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 42,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A team gathers insights from various users to understand their experiences and challenges. Which stage of Human-Centered Design are they in?",
+    "options": [
+      "Empathize",
+      "Define",
+      "Ideate",
+      "Test"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 43,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: Designers hold workshops where users can provide input on design concepts. What technique are they using?",
+    "options": [
+      "Participatory Design",
+      "Usability Testing",
+      "User Research",
+      "Community Engagement"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 44,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A developer wants to minimize the physical effort required to use their AI application. Which principle of Universal Design should they prioritize?",
+    "options": [
+      "Low Physical Effort",
+      "Flexibility in Use",
+      "Simple and Intuitive Use",
+      "Size and Space for Approach and Use"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 45,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech company focuses on collecting feedback from diverse users even after launching their product. What practice are they employing?",
+    "options": [
+      "Feedback Loops",
+      "Usability Testing",
+      "Market Analysis",
+      "Needs Assessment"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
     "id": 46,
     "quizID": "ModuleEightQuizzes",
     "question": "Scenario: An AI system fails to gain traction among users with disabilities. What design principle might have been overlooked?",
@@ -1034,16 +614,58 @@
     "questionPic": null
   },
   {
-    "id": 98,
+    "id": 47,
     "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An organization prioritizes diversity in hiring but fails to create an inclusive culture. What is a likely issue they will face?",
+    "question": "Scenario: During the design process, a team defines the specific problems users face based on collected insights. Which Human-Centered Design stage are they in?",
     "options": [
-      "Tokenism",
-      "Increased innovation",
-      "Higher retention rates",
-      "Enhanced collaboration"
+      "Define",
+      "Empathize",
+      "Ideate",
+      "Test"
     ],
     "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 48,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A company is assessing how effectively their AI application meets user needs. What should they conduct to ensure this?",
+    "options": [
+      "Market Research",
+      "Usability Testing",
+      "Cost-Benefit Analysis",
+      "Trend Analysis"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 49,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: Designers consider the diverse sensory abilities of users when creating an AI system. Which principle are they addressing?",
+    "options": [
+      "Perceptible Information",
+      "Simple and Intuitive Use",
+      "Flexibility in Use",
+      "Size and Space for Approach and Use"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 50,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech team emphasizes understanding the cultural context of their users. Which framework are they applying?",
+    "options": [
+      "Universal Design",
+      "Human-Centered Design",
+      "Agile Design",
+      "Lean Design"
+    ],
+    "correctAnswer": "B",
     "questionType": "scenario",
     "questionPic": null
   },
@@ -1062,210 +684,274 @@
     "questionType": "multiple"
   },
   {
-    "id": 32,
+    "id": 52,
     "quizID": "ModuleEightQuizzes",
-    "question": "Which practice involves evaluating AI systems to identify biases?",
-    "correctAnswer": "B",
-    "questionPic": null,
+    "question": "Which act aims to require companies to assess the impact of their automated decision-making systems?",
     "options": [
-      "User Experience Design",
-      "Algorithmic Auditing",
-      "Agile Development",
-      "Market Research"
-    ],
-    "questionType": "multiple"
-  },
-  {
-    "id": 97,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech conference showcases diverse speakers from various backgrounds discussing AI ethics. What aspect of AI does this represent?",
-    "options": [
-      "Inclusivity",
-      "Efficiency",
-      "Algorithmic bias",
-      "Profit maximization"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 34,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Which of the following is an example of an inclusive design tool?",
-    "correctAnswer": "A",
-    "questionPic": null,
-    "options": [
-      "Microsoft’s Inclusive Design Toolkit",
-      "Adobe Photoshop",
-      "Google Analytics",
-      "Microsoft Word"
-    ],
-    "questionType": "multiple"
-  },
-  {
-    "id": 41,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A product is designed to be useful for a wide range of users, including those with different abilities. What design principle does this represent?",
-    "options": [
-      "Tolerance for Error",
-      "Equitable Use",
-      "Simple and Intuitive Use",
-      "Perceptible Information"
+      "California Consumer Privacy Act (CCPA)",
+      "Algorithmic Accountability Act",
+      "AI Ethics Guidelines",
+      "Fair Housing Act"
     ],
     "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 22,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A group is working to raise awareness about biases in AI and advocating for more equitable practices. Which role are they fulfilling?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
-    "options": [
-      "Advocacy Group",
-      "Regulatory Body",
-      "Research Institution",
-      "Tech Company"
-    ]
-  },
-  {
-    "id": 35,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What do open data initiatives aim to provide?",
-    "correctAnswer": "A",
-    "questionPic": null,
-    "options": [
-      "Access to diverse datasets",
-      "Proprietary information",
-      "User analytics",
-      "Marketing insights"
-    ],
-    "questionType": "multiple"
-  },
-  {
-    "id": 75,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An AI system designed without considering diverse user needs fails to meet expectations. What does this highlight?",
-    "options": [
-      "Importance of representation in data",
-      "Effectiveness of the technology",
-      "Need for more data",
-      "Efficiency of algorithms"
-    ],
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 79,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Which of the following is NOT a key benefit of applying inclusive design principles?",
-    "options": [
-      "Enhanced User Experiences",
-      "Increased Adoption Rates",
-      "Reduced Development Time",
-      "Fostered Innovation"
-    ],
-    "correctAnswer": "C",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 88,
+    "id": 53,
     "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Historical exclusion of diverse voices has no impact on current AI systems.",
+    "question": "What international initiative emphasizes ethical principles for AI development?",
     "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 27,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A policymaker wants to understand how regulations impact diverse communities. What approach should they consider?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
-    "options": [
-      "Intersectionality",
-      "Standardization",
-      "Market Analysis",
-      "User Feedback"
-    ]
-  },
-  {
-    "id": 91,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: An AI development team includes members from various cultural backgrounds. What is this an example of?",
-    "options": [
-      "Diversity",
-      "Innovation",
-      "Efficiency",
-      "Algorithmic bias"
+      "UNESCO’s Recommendation on the Ethics of AI",
+      "OECD Principles on AI",
+      "General Data Protection Regulation (GDPR)",
+      "California Consumer Privacy Act (CCPA)"
     ],
     "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 23,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech company fails to prioritize inclusivity in its AI system. What type of organization might hold them accountable?",
-    "correctAnswer": "B",
-    "questionType": "scenario",
     "questionPic": null,
-    "options": [
-      "Regulatory Agency",
-      "Advocacy Group",
-      "Consulting Firm",
-      "Marketing Agency"
-    ]
+    "questionType": "multiple"
   },
   {
-    "id": 20,
+    "id": 54,
     "quizID": "ModuleEightQuizzes",
-    "question": "True or False: Intersectionality is not a consideration for future advocacy efforts in AI.",
+    "question": "What is a significant challenge in implementing regulations promoting diversity in AI?",
     "options": [
-      "True",
-      "False"
+      "Overwhelming public support",
+      "Lack of awareness",
+      "Abundance of resources",
+      "Uniform interpretation"
     ],
     "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
+    "questionPic": null,
+    "questionType": "multiple"
   },
   {
-    "id": 26,
+    "id": 55,
     "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A grassroots organization seeks to leverage data for social justice, particularly for marginalized communities. Which organization is it?",
-    "correctAnswer": "A",
-    "questionType": "scenario",
-    "questionPic": null,
+    "question": "Which organization aims to eliminate bias in AI systems through research and public engagement?",
     "options": [
+      "Partnership on AI",
       "Data for Black Lives",
       "Algorithmic Justice League",
-      "Partnership on AI",
-      "OECD"
-    ]
-  },
-  {
-    "id": 33,
-    "quizID": "ModuleEightQuizzes",
-    "question": "What role do diverse hiring practices play in AI development?",
+      "#OurDataDeservesJustice"
+    ],
     "correctAnswer": "C",
     "questionPic": null,
-    "options": [
-      "They reduce costs.",
-      "They enhance marketing strategies.",
-      "They create inclusive systems.",
-      "They limit innovation."
-    ],
     "questionType": "multiple"
+  },
+  {
+    "id": 56,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What is data bias?",
+    "options": [
+      "The use of outdated data",
+      "The inability to collect data",
+      "When data used to train AI systems is unrepresentative of the population",
+      "The reliance on automated data collection tools"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 57,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What type of bias arises from pre-existing societal inequalities reflected in data?",
+    "options": [
+      "Sampling Bias",
+      "Measurement Bias",
+      "Historical Bias",
+      "Confirmation Bias"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 58,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What is one consequence of using biased data sets in AI systems?",
+    "options": [
+      "Increased efficiency in processing",
+      "Discriminatory outcomes",
+      "Improved user experience",
+      "Lower operational costs"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 59,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Which of the following is an example of measurement bias?",
+    "options": [
+      "Training a model on diverse data",
+      "A survey that only reaches individuals with internet access",
+      "An algorithm that favors specific demographics",
+      "An analysis of historical hiring data"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 60,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Which AI application has been criticized for disproportionately targeting minority communities?",
+    "options": [
+      "Facial Recognition",
+      "Predictive Policing",
+      "Recommendation Systems",
+      "Chatbots"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 61,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Inclusive data collection is unimportant for creating fair AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 62,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Sampling bias can occur when certain groups are overrepresented in data collection.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 63,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: The consequences of biased data sets only affect specific demographic groups.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 64,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Continuous monitoring and evaluation of data collection practices can help mitigate bias.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 65,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Implementing bias detection tools is unnecessary for ethical AI development.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 66,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An AI system is trained on historical crime data that reflects systemic biases. What type of bias does this represent?",
+    "options": [
+      "Measurement Bias",
+      "Sampling Bias",
+      "Historical Bias",
+      "Confirmation Bias"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 67,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A company conducts a survey but only includes responses from individuals who use social media. What issue does this illustrate?",
+    "options": [
+      "Sampling Bias",
+      "Measurement Bias",
+      "Historical Bias",
+      "Algorithmic Bias"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 68,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A facial recognition system performs poorly on individuals from diverse backgrounds. What is a likely reason for this?",
+    "options": [
+      "Historical data accuracy",
+      "Algorithm design",
+      "Lack of representative training data",
+      "User engagement"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 69,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An organization uses oversampling techniques to ensure that underrepresented groups are adequately represented in their data. What best practice are they following?",
+    "options": [
+      "Fair sampling techniques",
+      "Measurement bias correction",
+      "Bias detection",
+      "Historical analysis"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 70,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A community outreach program aims to raise awareness about inclusive data collection. What is a key goal of this initiative?",
+    "options": [
+      "Foster trust among underrepresented communities",
+      "Increase profits",
+      "Simplify data collection processes",
+      "Reduce workforce requirements"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 71,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech company assesses its AI system's performance across different demographic groups. What process are they engaging in?",
+    "options": [
+      "Fairness audits",
+      "Data collection",
+      "Needs assessments",
+      "Algorithm design"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
   },
   {
     "id": 72,
@@ -1282,6 +968,160 @@
     "questionPic": null
   },
   {
+    "id": 73,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A hiring algorithm is found to favor male candidates based on historical data. What type of bias is at play?",
+    "options": [
+      "Historical Bias",
+      "Measurement Bias",
+      "Sampling Bias",
+      "Confirmation Bias"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 74,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A health app collects data only from users with access to smartphones. What issue does this create?",
+    "options": [
+      "Oversampling",
+      "Measurement Bias",
+      "Historical Bias",
+      "Algorithmic Bias"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 75,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An AI system designed without considering diverse user needs fails to meet expectations. What does this highlight?",
+    "options": [
+      "Importance of representation in data",
+      "Effectiveness of the technology",
+      "Need for more data",
+      "Efficiency of algorithms"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 76,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What is the primary goal of Universal Design?",
+    "options": [
+      "To create products for the wealthy",
+      "To ensure accessibility for all individuals",
+      "To focus solely on aesthetics",
+      "To design for a specific demographic"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 77,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Which principle of Universal Design emphasizes minimizing hazards and adverse consequences of user actions?",
+    "options": [
+      "Flexibility in Use",
+      "Tolerance for Error",
+      "Simple and Intuitive Use",
+      "Size and Space for Approach and Use"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 78,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What is the first stage of the Human-Centered Design process?",
+    "options": [
+      "Empathize",
+      "Define",
+      "Ideate",
+      "Test"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 79,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Which of the following is NOT a key benefit of applying inclusive design principles?",
+    "options": [
+      "Enhanced User Experiences",
+      "Increased Adoption Rates",
+      "Reduced Development Time",
+      "Fostered Innovation"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 80,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What is a key technique for involving diverse users in the design process?",
+    "options": [
+      "Expert Reviews",
+      "Participatory Design",
+      "A/B Testing",
+      "Market Analysis"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 81,
+    "quizID": "ModuleEightQuizzes",
+    "question": "What does diversity in AI refer to?",
+    "options": [
+      "The variety of programming languages used",
+      "The range of algorithms applied",
+      "The variety of perspectives, experiences, and backgrounds in AI development",
+      "The number of AI systems deployed"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 82,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Inclusivity in AI focuses on:",
+    "options": [
+      "Making AI systems more efficient",
+      "Ensuring marginalized groups can participate in AI technologies",
+      "Reducing the cost of AI development",
+      "Increasing the market share of AI companies"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 83,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Why is diversity important in AI development?",
+    "options": [
+      "It simplifies the development process.",
+      "It leads to more creative solutions and reduces bias.",
+      "It increases profits for tech companies.",
+      "It eliminates the need for regulations."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
     "id": 84,
     "quizID": "ModuleEightQuizzes",
     "question": "One of the implications of excluding diverse voices from AI development is:",
@@ -1294,32 +1134,6 @@
     "correctAnswer": "A",
     "questionPic": null,
     "questionType": "multiple"
-  },
-  {
-    "id": 37,
-    "quizID": "ModuleEightQuizzes",
-    "question": "True or False: The principle of Flexibility in Use allows users to customize their experiences.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 50,
-    "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A tech team emphasizes understanding the cultural context of their users. Which framework are they applying?",
-    "options": [
-      "Universal Design",
-      "Human-Centered Design",
-      "Agile Design",
-      "Lean Design"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
   },
   {
     "id": 85,
@@ -1336,14 +1150,200 @@
     "questionType": "multiple"
   },
   {
-    "id": 11,
+    "id": 86,
     "quizID": "ModuleEightQuizzes",
-    "question": "Scenario: A policymaker is considering public consultations to shape AI regulations. What approach is being utilized?",
+    "question": "True or False: Inclusivity means that diverse voices are merely present in AI development.",
     "options": [
-      "Inclusive Policy Development",
-      "Top-Down Approach",
-      "Expert Panels Only",
-      "Market Research Focus"
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 87,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: A diverse team is less likely to create biased AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 88,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Historical exclusion of diverse voices has no impact on current AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 89,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: Trust and adoption of AI technologies can be enhanced by inclusivity.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 90,
+    "quizID": "ModuleEightQuizzes",
+    "question": "True or False: AI systems developed without diverse input can address the needs of all populations effectively.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 91,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An AI development team includes members from various cultural backgrounds. What is this an example of?",
+    "options": [
+      "Diversity",
+      "Innovation",
+      "Efficiency",
+      "Algorithmic bias"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 92,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech company implements programs to mentor underrepresented groups in STEM. What issue is this addressing?",
+    "options": [
+      "Educational barriers",
+      "Workplace culture",
+      "Algorithmic bias",
+      "Market competition"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 93,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A facial recognition system has higher error rates for people with darker skin tones. What implication does this illustrate?",
+    "options": [
+      "Algorithmic bias",
+      "Inclusivity",
+      "Data security",
+      "User engagement"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 94,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A product is developed without consulting diverse communities, resulting in features that do not meet their needs. What is a likely outcome?",
+    "options": [
+      "Limited use cases",
+      "Increased market share",
+      "Enhanced user satisfaction",
+      "Reduced costs"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 95,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: Marginalized communities express skepticism towards AI technologies due to historical exclusion. What does this reflect?",
+    "options": [
+      "Erosion of trust",
+      "Increased innovation",
+      "Enhanced engagement",
+      "Higher adoption rates"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 96,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A new AI product is designed with input from various demographic groups. What advantage does this provide?",
+    "options": [
+      "Increased bias",
+      "More equitable outcomes",
+      "Higher costs",
+      "Decreased efficiency"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 97,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A tech conference showcases diverse speakers from various backgrounds discussing AI ethics. What aspect of AI does this represent?",
+    "options": [
+      "Inclusivity",
+      "Efficiency",
+      "Algorithmic bias",
+      "Profit maximization"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 98,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: An organization prioritizes diversity in hiring but fails to create an inclusive culture. What is a likely issue they will face?",
+    "options": [
+      "Tokenism",
+      "Increased innovation",
+      "Higher retention rates",
+      "Enhanced collaboration"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 99,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: A company receives feedback that its AI products do not serve all user demographics. What historical issue does this highlight?",
+    "options": [
+      "Exclusion of diverse voices",
+      "Technological advancement",
+      "Market competition",
+      "Cost reduction"
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 100,
+    "quizID": "ModuleEightQuizzes",
+    "question": "Scenario: AI technologies that are developed without considering diverse needs may result in products that:",
+    "options": [
+      "Harm certain populations",
+      "Meet all user requirements",
+      "Increase profit margins",
+      "Simplify user experience"
     ],
     "correctAnswer": "A",
     "questionType": "scenario",

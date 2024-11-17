@@ -1,45 +1,5 @@
 [
   {
-    "id": 4,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A government agency is developing a new policy for AI use in public services. They want to ensure diverse community input. What should they do?",
-    "options": [
-      "Rely solely on expert opinions",
-      "Ignore public consultations",
-      "Conduct surveys and hold public forums",
-      "Publish the policy without feedback"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 24,
-    "quizID": "ModuleSixQuizzes",
-    "question": "What does the 'right to be forgotten' refer to?",
-    "options": [
-      "Users can access their data at any time",
-      "Users can transfer their data to another service",
-      "Users can request the deletion of their personal data",
-      "Users can restrict data processing"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 47,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Ethical consumerism does not influence organizations' AI practices.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
     "id": 1,
     "quizID": "ModuleSixQuizzes",
     "question": "A tech company is looking to improve user autonomy by incorporating feedback from a diverse group of stakeholders. What is the best initial step they should take?",
@@ -52,88 +12,6 @@
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
-  },
-  {
-    "id": 14,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A drone delivery system malfunctions, causing property damage. Who is accountable for the damages?",
-    "options": [
-      "The e-commerce company",
-      "The drone manufacturer",
-      "The AI software developer",
-      "All parties involved"
-    ],
-    "correctAnswer": "D",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 19,
-    "quizID": "ModuleSixQuizzes",
-    "question": "Which aspect of accountability is critical for building trust in AI technologies?",
-    "options": [
-      "Increased automation",
-      "Transparency",
-      "Cost reduction",
-      "Speed of service"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 53,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A social media platform fails to effectively moderate harmful content due to biases in its AI system. What accountability lesson can be drawn from this situation?",
-    "options": [
-      "AI moderation is unnecessary.",
-      "AI systems should be developed in isolation.",
-      "Clear accountability structures for AI moderation are essential.",
-      "Public expectations do not matter."
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 11,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A healthcare AI system misdiagnoses patients. Who should be held primarily accountable?",
-    "options": [
-      "The hospital",
-      "The AI developers",
-      "The data providers",
-      "All of the above"
-    ],
-    "correctAnswer": "D",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 15,
-    "quizID": "ModuleSixQuizzes",
-    "question": "During an election, a social media platform’s AI fails to filter misinformation. Who is primarily responsible for this failure?",
-    "options": [
-      "The platform operators",
-      "The AI developers",
-      "Government regulators",
-      "All of the above"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 7,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Organizations must engage diverse stakeholders to align AI with societal values.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
   },
   {
     "id": 2,
@@ -150,18 +28,94 @@
     "questionType": "multiple"
   },
   {
-    "id": 16,
+    "id": 3,
     "quizID": "ModuleSixQuizzes",
-    "question": "What is the primary goal of aligning AI systems with societal values?",
+    "question": "A nonprofit organization partners with a tech company to develop AI tools for individuals with disabilities. This partnership exemplifies:",
     "options": [
-      "To increase sales",
-      "To foster trust and accountability",
-      "To reduce costs",
-      "To streamline processes"
+      "Corporate monopolization",
+      "A collaborative approach to enhancing user autonomy",
+      "Sole reliance on user input",
+      "A lack of stakeholder engagement"
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
+  },
+  {
+    "id": 4,
+    "quizID": "ModuleSixQuizzes",
+    "question": "A government agency is developing a new policy for AI use in public services. They want to ensure diverse community input. What should they do?",
+    "options": [
+      "Rely solely on expert opinions",
+      "Ignore public consultations",
+      "Conduct surveys and hold public forums",
+      "Publish the policy without feedback"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 5,
+    "quizID": "ModuleSixQuizzes",
+    "question": "An organization is assessing the effectiveness of its collaborative initiatives. What is a crucial step in this evaluation?",
+    "options": [
+      "Collecting feedback from stakeholders",
+      "Focusing only on financial outcomes",
+      "Ignoring user input",
+      "Limiting communication with the public"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 6,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Accountability in AI means that only the developers of an AI system are responsible for its outcomes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 7,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Organizations must engage diverse stakeholders to align AI with societal values.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 8,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Ethical considerations are irrelevant when developing AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 9,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: A strong commitment to accountability can help organizations avoid legal repercussions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
   },
   {
     "id": 10,
@@ -176,28 +130,28 @@
     "questionPic": null
   },
   {
-    "id": 22,
+    "id": 11,
     "quizID": "ModuleSixQuizzes",
-    "question": "Which right allows users to request corrections to their data?",
+    "question": "A healthcare AI system misdiagnoses patients. Who should be held primarily accountable?",
     "options": [
-      "Right to Access",
-      "Right to Rectification",
-      "Right to Erasure",
-      "Right to Object"
+      "The hospital",
+      "The AI developers",
+      "The data providers",
+      "All of the above"
     ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 59,
+    "id": 12,
     "quizID": "ModuleSixQuizzes",
-    "question": "What is the key takeaway from the Apple Siri privacy concerns?",
+    "question": "A bank's AI system unfairly denies loans based on ethnicity. What immediate action should the bank take?",
     "options": [
-      "Voice recognition technology is unnecessary.",
-      "Transparency and consent are vital for user trust.",
-      "AI does not require user input.",
-      "User data should always be shared."
+      "Ignore the complaints",
+      "Suspend the AI system and audit its decisions",
+      "Blame the AI developers",
+      "Reduce loan approval requirements"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -218,16 +172,58 @@
     "questionType": "multiple"
   },
   {
-    "id": 58,
+    "id": 14,
     "quizID": "ModuleSixQuizzes",
-    "question": "What critical aspect of AI accountability is highlighted by the Boeing 737 Max crashes?",
+    "question": "A drone delivery system malfunctions, causing property damage. Who is accountable for the damages?",
     "options": [
-      "Responsibility extends beyond just the software developers.",
-      "AI systems are always safe.",
-      "Only regulatory bodies should ensure safety.",
-      "Software fixes are sufficient."
+      "The e-commerce company",
+      "The drone manufacturer",
+      "The AI software developer",
+      "All parties involved"
+    ],
+    "correctAnswer": "D",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 15,
+    "quizID": "ModuleSixQuizzes",
+    "question": "During an election, a social media platform’s AI fails to filter misinformation. Who is primarily responsible for this failure?",
+    "options": [
+      "The platform operators",
+      "The AI developers",
+      "Government regulators",
+      "All of the above"
     ],
     "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 16,
+    "quizID": "ModuleSixQuizzes",
+    "question": "What is the primary goal of aligning AI systems with societal values?",
+    "options": [
+      "To increase sales",
+      "To foster trust and accountability",
+      "To reduce costs",
+      "To streamline processes"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 17,
+    "quizID": "ModuleSixQuizzes",
+    "question": "Which ethical framework focuses on moral character and the virtues of individuals in AI development?",
+    "options": [
+      "Utilitarianism",
+      "Deontological Ethics",
+      "Virtue Ethics",
+      "Justice and Fairness"
+    ],
+    "correctAnswer": "C",
     "questionPic": null,
     "questionType": "multiple"
   },
@@ -246,30 +242,60 @@
     "questionType": "multiple"
   },
   {
-    "id": 45,
+    "id": 19,
     "quizID": "ModuleSixQuizzes",
-    "question": "What is a significant lesson learned from Uber's self-driving car incident?",
+    "question": "Which aspect of accountability is critical for building trust in AI technologies?",
     "options": [
-      "AI technology should not be used.",
-      "Clear accountability structures are necessary in AI systems.",
-      "All AI systems are inherently safe.",
-      "Human drivers should always be in control."
+      "Increased automation",
+      "Transparency",
+      "Cost reduction",
+      "Speed of service"
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 26,
+    "id": 20,
     "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Organizations must respect user rights to foster trust in AI systems.",
+    "question": "What is the consequence of failing to implement an accountability framework in AI?",
     "options": [
-      "True",
-      "False"
+      "Increased user satisfaction",
+      "Enhanced reputation",
+      "Legal penalties and loss of trust",
+      "Higher sales figures"
     ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 21,
+    "quizID": "ModuleSixQuizzes",
+    "question": "What does data ownership in AI primarily involve?",
+    "options": [
+      "The speed of data processing",
+      "Legal, ethical, and social implications of data control",
+      "The cost of data storage",
+      "The popularity of data types"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 22,
+    "quizID": "ModuleSixQuizzes",
+    "question": "Which right allows users to request corrections to their data?",
+    "options": [
+      "Right to Access",
+      "Right to Rectification",
+      "Right to Erasure",
+      "Right to Object"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
   },
   {
     "id": 23,
@@ -286,42 +312,18 @@
     "questionType": "multiple"
   },
   {
-    "id": 9,
+    "id": 24,
     "quizID": "ModuleSixQuizzes",
-    "question": "True or False: A strong commitment to accountability can help organizations avoid legal repercussions.",
+    "question": "What does the 'right to be forgotten' refer to?",
     "options": [
-      "True",
-      "False"
+      "Users can access their data at any time",
+      "Users can transfer their data to another service",
+      "Users can request the deletion of their personal data",
+      "Users can restrict data processing"
     ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 34,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A social media platform allows users to flag inaccuracies in their profiles. What mechanism is this an example of?",
-    "options": [
-      "Data Validation Techniques",
-      "User Feedback Loops",
-      "Automated Quality Checks",
-      "Data Governance Frameworks"
-    ],
-    "correctAnswer": "B",
+    "correctAnswer": "C",
     "questionPic": null,
     "questionType": "multiple"
-  },
-  {
-    "id": 30,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Regular audits can help organizations ensure data quality and integrity.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
   },
   {
     "id": 25,
@@ -338,28 +340,130 @@
     "questionType": "multiple"
   },
   {
-    "id": 41,
+    "id": 26,
     "quizID": "ModuleSixQuizzes",
-    "question": "What is a key trend in AI accountability focused on explaining AI decision-making?",
+    "question": "True or False: Organizations must respect user rights to foster trust in AI systems.",
     "options": [
-      "Data Mining Techniques",
-      "Transparency-Enhancing Technologies",
-      "Automated Decision-Making",
-      "Cloud Computing"
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 27,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: User ownership over personal data is becoming less important in AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 28,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Incomplete data can lead to unbiased AI models.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 29,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Organizations have no responsibility for the data they collect once it is obtained.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 30,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Regular audits can help organizations ensure data quality and integrity.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 31,
+    "quizID": "ModuleSixQuizzes",
+    "question": "A company collects health data from users without their explicit consent. What principle is this violating?",
+    "options": [
+      "Data Accuracy",
+      "Informed consent",
+      "Data Portability",
+      "Data Timeliness"
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 40,
+    "id": 32,
     "quizID": "ModuleSixQuizzes",
-    "question": "What is the primary goal of implementing user rights in data management?",
+    "question": "A user requests that their data be deleted because they no longer use a service. What right are they exercising?",
     "options": [
-      "To minimize costs",
-      "To increase market reach",
-      "To foster trust between users and organizations",
-      "To expand data collection efforts"
+      "Right to Access",
+      "Right to Rectification",
+      "Right to Erasure",
+      "Right to Object"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 33,
+    "quizID": "ModuleSixQuizzes",
+    "question": "An AI system consistently relies on outdated data for its predictions. What aspect of data quality is being compromised?",
+    "options": [
+      "Data Completeness",
+      "Data Timeliness",
+      "Data Accuracy",
+      "Data Security"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 34,
+    "quizID": "ModuleSixQuizzes",
+    "question": "A social media platform allows users to flag inaccuracies in their profiles. What mechanism is this an example of?",
+    "options": [
+      "Data Validation Techniques",
+      "User Feedback Loops",
+      "Automated Quality Checks",
+      "Data Governance Frameworks"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 35,
+    "quizID": "ModuleSixQuizzes",
+    "question": "An organization establishes a committee to oversee data management practices. What is this an example of?",
+    "options": [
+      "Data Portability",
+      "Data Collection",
+      "Data Governance Framework",
+      "Data Accuracy"
     ],
     "correctAnswer": "C",
     "questionPic": null,
@@ -380,200 +484,16 @@
     "questionType": "multiple"
   },
   {
-    "id": 46,
+    "id": 37,
     "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Automated auditing tools can help organizations monitor their AI systems for compliance continuously.",
+    "question": "Which right empowers users to switch service providers while retaining their data?",
     "options": [
-      "True",
-      "False"
+      "Right to Data Portability",
+      "Right to Access",
+      "Right to Restrict Processing",
+      "Right to Object"
     ],
     "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 51,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A tech company creates an AI system that often misinterprets user queries. What emerging trend could help improve accountability in this context?",
-    "options": [
-      "Increased data collection",
-      "Transparency-Enhancing Technologies",
-      "Proprietary algorithms",
-      "Manual data entry"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 29,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Organizations have no responsibility for the data they collect once it is obtained.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 20,
-    "quizID": "ModuleSixQuizzes",
-    "question": "What is the consequence of failing to implement an accountability framework in AI?",
-    "options": [
-      "Increased user satisfaction",
-      "Enhanced reputation",
-      "Legal penalties and loss of trust",
-      "Higher sales figures"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 50,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: The regulatory environment has no effect on AI accountability.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 55,
-    "quizID": "ModuleSixQuizzes",
-    "question": "After a privacy breach, a company improves its data-sharing policies. What key aspect of AI accountability does this reflect?",
-    "options": [
-      "Transparency and user consent",
-      "Enhanced marketing strategies",
-      "Increased data collection",
-      "Limited stakeholder engagement"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 39,
-    "quizID": "ModuleSixQuizzes",
-    "question": "Which of the following is an example of a data validation technique?",
-    "options": [
-      "Cross-checking data against known sources",
-      "Collecting data without consent",
-      "Ignoring user feedback",
-      "Automating all data processes"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 3,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A nonprofit organization partners with a tech company to develop AI tools for individuals with disabilities. This partnership exemplifies:",
-    "options": [
-      "Corporate monopolization",
-      "A collaborative approach to enhancing user autonomy",
-      "Sole reliance on user input",
-      "A lack of stakeholder engagement"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 8,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Ethical considerations are irrelevant when developing AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 33,
-    "quizID": "ModuleSixQuizzes",
-    "question": "An AI system consistently relies on outdated data for its predictions. What aspect of data quality is being compromised?",
-    "options": [
-      "Data Completeness",
-      "Data Timeliness",
-      "Data Accuracy",
-      "Data Security"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 6,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Accountability in AI means that only the developers of an AI system are responsible for its outcomes.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 12,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A bank's AI system unfairly denies loans based on ethnicity. What immediate action should the bank take?",
-    "options": [
-      "Ignore the complaints",
-      "Suspend the AI system and audit its decisions",
-      "Blame the AI developers",
-      "Reduce loan approval requirements"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 52,
-    "quizID": "ModuleSixQuizzes",
-    "question": "A community expresses concerns about AI surveillance technologies. Which approach should the organization adopt?",
-    "options": [
-      "Community Engagement",
-      "Increased marketing efforts",
-      "Ignoring public feedback",
-      "Expanding data collection"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 28,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Incomplete data can lead to unbiased AI models.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 43,
-    "quizID": "ModuleSixQuizzes",
-    "question": "What role do public expectations play in shaping AI accountability?",
-    "options": [
-      "They have little to no impact.",
-      "They drive demand for ethical AI practices.",
-      "They focus solely on data privacy.",
-      "They promote competition among companies."
-    ],
-    "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
   },
@@ -592,70 +512,42 @@
     "questionType": "multiple"
   },
   {
-    "id": 44,
+    "id": 39,
     "quizID": "ModuleSixQuizzes",
-    "question": "Which approach emphasizes collaboration among diverse stakeholders for AI governance?",
+    "question": "Which of the following is an example of a data validation technique?",
     "options": [
-      "Multi-Stakeholder Collaborations",
-      "Sole Proprietorships",
-      "Individual Corporate Initiatives",
-      "Closed-Source Developments"
+      "Cross-checking data against known sources",
+      "Collecting data without consent",
+      "Ignoring user feedback",
+      "Automating all data processes"
     ],
     "correctAnswer": "A",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 32,
+    "id": 40,
     "quizID": "ModuleSixQuizzes",
-    "question": "A user requests that their data be deleted because they no longer use a service. What right are they exercising?",
+    "question": "What is the primary goal of implementing user rights in data management?",
     "options": [
-      "Right to Access",
-      "Right to Rectification",
-      "Right to Erasure",
-      "Right to Object"
+      "To minimize costs",
+      "To increase market reach",
+      "To foster trust between users and organizations",
+      "To expand data collection efforts"
     ],
     "correctAnswer": "C",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 37,
+    "id": 41,
     "quizID": "ModuleSixQuizzes",
-    "question": "Which right empowers users to switch service providers while retaining their data?",
+    "question": "What is a key trend in AI accountability focused on explaining AI decision-making?",
     "options": [
-      "Right to Data Portability",
-      "Right to Access",
-      "Right to Restrict Processing",
-      "Right to Object"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 56,
-    "quizID": "ModuleSixQuizzes",
-    "question": "What is the purpose of public-private partnerships in AI governance?",
-    "options": [
-      "To drive innovation while ensuring accountability",
-      "To limit user involvement",
-      "To reduce operational costs",
-      "To monopolize the AI market"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 60,
-    "quizID": "ModuleSixQuizzes",
-    "question": "Which emerging trend allows users to engage in discussions about AI ethics?",
-    "options": [
-      "Corporate Governance",
-      "Public Engagement and Crowdsourcing",
-      "Automated Decision Making",
-      "Proprietary Algorithms"
+      "Data Mining Techniques",
+      "Transparency-Enhancing Technologies",
+      "Automated Decision-Making",
+      "Cloud Computing"
     ],
     "correctAnswer": "B",
     "questionPic": null,
@@ -676,18 +568,82 @@
     "questionType": "multiple"
   },
   {
-    "id": 54,
+    "id": 43,
     "quizID": "ModuleSixQuizzes",
-    "question": "A corporation implements an AI hiring tool that discriminates against certain demographics. Who should be held accountable?",
+    "question": "What role do public expectations play in shaping AI accountability?",
     "options": [
-      "Only the AI developers",
-      "The organization as a whole",
-      "Just the HR department",
-      "The applicants"
+      "They have little to no impact.",
+      "They drive demand for ethical AI practices.",
+      "They focus solely on data privacy.",
+      "They promote competition among companies."
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
+  },
+  {
+    "id": 44,
+    "quizID": "ModuleSixQuizzes",
+    "question": "Which approach emphasizes collaboration among diverse stakeholders for AI governance?",
+    "options": [
+      "Multi-Stakeholder Collaborations",
+      "Sole Proprietorships",
+      "Individual Corporate Initiatives",
+      "Closed-Source Developments"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 45,
+    "quizID": "ModuleSixQuizzes",
+    "question": "What is a significant lesson learned from Uber's self-driving car incident?",
+    "options": [
+      "AI technology should not be used.",
+      "Clear accountability structures are necessary in AI systems.",
+      "All AI systems are inherently safe.",
+      "Human drivers should always be in control."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 46,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Automated auditing tools can help organizations monitor their AI systems for compliance continuously.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 47,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Ethical consumerism does not influence organizations' AI practices.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 48,
+    "quizID": "ModuleSixQuizzes",
+    "question": "True or False: Diversity and inclusion are becoming less important in AI development.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
   },
   {
     "id": 49,
@@ -702,30 +658,98 @@
     "questionPic": null
   },
   {
-    "id": 35,
+    "id": 50,
     "quizID": "ModuleSixQuizzes",
-    "question": "An organization establishes a committee to oversee data management practices. What is this an example of?",
+    "question": "True or False: The regulatory environment has no effect on AI accountability.",
     "options": [
-      "Data Portability",
-      "Data Collection",
-      "Data Governance Framework",
-      "Data Accuracy"
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 51,
+    "quizID": "ModuleSixQuizzes",
+    "question": "A tech company creates an AI system that often misinterprets user queries. What emerging trend could help improve accountability in this context?",
+    "options": [
+      "Increased data collection",
+      "Transparency-Enhancing Technologies",
+      "Proprietary algorithms",
+      "Manual data entry"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 52,
+    "quizID": "ModuleSixQuizzes",
+    "question": "A community expresses concerns about AI surveillance technologies. Which approach should the organization adopt?",
+    "options": [
+      "Community Engagement",
+      "Increased marketing efforts",
+      "Ignoring public feedback",
+      "Expanding data collection"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 53,
+    "quizID": "ModuleSixQuizzes",
+    "question": "A social media platform fails to effectively moderate harmful content due to biases in its AI system. What accountability lesson can be drawn from this situation?",
+    "options": [
+      "AI moderation is unnecessary.",
+      "AI systems should be developed in isolation.",
+      "Clear accountability structures for AI moderation are essential.",
+      "Public expectations do not matter."
     ],
     "correctAnswer": "C",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 31,
+    "id": 54,
     "quizID": "ModuleSixQuizzes",
-    "question": "A company collects health data from users without their explicit consent. What principle is this violating?",
+    "question": "A corporation implements an AI hiring tool that discriminates against certain demographics. Who should be held accountable?",
     "options": [
-      "Data Accuracy",
-      "Informed consent",
-      "Data Portability",
-      "Data Timeliness"
+      "Only the AI developers",
+      "The organization as a whole",
+      "Just the HR department",
+      "The applicants"
     ],
     "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 55,
+    "quizID": "ModuleSixQuizzes",
+    "question": "After a privacy breach, a company improves its data-sharing policies. What key aspect of AI accountability does this reflect?",
+    "options": [
+      "Transparency and user consent",
+      "Enhanced marketing strategies",
+      "Increased data collection",
+      "Limited stakeholder engagement"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 56,
+    "quizID": "ModuleSixQuizzes",
+    "question": "What is the purpose of public-private partnerships in AI governance?",
+    "options": [
+      "To drive innovation while ensuring accountability",
+      "To limit user involvement",
+      "To reduce operational costs",
+      "To monopolize the AI market"
+    ],
+    "correctAnswer": "A",
     "questionPic": null,
     "questionType": "multiple"
   },
@@ -744,68 +768,44 @@
     "questionType": "multiple"
   },
   {
-    "id": 27,
+    "id": 58,
     "quizID": "ModuleSixQuizzes",
-    "question": "True or False: User ownership over personal data is becoming less important in AI systems.",
+    "question": "What critical aspect of AI accountability is highlighted by the Boeing 737 Max crashes?",
     "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 21,
-    "quizID": "ModuleSixQuizzes",
-    "question": "What does data ownership in AI primarily involve?",
-    "options": [
-      "The speed of data processing",
-      "Legal, ethical, and social implications of data control",
-      "The cost of data storage",
-      "The popularity of data types"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 48,
-    "quizID": "ModuleSixQuizzes",
-    "question": "True or False: Diversity and inclusion are becoming less important in AI development.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 17,
-    "quizID": "ModuleSixQuizzes",
-    "question": "Which ethical framework focuses on moral character and the virtues of individuals in AI development?",
-    "options": [
-      "Utilitarianism",
-      "Deontological Ethics",
-      "Virtue Ethics",
-      "Justice and Fairness"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 5,
-    "quizID": "ModuleSixQuizzes",
-    "question": "An organization is assessing the effectiveness of its collaborative initiatives. What is a crucial step in this evaluation?",
-    "options": [
-      "Collecting feedback from stakeholders",
-      "Focusing only on financial outcomes",
-      "Ignoring user input",
-      "Limiting communication with the public"
+      "Responsibility extends beyond just the software developers.",
+      "AI systems are always safe.",
+      "Only regulatory bodies should ensure safety.",
+      "Software fixes are sufficient."
     ],
     "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 59,
+    "quizID": "ModuleSixQuizzes",
+    "question": "What is the key takeaway from the Apple Siri privacy concerns?",
+    "options": [
+      "Voice recognition technology is unnecessary.",
+      "Transparency and consent are vital for user trust.",
+      "AI does not require user input.",
+      "User data should always be shared."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 60,
+    "quizID": "ModuleSixQuizzes",
+    "question": "Which emerging trend allows users to engage in discussions about AI ethics?",
+    "options": [
+      "Corporate Governance",
+      "Public Engagement and Crowdsourcing",
+      "Automated Decision Making",
+      "Proprietary Algorithms"
+    ],
+    "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
   }

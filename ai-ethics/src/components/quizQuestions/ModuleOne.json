@@ -1,19 +1,5 @@
 [
   {
-    "id": 68,
-    "question": "A company is using customer data to develop a machine learning model that predicts purchasing behavior. What is the best practice the company should follow regarding consent?",
-    "options": [
-      "Notify users of data collection in a lengthy privacy policy and assume consent.",
-      "Obtain explicit consent from users, explaining how their data will be used for AI training, and provide the option to opt-out.",
-      "Collect data without informing users since the data will be anonymized.",
-      "Use data from past purchases without needing consent since it’s part of a routine process."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
     "id": 1,
     "quizID": "ModuleOneQuizzes",
     "questionType": "multiple",
@@ -26,20 +12,6 @@
       "To automate data collection without user involvement"
     ],
     "correctAnswer": "B"
-  },
-  {
-    "id": 72,
-    "question": "Which of the following is a best practice for obtaining location data consent in mobile apps?",
-    "options": [
-      "Requesting consent at the app's initial launch.",
-      "Providing users with granular options, such as choosing between precise and approximate location data.",
-      "Automatically enabling location data without informing the user.",
-      "Only requesting location data for targeted advertising."
-    ],
-    "correctAnswer": "B",
-    "questionType": "multiple",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
   },
   {
     "id": 2,
@@ -80,20 +52,6 @@
       "The option to disable all features simultaneously"
     ],
     "correctAnswer": "B"
-  },
-  {
-    "id": 62,
-    "question": "What is a key aspect of Apple's App Tracking Transparency (ATT) framework?",
-    "options": [
-      "It allows apps to track user activity without user consent.",
-      "It requires apps to explicitly request consent for tracking user activity across other apps and websites.",
-      "It only applies to Android devices.",
-      "It automatically grants permission for personalized advertising unless users opt out."
-    ],
-    "correctAnswer": "B",
-    "questionType": "multiple",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
   },
   {
     "id": 5,
@@ -138,18 +96,6 @@
     ]
   },
   {
-    "id": 53,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: Consent Management Platforms (CMPs) make it harder for organizations to comply with privacy regulations.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
     "id": 8,
     "quizID": "ModuleOneQuizzes",
     "questionType": "multiple",
@@ -164,46 +110,6 @@
     "correctAnswer": "B"
   },
   {
-    "id": 60,
-    "question": "Why is mobile data consent crucial for organizations?",
-    "options": [
-      "It increases the efficiency of data processing.",
-      "It enhances user trust, ensures compliance with regulations, and empowers user control over data.",
-      "It allows organizations to collect unlimited user data without restrictions.",
-      "It helps prevent technical issues in mobile apps."
-    ],
-    "correctAnswer": "B",
-    "questionType": "multiple",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 63,
-    "question": "True or False: Obtaining consent for app permissions should be done contextually to help users understand why the app requires access to certain features, such as the camera or microphone.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 29,
-    "quizID": "ModuleOneQuizzes",
-    "question": "Why is data consent important in ride-sharing apps?",
-    "options": [
-      "It allows the app to permanently store all user location data",
-      "It provides users with control over real-time location tracking and data storage",
-      "It gives the app permission to sell data to advertisers",
-      "It ensures that rides are free for users who provide data"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
     "id": 9,
     "quizID": "ModuleOneQuizzes",
     "questionType": "multiple",
@@ -215,48 +121,6 @@
       "It helps organizations gather as much data as possible without restrictions",
       "It eliminates the need for transparency in data collection"
     ],
-    "correctAnswer": "B"
-  },
-  {
-    "id": 71,
-    "question": "Why is mobile data consent crucial for organizations?",
-    "options": [
-      "It increases the efficiency of data processing.",
-      "It enhances user trust, ensures compliance with regulations, and empowers user control over data.",
-      "It allows organizations to collect unlimited user data without restrictions.",
-      "It helps prevent technical issues in mobile apps."
-    ],
-    "correctAnswer": "B",
-    "questionType": "multiple",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 49,
-    "quizID": "ModuleOneQuizzes",
-    "question": "Which of the following is a benefit of dynamic or continuous consent?",
-    "options": [
-      "Reducing user rights.",
-      "Empowering users to adjust their data preferences over time.",
-      "Simplifying the consent process by eliminating user control.",
-      "Automatically deleting user data after it’s collected."
-    ],
-    "questionType": "multiple",
-    "questionPic": null,
-    "correctAnswer": "B"
-  },
-  {
-    "id": 45,
-    "quizID": "ModuleOneQuizzes",
-    "question": "A company uses automated decision-making to determine loan approvals for consumers in the EU. According to GDPR, what are the obligations of the company regarding informing users about this practice?",
-    "options": [
-      "The company only needs to inform users if the decision is positive.",
-      "The company must disclose the automated decision-making process and allow users to request human intervention.",
-      "The company does not need to disclose the use of automation if the system is accurate.",
-      "The company can withhold information about the automation if the decision benefits the user."
-    ],
-    "questionType": "scenario",
-    "questionPic": null,
     "correctAnswer": "B"
   },
   {
@@ -274,166 +138,6 @@
     "correctAnswer": "B"
   },
   {
-    "id": 78,
-    "question": "True or False: Providing users with incentives for opting into personalized ads is a best practice to encourage engagement.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 42,
-    "quizID": "ModuleOneQuizzes",
-    "question": "An e-commerce company processes the personal data of users in the EU. They collect email addresses and purchase history for marketing purposes but fail to inform users about how this data will be used. Is this practice compliant with GDPR?",
-    "options": [
-      "Yes, because the company is not selling the data.",
-      "No, because the company is not using a third-party processor.",
-      "No, because GDPR requires organizations to inform users how their data will be used.",
-      "Yes, because the data is collected directly from the users."
-    ],
-    "questionType": "scenario",
-    "questionPic": null,
-    "correctAnswer": "C"
-  },
-  {
-    "id": 56,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: Dynamic consent provides no benefit to user empowerment.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 30,
-    "quizID": "ModuleOneQuizzes",
-    "question": "In educational platforms, why is data consent important?",
-    "options": [
-      "It allows users to have their learning progress analyzed without their consent",
-      "It ensures that users can decide which learning data can be shared and with whom",
-      "It automatically grants institutions access to all user data",
-      "It guarantees that all assessments are public"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 34,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: Under GDPR, users have the right to request that their data be deleted under the 'Right to be Forgotten.'",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 25,
-    "quizID": "ModuleOneQuizzes",
-    "question": "What control does proper data consent provide to users on educational platforms?",
-    "options": [
-      "The ability to consent to sharing learning behavior data with third-party educators or researchers",
-      "The automatic sharing of educational records with all instructors",
-      "The option to have their data anonymized without consent",
-      "Automatic analysis of educational progress without user knowledge"
-    ],
-    "correctAnswer": "A",
-    "questionType": "multiple",
-    "questionPic": null
-  },
-  {
-    "id": 43,
-    "quizID": "ModuleOneQuizzes",
-    "question": "A consumer in California requests that their personal data be deleted from a retailer's database. The retailer denies the request because they want to use the data for future targeted advertising. Is this allowed under the CCPA?",
-    "options": [
-      "Yes, because the company can use the data for advertising purposes.",
-      "No, because the CCPA gives consumers the right to have their data deleted upon request.",
-      "Yes, as long as the company informs the consumer of the denial.",
-      "No, unless the company has already shared the data with third parties."
-    ],
-    "questionType": "scenario",
-    "questionPic": null,
-    "correctAnswer": "B"
-  },
-  {
-    "id": 39,
-    "quizID": "ModuleOneQuizzes",
-    "question": "The CCPA grants consumers which of the following rights?",
-    "options": [
-      "Right to access health data only",
-      "Right to opt out of data selling",
-      "Right to object to all forms of data processing",
-      "Right to transfer data internationally"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 58,
-    "question": "An app developer uses an algorithm to automatically personalize the app experience based on users' behavior. The algorithm profiles users and tailors recommendations. What steps should the developer take to handle consent ethically?",
-    "options": [
-      "Continue the profiling without informing users because it improves user experience.",
-      "Notify users that their behavior is being tracked for personalization and allow them to opt-out of profiling.",
-      "Implicitly assume users are comfortable with profiling since they downloaded the app.",
-      "Use passive consent mechanisms to avoid complexity in the user interface."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 36,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: The EDPB (European Data Protection Board) ensures consistent application of GDPR across all EU countries.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 70,
-    "question": "A company wants to use implied consent to gather user data for AI model training. What ethical concerns might arise from this practice?",
-    "options": [
-      "Users may feel more empowered.",
-      "Users may not fully understand how their data is being used, leading to potential exploitation.",
-      "Users will be more trusting of the company.",
-      "Implied consent is the same as explicit consent, so there are no ethical issues."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 50,
-    "quizID": "ModuleOneQuizzes",
-    "question": "What is the primary function of a Consent Management Platform (CMP)?",
-    "options": [
-      "Store user data.",
-      "Automate the process of obtaining, managing, and updating user consent.",
-      "Block third-party data access.",
-      "Restrict the use of AI systems."
-    ],
-    "questionType": "multiple",
-    "questionPic": null,
-    "correctAnswer": "B"
-  },
-  {
     "id": 11,
     "quizID": "ModuleOneQuizzes",
     "questionType": "multiple",
@@ -446,58 +150,6 @@
       "Implicit consent",
       "Opt-out consent"
     ]
-  },
-  {
-    "id": 57,
-    "question": "A company is using customer data to develop a machine learning model that predicts purchasing behavior. What is the best practice the company should follow regarding consent?",
-    "options": [
-      "Notify users of data collection in a lengthy privacy policy and assume consent.",
-      "Obtain explicit consent from users, explaining how their data will be used for AI training, and provide the option to opt-out.",
-      "Collect data without informing users since the data will be anonymized.",
-      "Use data from past purchases without needing consent since it’s part of a routine process."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 66,
-    "question": "True or False: Push notifications require user consent only when the app is used for marketing purposes.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 33,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: Organizations that comply with the GDPR do not need to comply with the CCPA if they operate in California.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 44,
-    "quizID": "ModuleOneQuizzes",
-    "question": "A company collects sensitive personal information, including biometric data, from California residents. According to the CPRA, what additional steps must the company take regarding this data?",
-    "options": [
-      "They must delete the data after 6 months.",
-      "They must obtain explicit consent from users and provide them the right to limit its use.",
-      "They are not required to take any additional steps as long as the data is secure.",
-      "They must inform users about the sale of biometric data but don’t need explicit consent."
-    ],
-    "questionType": "scenario",
-    "questionPic": null,
-    "correctAnswer": "B"
   },
   {
     "id": 12,
@@ -514,20 +166,6 @@
     "correctAnswer": "A"
   },
   {
-    "id": 73,
-    "question": "What is a key aspect of Apple's App Tracking Transparency (ATT) framework?",
-    "options": [
-      "It allows apps to track user activity without user consent.",
-      "It requires apps to explicitly request consent for tracking user activity across other apps and websites.",
-      "It only applies to Android devices.",
-      "It automatically grants permission for personalized advertising unless users opt out."
-    ],
-    "correctAnswer": "B",
-    "questionType": "multiple",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
     "id": 13,
     "quizID": "ModuleOneQuizzes",
     "questionType": "true_false",
@@ -538,56 +176,6 @@
       "False"
     ],
     "correctAnswer": "B"
-  },
-  {
-    "id": 77,
-    "question": "True or False: Push notifications require user consent only when the app is used for marketing purposes.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 31,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: The GDPR requires organizations to collect only the necessary personal data for the specified purpose.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 28,
-    "quizID": "ModuleOneQuizzes",
-    "question": "In smart home devices, which of the following options best describes the benefit of revoking consent?",
-    "options": [
-      "Users can still use voice commands while data collection continues",
-      "Users can stop the collection of their data at any time, and previously collected data can be deleted",
-      "The device stops working if consent is revoked",
-      "Users must provide consent only once"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 75,
-    "question": "True or False: Users should not have the option to opt-out of personalized ads if they use a free mobile app.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
   },
   {
     "id": 14,
@@ -616,18 +204,6 @@
     "correctAnswer": "A"
   },
   {
-    "id": 64,
-    "question": "True or False: Users should not have the option to opt-out of personalized ads if they use a free mobile app.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
     "id": 16,
     "quizID": "ModuleOneQuizzes",
     "questionType": "multiple",
@@ -640,48 +216,6 @@
       "Only partial control over the data provided"
     ],
     "correctAnswer": "A"
-  },
-  {
-    "id": 69,
-    "question": "An app developer uses an algorithm to automatically personalize the app experience based on users' behavior. The algorithm profiles users and tailors recommendations. What steps should the developer take to handle consent ethically?",
-    "options": [
-      "Continue the profiling without informing users because it improves user experience.",
-      "Notify users that their behavior is being tracked for personalization and allow them to opt-out of profiling.",
-      "Implicitly assume users are comfortable with profiling since they downloaded the app.",
-      "Use passive consent mechanisms to avoid complexity in the user interface."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 41,
-    "quizID": "ModuleOneQuizzes",
-    "question": "Which of the following entities is responsible for enforcing CPRA?",
-    "options": [
-      "The Federal Trade Commission (FTC)",
-      "The European Data Protection Board (EDPB)",
-      "The California Privacy Protection Agency (CPPA)",
-      "The International Association of Privacy Professionals (IAPP)"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 37,
-    "quizID": "ModuleOneQuizzes",
-    "question": "Which of the following is NOT a key principle of GDPR?",
-    "options": [
-      "Data Minimization",
-      "Purpose Limitation",
-      "Indefinite Data Retention",
-      "Accountability"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
   },
   {
     "id": 17,
@@ -698,82 +232,6 @@
     "correctAnswer": "C"
   },
   {
-    "id": 40,
-    "quizID": "ModuleOneQuizzes",
-    "question": "Under GDPR, which of these rights allows users to receive their personal data in a commonly used, machine-readable format?",
-    "options": [
-      "Right to Access",
-      "Right to Rectification",
-      "Right to Data Portability",
-      "Right to Object"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 55,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: One of the benefits of CMPs is that they enhance user experience by providing clear interfaces for consent management.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 48,
-    "quizID": "ModuleOneQuizzes",
-    "question": "What does third-party data sharing typically involve?",
-    "options": [
-      "Sharing user data within the same organization.",
-      "Transferring user data to external organizations or entities for purposes like analytics or marketing.",
-      "Selling user data without consent.",
-      "Using user data only for internal AI algorithms."
-    ],
-    "questionType": "multiple",
-    "questionPic": null,
-    "correctAnswer": "B"
-  },
-  {
-    "id": 67,
-    "question": "True or False: Providing users with incentives for opting into personalized ads is a best practice to encourage engagement.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 76,
-    "question": "True or False: Regularly reminding users of their consent choices, including app permissions and location data, helps foster transparency and accountability.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 74,
-    "question": "True or False: Obtaining consent for app permissions should be done contextually to help users understand why the app requires access to certain features, such as the camera or microphone.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
     "id": 18,
     "quizID": "ModuleOneQuizzes",
     "questionType": "multiple",
@@ -786,18 +244,6 @@
       "Building trust and transparency with users"
     ],
     "correctAnswer": "C"
-  },
-  {
-    "id": 26,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: In ride-sharing apps, proper data consent ensures users can control how long their location data is stored and can request its deletion.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
   },
   {
     "id": 19,
@@ -814,32 +260,6 @@
     ]
   },
   {
-    "id": 52,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: Dynamic consent allows users to provide ongoing consent and modify their preferences over time.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 27,
-    "quizID": "ModuleOneQuizzes",
-    "question": "In healthcare wearables, what happens when a user withdraws consent to share their data?",
-    "options": [
-      "Their data continues to be used for marketing purposes",
-      "The wearable deletes or retracts their data from third-party systems",
-      "Data sharing continues but in an anonymized format",
-      "The wearable device stops functioning"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
     "id": 20,
     "quizID": "ModuleOneQuizzes",
     "questionType": "true_false",
@@ -852,44 +272,6 @@
     "correctAnswer": "A"
   },
   {
-    "id": 65,
-    "question": "True or False: Regularly reminding users of their consent choices, including app permissions and location data, helps foster transparency and accountability.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
-  },
-  {
-    "id": 32,
-    "quizID": "ModuleOneQuizzes",
-    "question": "True or False: The CPRA introduces stricter guidelines for the collection of non-sensitive personal information than the CCPA.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 46,
-    "quizID": "ModuleOneQuizzes",
-    "question": "A California resident receives notification that their personal data has been breached. Under the CCPA, what rights does the individual have?",
-    "options": [
-      "The right to sue the company if the breach was intentional.",
-      "The right to request a monetary compensation from the company.",
-      "The right to file a lawsuit for damages, even if the breach was unintentional.",
-      "The right to have their data transferred to a different organization for safekeeping."
-    ],
-    "questionType": "scenario",
-    "questionPic": null,
-    "correctAnswer": "C"
-  },
-  {
     "id": 21,
     "quizID": "ModuleOneQuizzes",
     "questionType": "true_false",
@@ -900,34 +282,6 @@
       "False"
     ],
     "correctAnswer": "A"
-  },
-  {
-    "id": 38,
-    "quizID": "ModuleOneQuizzes",
-    "question": "What new category does CPRA introduce for stricter protection?",
-    "options": [
-      "Public Information",
-      "Financial Information",
-      "Sensitive Personal Information",
-      "Business Information"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 59,
-    "question": "A company wants to use implied consent to gather user data for AI model training. What ethical concerns might arise from this practice?",
-    "options": [
-      "Users may feel more empowered.",
-      "Users may not fully understand how their data is being used, leading to potential exploitation.",
-      "Users will be more trusting of the company.",
-      "Implied consent is the same as explicit consent, so there are no ethical issues."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "quizID": "ModuleOneQuizzes",
-    "questionPic": null
   },
   {
     "id": 22,
@@ -958,18 +312,368 @@
     ]
   },
   {
-    "id": 61,
-    "question": "Which of the following is a best practice for obtaining location data consent in mobile apps?",
+    "id": 24,
+    "quizID": "ModuleOneQuizzes",
+    "questionType": "multiple",
+    "questionPic": null,
+    "question": "Which of the following are examples of contextual consent?",
+    "correctAnswer": "A",
     "options": [
-      "Requesting consent at the app's initial launch.",
-      "Providing users with granular options, such as choosing between precise and approximate location data.",
-      "Automatically enabling location data without informing the user.",
-      "Only requesting location data for targeted advertising."
+      "Sharing health data when signing up for a fitness app",
+      "Automatically agreeing to terms when browsing a website",
+      "Giving permission for personal email marketing.",
+      "Allowing a platform to sell all your personal data to third parties"
+    ]
+  },
+  {
+    "id": 25,
+    "quizID": "ModuleOneQuizzes",
+    "question": "What control does proper data consent provide to users on educational platforms?",
+    "options": [
+      "The ability to consent to sharing learning behavior data with third-party educators or researchers",
+      "The automatic sharing of educational records with all instructors",
+      "The option to have their data anonymized without consent",
+      "Automatic analysis of educational progress without user knowledge"
+    ],
+    "correctAnswer": "A",
+    "questionType": "multiple",
+    "questionPic": null
+  },
+  {
+    "id": 26,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: In ride-sharing apps, proper data consent ensures users can control how long their location data is stored and can request its deletion.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 27,
+    "quizID": "ModuleOneQuizzes",
+    "question": "In healthcare wearables, what happens when a user withdraws consent to share their data?",
+    "options": [
+      "Their data continues to be used for marketing purposes",
+      "The wearable deletes or retracts their data from third-party systems",
+      "Data sharing continues but in an anonymized format",
+      "The wearable device stops functioning"
     ],
     "correctAnswer": "B",
-    "questionType": "multiple",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 28,
     "quizID": "ModuleOneQuizzes",
+    "question": "In smart home devices, which of the following options best describes the benefit of revoking consent?",
+    "options": [
+      "Users can still use voice commands while data collection continues",
+      "Users can stop the collection of their data at any time, and previously collected data can be deleted",
+      "The device stops working if consent is revoked",
+      "Users must provide consent only once"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 29,
+    "quizID": "ModuleOneQuizzes",
+    "question": "Why is data consent important in ride-sharing apps?",
+    "options": [
+      "It allows the app to permanently store all user location data",
+      "It provides users with control over real-time location tracking and data storage",
+      "It gives the app permission to sell data to advertisers",
+      "It ensures that rides are free for users who provide data"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 30,
+    "quizID": "ModuleOneQuizzes",
+    "question": "In educational platforms, why is data consent important?",
+    "options": [
+      "It allows users to have their learning progress analyzed without their consent",
+      "It ensures that users can decide which learning data can be shared and with whom",
+      "It automatically grants institutions access to all user data",
+      "It guarantees that all assessments are public"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 31,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: The GDPR requires organizations to collect only the necessary personal data for the specified purpose.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
     "questionPic": null
+  },
+  {
+    "id": 32,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: The CPRA introduces stricter guidelines for the collection of non-sensitive personal information than the CCPA.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 33,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: Organizations that comply with the GDPR do not need to comply with the CCPA if they operate in California.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 34,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: Under GDPR, users have the right to request that their data be deleted under the 'Right to be Forgotten.'",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 35,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: The CCPA allows consumers to opt-out of the sale of their personal data but does not require organizations to delete their data.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 36,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: The EDPB (European Data Protection Board) ensures consistent application of GDPR across all EU countries.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 37,
+    "quizID": "ModuleOneQuizzes",
+    "question": "Which of the following is NOT a key principle of GDPR?",
+    "options": [
+      "Data Minimization",
+      "Purpose Limitation",
+      "Indefinite Data Retention",
+      "Accountability"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 38,
+    "quizID": "ModuleOneQuizzes",
+    "question": "What new category does CPRA introduce for stricter protection?",
+    "options": [
+      "Public Information",
+      "Financial Information",
+      "Sensitive Personal Information",
+      "Business Information"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 39,
+    "quizID": "ModuleOneQuizzes",
+    "question": "The CCPA grants consumers which of the following rights?",
+    "options": [
+      "Right to access health data only",
+      "Right to opt out of data selling",
+      "Right to object to all forms of data processing",
+      "Right to transfer data internationally"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 40,
+    "quizID": "ModuleOneQuizzes",
+    "question": "Under GDPR, which of these rights allows users to receive their personal data in a commonly used, machine-readable format?",
+    "options": [
+      "Right to Access",
+      "Right to Rectification",
+      "Right to Data Portability",
+      "Right to Object"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 41,
+    "quizID": "ModuleOneQuizzes",
+    "question": "Which of the following entities is responsible for enforcing CPRA?",
+    "options": [
+      "The Federal Trade Commission (FTC)",
+      "The European Data Protection Board (EDPB)",
+      "The California Privacy Protection Agency (CPPA)",
+      "The International Association of Privacy Professionals (IAPP)"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 42,
+    "quizID": "ModuleOneQuizzes",
+    "question": "An e-commerce company processes the personal data of users in the EU. They collect email addresses and purchase history for marketing purposes but fail to inform users about how this data will be used. Is this practice compliant with GDPR?",
+    "options": [
+      "Yes, because the company is not selling the data.",
+      "No, because the company is not using a third-party processor.",
+      "No, because GDPR requires organizations to inform users how their data will be used.",
+      "Yes, because the data is collected directly from the users."
+    ],
+    "questionType": "scenario",
+    "questionPic": null,
+    "correctAnswer": "C"
+  },
+  {
+    "id": 43,
+    "quizID": "ModuleOneQuizzes",
+    "question": "A consumer in California requests that their personal data be deleted from a retailer's database. The retailer denies the request because they want to use the data for future targeted advertising. Is this allowed under the CCPA?",
+    "options": [
+      "Yes, because the company can use the data for advertising purposes.",
+      "No, because the CCPA gives consumers the right to have their data deleted upon request.",
+      "Yes, as long as the company informs the consumer of the denial.",
+      "No, unless the company has already shared the data with third parties."
+    ],
+    "questionType": "scenario",
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 44,
+    "quizID": "ModuleOneQuizzes",
+    "question": "A company collects sensitive personal information, including biometric data, from California residents. According to the CPRA, what additional steps must the company take regarding this data?",
+    "options": [
+      "They must delete the data after 6 months.",
+      "They must obtain explicit consent from users and provide them the right to limit its use.",
+      "They are not required to take any additional steps as long as the data is secure.",
+      "They must inform users about the sale of biometric data but don’t need explicit consent."
+    ],
+    "questionType": "scenario",
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 45,
+    "quizID": "ModuleOneQuizzes",
+    "question": "A company uses automated decision-making to determine loan approvals for consumers in the EU. According to GDPR, what are the obligations of the company regarding informing users about this practice?",
+    "options": [
+      "The company only needs to inform users if the decision is positive.",
+      "The company must disclose the automated decision-making process and allow users to request human intervention.",
+      "The company does not need to disclose the use of automation if the system is accurate.",
+      "The company can withhold information about the automation if the decision benefits the user."
+    ],
+    "questionType": "scenario",
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 46,
+    "quizID": "ModuleOneQuizzes",
+    "question": "A California resident receives notification that their personal data has been breached. Under the CCPA, what rights does the individual have?",
+    "options": [
+      "The right to sue the company if the breach was intentional.",
+      "The right to request a monetary compensation from the company.",
+      "The right to file a lawsuit for damages, even if the breach was unintentional.",
+      "The right to have their data transferred to a different organization for safekeeping."
+    ],
+    "questionType": "scenario",
+    "questionPic": null,
+    "correctAnswer": "C"
+  },
+  {
+    "id": 47,
+    "quizID": "ModuleOneQuizzes",
+    "question": "Why is effective consent management important for AI systems?",
+    "options": [
+      "It helps reduce the cost of data storage.",
+      "It builds user trust, ensures regulatory compliance, and empowers user control.",
+      "It increases the complexity of data processing.",
+      "It helps organizations avoid third-party data sharing."
+    ],
+    "questionType": "multiple",
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 48,
+    "quizID": "ModuleOneQuizzes",
+    "question": "What does third-party data sharing typically involve?",
+    "options": [
+      "Sharing user data within the same organization.",
+      "Transferring user data to external organizations or entities for purposes like analytics or marketing.",
+      "Selling user data without consent.",
+      "Using user data only for internal AI algorithms."
+    ],
+    "questionType": "multiple",
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 49,
+    "quizID": "ModuleOneQuizzes",
+    "question": "Which of the following is a benefit of dynamic or continuous consent?",
+    "options": [
+      "Reducing user rights.",
+      "Empowering users to adjust their data preferences over time.",
+      "Simplifying the consent process by eliminating user control.",
+      "Automatically deleting user data after it’s collected."
+    ],
+    "questionType": "multiple",
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 50,
+    "quizID": "ModuleOneQuizzes",
+    "question": "What is the primary function of a Consent Management Platform (CMP)?",
+    "options": [
+      "Store user data.",
+      "Automate the process of obtaining, managing, and updating user consent.",
+      "Block third-party data access.",
+      "Restrict the use of AI systems."
+    ],
+    "questionType": "multiple",
+    "questionPic": null,
+    "correctAnswer": "B"
   },
   {
     "id": 51,
@@ -986,23 +690,21 @@
     "correctAnswer": "C"
   },
   {
-    "id": 24,
+    "id": 52,
     "quizID": "ModuleOneQuizzes",
-    "questionType": "multiple",
-    "questionPic": null,
-    "question": "Which of the following are examples of contextual consent?",
-    "correctAnswer": "A",
+    "question": "True or False: Dynamic consent allows users to provide ongoing consent and modify their preferences over time.",
     "options": [
-      "Sharing health data when signing up for a fitness app",
-      "Automatically agreeing to terms when browsing a website",
-      "Giving permission for personal email marketing.",
-      "Allowing a platform to sell all your personal data to third parties"
-    ]
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
   },
   {
-    "id": 35,
+    "id": 53,
     "quizID": "ModuleOneQuizzes",
-    "question": "True or False: The CCPA allows consumers to opt-out of the sale of their personal data but does not require organizations to delete their data.",
+    "question": "True or False: Consent Management Platforms (CMPs) make it harder for organizations to comply with privacy regulations.",
     "options": [
       "True",
       "False"
@@ -1024,17 +726,315 @@
     "questionPic": null
   },
   {
-    "id": 47,
+    "id": 55,
     "quizID": "ModuleOneQuizzes",
-    "question": "Why is effective consent management important for AI systems?",
+    "question": "True or False: One of the benefits of CMPs is that they enhance user experience by providing clear interfaces for consent management.",
     "options": [
-      "It helps reduce the cost of data storage.",
-      "It builds user trust, ensures regulatory compliance, and empowers user control.",
-      "It increases the complexity of data processing.",
-      "It helps organizations avoid third-party data sharing."
+      "True",
+      "False"
     ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 56,
+    "quizID": "ModuleOneQuizzes",
+    "question": "True or False: Dynamic consent provides no benefit to user empowerment.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 57,
+    "question": "A company is using customer data to develop a machine learning model that predicts purchasing behavior. What is the best practice the company should follow regarding consent?",
+    "options": [
+      "Notify users of data collection in a lengthy privacy policy and assume consent.",
+      "Obtain explicit consent from users, explaining how their data will be used for AI training, and provide the option to opt-out.",
+      "Collect data without informing users since the data will be anonymized.",
+      "Use data from past purchases without needing consent since it’s part of a routine process."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 58,
+    "question": "An app developer uses an algorithm to automatically personalize the app experience based on users' behavior. The algorithm profiles users and tailors recommendations. What steps should the developer take to handle consent ethically?",
+    "options": [
+      "Continue the profiling without informing users because it improves user experience.",
+      "Notify users that their behavior is being tracked for personalization and allow them to opt-out of profiling.",
+      "Implicitly assume users are comfortable with profiling since they downloaded the app.",
+      "Use passive consent mechanisms to avoid complexity in the user interface."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 59,
+    "question": "A company wants to use implied consent to gather user data for AI model training. What ethical concerns might arise from this practice?",
+    "options": [
+      "Users may feel more empowered.",
+      "Users may not fully understand how their data is being used, leading to potential exploitation.",
+      "Users will be more trusting of the company.",
+      "Implied consent is the same as explicit consent, so there are no ethical issues."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 60,
+    "question": "Why is mobile data consent crucial for organizations?",
+    "options": [
+      "It increases the efficiency of data processing.",
+      "It enhances user trust, ensures compliance with regulations, and empowers user control over data.",
+      "It allows organizations to collect unlimited user data without restrictions.",
+      "It helps prevent technical issues in mobile apps."
+    ],
+    "correctAnswer": "B",
     "questionType": "multiple",
-    "questionPic": null,
-    "correctAnswer": "B"
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 61,
+    "question": "Which of the following is a best practice for obtaining location data consent in mobile apps?",
+    "options": [
+      "Requesting consent at the app's initial launch.",
+      "Providing users with granular options, such as choosing between precise and approximate location data.",
+      "Automatically enabling location data without informing the user.",
+      "Only requesting location data for targeted advertising."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 62,
+    "question": "What is a key aspect of Apple's App Tracking Transparency (ATT) framework?",
+    "options": [
+      "It allows apps to track user activity without user consent.",
+      "It requires apps to explicitly request consent for tracking user activity across other apps and websites.",
+      "It only applies to Android devices.",
+      "It automatically grants permission for personalized advertising unless users opt out."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 63,
+    "question": "True or False: Obtaining consent for app permissions should be done contextually to help users understand why the app requires access to certain features, such as the camera or microphone.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 64,
+    "question": "True or False: Users should not have the option to opt-out of personalized ads if they use a free mobile app.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 65,
+    "question": "True or False: Regularly reminding users of their consent choices, including app permissions and location data, helps foster transparency and accountability.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 66,
+    "question": "True or False: Push notifications require user consent only when the app is used for marketing purposes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 67,
+    "question": "True or False: Providing users with incentives for opting into personalized ads is a best practice to encourage engagement.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 68,
+    "question": "A company is using customer data to develop a machine learning model that predicts purchasing behavior. What is the best practice the company should follow regarding consent?",
+    "options": [
+      "Notify users of data collection in a lengthy privacy policy and assume consent.",
+      "Obtain explicit consent from users, explaining how their data will be used for AI training, and provide the option to opt-out.",
+      "Collect data without informing users since the data will be anonymized.",
+      "Use data from past purchases without needing consent since it’s part of a routine process."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 69,
+    "question": "An app developer uses an algorithm to automatically personalize the app experience based on users' behavior. The algorithm profiles users and tailors recommendations. What steps should the developer take to handle consent ethically?",
+    "options": [
+      "Continue the profiling without informing users because it improves user experience.",
+      "Notify users that their behavior is being tracked for personalization and allow them to opt-out of profiling.",
+      "Implicitly assume users are comfortable with profiling since they downloaded the app.",
+      "Use passive consent mechanisms to avoid complexity in the user interface."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 70,
+    "question": "A company wants to use implied consent to gather user data for AI model training. What ethical concerns might arise from this practice?",
+    "options": [
+      "Users may feel more empowered.",
+      "Users may not fully understand how their data is being used, leading to potential exploitation.",
+      "Users will be more trusting of the company.",
+      "Implied consent is the same as explicit consent, so there are no ethical issues."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 71,
+    "question": "Why is mobile data consent crucial for organizations?",
+    "options": [
+      "It increases the efficiency of data processing.",
+      "It enhances user trust, ensures compliance with regulations, and empowers user control over data.",
+      "It allows organizations to collect unlimited user data without restrictions.",
+      "It helps prevent technical issues in mobile apps."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 72,
+    "question": "Which of the following is a best practice for obtaining location data consent in mobile apps?",
+    "options": [
+      "Requesting consent at the app's initial launch.",
+      "Providing users with granular options, such as choosing between precise and approximate location data.",
+      "Automatically enabling location data without informing the user.",
+      "Only requesting location data for targeted advertising."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 73,
+    "question": "What is a key aspect of Apple's App Tracking Transparency (ATT) framework?",
+    "options": [
+      "It allows apps to track user activity without user consent.",
+      "It requires apps to explicitly request consent for tracking user activity across other apps and websites.",
+      "It only applies to Android devices.",
+      "It automatically grants permission for personalized advertising unless users opt out."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 74,
+    "question": "True or False: Obtaining consent for app permissions should be done contextually to help users understand why the app requires access to certain features, such as the camera or microphone.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 75,
+    "question": "True or False: Users should not have the option to opt-out of personalized ads if they use a free mobile app.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 76,
+    "question": "True or False: Regularly reminding users of their consent choices, including app permissions and location data, helps foster transparency and accountability.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 77,
+    "question": "True or False: Push notifications require user consent only when the app is used for marketing purposes.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 78,
+    "question": "True or False: Providing users with incentives for opting into personalized ads is a best practice to encourage engagement.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
   }
 ]

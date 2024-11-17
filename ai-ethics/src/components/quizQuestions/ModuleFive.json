@@ -1,36 +1,64 @@
 [
   {
-    "id": 25,
+    "id": 1,
     "quizID": "ModuleFiveQuizzes",
-    "question": "Why is explainability particularly critical in healthcare applications?",
+    "question": "What is algorithmic transparency?",
     "options": [
-      "AI systems often make errors in predictions.",
-      "Patients and providers need to trust AI recommendations for treatment.",
-      "Healthcare data is typically more complex than financial data.",
-      "Explainability is a regulatory requirement in all fields."
+      "Clarity about the procedures used to develop AI systems",
+      "Openness regarding the data used in AI systems",
+      "Insight into the decision-making processes of AI algorithms",
+      "Documentation of regulatory compliance in AI"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 2,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which of the following regulations includes a 'right to explanation' for automated decisions?",
+    "options": [
+      "Health Insurance Portability and Accountability Act (HIPAA)",
+      "General Data Protection Regulation (GDPR)",
+      "California Consumer Privacy Act (CCPA)",
+      "Freedom of Information Act (FOIA)"
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 21,
+    "id": 3,
     "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: After receiving feedback from users, a company revises its AI models to include clearer explanations of decision-making processes and data usage. This initiative primarily reflects a commitment to:",
+    "question": "Process transparency ensures that organizations are accountable by:",
     "options": [
-      "Data Privacy",
-      "User Engagement",
-      "Transparency and Accountability",
-      "Cost Reduction"
+      "Making algorithmic decisions clear to users",
+      "Documenting every step of AI system development",
+      "Ensuring data privacy and protection",
+      "Providing user-friendly interfaces"
     ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
   },
   {
-    "id": 69,
+    "id": 4,
     "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Standardized metrics for evaluating explainability are well established and widely used in the AI industry.",
+    "question": "The 'black box' phenomenon in AI primarily refers to:",
+    "options": [
+      "The complexity of data processing",
+      "The inability to interpret AI decision-making processes",
+      "The transparency of data collection methods",
+      "The regulation of AI systems"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 5,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Data transparency refers to the openness about the decision-making processes of AI algorithms.",
     "options": [
       "True",
       "False"
@@ -40,18 +68,40 @@
     "questionPic": null
   },
   {
-    "id": 79,
+    "id": 6,
     "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following techniques is NOT associated with Explainable AI (XAI)?",
+    "question": "True or False: Transparency in AI is not necessary in low-stakes applications, as the potential for harm is minimal.",
     "options": [
-      "SHAP (SHapley Additive exPlanations)",
-      "LIME (Local Interpretable Model-agnostic Explanations)",
-      "Neural architecture search",
-      "Decision trees"
+      "True",
+      "False"
     ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 7,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Explainable AI (XAI) aims to make AI systems more interpretable for users.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 8,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Regulatory frameworks like the GDPR do not have an impact on AI transparency.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
   },
   {
     "id": 9,
@@ -68,56 +118,30 @@
     "questionPic": null
   },
   {
-    "id": 61,
+    "id": 10,
     "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A developer creates an AI system to assist in job interviews but does not ensure the system is transparent. What is a likely ethical outcome?",
+    "question": "Scenario: A medical AI system provides diagnostic recommendations without any explanation to the physicians using it. As a result, doctors are hesitant to trust its suggestions. This situation illustrates the impact of:",
     "options": [
-      "Fairness in candidate selection",
-      "Trust in the recruitment process",
-      "Discriminatory practices in hiring",
-      "Increased efficiency in interviews"
+      "Data Transparency",
+      "Process Transparency",
+      "Algorithmic Transparency",
+      "Regulatory Compliance"
     ],
     "correctAnswer": "C",
     "questionType": "scenario",
     "questionPic": null
   },
   {
-    "id": 49,
+    "id": 11,
     "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Transparency in AI systems is not necessary if the system is accurate.",
+    "question": "Scenario: A government agency implements a new AI system to allocate social services but does not disclose how it collected and processed the data used for training the model. Citizens express concerns about fairness and bias. This scenario demonstrates a lack of:",
     "options": [
-      "True",
-      "False"
+      "Data Transparency",
+      "Process Transparency",
+      "Algorithmic Transparency",
+      "All of the Above"
     ],
-    "questionType": "true_false",
-    "questionPic": null,
-    "correctAnswer": "B"
-  },
-  {
-    "id": 33,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: An autonomous vehicle experiences an accident. Investigators need to understand why the vehicle made a specific decision leading up to the crash. What role does explainability play in this scenario?",
-    "options": [
-      "It helps determine the technical specifications of the vehicle.",
-      "It provides insights into the decision-making process of the AI system.",
-      "It ensures that the vehicle complies with safety regulations.",
-      "It reduces the overall cost of developing autonomous vehicles."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 74,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A company decides to prioritize a highly accurate AI model over a more explainable one. What is a potential consequence of this decision?",
-    "options": [
-      "Increased trust from users",
-      "Reduced understanding and acceptance among end-users",
-      "Higher user engagement",
-      "Improved clarity in decision-making"
-    ],
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "questionType": "scenario",
     "questionPic": null
   },
@@ -130,6 +154,282 @@
       "Data Transparency",
       "Process Transparency",
       "Regulatory Compliance"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 13,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Transparency in AI is primarily concerned with how algorithms are coded, not with the data used to train them.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 14,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Process transparency helps in documenting potential biases in the development and deployment of AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 15,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Transparency in AI systems only benefits end-users and has no relevance to developers.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 16,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Regulatory efforts for transparency in AI are primarily focused on ensuring user privacy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 17,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A credit scoring algorithm denies loans to individuals based on data inputs that are not disclosed to applicants. This lack of openness primarily affects:",
+    "options": [
+      "Algorithmic Transparency",
+      "Process Transparency",
+      "Data Transparency",
+      "All of the Above"
+    ],
+    "correctAnswer": "D",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 18,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: An AI company conducts an audit of its machine learning models to identify potential biases and document its decision-making process. This practice is an example of:",
+    "options": [
+      "Data Transparency",
+      "Algorithmic Transparency",
+      "Process Transparency",
+      "Ethical Compliance"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 19,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A healthcare provider introduces an AI system to assist with patient diagnostics but does not allow doctors to access the training data or understand how the system generates its recommendations. This situation is likely to lead to:",
+    "options": [
+      "Increased trust from the medical staff",
+      "Greater patient satisfaction",
+      "Reduced user trust in the AI system",
+      "Improved accuracy in diagnoses"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 20,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: An educational institution implements an AI-driven admissions system that evaluates applications but fails to explain how it arrived at its decisions. As a result, students question the fairness of the process. This situation highlights the need for:",
+    "options": [
+      "Increased privacy measures",
+      "Better marketing strategies",
+      "Algorithmic Transparency",
+      "Process Automation"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 21,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: After receiving feedback from users, a company revises its AI models to include clearer explanations of decision-making processes and data usage. This initiative primarily reflects a commitment to:",
+    "options": [
+      "Data Privacy",
+      "User Engagement",
+      "Transparency and Accountability",
+      "Cost Reduction"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 22,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What is the primary focus of explainability in AI?",
+    "options": [
+      "The overall transparency of AI processes",
+      "The ability to clarify how AI systems make specific decisions",
+      "The technical complexity of AI algorithms",
+      "The regulatory compliance of AI systems"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 23,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which of the following is NOT a goal of Explainable AI (XAI)?",
+    "options": [
+      "Improve user understanding",
+      "Enhance trust and accountability",
+      "Increase the complexity of AI models",
+      "Support ethical AI practices"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 24,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which technique is used to approximate complex models with simpler, interpretable models for explanation?",
+    "options": [
+      "SHAP",
+      "Counterfactual Explanations",
+      "LIME",
+      "Decision Trees"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 25,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Why is explainability particularly critical in healthcare applications?",
+    "options": [
+      "AI systems often make errors in predictions.",
+      "Patients and providers need to trust AI recommendations for treatment.",
+      "Healthcare data is typically more complex than financial data.",
+      "Explainability is a regulatory requirement in all fields."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 26,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which of the following best describes counterfactual explanations?",
+    "options": [
+      "They provide real-time explanations of AI decisions.",
+      "They compare actual outcomes with potential alternative scenarios.",
+      "They are inherently interpretable models like decision trees.",
+      "They are designed to make models more complex."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 27,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Explainability and transparency serve the same function in AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 28,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: The goals of Explainable AI (XAI) include improving user understanding and ensuring accountability.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 29,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Explainability is only important for AI systems used in finance and healthcare.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 30,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: SHAP values explain the contribution of each feature to a prediction.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 31,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Explainability is not a requirement for regulatory compliance in any field.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 32,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A healthcare provider uses an AI system to assist in diagnosing diseases. The AI recommends a specific treatment plan for a patient. The provider is unsure why the AI made this recommendation. Which of the following is the best approach to improve trust in this AI system?",
+    "options": [
+      "Increase the complexity of the AI model",
+      "Provide clear, understandable explanations for the treatment recommendations",
+      "Limit access to the AI system to only expert users",
+      "Ignore the AI recommendations and rely on human judgment"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 33,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: An autonomous vehicle experiences an accident. Investigators need to understand why the vehicle made a specific decision leading up to the crash. What role does explainability play in this scenario?",
+    "options": [
+      "It helps determine the technical specifications of the vehicle.",
+      "It provides insights into the decision-making process of the AI system.",
+      "It ensures that the vehicle complies with safety regulations.",
+      "It reduces the overall cost of developing autonomous vehicles."
     ],
     "correctAnswer": "B",
     "questionType": "scenario",
@@ -150,16 +450,32 @@
     "questionPic": null
   },
   {
-    "id": 48,
+    "id": 35,
     "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Virtue ethics emphasizes the importance of the character and virtues of the developers of AI systems.",
+    "question": "Scenario: A company has developed an AI system for hiring. Some candidates believe they were unfairly rejected. To ensure fairness, what should the company implement regarding explainability?",
     "options": [
-      "True",
-      "False"
+      "Regularly update the hiring algorithm without explanations",
+      "Use explainability techniques to identify and correct biases in the system",
+      "Only provide explanations to selected candidates",
+      "Disregard feedback from rejected candidates"
     ],
-    "questionType": "true_false",
-    "questionPic": null,
-    "correctAnswer": "A"
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 36,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A startup is developing a new AI application for healthcare diagnostics. The team decides to use a complex neural network for its accuracy. What is a potential drawback of this choice regarding explainability?",
+    "options": [
+      "The model will be too simple to provide accurate predictions.",
+      "The model may be difficult to interpret, complicating explainability.",
+      "The model will be easy to explain to users.",
+      "The model will not comply with regulatory requirements."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
   },
   {
     "id": 37,
@@ -176,54 +492,178 @@
     "questionType": "multiple"
   },
   {
-    "id": 6,
+    "id": 38,
     "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Transparency in AI is not necessary in low-stakes applications, as the potential for harm is minimal.",
+    "question": "Which ethical framework focuses on maximizing overall happiness?",
     "options": [
-      "True",
-      "False"
+      "Virtue Ethics",
+      "Deontological Ethics",
+      "Utilitarianism",
+      "Social Contract Theory"
     ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
   },
   {
-    "id": 82,
+    "id": 39,
     "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: The public's expectations for transparency in AI have decreased as AI technology has advanced.",
+    "question": "What does a lack of explainability in an AI system often lead to?",
     "options": [
-      "True",
-      "False"
+      "Increased user trust",
+      "Enhanced performance",
+      "Unfair decisions and biases",
+      "Higher accuracy"
     ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
   },
   {
-    "id": 3,
+    "id": 40,
     "quizID": "ModuleFiveQuizzes",
-    "question": "Process transparency ensures that organizations are accountable by:",
+    "question": "In the context of AI ethics, what does 'black box' refer to?",
     "options": [
-      "Making algorithmic decisions clear to users",
-      "Documenting every step of AI system development",
-      "Ensuring data privacy and protection",
-      "Providing user-friendly interfaces"
+      "A secure data storage system",
+      "A type of hardware used in AI systems",
+      "A model whose internal workings are not easily interpretable",
+      "A method for tracking AI decisions"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 41,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What is the significance of the Shapley value in AI explainability?",
+    "options": [
+      "It increases the complexity of AI models.",
+      "It quantifies the contribution of individual features to a model's predictions.",
+      "It measures the speed of AI processing.",
+      "It eliminates bias in AI systems."
     ],
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
   },
   {
-    "id": 16,
+    "id": 42,
     "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Regulatory efforts for transparency in AI are primarily focused on ensuring user privacy.",
+    "question": "Which of the following is NOT an ethical framework discussed in the lesson?",
+    "options": [
+      "Utilitarianism",
+      "Virtue Ethics",
+      "Marxist Ethics",
+      "Deontological Ethics"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 43,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Transparency in AI systems is essential for which of the following reasons?",
+    "options": [
+      "It reduces operational costs.",
+      "It allows for informed consent from users.",
+      "It simplifies data collection.",
+      "It eliminates the need for human oversight."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 44,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What organization emphasizes the importance of explainability in high-stakes situations?",
+    "options": [
+      "IEEE",
+      "NASA",
+      "WHO",
+      "UN"
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 45,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which of the following best describes accountability in AI systems?",
+    "options": [
+      "The ability to improve AI performance",
+      "The ability to attribute responsibility for AI decisions",
+      "The ability to reduce data collection",
+      "The ability to make AI systems autonomous"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 46,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What is the potential consequence of an opaque AI system used in hiring?",
+    "options": [
+      "Improved recruitment outcomes",
+      "Enhanced employee morale",
+      "Discrimination against underrepresented groups",
+      "Increased transparency in decision-making"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 47,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Explainability in AI is only important for technical experts.",
     "options": [
       "True",
       "False"
     ],
-    "correctAnswer": "B",
     "questionType": "true_false",
-    "questionPic": null
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 48,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Virtue ethics emphasizes the importance of the character and virtues of the developers of AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "questionType": "true_false",
+    "questionPic": null,
+    "correctAnswer": "A"
+  },
+  {
+    "id": 49,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Transparency in AI systems is not necessary if the system is accurate.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "questionType": "true_false",
+    "questionPic": null,
+    "correctAnswer": "B"
+  },
+  {
+    "id": 50,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: The COMPAS system was found to be completely unbiased in its predictions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "questionType": "true_false",
+    "questionPic": null,
+    "correctAnswer": "B"
   },
   {
     "id": 51,
@@ -236,6 +676,318 @@
     "questionType": "true_false",
     "questionPic": null,
     "correctAnswer": "B"
+  },
+  {
+    "id": 52,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A hospital is implementing an AI system for patient treatment recommendations. Which ethical consideration is most crucial for ensuring fair outcomes?",
+    "options": [
+      "The system should operate without human intervention.",
+      "The system must provide clear explanations for its recommendations.",
+      "The system should minimize data input.",
+      "The system should only use historical data for training."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 53,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: An AI-driven loan approval system denies an application but does not explain the decision. What ethical issue does this raise?",
+    "options": [
+      "Increased application speed",
+      "Lack of accountability and potential bias",
+      "Higher approval rates for applicants",
+      "Better data security"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 54,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: In a hiring process, an AI system consistently favors candidates from a specific demographic group without clear justification. What ethical framework is most violated in this scenario?",
+    "options": [
+      "Utilitarianism",
+      "Deontological Ethics",
+      "Virtue Ethics",
+      "All of the above"
+    ],
+    "correctAnswer": "D",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 55,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: If an AI system in a judicial context provides a sentence recommendation but does not reveal how it arrived at that decision, what is a potential consequence?",
+    "options": [
+      "Improved judicial efficiency",
+      "Increased public trust in the system",
+      "Unjust sentencing and lack of recourse for defendants",
+      "Enhanced legal accuracy"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 56,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A tech company has developed an AI model that shows great accuracy but operates as a 'black box.' Which ethical guideline should the company prioritize?",
+    "options": [
+      "Maximizing profits",
+      "Ensuring transparency and explainability",
+      "Reducing operational costs",
+      "Increasing model complexity"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 57,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: An organization uses AI to screen job applicants but does not provide feedback on why applicants were rejected. What ethical concern does this raise?",
+    "options": [
+      "Efficiency in hiring",
+      "Fairness and transparency in the hiring process",
+      "Accuracy in candidate evaluation",
+      "Increased applicant pool"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 58,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A financial institution adopts an AI tool to assess creditworthiness but does not disclose the data used in its algorithm. What is a significant ethical implication?",
+    "options": [
+      "Improved customer satisfaction",
+      "Risk of discrimination and lack of accountability",
+      "Higher loan approval rates",
+      "Reduced operational costs"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 59,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: An AI system in healthcare recommends treatments but lacks a mechanism for doctors to understand its decision-making process. What is a potential risk?",
+    "options": [
+      "Increased doctor-patient trust",
+      "Informed consent and ethical practices",
+      "Compromised patient safety and care",
+      "Improved health outcomes"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 60,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A public institution implements an AI tool for policing that provides risk scores for individuals. If these scores are not explained to the public, what is the ethical concern?",
+    "options": [
+      "Increased funding for the police",
+      "Potential for bias and erosion of public trust",
+      "Improved crime prevention",
+      "Enhanced community safety"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 61,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A developer creates an AI system to assist in job interviews but does not ensure the system is transparent. What is a likely ethical outcome?",
+    "options": [
+      "Fairness in candidate selection",
+      "Trust in the recruitment process",
+      "Discriminatory practices in hiring",
+      "Increased efficiency in interviews"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 62,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which of the following is a major technical challenge in achieving transparency in AI systems?",
+    "options": [
+      "Lack of user engagement",
+      "Complexity of AI models",
+      "High cost of AI development",
+      "Inadequate funding for research"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 63,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What is often the trade-off faced by developers when designing AI models?",
+    "options": [
+      "Increased complexity for decreased performance",
+      "High accuracy for lower transparency",
+      "Simplicity for increased cost",
+      "User satisfaction for faster processing"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 64,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What do developers need to provide in order to make AI systems more understandable for end-users?",
+    "options": [
+      "Complex technical documentation",
+      "User-centric explanations",
+      "Performance metrics only",
+      "Extensive training programs"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 65,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "The absence of standardized metrics for explainability means:",
+    "options": [
+      "All AI systems are equally transparent",
+      "Developers can easily assess their models",
+      "Assessing explainability becomes subjective",
+      "User trust is guaranteed"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 66,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which user group is likely to require detailed breakdowns of feature importance when using AI systems?",
+    "options": [
+      "Casual end-users",
+      "Regulatory bodies",
+      "Data scientists",
+      "General public"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 67,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Deep learning models are often referred to as 'black boxes' because their decision-making processes are easily understandable.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 68,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: End-users typically prioritize understanding the rationale behind AI decisions when those decisions have significant consequences.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 69,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Standardized metrics for evaluating explainability are well established and widely used in the AI industry.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 70,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Tailoring explanations to specific user contexts can enhance the relevance and usefulness of the information provided.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 71,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Stakeholders have no influence over the regulations related to transparency and explainability in AI systems.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 72,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: An AI system for loan approval uses a complex deep learning model. Users express concerns about understanding the decision-making process. What approach should the developers take to enhance transparency?",
+    "options": [
+      "Provide a technical manual for the model",
+      "Offer simplified, user-centric explanations tailored to common concerns",
+      "Focus solely on improving model accuracy",
+      "Ignore user feedback, as the model is effective"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 73,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A healthcare AI application is providing treatment recommendations. The end-users are concerned about the rationale behind these recommendations. Which of the following strategies would best address their concerns?",
+    "options": [
+      "Explain the algorithm in technical terms",
+      "Provide a detailed report on every data point used",
+      "Offer clear, context-relevant explanations that highlight key influencing factors",
+      "Focus on demonstrating the model's accuracy"
+    ],
+    "correctAnswer": "C",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 74,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Scenario: A company decides to prioritize a highly accurate AI model over a more explainable one. What is a potential consequence of this decision?",
+    "options": [
+      "Increased trust from users",
+      "Reduced understanding and acceptance among end-users",
+      "Higher user engagement",
+      "Improved clarity in decision-making"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
   },
   {
     "id": 75,
@@ -252,9 +1004,141 @@
     "questionPic": null
   },
   {
-    "id": 31,
+    "id": 76,
     "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Explainability is not a requirement for regulatory compliance in any field.",
+    "question": "Scenario: A regulatory body is evaluating an AI system's transparency and explainability. Which of the following should be a primary focus for the body?",
+    "options": [
+      "Assessing the technical complexity of the model",
+      "Evaluating how the system communicates decisions to users",
+      "Determining the cost of the AI system",
+      "Analyzing the number of features in the model"
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 77,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which of the following best describes the primary goal of regulatory developments regarding AI transparency?",
+    "options": [
+      "To increase AI performance metrics",
+      "To ensure users understand AI decision-making processes",
+      "To eliminate AI use in critical applications",
+      "To prioritize profits over ethics"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 78,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What is one significant challenge in achieving transparency in complex AI systems?",
+    "options": [
+      "Simplifying user interfaces",
+      "Lack of standardization in metrics for explainability",
+      "Increasing user data privacy",
+      "The rise of social media"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 79,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "Which of the following techniques is NOT associated with Explainable AI (XAI)?",
+    "options": [
+      "SHAP (SHapley Additive exPlanations)",
+      "LIME (Local Interpretable Model-agnostic Explanations)",
+      "Neural architecture search",
+      "Decision trees"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 80,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What emerging trend reflects a shift towards ethical considerations in AI development?",
+    "options": [
+      "Increasing reliance on deep learning",
+      "The rise of responsible AI practices",
+      "Decreasing interest in user data",
+      "The dominance of unsupervised learning"
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 81,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "What role do visualization tools play in AI transparency?",
+    "options": [
+      "They simplify algorithms",
+      "They obscure decision-making processes",
+      "They provide intuitive representations of data and model behavior",
+      "They replace the need for explainability"
+    ],
+    "correctAnswer": "C",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 82,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: The public's expectations for transparency in AI have decreased as AI technology has advanced.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 83,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Multi-stakeholder engagement is essential for developing comprehensive frameworks for AI transparency.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 84,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: Regulatory bodies are primarily focused on maximizing AI performance without regard for transparency.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "B",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 85,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: The advancements in natural language processing (NLP) can aid in creating more intuitive explanations for AI decisions.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswer": "A",
+    "questionType": "true_false",
+    "questionPic": null
+  },
+  {
+    "id": 86,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "True or False: The future of AI transparency relies solely on technological innovations, without the need for collaboration among stakeholders.",
     "options": [
       "True",
       "False"
@@ -278,32 +1162,6 @@
     "questionPic": null
   },
   {
-    "id": 70,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Tailoring explanations to specific user contexts can enhance the relevance and usefulness of the information provided.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 66,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which user group is likely to require detailed breakdowns of feature importance when using AI systems?",
-    "options": [
-      "Casual end-users",
-      "Regulatory bodies",
-      "Data scientists",
-      "General public"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
     "id": 88,
     "quizID": "ModuleFiveQuizzes",
     "question": "Scenario: An AI company is facing criticism for a lack of transparency in its algorithms. Which strategy would best address these concerns?",
@@ -318,256 +1176,16 @@
     "questionPic": null
   },
   {
-    "id": 57,
+    "id": 89,
     "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: An organization uses AI to screen job applicants but does not provide feedback on why applicants were rejected. What ethical concern does this raise?",
+    "question": "Scenario: A team of researchers is developing a new AI model that must balance performance and explainability. What approach should they take?",
     "options": [
-      "Efficiency in hiring",
-      "Fairness and transparency in the hiring process",
-      "Accuracy in candidate evaluation",
-      "Increased applicant pool"
+      "Focus solely on improving model accuracy",
+      "Integrate explainability assessments during the testing phase",
+      "Only use simple algorithms for better explainability",
+      "Delay addressing explainability until after deployment"
     ],
     "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 26,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following best describes counterfactual explanations?",
-    "options": [
-      "They provide real-time explanations of AI decisions.",
-      "They compare actual outcomes with potential alternative scenarios.",
-      "They are inherently interpretable models like decision trees.",
-      "They are designed to make models more complex."
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 39,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What does a lack of explainability in an AI system often lead to?",
-    "options": [
-      "Increased user trust",
-      "Enhanced performance",
-      "Unfair decisions and biases",
-      "Higher accuracy"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 67,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Deep learning models are often referred to as 'black boxes' because their decision-making processes are easily understandable.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 28,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: The goals of Explainable AI (XAI) include improving user understanding and ensuring accountability.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 1,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What is algorithmic transparency?",
-    "options": [
-      "Clarity about the procedures used to develop AI systems",
-      "Openness regarding the data used in AI systems",
-      "Insight into the decision-making processes of AI algorithms",
-      "Documentation of regulatory compliance in AI"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 68,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: End-users typically prioritize understanding the rationale behind AI decisions when those decisions have significant consequences.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 30,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: SHAP values explain the contribution of each feature to a prediction.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 14,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Process transparency helps in documenting potential biases in the development and deployment of AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 20,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: An educational institution implements an AI-driven admissions system that evaluates applications but fails to explain how it arrived at its decisions. As a result, students question the fairness of the process. This situation highlights the need for:",
-    "options": [
-      "Increased privacy measures",
-      "Better marketing strategies",
-      "Algorithmic Transparency",
-      "Process Automation"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 83,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Multi-stakeholder engagement is essential for developing comprehensive frameworks for AI transparency.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 11,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A government agency implements a new AI system to allocate social services but does not disclose how it collected and processed the data used for training the model. Citizens express concerns about fairness and bias. This scenario demonstrates a lack of:",
-    "options": [
-      "Data Transparency",
-      "Process Transparency",
-      "Algorithmic Transparency",
-      "All of the Above"
-    ],
-    "correctAnswer": "D",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 60,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A public institution implements an AI tool for policing that provides risk scores for individuals. If these scores are not explained to the public, what is the ethical concern?",
-    "options": [
-      "Increased funding for the police",
-      "Potential for bias and erosion of public trust",
-      "Improved crime prevention",
-      "Enhanced community safety"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 54,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: In a hiring process, an AI system consistently favors candidates from a specific demographic group without clear justification. What ethical framework is most violated in this scenario?",
-    "options": [
-      "Utilitarianism",
-      "Deontological Ethics",
-      "Virtue Ethics",
-      "All of the above"
-    ],
-    "correctAnswer": "D",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 77,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following best describes the primary goal of regulatory developments regarding AI transparency?",
-    "options": [
-      "To increase AI performance metrics",
-      "To ensure users understand AI decision-making processes",
-      "To eliminate AI use in critical applications",
-      "To prioritize profits over ethics"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 38,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which ethical framework focuses on maximizing overall happiness?",
-    "options": [
-      "Virtue Ethics",
-      "Deontological Ethics",
-      "Utilitarianism",
-      "Social Contract Theory"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 53,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: An AI-driven loan approval system denies an application but does not explain the decision. What ethical issue does this raise?",
-    "options": [
-      "Increased application speed",
-      "Lack of accountability and potential bias",
-      "Higher approval rates for applicants",
-      "Better data security"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 78,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What is one significant challenge in achieving transparency in complex AI systems?",
-    "options": [
-      "Simplifying user interfaces",
-      "Lack of standardization in metrics for explainability",
-      "Increasing user data privacy",
-      "The rise of social media"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 10,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A medical AI system provides diagnostic recommendations without any explanation to the physicians using it. As a result, doctors are hesitant to trust its suggestions. This situation illustrates the impact of:",
-    "options": [
-      "Data Transparency",
-      "Process Transparency",
-      "Algorithmic Transparency",
-      "Regulatory Compliance"
-    ],
-    "correctAnswer": "C",
     "questionType": "scenario",
     "questionPic": null
   },
@@ -586,446 +1204,6 @@
     "questionPic": null
   },
   {
-    "id": 58,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A financial institution adopts an AI tool to assess creditworthiness but does not disclose the data used in its algorithm. What is a significant ethical implication?",
-    "options": [
-      "Improved customer satisfaction",
-      "Risk of discrimination and lack of accountability",
-      "Higher loan approval rates",
-      "Reduced operational costs"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 47,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Explainability in AI is only important for technical experts.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "questionType": "true_false",
-    "questionPic": null,
-    "correctAnswer": "B"
-  },
-  {
-    "id": 41,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What is the significance of the Shapley value in AI explainability?",
-    "options": [
-      "It increases the complexity of AI models.",
-      "It quantifies the contribution of individual features to a model's predictions.",
-      "It measures the speed of AI processing.",
-      "It eliminates bias in AI systems."
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 15,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Transparency in AI systems only benefits end-users and has no relevance to developers.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 24,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which technique is used to approximate complex models with simpler, interpretable models for explanation?",
-    "options": [
-      "SHAP",
-      "Counterfactual Explanations",
-      "LIME",
-      "Decision Trees"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 8,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Regulatory frameworks like the GDPR do not have an impact on AI transparency.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 85,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: The advancements in natural language processing (NLP) can aid in creating more intuitive explanations for AI decisions.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 63,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What is often the trade-off faced by developers when designing AI models?",
-    "options": [
-      "Increased complexity for decreased performance",
-      "High accuracy for lower transparency",
-      "Simplicity for increased cost",
-      "User satisfaction for faster processing"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 32,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A healthcare provider uses an AI system to assist in diagnosing diseases. The AI recommends a specific treatment plan for a patient. The provider is unsure why the AI made this recommendation. Which of the following is the best approach to improve trust in this AI system?",
-    "options": [
-      "Increase the complexity of the AI model",
-      "Provide clear, understandable explanations for the treatment recommendations",
-      "Limit access to the AI system to only expert users",
-      "Ignore the AI recommendations and rely on human judgment"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 13,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Transparency in AI is primarily concerned with how algorithms are coded, not with the data used to train them.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 22,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What is the primary focus of explainability in AI?",
-    "options": [
-      "The overall transparency of AI processes",
-      "The ability to clarify how AI systems make specific decisions",
-      "The technical complexity of AI algorithms",
-      "The regulatory compliance of AI systems"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 35,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A company has developed an AI system for hiring. Some candidates believe they were unfairly rejected. To ensure fairness, what should the company implement regarding explainability?",
-    "options": [
-      "Regularly update the hiring algorithm without explanations",
-      "Use explainability techniques to identify and correct biases in the system",
-      "Only provide explanations to selected candidates",
-      "Disregard feedback from rejected candidates"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 2,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following regulations includes a 'right to explanation' for automated decisions?",
-    "options": [
-      "Health Insurance Portability and Accountability Act (HIPAA)",
-      "General Data Protection Regulation (GDPR)",
-      "California Consumer Privacy Act (CCPA)",
-      "Freedom of Information Act (FOIA)"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 73,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A healthcare AI application is providing treatment recommendations. The end-users are concerned about the rationale behind these recommendations. Which of the following strategies would best address their concerns?",
-    "options": [
-      "Explain the algorithm in technical terms",
-      "Provide a detailed report on every data point used",
-      "Offer clear, context-relevant explanations that highlight key influencing factors",
-      "Focus on demonstrating the model's accuracy"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 65,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "The absence of standardized metrics for explainability means:",
-    "options": [
-      "All AI systems are equally transparent",
-      "Developers can easily assess their models",
-      "Assessing explainability becomes subjective",
-      "User trust is guaranteed"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 72,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: An AI system for loan approval uses a complex deep learning model. Users express concerns about understanding the decision-making process. What approach should the developers take to enhance transparency?",
-    "options": [
-      "Provide a technical manual for the model",
-      "Offer simplified, user-centric explanations tailored to common concerns",
-      "Focus solely on improving model accuracy",
-      "Ignore user feedback, as the model is effective"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 23,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following is NOT a goal of Explainable AI (XAI)?",
-    "options": [
-      "Improve user understanding",
-      "Enhance trust and accountability",
-      "Increase the complexity of AI models",
-      "Support ethical AI practices"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 27,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Explainability and transparency serve the same function in AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 29,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Explainability is only important for AI systems used in finance and healthcare.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 46,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What is the potential consequence of an opaque AI system used in hiring?",
-    "options": [
-      "Improved recruitment outcomes",
-      "Enhanced employee morale",
-      "Discrimination against underrepresented groups",
-      "Increased transparency in decision-making"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 86,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: The future of AI transparency relies solely on technological innovations, without the need for collaboration among stakeholders.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 89,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A team of researchers is developing a new AI model that must balance performance and explainability. What approach should they take?",
-    "options": [
-      "Focus solely on improving model accuracy",
-      "Integrate explainability assessments during the testing phase",
-      "Only use simple algorithms for better explainability",
-      "Delay addressing explainability until after deployment"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 17,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A credit scoring algorithm denies loans to individuals based on data inputs that are not disclosed to applicants. This lack of openness primarily affects:",
-    "options": [
-      "Algorithmic Transparency",
-      "Process Transparency",
-      "Data Transparency",
-      "All of the Above"
-    ],
-    "correctAnswer": "D",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 19,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A healthcare provider introduces an AI system to assist with patient diagnostics but does not allow doctors to access the training data or understand how the system generates its recommendations. This situation is likely to lead to:",
-    "options": [
-      "Increased trust from the medical staff",
-      "Greater patient satisfaction",
-      "Reduced user trust in the AI system",
-      "Improved accuracy in diagnoses"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 71,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Stakeholders have no influence over the regulations related to transparency and explainability in AI systems.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 4,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "The 'black box' phenomenon in AI primarily refers to:",
-    "options": [
-      "The complexity of data processing",
-      "The inability to interpret AI decision-making processes",
-      "The transparency of data collection methods",
-      "The regulation of AI systems"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 50,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: The COMPAS system was found to be completely unbiased in its predictions.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "questionType": "true_false",
-    "questionPic": null,
-    "correctAnswer": "B"
-  },
-  {
-    "id": 80,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What emerging trend reflects a shift towards ethical considerations in AI development?",
-    "options": [
-      "Increasing reliance on deep learning",
-      "The rise of responsible AI practices",
-      "Decreasing interest in user data",
-      "The dominance of unsupervised learning"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 62,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following is a major technical challenge in achieving transparency in AI systems?",
-    "options": [
-      "Lack of user engagement",
-      "Complexity of AI models",
-      "High cost of AI development",
-      "Inadequate funding for research"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 56,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A tech company has developed an AI model that shows great accuracy but operates as a 'black box.' Which ethical guideline should the company prioritize?",
-    "options": [
-      "Maximizing profits",
-      "Ensuring transparency and explainability",
-      "Reducing operational costs",
-      "Increasing model complexity"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 5,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Data transparency refers to the openness about the decision-making processes of AI algorithms.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 55,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: If an AI system in a judicial context provides a sentence recommendation but does not reveal how it arrived at that decision, what is a potential consequence?",
-    "options": [
-      "Improved judicial efficiency",
-      "Increased public trust in the system",
-      "Unjust sentencing and lack of recourse for defendants",
-      "Enhanced legal accuracy"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 64,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What do developers need to provide in order to make AI systems more understandable for end-users?",
-    "options": [
-      "Complex technical documentation",
-      "User-centric explanations",
-      "Performance metrics only",
-      "Extensive training programs"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
     "id": 91,
     "quizID": "ModuleFiveQuizzes",
     "question": "Scenario: A government agency is drafting new regulations on AI transparency. What should they consider to ensure that the regulations promote effective transparency?",
@@ -1036,184 +1214,6 @@
       "Prioritizing speed over thoroughness in the regulatory process"
     ],
     "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 43,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Transparency in AI systems is essential for which of the following reasons?",
-    "options": [
-      "It reduces operational costs.",
-      "It allows for informed consent from users.",
-      "It simplifies data collection.",
-      "It eliminates the need for human oversight."
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 40,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "In the context of AI ethics, what does 'black box' refer to?",
-    "options": [
-      "A secure data storage system",
-      "A type of hardware used in AI systems",
-      "A model whose internal workings are not easily interpretable",
-      "A method for tracking AI decisions"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 59,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: An AI system in healthcare recommends treatments but lacks a mechanism for doctors to understand its decision-making process. What is a potential risk?",
-    "options": [
-      "Increased doctor-patient trust",
-      "Informed consent and ethical practices",
-      "Compromised patient safety and care",
-      "Improved health outcomes"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 84,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Regulatory bodies are primarily focused on maximizing AI performance without regard for transparency.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "B",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 44,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What organization emphasizes the importance of explainability in high-stakes situations?",
-    "options": [
-      "IEEE",
-      "NASA",
-      "WHO",
-      "UN"
-    ],
-    "correctAnswer": "A",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 81,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "What role do visualization tools play in AI transparency?",
-    "options": [
-      "They simplify algorithms",
-      "They obscure decision-making processes",
-      "They provide intuitive representations of data and model behavior",
-      "They replace the need for explainability"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 52,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A hospital is implementing an AI system for patient treatment recommendations. Which ethical consideration is most crucial for ensuring fair outcomes?",
-    "options": [
-      "The system should operate without human intervention.",
-      "The system must provide clear explanations for its recommendations.",
-      "The system should minimize data input.",
-      "The system should only use historical data for training."
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 42,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following is NOT an ethical framework discussed in the lesson?",
-    "options": [
-      "Utilitarianism",
-      "Virtue Ethics",
-      "Marxist Ethics",
-      "Deontological Ethics"
-    ],
-    "correctAnswer": "C",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 18,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: An AI company conducts an audit of its machine learning models to identify potential biases and document its decision-making process. This practice is an example of:",
-    "options": [
-      "Data Transparency",
-      "Algorithmic Transparency",
-      "Process Transparency",
-      "Ethical Compliance"
-    ],
-    "correctAnswer": "C",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 76,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A regulatory body is evaluating an AI system's transparency and explainability. Which of the following should be a primary focus for the body?",
-    "options": [
-      "Assessing the technical complexity of the model",
-      "Evaluating how the system communicates decisions to users",
-      "Determining the cost of the AI system",
-      "Analyzing the number of features in the model"
-    ],
-    "correctAnswer": "B",
-    "questionType": "scenario",
-    "questionPic": null
-  },
-  {
-    "id": 7,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "True or False: Explainable AI (XAI) aims to make AI systems more interpretable for users.",
-    "options": [
-      "True",
-      "False"
-    ],
-    "correctAnswer": "A",
-    "questionType": "true_false",
-    "questionPic": null
-  },
-  {
-    "id": 45,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Which of the following best describes accountability in AI systems?",
-    "options": [
-      "The ability to improve AI performance",
-      "The ability to attribute responsibility for AI decisions",
-      "The ability to reduce data collection",
-      "The ability to make AI systems autonomous"
-    ],
-    "correctAnswer": "B",
-    "questionPic": null,
-    "questionType": "multiple"
-  },
-  {
-    "id": 36,
-    "quizID": "ModuleFiveQuizzes",
-    "question": "Scenario: A startup is developing a new AI application for healthcare diagnostics. The team decides to use a complex neural network for its accuracy. What is a potential drawback of this choice regarding explainability?",
-    "options": [
-      "The model will be too simple to provide accurate predictions.",
-      "The model may be difficult to interpret, complicating explainability.",
-      "The model will be easy to explain to users.",
-      "The model will not comply with regulatory requirements."
-    ],
-    "correctAnswer": "B",
     "questionType": "scenario",
     "questionPic": null
   }
