@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 .lesson-container {
     display: flex;
     flex-direction: row;
@@ -306,6 +307,11 @@
   color: #0056D1;
   font-weight: 800;
   font-size: 18px;
+}
+.default-text{
+  font-size: xx-large;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Responsive styling */
