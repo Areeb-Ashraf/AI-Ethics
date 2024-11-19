@@ -494,7 +494,7 @@ const Lessons = () => {
             </div>
           </>
         ) : (
-          <div>Select a lesson to begin</div>
+          <div className="default-text">Select a lesson to begin</div>
         )}
       </div>
 
