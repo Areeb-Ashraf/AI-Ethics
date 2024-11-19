@@ -9,6 +9,7 @@ import { auth } from "../firebase";
 import ModuleBadge from "../styles/Badges/ModuleBadge.svg";
 import { Timestamp } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
+import DashboardTour from "./tours/DashboardTour";
 
 /*
 Notes For Backend
@@ -416,6 +417,8 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      <DashboardTour />
     </>
   );
 };

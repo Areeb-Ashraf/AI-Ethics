@@ -14,6 +14,7 @@ import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { logEvent } from "firebase/analytics";
+import Cookies from "js-cookie";
 
 function UserProfile({ userProfile, setUserProfile }) {
   const [isEditMode, setIsEditMode] = useState(false);
@@ -76,6 +77,14 @@ function UserProfile({ userProfile, setUserProfile }) {
   function toggleEditMode() {
     setIsEditMode(!isEditMode);
   }
+
+  const handleResetWalkthrough = () => {
+    const allCookies = Cookies.get();
+    for (let cookie in allCookies) {
+      Cookies.remove(cookie);
+    }
+    alert("All walkthrough progress has been reset.");
+  };
 
   if (isEditMode) {
     // Edit mode to modify profile details
@@ -169,6 +178,12 @@ function UserProfile({ userProfile, setUserProfile }) {
           Change Email
         </button>
       </div>
+      <button
+        className="action-button change-email"
+        onClick={handleResetWalkthrough}
+      >
+        Reset Walkthrough Progress
+      </button>
     </div>
   );
 

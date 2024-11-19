@@ -46,16 +46,9 @@ const imagesRef = ref(storage, "images");
 const perf = getPerformance(app);
 
 // firestore emulator
-if (process.env.NODE_ENV === "development") {
+if (process.env.REACT_APP_USE_FIREBASE_EMULATORS === "true") {
   connectFirestoreEmulator(db, "localhost", 8080);
-}
-
-// storage emulator
-if (process.env.NODE_ENV === "development") {
   connectStorageEmulator(storage, "localhost", 9199);
-}
-// auth emulator
-if (process.env.NODE_ENV === "development") {
   connectAuthEmulator(auth, "http://localhost:9099");
 }
 
