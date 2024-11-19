@@ -55,7 +55,7 @@ const DashboardTour = () => {
     },
     {
       target: ".resume-btn",
-      content: "Click this button to resume to get started learning!",
+      content: "Click this button to get started learning!",
     },
   ];
 
