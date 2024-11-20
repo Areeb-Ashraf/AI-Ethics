@@ -6,6 +6,7 @@ import "reactjs-popup/dist/index.css";
 import Cookies from "js-cookie";
 import AddQuestions from "./firebaseAddBatchScript";
 import { setLogLevel } from "firebase/firestore";
+import GlossaryTooltip from "./components/GlossaryTooltip";
 setLogLevel("debug");
 
 function DatabaseManTester() {
@@ -80,35 +81,48 @@ function DatabaseManTester() {
   //   console.log(progress);
   // }
 
-  const Tooltip = () => {
-    const [definition, setDefinition] = useState("Loading...");
+  // const Tooltip = () => {
+  //   const [definition, setDefinition] = useState("Loading...");
 
-    useEffect(() => {
-      // Fetch the definition of "A.I." when the component mounts
-      fetchGlossary("A.I.")
-        .then((result) => {
-          if (result && result.description) {
-            setDefinition(result.description); // Safely access the description
-          } else {
-            setDefinition("No definition found."); // Handle case where no result is found
-          }
-        })
-        .catch((error) => {
-          setDefinition("Error loading definition."); // Handle any errors
-        });
-    }, []);
+  //   useEffect(() => {
+  //     // Fetch the definition of "A.I." when the component mounts
+  //     fetchGlossary("A.I.")
+  //       .then((result) => {
+  //         if (result && result.description) {
+  //           setDefinition(result.description); // Safely access the description
+  //         } else {
+  //           setDefinition("No definition found."); // Handle case where no result is found
+  //         }
+  //       })
+  //       .catch((error) => {
+  //         setDefinition("Error loading definition."); // Handle any errors
+  //       });
+  //   }, []);
 
-    return (
-      <Popup
-        trigger={(open) => <button className="button">A.I. Definition </button>}
-        position="right center"
-        closeOnDocumentClick
-      >
-        <span>{definition}</span>{" "}
-        {/* This will display the fetched definition */}
-      </Popup>
-    );
-  };
+  //   return (
+  //     <Popup
+  //       trigger={(open) => (
+  //         <button
+  //           style={{
+  //             background: "none",
+  //             border: "none",
+  //             color: "blue",
+  //             cursor: "pointer",
+  //             textDecoration: "underline",
+  //             padding: 0,
+  //           }}
+  //         >
+  //           A.I. Definition{" "}
+  //         </button>
+  //       )}
+  //       position="right center"
+  //       closeOnDocumentClick
+  //     >
+  //       <span>{definition}</span>{" "}
+  //       {/* This will display the fetched definition */}
+  //     </Popup>
+  //   );
+  // };
 
   return (
     <div>
@@ -119,7 +133,9 @@ function DatabaseManTester() {
           backgroundColor: "transparent",
         }}
       ></div>
-      <Tooltip />
+      <GlossaryTooltip glossaryWord="API" />
+      <GlossaryTooltip glossaryWord="Chatbot" />
+      <GlossaryTooltip glossaryWord="Spooge" />
       <button onClick={() => fetchGlossary("API")}>
         Click me to retrieve "API" glossary word
       </button>
