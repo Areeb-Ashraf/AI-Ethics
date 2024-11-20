@@ -32,12 +32,6 @@ const Introsec7 = () => {
           development, we can harness the full potential of this powerful
           technology while ensuring that it serves the public good.{" "}
         </p>
-        <button
-          className="action-button"
-          onClick={() => databaseManager.addCompletedLesson("Module 1")}
-        >
-          Complete Lesson
-        </button>
       </div>
     </>
   );
