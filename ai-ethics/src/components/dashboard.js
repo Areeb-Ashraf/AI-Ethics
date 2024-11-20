@@ -172,6 +172,12 @@ const Dashboard = () => {
       ? completedLessons.slice(-3)
       : [];
 
+    [LlastThreeCompleted[0], LlastThreeCompleted[1], LlastThreeCompleted[2]] = [
+      LlastThreeCompleted[2],
+      LlastThreeCompleted[1],
+      LlastThreeCompleted[0],
+    ];
+
     setLastThreeCompleted(LlastThreeCompleted);
   }
 

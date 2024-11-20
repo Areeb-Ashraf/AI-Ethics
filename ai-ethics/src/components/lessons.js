@@ -283,11 +283,15 @@ const Lessons = () => {
   const handleNextClick = () => {
     const { moduleIndex, sectionIndex } = currentSection;
     const module = moduleData[moduleIndex];
-    const currentLesson = module.sections[sectionIndex];
 
-    // Call updateLessonProgress with the current lesson's secID before updating the section
-    if (currentLesson.type === "Lesson") {
-      databaseManager.updateLessonProgress(currentLesson.secID);
+    // If the current section is the last lesson in the module, update the completed lessons
+    // only works in the ordinary order, not for hitting the "Prev" button
+    if (
+      sectionIndex === module.sections.length - 2 &&
+      !completed.includes(module.title)
+    ) {
+      setCompleted((prevCompleted) => [...prevCompleted, module.title]);
+      databaseManager.addCompletedLesson(module.title);
     }
 
     if (sectionIndex < module.sections.length - 1) {
@@ -301,12 +305,6 @@ const Lessons = () => {
 
   const handlePrevClick = () => {
     const { moduleIndex, sectionIndex } = currentSection;
-    const currentLesson = module.sections[sectionIndex];
-
-    // Call updateLessonProgress with the current lesson's secID before updating the section
-    if (currentLesson.type === "Lesson") {
-      databaseManager.updateLessonProgress(currentLesson.secID);
-    }
 
     if (sectionIndex > 0) {
       setCurrentSection({ moduleIndex, sectionIndex: sectionIndex - 1 });
