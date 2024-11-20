@@ -34,7 +34,7 @@ const Introsec7 = () => {
         </p>
         <button
           className="action-button"
-          onClick={() => databaseManager.addCompletedLesson("ModuleOne")}
+          onClick={() => databaseManager.addCompletedLesson("Module 1")}
         >
           Complete Lesson
         </button>

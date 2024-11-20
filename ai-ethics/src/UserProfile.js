@@ -98,7 +98,7 @@ function UserProfile({ userProfile, setUserProfile }) {
               type="text"
               required
               minLength="1"
-              maxLength="18"
+              maxLength="24"
               name="fname"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -111,7 +111,7 @@ function UserProfile({ userProfile, setUserProfile }) {
               type="text"
               required
               minLength="1"
-              maxLength="18"
+              maxLength="24"
               name="username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
