@@ -309,9 +309,12 @@
   font-size: 18px;
 }
 .default-text{
-  font-size: xx-large;
+  font-size: 80px;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding-top: 22%;
+  padding-left: 18%;
 }
 
 /* Responsive styling */
