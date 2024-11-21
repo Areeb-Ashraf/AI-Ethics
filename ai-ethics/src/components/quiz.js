@@ -6,6 +6,8 @@ import retake from "./images/retake.svg";
 import quizStart from "./images/quizStart.svg";
 import { getAuth } from "firebase/auth";
 import { quizDatabase } from "../QuizDatabase";
+/* import ImageDisplay from './ImageDisplay'; */ // Import the new ImageDisplay component
+
 
 
 const Quiz = ({ quizID }) => {
@@ -81,7 +83,12 @@ const Quiz = ({ quizID }) => {
     setIsSubmitted(true);
     setTimeTaken(duration); // Store the time taken
   
-    const xpEarned = calculateQuizScore(duration, accuracy);
+    let xpEarned;
+    if (correctAnswers === 0) {
+      xpEarned = 0; // Ensure 0 XP for no correct answers
+    } else {
+      xpEarned = calculateQuizScore(duration, accuracy);
+    }
     setXp(Math.round(xpEarned));
   
     try {
@@ -99,6 +106,7 @@ const Quiz = ({ quizID }) => {
       console.error("Error uploading quiz score:", error);
     }
   }, [quizQuestions, selectedOptions, timeLeft, quizID, calculateQuizScore]);
+  
   
 
   useEffect(() => {
@@ -118,6 +126,16 @@ const Quiz = ({ quizID }) => {
 
   const handleRetakeQuiz = () => {
     setStartPage(true);
+    fetchQuizQuestions(); // Fetch a new set of questions
+  };
+
+  const RetakeQuiz = () => {
+    setStartPage(false); // Skip back to the quiz instead of the start page
+    setCurrentQuestionIndex(0); // Reset the question index
+    setIsSubmitted(false); // Mark the quiz as not submitted
+    setSelectedOptions({}); // Clear selected options
+    setResults({ correctAnswers: 0, totalQuestions: 0 }); // Reset results
+    setTimeLeft(10 * 60); // Reset timer to 10 minutes
     fetchQuizQuestions(); // Fetch a new set of questions
   };
 
@@ -175,40 +193,46 @@ const Quiz = ({ quizID }) => {
             You finished the quiz in {formatTime(timeTaken)}.
           </div>
           <div className="result-buttons-container">
-            <div className="result-retake-btn" onClick={handleRetakeQuiz}>
-              <img className="retake-img" src={retake} alt="retake-img" />
-              Retake
-            </div>
-          </div>
+  <div className="result-finish-btn" onClick={handleRetakeQuiz}>
+    Back to Home Quiz
+  </div>
+  <div className="result-retake-btn" onClick={RetakeQuiz}>
+    <img className="retake-img" src={retake} alt="retake-img" />
+    Retake
+  </div>
+</div>
         </div>
       ) : (
         <>
-<div className="question-container">
-  <div className="quiz-progress-bar-container">
-    <div className="quiz-progress-bar">
-      <div
-        className="quiz-progress"
-        style={{
-          width: `${progress}%`,
-          backgroundColor: progress === 100 ? "green" : "#0056D1",
-        }}
-      ></div>
-    </div>
-    <div className="quiz-progress-percentage">{Math.round(progress)}%</div>
-  </div>
-  <div className="question-details-container">
-    <div className="question-number">Question {currentQuestionIndex + 1}</div>
-    <div className="question-timer-container">
-      <div className="question-timer-img">
-        <img src={quizTimer} alt="question-timer-img" />
-      </div>
-      <div className="question-timer">{formatTime(timeLeft)}</div>
-    </div>
-  </div>
-  <div className="question">{currentQuestion.question}</div>
-</div>
-
-
+            <div className="question-container">
+              <div className="quiz-progress-bar-container">
+                <div className="quiz-progress-bar">
+                  <div
+                    className="quiz-progress"
+                    style={{
+                      width: `${progress}%`,
+                      backgroundColor: progress === 100 ? "green" : "#0056D1",
+                    }}
+                  ></div>
+                </div>
+                <div className="quiz-progress-percentage">{Math.round(progress)}%</div>
+              </div>
+              <div className="question-details-container">
+                <div className="question-number">Question {currentQuestionIndex + 1}</div>
+                <div className="question-timer-container">
+                  <div className="question-timer-img">
+                    <img src={quizTimer} alt="question-timer-img" />
+                  </div>
+                  <div className="question-timer">{formatTime(timeLeft)}</div>
+                </div>
+              </div>
+              <div className="question">{currentQuestion.question}</div>
+              {/* <ImageDisplay
+              quizID={quizID}
+              currentQuestionID={quizQuestions[currentQuestionIndex].id} // Pass the actual 'id' from the question
+            />
+            */}
+            </div>
           <div className="answers-container">
             {currentQuestion.options.map((option, index) => {
               const optionLetter = String.fromCharCode(65 + index);
