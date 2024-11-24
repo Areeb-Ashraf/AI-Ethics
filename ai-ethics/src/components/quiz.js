@@ -10,7 +10,7 @@ import { quizDatabase } from "../QuizDatabase";
 
 
 
-const Quiz = ({ quizID }) => {
+const Quiz = ({ quizID, onQuizStateChange  }) => {
   const [startPage, setStartPage] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -54,12 +54,15 @@ const Quiz = ({ quizID }) => {
     }
   }, [quizID]);
 
+  
+
   useEffect(() => {
     fetchQuizQuestions();
   }, [fetchQuizQuestions]);
 
   const startQuiz = () => {
     setStartPage(false);
+    onQuizStateChange(quizID, true); 
     setCurrentQuestionIndex(0);
     setIsSubmitted(false);
     setSelectedOptions({});
@@ -82,6 +85,7 @@ const Quiz = ({ quizID }) => {
     setResults({ correctAnswers, totalQuestions: quizQuestions.length });
     setIsSubmitted(true);
     setTimeTaken(duration); // Store the time taken
+    onQuizStateChange(quizID, false);
   
     let xpEarned;
     if (correctAnswers === 0) {
@@ -105,7 +109,7 @@ const Quiz = ({ quizID }) => {
     } catch (error) {
       console.error("Error uploading quiz score:", error);
     }
-  }, [quizQuestions, selectedOptions, timeLeft, quizID, calculateQuizScore]);
+  }, [quizQuestions, selectedOptions, timeLeft, quizID, calculateQuizScore, onQuizStateChange]);
   
   
 
@@ -188,7 +192,10 @@ const Quiz = ({ quizID }) => {
             </div>
           </div>
           <div className="Great-Job">Great Job!</div>
-          <div className="Great-Job"> You Earned: {xp} XP!!</div>
+          <div className="Great-Job">
+    Accuracy: {Math.round((results.correctAnswers / results.totalQuestions) * 100)} / 100
+  </div>
+          <div className="Great-Job"> Speed Bonus Score: {xp}/200 XP!!</div>
           <div className="result-text">
             You finished the quiz in {formatTime(timeTaken)}.
           </div>

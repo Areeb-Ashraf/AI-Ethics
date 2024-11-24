@@ -73,7 +73,22 @@ import Mod8Sec5 from "./lessonContents/module8/mod8sec5";
 // import Mod2Sec1 from "./lessonContents/module2/mod2sec1";
 import Quiz from "./quiz";
 
-// Module data with different section types (Lesson, Quiz, Video)
+
+const Lessons = () => {
+  const [currentSection, setCurrentSection] = useState({
+    moduleIndex: 0,
+    sectionIndex: 0,
+  });
+  const [isLessonStarted, setIsLessonStarted] = useState(false);
+  const [activeAccordion, setActiveAccordion] = useState(null);
+  const [completed, setCompleted] = useState([]);
+  const [activeQuiz, setActiveQuiz] = useState(null);
+
+  const handleQuizState = (quizID, isActive) => {
+    setActiveQuiz(isActive ? quizID : null);
+  };
+
+  // Module data with different section types (Lesson, Quiz, Video)
 const moduleData = [
   {
     id: 0,
@@ -90,7 +105,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "Introduction",
-        contentComponent: <Quiz quizID="Introduction" />,
+        contentComponent: <Quiz quizID="Introduction" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -108,7 +123,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "ModuleOne",
-        contentComponent: <Quiz quizID="ModuleOne" />,
+        contentComponent: <Quiz quizID="ModuleOne" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -125,7 +140,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "ModuleTwo",
-        contentComponent: <Quiz quizID="ModuleTwo" />,
+        contentComponent: <Quiz quizID="ModuleTwo" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -142,7 +157,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "ModuleThree",
-        contentComponent: <Quiz quizID="ModuleThree" />,
+        contentComponent: <Quiz quizID="ModuleThree" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -161,7 +176,7 @@ const moduleData = [
         secID: "4.1",
         type: "Quiz",
         quizID: "ModuleFour",
-        contentComponent: <Quiz quizID="ModuleFour" />,
+        contentComponent: <Quiz quizID="ModuleFour" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -178,7 +193,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "ModuleFive",
-        contentComponent: <Quiz quizID="ModuleFive" />,
+        contentComponent: <Quiz quizID="ModuleFive" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -194,7 +209,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "ModuleSix",
-        contentComponent: <Quiz quizID="ModuleSix" />,
+        contentComponent: <Quiz quizID="ModuleSix" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -211,7 +226,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "ModuleSeven",
-        contentComponent: <Quiz quizID="ModuleSeven" />,
+        contentComponent: <Quiz quizID="ModuleSeven" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -228,7 +243,7 @@ const moduleData = [
       {
         type: "Quiz",
         quizID: "ModuleEight",
-        contentComponent: <Quiz quizID="ModuleEight" />,
+        contentComponent: <Quiz quizID="ModuleEight" onQuizStateChange={handleQuizState} />
       },
     ],
   },
@@ -247,15 +262,6 @@ const getSectionIconAndLabel = (type) => {
       return { icon: <FaIcons.FaBook />, label: "Content" }; // Default icon/label if type is unknown
   }
 };
-
-const Lessons = () => {
-  const [currentSection, setCurrentSection] = useState({
-    moduleIndex: 0,
-    sectionIndex: 0,
-  });
-  const [isLessonStarted, setIsLessonStarted] = useState(false);
-  const [activeAccordion, setActiveAccordion] = useState(null);
-  const [completed, setCompleted] = useState([]);
 
   // Get the completed lessons from the database
   useEffect(() => {
@@ -319,7 +325,7 @@ const Lessons = () => {
     }
   };
 
-  const renderPanelButtons = (module, moduleIndex) => {
+ const renderPanelButtons = (module, moduleIndex) => {
     const uniqueSectionTypes = [
       ...new Set(module.sections.map((section) => section.type)),
     ];
@@ -327,10 +333,13 @@ const Lessons = () => {
     return uniqueSectionTypes.map((type) => {
       const { icon, label } = getSectionIconAndLabel(type);
 
-      // Check if the current section type matches to apply active styling
       const isActiveType =
         currentSection.moduleIndex === moduleIndex &&
         module.sections[currentSection.sectionIndex].type === type;
+
+      const isDisabled =
+        activeQuiz && // Disable if a quiz is active and it's not the current quiz
+        (type !== "Quiz" || module.sections[module.sections.length - 1].quizID !== activeQuiz);
 
       return (
         <button
@@ -338,12 +347,11 @@ const Lessons = () => {
           className={`panel-button ${
             isActiveType ? "active-panel-button" : ""
           }`}
+          disabled={isDisabled} // Disable other buttons during an active quiz
           onClick={() => {
-            // Find the first index of the section matching the type (Lesson or Quiz)
             const sectionIndex = module.sections.findIndex(
               (section) => section.type === type
             );
-            // Set the current section based on the found index
             if (sectionIndex !== -1) {
               setCurrentSection({ moduleIndex, sectionIndex });
               setIsLessonStarted(true);
@@ -502,4 +510,3 @@ const Lessons = () => {
 };
 
 export default Lessons;
-export { moduleData };
