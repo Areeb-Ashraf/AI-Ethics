@@ -1036,5 +1036,75 @@
     "questionType": "true_false",
     "quizID": "ModuleOneQuizzes",
     "questionPic": null
+  },
+  {
+    "id": 79,
+    "question": "Based on the image showing options to accept or deny the privacy policy, what is a key requirement for user consent according to data privacy laws?",
+    "options": [
+      "Users must be given the option to accept the privacy policy, but they cannot deny it.",
+      "Users must be able to either accept or deny the privacy policy, with the option to withdraw or change consent at any time.",
+      "Users are only required to accept the privacy policy, and they cannot change their preferences later.",
+      "The option to deny the privacy policy should be hidden or difficult to find."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple_choice",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 80,
+    "question": "In the context of conditional consent, what does the option to \"Personalize my choices,\" \"Deny it,\" or \"Accept all\" indicate about how consent should be managed?",
+    "options": [
+      "Users must accept all options, and personalization or denial of consent is not allowed.",
+      "Users should be able to personalize their consent choices, with clear options to accept all, deny consent, or customize preferences, ensuring that consent is freely given.",
+      "The option to personalize choices is optional, and users can be forced to accept all consent without any personalization.",
+      "Users can deny all options without consequences, and they cannot be presented with an option to personalize consent."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple_choice",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 81,
+    "question": "Which of the following best describes the difference between opt-in and opt-out consent in data privacy?",
+    "options": [
+      "In the opt-in model, users automatically consent to data collection unless they explicitly deny it, whereas in the opt-out model, users must actively consent to data collection.",
+      "In the opt-in model, users must take explicit action, such as clicking \"Accept,\" to give consent, whereas in the opt-out model, consent is implied unless the user takes action to withdraw it.",
+      "Opt-in consent is required only for marketing activities, while opt-out consent applies to all forms of data collection, including cookies.",
+      "Opt-out consent requires users to opt in to data collection, while opt-in consent allows users to choose whether to withdraw consent later."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple_choice",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 82,
+    "question": "Which of the following is true regarding cookie banners that follow the opt-in model under GDPR?",
+    "options": [
+      "Users must only be given the option to \"Accept all\" cookies, and the \"Deny all\" option is optional.",
+      "Users must be given a clear, explicit option to \"Accept all\" or \"Deny all\" cookies, with no consequences for denying consent.",
+      "Cookie banners can prevent users from accessing the site if they deny consent.",
+      "Users should be forced to accept cookies in order to access the site’s features."
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple_choice",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
+  },
+  {
+    "id": 83,
+    "question": "Which type of consent is being described when users are given the option to accept or reject specific data processing purposes, such as allowing analytics cookies but rejecting advertising cookies?",
+    "options": [
+      "Opt-in consent",
+      "Granular consent",
+      "Conditional consent",
+      "Implied consent"
+    ],
+    "correctAnswer": "B",
+    "questionType": "multiple_choice",
+    "quizID": "ModuleOneQuizzes",
+    "questionPic": null
   }
 ]

@@ -1348,5 +1348,47 @@
     "correctAnswer": "A",
     "questionType": "scenario",
     "questionPic": null
+  },
+  {
+    "id": 101,
+    "quizID": "ModuleEightQuizzes",
+    "question": "How does allowing users to select any language for the app contribute to diversity and inclusivity?",
+    "options": [
+      "It ensures that only users from specific regions can access the app.",
+      "It enables users from different linguistic backgrounds to engage with the app in a language they are comfortable with, promoting accessibility and inclusion.",
+      " It limits the app's features to only those who speak the selected language.",
+      "It encourages users to learn new languages while using the app."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 102,
+    "quizID": "ModuleEightQuizzes",
+    "question": "How does giving users the option to control whether their data is sold, in compliance with California Consumer Privacy Act (CCPA), promote diversity and inclusivity?",
+    "options": [
+      "It allows users to opt out of personalized advertising based on their preferences and values, ensuring greater control over their personal information.",
+      "It restricts access to the app for users who choose not to share their data.",
+      "It forces all users to accept data sharing in order to use the app, regardless of their preferences.",
+      "It ensures that only users from California can benefit from data privacy protections."
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 103,
+    "quizID": "ModuleEightQuizzes",
+    "question": "In the context of AI ethics and diversity, if a translation app offers a wide variety of languages for users to select and translate into one another, which of the following actions would best promote inclusivity and respect for diverse linguistic communities?",
+    "options": [
+      "The app includes a comprehensive list of languages, ensuring lesser-known and endangered languages are also represented, and it provides accurate translations for all supported languages.",
+      "The app prioritizes only the most widely spoken languages, excluding smaller, regional, or indigenous languages due to limited resources.",
+      "The app allows users to choose languages but only provides translations for the most common ones, while offering inaccurate or incomplete translations for others.",
+      "The app focuses solely on popular global languages, assuming that users who speak less common languages can use external translation tools for those needs."
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
   }
 ]

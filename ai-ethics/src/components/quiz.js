@@ -6,7 +6,7 @@ import retake from "./images/retake.svg";
 import quizStart from "./images/quizStart.svg";
 import { getAuth } from "firebase/auth";
 import { quizDatabase } from "../QuizDatabase";
-/* import ImageDisplay from './ImageDisplay'; */ // Import the new ImageDisplay component
+import ImageDisplay from './ImageDisplay'; // Import the new ImageDisplay component
 
 
 
@@ -235,11 +235,11 @@ const Quiz = ({ quizID, onQuizStateChange  }) => {
                 </div>
               </div>
               <div className="question">{currentQuestion.question}</div>
-              {/* <ImageDisplay
+              { <ImageDisplay
               quizID={quizID}
               currentQuestionID={quizQuestions[currentQuestionIndex].id} // Pass the actual 'id' from the question
             />
-            */}
+            }
             </div>
           <div className="answers-container">
             {currentQuestion.options.map((option, index) => {

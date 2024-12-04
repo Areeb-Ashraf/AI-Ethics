@@ -1350,6 +1350,34 @@
     "questionType": "multiple"
   },
   {
+    "id": 101,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "Which of the following statements best describes the principle of user autonomy in data privacy?",
+    "options": [
+      "Users are allowed to modify their data but cannot request its deletion.",
+      "Users have the right to submit requests to delete their personal data, giving them control over their information.",
+      "Only the service provider can modify or delete user data, without user consent.",
+      "Users must pay a fee to request the deletion of their personal data."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 102,
+    "quizID": "ModuleThreeQuizzes",
+    "question": "If an app's description on the Google Play Store mentions that users can delete their data, what does this imply about the app’s data privacy practices?",
+    "options": [
+      "The app guarantees complete data removal after a user deletes their information.",
+      "Users are empowered with the ability to manage and delete their personal data, promoting transparency and control.",
+      "The app stores user data indefinitely, even after a deletion request is made.",
+      "Deleting data through the app results in the loss of all app functionalities for the user."
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
     "id": "Nrno8I3YvZYU6mEtVqOH",
     "quizID": "ModuleThreeQuizzes"
   }

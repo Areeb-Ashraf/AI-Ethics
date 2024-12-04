@@ -1666,5 +1666,33 @@
       "Use only one dataset to train the AI.",
       "Ignore the issue of bias in favor of efficiency."
     ]
+  },
+  {
+    "id": 128,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "What is the primary social impact of an app that explicitly prohibits the upload of political content or media, as mentioned in its terms of service?",
+    "options": [
+      "It encourages political engagement and discourse among users.",
+      "It helps maintain a neutral and non-polarized platform, reducing the risk of conflicts and misinformation.",
+      " It limits users' freedom of speech by censoring political opinions.",
+      "It promotes political bias by preventing the sharing of diverse viewpoints."
+    ]
+  },
+  {
+    "id": 129,
+    "quizID": "ModuleFourQuizzes",
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null,
+    "question": "What is the primary reason Instagram requires users under 16 years old to add a parent or guardian in order to make their account public?",
+    "options": [
+      "To ensure users can receive age-appropriate content.",
+      "To comply with privacy regulations and protect minors from potential online risks.",
+      "To verify the user’s identity and prevent fake accounts.",
+      "To give parents control over the content the user posts."
+    ]
   }
 ]

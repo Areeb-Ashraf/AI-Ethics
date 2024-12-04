@@ -1216,5 +1216,61 @@
     "correctAnswer": "C",
     "questionType": "scenario",
     "questionPic": null
+  },
+  {
+    "id": 92,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "When a mobile app with AI-powered features introduces a premium subscription, which of the following actions best demonstrates a commitment to ethical AI transparency?",
+    "options": [
+      "The app provides a detailed explanation of how AI-driven features use personal data, and it allows users to opt out of data collection for certain features.",
+      "The app offers a premium subscription with AI features but does not clarify how the AI makes decisions or collects data.",
+      "The app unlocks AI features only after users provide extensive personal information, without informing them how the data will be used.",
+      "The app includes AI features in the premium subscription but does not provide any details about how the AI interacts with user data, focusing solely on the added functionalities."
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 93,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "In the context of AI ethics and privacy, if a mobile app displays that it uses tracking technologies to collect user data, which of the following actions best aligns with ethical practices regarding user privacy?",
+    "options": [
+      "The app discloses that it uses tracking technologies but provides no option for users to opt out, even though it collects sensitive personal data.",
+      "The app informs users that it uses tracking technologies and provides clear options to control or disable data collection for specific purposes, such as personalized ads.",
+      "The app briefly mentions tracking technologies in its privacy policy but hides details on what types of data are being tracked and how they are used.",
+      "The app uses tracking technologies and claims they are necessary for functionality, but does not inform users about the collection of any personal information or the purposes of tracking."
+    ],
+    "correctAnswer": "B",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 94,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "In the context of AI ethics and privacy, if the Facebook app requests permission to use a user's web activity data to personalize content, which of the following actions would best align with ethical privacy practices?",
+    "options": [
+      "The app clearly explains the purpose of collecting web activity data, how it will be used to personalize the user experience, and provides users with an easy option to opt out of data collection.",
+      " The app asks for permission to collect web activity data but does not explain how it will be used or give the user an option to manage their preferences or opt out.",
+      "The app asks users to allow the use of their web activity data but hides the details about how the data will be processed, claiming that it is essential for the app’s functionality.",
+      "The app automatically collects web activity data for personalization without asking for explicit permission, assuming user consent by default."
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
+  },
+  {
+    "id": 95,
+    "quizID": "ModuleFiveQuizzes",
+    "question": "In the context of AI ethics and privacy, if the Bloomberg app asks users to allow tracking across all of its apps and websites, which of the following actions would most align with ethical privacy practices?",
+    "options": [
+      "The app asks for permission to track user activity across all apps and websites and clearly explains the reasons for tracking, how the data will be used, and provides users with an option to opt out or limit tracking.",
+      "The app requests permission to track users across apps and websites but does not explain how the data will be used or what specific information will be collected.",
+      "The app automatically enables tracking across its apps and websites by default and only provides a vague notice that user activity will be tracked for advertising purposes.",
+      "The app asks for permission to track across its apps and websites but does not give users the ability to manage or revoke their consent after accepting."
+    ],
+    "correctAnswer": "A",
+    "questionType": "scenario",
+    "questionPic": null
   }
 ]
