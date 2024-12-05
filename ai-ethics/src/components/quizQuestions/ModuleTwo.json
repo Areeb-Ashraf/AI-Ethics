@@ -1104,5 +1104,39 @@
     "questionPic": null,
     "quizID": "ModuleTwoQuizzes",
     "questionType": "multiple"
+  },
+  {
+    "id": 83,
+    "question": "What is the purpose of a mobile app asking users if they have a learning disability like ADHD or dyslexia?",
+    "options": [
+      "To collect personal information for marketing purposes.",
+      "To tailor the app’s content and features to better suit the needs of users with learning disabilities, improving accessibility",
+      "To provide discounts or special offers to users with disabilities.",
+      "To ask users to participate in research studies related to disabilities."
+    ],
+    "correctAnswer": "B",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
+  },
+  {
+    "id": 84,
+    "question": "Why might a mobile app offer the option to switch to light mode?",
+    "options": [
+      "To allow users to customize the app’s appearance based on personal preference, which can improve readability for some users.",
+      "To reduce the app’s data usage by switching to a lighter color scheme.",
+      "To increase the app’s speed by using fewer resources.",
+      " To encourage users to spend more time on the app by making it visually appealing."
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "quizID": "ModuleTwoQuizzes",
+    "questionType": "multiple"
   }
+
+
+
+
+
+
 ]

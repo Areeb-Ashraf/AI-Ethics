@@ -808,5 +808,33 @@
     "correctAnswer": "B",
     "questionPic": null,
     "questionType": "multiple"
+  },
+  {
+    "id": 61,
+    "quizID": "ModuleSixQuizzes",
+    "question": "In the context of AI ethics and accountability, if a mobile app like Twitter presents conflicting statements—claiming it doesn't share data with third parties on its Play Store listing, but stating in its privacy policy that it does—what is the most ethically responsible course of action for the app developer?",
+    "options": [
+      "The app should immediately update the Play Store listing and privacy policy to ensure they match, providing clear and transparent information about data-sharing practices.",
+      "The app can continue using different messaging in the Play Store and privacy policy, as users are responsible for reading the privacy policy.",
+      "The app should remove the privacy policy and stop sharing data with third parties until it can resolve the inconsistency.",
+      "The app should assume that users will not notice the inconsistency and continue operating as usual, as privacy policies are generally ignored by most users."
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
+  },
+  {
+    "id": 62,
+    "quizID": "ModuleSixQuizzes",
+    "question": "In the context of AI ethics and accountability, if the Instagram app asks a user to allow sharing data with a third-party app, and clearly specifies which data will be shared (e.g., photos, contacts, etc.), which of the following actions would most align with ethical accountability practices?",
+    "options": [
+      "The app provides clear information about what specific data will be shared with the third-party app and asks for explicit consent, ensuring the user fully understands the implications of sharing their data.",
+      "The app asks for permission to share data with a third-party app but only gives a vague description of the data being shared, without specifying the types of data or the purposes of sharing.",
+      "The app requests permission to share data with a third-party app but does not explain what data will be shared or give users any choice in the matter, assuming consent by default.",
+      "The app asks for permission to share data but does not give any details about the third-party app, leaving users unaware of how their data will be used outside of Instagram."
+    ],
+    "correctAnswer": "A",
+    "questionPic": null,
+    "questionType": "multiple"
   }
 ]
