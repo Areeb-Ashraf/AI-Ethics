@@ -9,6 +9,8 @@ import databaseManager from "../databaseManager";
 import UserProfile from "../UserProfile";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
+// import welcomeLogo from "./images/welcomeLogo.svg";
+import defaultProfile from "./images/default_profile.jpg";
 
 /*
 Notes For Backend
@@ -60,7 +62,7 @@ const Profile = () => {
       try {
         if (user) {
           const profile = await databaseManager.fetchUserProfile(user.uid);
-          setCurrentXP(await databaseManager.fetchXPforUser(user.uid) || 0);
+          setCurrentXP((await databaseManager.fetchXPforUser(user.uid)) || 0);
           if (profile) {
             setUserProfile(profile);
           } else {
@@ -94,8 +96,10 @@ const Profile = () => {
 
   // Calculate progress percentage between milestones
   const progressRange = nextMilestone.xp - currentMilestone.xp;
-  const progressPercent = currentXP == 3000 ? "100" : 
-    ((currentXP - currentMilestone.xp) / progressRange) * 100;
+  const progressPercent =
+    currentXP == 3000
+      ? "100"
+      : ((currentXP - currentMilestone.xp) / progressRange) * 100;
 
   return (
     <>
@@ -105,7 +109,13 @@ const Profile = () => {
           <div className="profile-info-container">
             <div className="profile-info-user">
               <div className="profile-picture">
-                <img style={{display: userProfile ? "" : "none"}} src={userProfile?.imgURL} alt="Profile" />
+                <img
+                  style={{ display: userProfile ? "" : "none" }}
+                  src={
+                    userProfile?.imgURL ? userProfile?.imgURL : defaultProfile
+                  }
+                  alt="Profile"
+                />
               </div>
               <div className="username-container">
                 <div className="username">{userProfile?.name || "Noname"}</div>
@@ -143,7 +153,9 @@ const Profile = () => {
                   key={index}
                   style={{
                     filter: milestone.xp <= currentXP ? "none" : "grayscale(1)",
-                    animation: `fadeInBounce 0.6s ease-in-out ${index === 10 ? 1 : 0}.${index}s forwards`
+                    animation: `fadeInBounce 0.6s ease-in-out ${
+                      index === 10 ? 1 : 0
+                    }.${index}s forwards`,
                   }}
                 >
                   <div className="ethic-card-xp">{milestone.xp} XP</div>
@@ -201,8 +213,8 @@ const Profile = () => {
               <div
                 className="badge-box"
                 style={{
-                  filter: completedModules >= 1 ? "": "grayscale(1)",
-                  animation: "fadeInBounce 0.6s ease-in-out 0.1s forwards"
+                  filter: completedModules >= 1 ? "" : "grayscale(1)",
+                  animation: "fadeInBounce 0.6s ease-in-out 0.1s forwards",
                 }}
               >
                 <img src={EthicBot} alt="EthicBot-img" />
@@ -211,8 +223,8 @@ const Profile = () => {
               <div
                 className="badge-box"
                 style={{
-                  filter: completedModules >= 4 ? "": "grayscale(1)",
-                  animation: "fadeInBounce 0.6s ease-in-out 0.2s forwards"
+                  filter: completedModules >= 4 ? "" : "grayscale(1)",
+                  animation: "fadeInBounce 0.6s ease-in-out 0.2s forwards",
                 }}
               >
                 <img src={VirtueBot} alt="VirtueBot-img" />
@@ -221,8 +233,8 @@ const Profile = () => {
               <div
                 className="badge-box"
                 style={{
-                  filter: completedModules >= 7 ? "": "grayscale(1)",
-                  animation: "fadeInBounce 0.6s ease-in-out 0.3s forwards"
+                  filter: completedModules >= 7 ? "" : "grayscale(1)",
+                  animation: "fadeInBounce 0.6s ease-in-out 0.3s forwards",
                 }}
               >
                 <img src={JusticeBot} alt="JusticeBot-img" />

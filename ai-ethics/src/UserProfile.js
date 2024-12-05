@@ -1,20 +1,13 @@
 import { auth, db, analytics } from "./firebase";
-import {
-  query,
-  collection,
-  getDocs,
-  where,
-  updateDoc,
-  addDoc,
-  doc,
-} from "firebase/firestore";
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { collection, updateDoc, addDoc, doc } from "firebase/firestore";
 import databaseManager from "./databaseManager";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { logEvent } from "firebase/analytics";
 import Cookies from "js-cookie";
+// import welcomeLogo from "./components/images/welcomeLogo.svg";
+import defaultProfile from "./components/images/default_profile.jpg";
 
 function UserProfile({ userProfile, setUserProfile }) {
   const [isEditMode, setIsEditMode] = useState(false);
@@ -152,7 +145,10 @@ function UserProfile({ userProfile, setUserProfile }) {
       <div className="account-display">
         <div className="left-section">
           <div className="profile-picture-2">
-            <img src={userProfile?.imgURL} alt="Profile" />
+            <img
+              src={userProfile?.imgURL ? userProfile?.imgURL : defaultProfile}
+              alt="Profile"
+            />
           </div>
         </div>
         <div className="right-section">
