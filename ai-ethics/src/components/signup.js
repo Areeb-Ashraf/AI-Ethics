@@ -3,6 +3,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { authManager } from "../firebase"; // Adjust the path as needed
 import "../styles/account.css";
 import eyeIcon from "../eye.png"; // Adjust the path as needed
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 const Signup = () => {
   const [fname, setFname] = useState("");
@@ -13,6 +15,7 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const navigate = useNavigate();
+  const Alert = withReactContent(Swal);
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -31,8 +34,16 @@ const Signup = () => {
       }
       const name = `${fname} ${lname}`;
       await authManager.registerWithEmailAndPassword(name, email, password);
-      alert("Registration successful!");
-      navigate("/");
+      Alert.fire({
+        title: "Registration successful!",
+        icon: "success",
+        confirmButtonText: "OK",
+        confirmButtonColor: "#0056D1",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/");
+        }
+      });
     } catch (err) {
       console.error("Registration failed:", err.message);
       alert(err.message);

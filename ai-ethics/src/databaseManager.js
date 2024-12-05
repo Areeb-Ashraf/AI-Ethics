@@ -12,6 +12,8 @@ import {
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { moduleData } from "./components/lessons";
 import { glossaryWords } from "./constants";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 function calculateQuizScore(duration, accuracy) {
   return Math.round(Math.min((90 / duration) * 100, 100) + accuracy);
@@ -292,6 +294,8 @@ class DatabaseManager {
 
   // adds a lesson to a users completed lessons list in their profile
   async addCompletedLesson(lessonID) {
+    const Alert = withReactContent(Swal);
+
     try {
       const userID = await this.getCurrentUserId();
       const q = query(
@@ -323,6 +327,12 @@ class DatabaseManager {
           { completedLessons: completedLessons },
           { merge: true }
         );
+        Alert.fire({
+          title: `Lesson ${lessonID} Completed!`,
+          icon: "success",
+          confirmButtonText: "OK",
+          confirmButtonColor: "#0056D1",
+        });
       } else {
         console.log("Lesson already completed");
       }
