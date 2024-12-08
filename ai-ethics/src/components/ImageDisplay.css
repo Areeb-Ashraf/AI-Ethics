@@ -1,0 +1,72 @@
+/*  Rectangle Images */
+
+.responsive-image {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    object-fit: contain;
+    border-radius: 8px;
+    margin-left: 12px;
+  }
+  
+
+  @media (max-width: 1500px) {
+    .responsive-image {
+      max-width: 550px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-image {
+      max-width: 300px;
+    }
+  }
+  
+
+/*  mobile app images */
+  .responsive-image-two {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    object-fit: contain;
+    border-radius: 8px;
+    margin-left: 12px;
+  }
+  
+
+  @media (max-width: 1500px) {
+    .responsive-image-two {
+      max-width: 250px;
+      max-height: 375px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-image-two {
+      max-width: 150px;
+    }
+  }
+
+/*Box Images*/
+  .responsive-image-three {
+    width: 100%;
+    max-width: 800px; 
+    height: auto; 
+    object-fit: contain;
+    border-radius: 8px;
+    margin-left: 12px;
+  }
+  
+
+  @media (max-width: 1500px) {
+    .responsive-image-three {
+      max-width: 450px;
+      max-height: 450px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .responsive-image-three {
+      max-width: 300px;
+    }
+  }
