@@ -149,7 +149,7 @@ const Dashboard = () => {
       if (isNaN(dateA)) return 1; // `a` is invalid, place after `b`
       if (isNaN(dateB)) return -1; // `b` is invalid, place after `a`
 
-      return dateA - dateB;
+      return dateB - dateA;
     });
     // console.log("post sort: ", LcompletedQuizzes);
 
