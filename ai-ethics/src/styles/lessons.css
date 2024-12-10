@@ -154,7 +154,7 @@
   .panel-button-time {
     font-size: 11px;
     font-weight: 700;
-    color: grey;
+    color: black;
   }
   
   /* panel hover css */
@@ -169,6 +169,9 @@
   }
   
   .panel-button:hover .panel-button-text {
+    color: white;
+  }
+  .panel-button:hover .panel-button-time {
     color: white;
   }
 
@@ -193,6 +196,9 @@
 
   .active-panel-button .panel-button-icon {
     color: black;
+  }
+  .active-panel-button .panel-button-time{
+    color:white
   }
   
   /* Module Content */
@@ -222,10 +228,10 @@
 .module-navigation-buttons {
   background-color: #e1ecf4;
   border-radius: 3px;
-  border: 1px solid #7aa7c7;
+  border: 1px solid #1a73e8;
   box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
   box-sizing: border-box;
-  color: #39739d;
+  color: #1a73e8;
   cursor: pointer;
   display: inline-block;
   font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
@@ -248,7 +254,7 @@
 
 .module-navigation-buttons:hover {
   background-color: #b3d3ea;
-  color: #2c5777;
+  color: #1a73e8;
 }
 
 .module-navigation-buttons:focus{
