@@ -1,14 +1,6 @@
 import { auth, db, imagesRef, analytics } from "./firebase";
 import { logEvent } from "firebase/analytics";
-import {
-  query,
-  collection,
-  getDocs,
-  where,
-  doc,
-  setDoc,
-  limit,
-} from "firebase/firestore";
+import { query, collection, getDocs, where, doc, setDoc, limit } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { moduleData } from "./components/lessons";
 import { glossaryWords } from "./constants";
@@ -149,11 +141,7 @@ class DatabaseManager {
   async fetchUserProfile(userID) {
     try {
       logEvent(analytics, "fetch_user_profile_start", { userID });
-      const q = query(
-        collection(db, "userProfile"),
-        where("userID", "==", userID),
-        limit(1)
-      );
+      const q = query(collection(db, "userProfile"), where("userID", "==", userID), limit(1));
       const querySnapshot = await getDocs(q);
 
       if (!querySnapshot.empty) {
@@ -183,11 +171,7 @@ class DatabaseManager {
   async getUserDocumentIdByUid(uid) {
     try {
       logEvent(analytics, "get_user_document_by_uid_start", { uid });
-      const q = query(
-        collection(db, "users"),
-        where("uid", "==", uid),
-        limit(1)
-      );
+      const q = query(collection(db, "users"), where("uid", "==", uid), limit(1));
       const querySnapshot = await getDocs(q);
 
       if (querySnapshot.empty) {
@@ -266,6 +250,9 @@ class DatabaseManager {
       if (userProfile && userProfile.completedLessons) {
         const completedLessons = userProfile.completedLessons;
         xp += completedLessons.length * 50;
+        if (completedLessons.length >= 3) xp += 50;
+        if (completedLessons.length >= 5) xp += 50;
+        if (completedLessons.length >= 9) xp += 50;
       }
 
       if (scores.length === 0) {
@@ -298,11 +285,7 @@ class DatabaseManager {
 
     try {
       const userID = await this.getCurrentUserId();
-      const q = query(
-        collection(db, "userProfile"),
-        where("userID", "==", userID),
-        limit(1)
-      );
+      const q = query(collection(db, "userProfile"), where("userID", "==", userID), limit(1));
       const querySnapshot = await getDocs(q);
 
       let userProfile = null;
@@ -523,12 +506,11 @@ class DatabaseManager {
       logEvent(analytics, "fetchLeaderboardData_start");
 
       // Fetch all users, profiles, and scores in parallel
-      const [userSnapshot, userProfilesSnapshot, scoresSnapshot] =
-        await Promise.all([
-          getDocs(collection(db, "users")),
-          getDocs(collection(db, "userProfile")),
-          getDocs(collection(db, "Scores")),
-        ]);
+      const [userSnapshot, userProfilesSnapshot, scoresSnapshot] = await Promise.all([
+        getDocs(collection(db, "users")),
+        getDocs(collection(db, "userProfile")),
+        getDocs(collection(db, "Scores")),
+      ]);
 
       // Map user profiles and scores by user ID
       const userProfiles = userProfilesSnapshot.docs.reduce((acc, doc) => {
@@ -551,10 +533,7 @@ class DatabaseManager {
         const userProfile = userProfiles[user.uid] || null;
 
         const name = userProfile?.username || userProfile?.name || user.name;
-        const xp = this.calculateXP(
-          userProfile,
-          scoresByUserID[user.uid] || []
-        );
+        const xp = this.calculateXP(userProfile, scoresByUserID[user.uid] || []);
 
         return {
           name,
@@ -600,6 +579,13 @@ class DatabaseManager {
 
     return xp;
   }
+
+  // async addBadgeToUser(userID, badge, profileRef) {
+  //   logEvent(analytics, "adding_badge_start", { userID });
+
+  //   if
+
+  // }
 }
 
 export default DatabaseManager = new DatabaseManager();

@@ -12,25 +12,11 @@ import { auth } from "../firebase";
 // import welcomeLogo from "./images/welcomeLogo.svg";
 import defaultProfile from "./images/default_profile.jpg";
 
-/*
-Notes For Backend
-
-Some things are dynamic, some are static
-
-The following are the data we need for this page:
-- the module badges are displayed dynamically based on the variable `completedModules`. Need to track and fetch the no of modules completed from db
-- Elite Badges are not dynamic yet. need to make it dynamic based on earned user xp. Also, how are these awarded?
-
-** Apologies for the huge amount of notes, please read through all of these, all of these need to be addressed.
-
-
-
-TO DO:
-fetch all the relavent data and address the concerns above. How you are getting what data from where is left to you.
-Need to decide what data to display in account details. If they should be editable the implement the feature to edit them and update the db accordingly
-
-
-*/
+const extractModuleNumber = (lessonName) => {
+  if (lessonName === "Introduction") return 0;
+  const match = lessonName.match(/Module (\d+)/);
+  return match ? parseInt(match[1]) : null;
+};
 
 const milestones = [
   { xp: 0, label: "Novice" },
@@ -48,14 +34,24 @@ const milestones = [
 //   const currentXP = 575; // Replace this later with dynamic value
 
 const Profile = () => {
-  const totalModules = 10;
-  const modules = Array.from({ length: totalModules }, (_, i) => i + 1);
+  const modules = [
+    { id: 0, name: "Introduction" },
+    { id: 1, name: "Module 1" },
+    { id: 2, name: "Module 2" },
+    { id: 3, name: "Module 3" },
+    { id: 4, name: "Module 4" },
+    { id: 5, name: "Module 5" },
+    { id: 6, name: "Module 6" },
+    { id: 7, name: "Module 7" },
+    { id: 8, name: "Module 8" },
+    { id: 9, name: "Module 9" },
+  ];
   const xps = [5, 10, 50, 100, 200, 500, 1000, 3000];
 
   const [userProfile, setUserProfile] = useState(null);
   const [user, loading, error] = useAuthState(auth);
   const [currentXP, setCurrentXP] = useState(0);
-  const [completedModules, setCompletedModules] = useState(0);
+  const [completedModules, setCompletedModules] = useState([]);
 
   useEffect(() => {
     async function fetchProfile() {
@@ -79,9 +75,10 @@ const Profile = () => {
 
   useEffect(() => {
     if (userProfile && userProfile.completedLessons) {
-      setCompletedModules(userProfile.completedLessons.length);
+      const completedModuleNumbers = userProfile.completedLessons.map(extractModuleNumber);
+      setCompletedModules(completedModuleNumbers);
     } else {
-      setCompletedModules(0);
+      setCompletedModules([]);
     }
   }, [userProfile]);
 
@@ -91,15 +88,12 @@ const Profile = () => {
     .reverse()
     .find((milestone) => currentXP >= milestone.xp);
   const nextMilestone =
-    milestones.find((milestone) => milestone.xp > currentXP) ||
-    currentMilestone;
+    milestones.find((milestone) => milestone.xp > currentXP) || currentMilestone;
 
   // Calculate progress percentage between milestones
   const progressRange = nextMilestone.xp - currentMilestone.xp;
   const progressPercent =
-    currentXP == 3000
-      ? "100"
-      : ((currentXP - currentMilestone.xp) / progressRange) * 100;
+    currentXP == 3000 ? "100" : ((currentXP - currentMilestone.xp) / progressRange) * 100;
 
   return (
     <>
@@ -111,9 +105,7 @@ const Profile = () => {
               <div className="profile-picture">
                 <img
                   style={{ display: userProfile ? "" : "none" }}
-                  src={
-                    userProfile?.imgURL ? userProfile?.imgURL : defaultProfile
-                  }
+                  src={userProfile?.imgURL ? userProfile?.imgURL : defaultProfile}
                   alt="Profile"
                 />
               </div>
@@ -127,9 +119,7 @@ const Profile = () => {
               </div>
             </div>
             <div className="profile-info-progress">
-              <div className="progress-current-milestone">
-                {currentMilestone.label}
-              </div>
+              <div className="progress-current-milestone">{currentMilestone.label}</div>
               <div className="milestone-progressbar-container">
                 {currentXP}/{nextMilestone.xp} XP
                 <div className="milestone-progress-bar">
@@ -139,9 +129,7 @@ const Profile = () => {
                   ></div>
                 </div>
               </div>
-              <div className="progress-next-milestone">
-                {nextMilestone.label}
-              </div>
+              <div className="progress-next-milestone">{nextMilestone.label}</div>
             </div>
           </div>
           <div className="ethical-evolution-container">
@@ -167,28 +155,22 @@ const Profile = () => {
           </div>
         </div>
         <div className="profile-lower-containers">
-          <UserProfile
-            userProfile={userProfile}
-            setUserProfile={setUserProfile}
-          />
+          <UserProfile userProfile={userProfile} setUserProfile={setUserProfile} />
           <div className="achivements-container">
             <div className="achivements-header">Your Achievements</div>
             <div className="achievements-section-header">Module Badges</div>
             <div className="achievements-badges-container">
               {modules.map((module) => (
                 <div
-                  key={module}
+                  key={`module-${module.id}`}
                   className="badge-box"
                   style={{
-                    filter:
-                      module <= completedModules ? "none" : "grayscale(1)", // Apply grayscale for unearned badges
-                    animation: `fadeInBounce 0.6s ease-in-out 0.${
-                      module - 1
-                    }s forwards`,
+                    filter: completedModules.includes(module.id) ? "none" : "grayscale(1)",
+                    animation: `fadeInBounce 0.6s ease-in-out 0.${module.id}s forwards`,
                   }}
                 >
-                  <img src={ModuleBadge} alt={`ModuleBadge-${module}`} />
-                  Module {module}
+                  <img src={ModuleBadge} alt={`ModuleBadge-${module.name}`} />
+                  {module.name}
                 </div>
               ))}
             </div>
@@ -213,7 +195,7 @@ const Profile = () => {
               <div
                 className="badge-box"
                 style={{
-                  filter: completedModules >= 1 ? "" : "grayscale(1)",
+                  filter: completedModules.length >= 3 ? "" : "grayscale(1)",
                   animation: "fadeInBounce 0.6s ease-in-out 0.1s forwards",
                 }}
               >
@@ -223,7 +205,7 @@ const Profile = () => {
               <div
                 className="badge-box"
                 style={{
-                  filter: completedModules >= 4 ? "" : "grayscale(1)",
+                  filter: completedModules.length >= 5 ? "" : "grayscale(1)",
                   animation: "fadeInBounce 0.6s ease-in-out 0.2s forwards",
                 }}
               >
@@ -233,7 +215,7 @@ const Profile = () => {
               <div
                 className="badge-box"
                 style={{
-                  filter: completedModules >= 7 ? "" : "grayscale(1)",
+                  filter: completedModules.length >= 9 ? "" : "grayscale(1)",
                   animation: "fadeInBounce 0.6s ease-in-out 0.3s forwards",
                 }}
               >
