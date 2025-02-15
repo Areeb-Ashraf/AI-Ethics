@@ -11,56 +11,22 @@ import { Timestamp } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import DashboardTour from "./tours/DashboardTour";
 
-/*
-Notes For Backend
-
-*NOTHING on this page is dynamic, everything is static. Going to leave fetching what dat from where to you
-
-The following are the data that is needed:
-- the users first/last/full name should go in `db-user-name`
-- `db-course-name-subtext` displays the number of modules quizzez and hours, does this need to come from the db? [i dont think it does, needs to be discussed]
-- the `resume-btn` need to go to the module the user had last left the course, therefore need which module was last completed
-- `prog-black` and `prog-cont-percent` (sorry for the bad name) need to display how many modules out of total modules are completed
-- Should the `quiz-card-container`display the last 3 quizzees thatr were completed?  if so we need how many quizzes were completed.
-- `db-progress-current-milestone` and `db-progress-next-milestone` are current and next milestones which is based on the useres earned xp, 
-so the names might not need to come from the db but we need the users earned xp can calculate what their current and nex milestone is dynamically and disply those 
-- the `db-milestone-progressbar-container` has 575/650 XP displaying earnedXP/XP needed for next milestone. Need earned xp from db
-- Need to display earned user xp in `state-user-xp`
-- The `stat-module-semicircle-prog-container` is displaying what module the user is corrently on and how much of that module is completed. 
-Need this dat from db. Going to be a pain to track how much of a module the user has finished. All other progress bars are displayed based on the width percentage of the inner container but this prog bar is determined by rotation, formula can be found in css.
-- `stat-time-left` displays goal. Do we need this?
-- `upcoming-task-container` displays what the user needs to do next. Need completed module and completed quiz from db for this. One `task-box` for each.
-
-
-** Apologies for the huge amount of notes, please read through all of these, all of these need to be addressed.
-
-
-TO DO:
-fetch all the relavent data and address the concerns above. How you are getting what data from where is left to you.
-Resume button should go to the module the user had last left the course.
-
-To do for Areeb:
-Do animations
-complete quiz card design and render in loop the the last 3 completed quizzes dynamically
-add icons to the task box
-*/
-
 function calculateQuizScore(duration, accuracy) {
   return Math.round(Math.min((90 / duration) * 100, 100) + accuracy);
 }
 
 const milestones = [
   { xp: 0, label: "Novice" },
-  { xp: 50, label: "Ethics Explorer" },
-  { xp: 100, label: "AI Learner" },
-  { xp: 150, label: "Moral Thinker" },
-  { xp: 250, label: "Ethics Analyst" },
-  { xp: 350, label: "AI Scholar" },
-  { xp: 500, label: "Virtue Advocate" },
-  { xp: 650, label: "AI Specialist" },
-  { xp: 800, label: "Guardian of Ethics" },
-  { xp: 1000, label: "Master of Integrity" },
-  { xp: 3000, label: "Completionist" },
+  { xp: 100, label: "Ethics Explorer" }, // +100
+  { xp: 200, label: "AI Learner" }, // +100
+  { xp: 350, label: "Moral Thinker" }, // +150
+  { xp: 500, label: "Ethics Analyst" }, // +150
+  { xp: 750, label: "AI Scholar" }, // +250
+  { xp: 1000, label: "AI Specialist" }, // +250
+  { xp: 1300, label: "Guardian of Ethics" }, // +300
+  { xp: 1600, label: "Master of Integrity" }, // +300
+  { xp: 2000, label: "Completionist" }, // +400
+  { xp: 2400, label: "Perfectionist" }, // +400
 ];
 
 const Dashboard = () => {
@@ -137,14 +103,8 @@ const Dashboard = () => {
     // console.log("pre sort: ", LcompletedQuizzes);
 
     LcompletedQuizzes.sort((a, b) => {
-      let dateA =
-        a.timestamp instanceof Timestamp
-          ? a.timestamp.toDate()
-          : new Date(a.timestamp);
-      let dateB =
-        b.timestamp instanceof Timestamp
-          ? b.timestamp.toDate()
-          : new Date(b.timestamp);
+      let dateA = a.timestamp instanceof Timestamp ? a.timestamp.toDate() : new Date(a.timestamp);
+      let dateB = b.timestamp instanceof Timestamp ? b.timestamp.toDate() : new Date(b.timestamp);
 
       if (isNaN(dateA)) return 1; // `a` is invalid, place after `b`
       if (isNaN(dateB)) return -1; // `b` is invalid, place after `a`
@@ -168,9 +128,7 @@ const Dashboard = () => {
 
     // Get the last 3 completed lessons
     // given how we add lessons as completed in the db this should be the last 3 completed lessons
-    const LlastThreeCompleted = Array.isArray(completedLessons)
-      ? completedLessons.slice(-3)
-      : [];
+    const LlastThreeCompleted = Array.isArray(completedLessons) ? completedLessons.slice(-3) : [];
 
     [LlastThreeCompleted[0], LlastThreeCompleted[1], LlastThreeCompleted[2]] = [
       LlastThreeCompleted[2],
@@ -209,23 +167,14 @@ const Dashboard = () => {
     .reverse()
     .find((milestone) => currentXP >= milestone.xp);
   const nextMilestone =
-    milestones.find((milestone) => milestone.xp > currentXP) ||
-    currentMilestone;
+    milestones.find((milestone) => milestone.xp > currentXP) || currentMilestone;
 
   // Calculate progress percentage between milestones
   const progressRange = nextMilestone.xp - currentMilestone.xp;
   const progressPercent =
-    currentXP == 3000
-      ? "100"
-      : ((currentXP - currentMilestone.xp) / progressRange) * 100;
+    currentXP == 3000 ? "100" : ((currentXP - currentMilestone.xp) / progressRange) * 100;
 
-  const notCompletedThings = [
-    "Lesson 5",
-    "Quiz 5",
-    "Lesson 6",
-    "Quiz 6",
-    "Lesson 7",
-  ];
+  const notCompletedThings = ["Lesson 5", "Quiz 5", "Lesson 6", "Quiz 6", "Lesson 7"];
 
   const next2tasks = notCompletedThings.slice(0, 2);
 
@@ -237,8 +186,8 @@ const Dashboard = () => {
             <h1>Dashboard</h1>
             <div className="db-text-container">
               <div className="db-user-name">
-                Hey {userProfile && (userProfile.username || userProfile.name)}!
-                ! <div className="hand">👋</div>
+                Hey {userProfile && (userProfile.username || userProfile.name)}! !{" "}
+                <div className="hand">👋</div>
               </div>
               Let's get back to learning
             </div>
@@ -249,9 +198,7 @@ const Dashboard = () => {
                   <div className="db-course-name">
                     AI Ethics Course <span className="beginner">Beginner</span>
                   </div>
-                  <div className="db-course-name-subtext">
-                    9 Modules | 9 Quizzes | 10 Hours
-                  </div>
+                  <div className="db-course-name-subtext">9 Modules | 9 Quizzes | 10 Hours</div>
                   <button
                     className="resume-btn"
                     onClick={() => {
@@ -266,10 +213,7 @@ const Dashboard = () => {
                 </div>
               </div>
               <div className="prog-bottom">
-                <div
-                  className="prog-black"
-                  style={{ width: `${modulesProgress}%` }}
-                >
+                <div className="prog-black" style={{ width: `${modulesProgress}%` }}>
                   <div className="prog-cont-percent">{modulesProgress}%</div>
                 </div>
               </div>
@@ -326,9 +270,7 @@ const Dashboard = () => {
               <div className="db-progress-next-milestone">AI Specialist</div>
             </div> */}
             <div className="next-milestone-container">
-              <div className="db-progress-current-milestone">
-                {currentMilestone.label}
-              </div>
+              <div className="db-progress-current-milestone">{currentMilestone.label}</div>
               <div className="db-milestone-progressbar-container">
                 {currentXP}/{nextMilestone.xp} XP
                 <div className="db-milestone-progress-bar">
@@ -338,9 +280,7 @@ const Dashboard = () => {
                   ></div>
                 </div>
               </div>
-              <div className="db-progress-next-milestone">
-                {nextMilestone.label}
-              </div>
+              <div className="db-progress-next-milestone">{nextMilestone.label}</div>
             </div>
 
             {/* <h4>Statistic </h4> */}

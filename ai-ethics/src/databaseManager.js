@@ -563,6 +563,9 @@ class DatabaseManager {
 
     if (userProfile?.completedLessons) {
       xp += userProfile.completedLessons.length * 50;
+      if (userProfile.completedLessons.length >= 3) xp += 50;
+      if (userProfile.completedLessons.length >= 5) xp += 50;
+      if (userProfile.completedLessons.length >= 9) xp += 50;
     }
 
     const maxScores = {};

@@ -18,20 +18,33 @@ const extractModuleNumber = (lessonName) => {
   return match ? parseInt(match[1]) : null;
 };
 
+// const milestones = [
+//   { xp: 0, label: "Novice" },
+//   { xp: 50, label: "Ethics Explorer" },
+//   { xp: 150, label: "AI Learner" },
+//   { xp: 300, label: "Moral Thinker" },
+//   { xp: 400, label: "Ethics Analyst" },
+//   { xp: 500, label: "AI Scholar" },
+//   { xp: 600, label: "Virtue Advocate" },
+//   { xp: 800, label: "AI Specialist" },
+//   { xp: 1200, label: "Guardian of Ethics" },
+//   { xp: 1600, label: "Master of Integrity" },
+//   { xp: 2000, label: "Completionist" },
+//   { xp: 2400, label: "Perfectionist" },
+// ];
 const milestones = [
   { xp: 0, label: "Novice" },
-  { xp: 50, label: "Ethics Explorer" },
-  { xp: 100, label: "AI Learner" },
-  { xp: 150, label: "Moral Thinker" },
-  { xp: 250, label: "Ethics Analyst" },
-  { xp: 350, label: "AI Scholar" },
-  { xp: 500, label: "Virtue Advocate" },
-  { xp: 650, label: "AI Specialist" },
-  { xp: 800, label: "Guardian of Ethics" },
-  { xp: 1000, label: "Master of Integrity" },
-  { xp: 3000, label: "Completionist" },
+  { xp: 100, label: "Ethics Explorer" }, // +100
+  { xp: 200, label: "AI Learner" }, // +100
+  { xp: 350, label: "Moral Thinker" }, // +150
+  { xp: 500, label: "Ethics Analyst" }, // +150
+  { xp: 750, label: "AI Scholar" }, // +250
+  { xp: 1000, label: "AI Specialist" }, // +250
+  { xp: 1300, label: "Guardian of Ethics" }, // +300
+  { xp: 1600, label: "Master of Integrity" }, // +300
+  { xp: 2000, label: "Completionist" }, // +400
+  { xp: 2400, label: "Perfectionist" }, // +400
 ];
-//   const currentXP = 575; // Replace this later with dynamic value
 
 const Profile = () => {
   const modules = [
@@ -44,9 +57,11 @@ const Profile = () => {
     { id: 6, name: "Module 6" },
     { id: 7, name: "Module 7" },
     { id: 8, name: "Module 8" },
-    { id: 9, name: "Module 9" },
   ];
-  const xps = [5, 10, 50, 100, 200, 500, 1000, 3000];
+
+  // the size of each increase grows by 50xp each step
+  // +100, +150, +200, etc.
+  const xps = [100, 200, 350, 450, 700, 1000, 1350, 1750, 2400];
 
   const [userProfile, setUserProfile] = useState(null);
   const [user, loading, error] = useAuthState(auth);
