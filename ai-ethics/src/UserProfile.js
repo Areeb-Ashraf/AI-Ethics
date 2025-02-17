@@ -97,7 +97,7 @@ function UserProfile({ userProfile, setUserProfile }) {
               onChange={(e) => setName(e.target.value)}
             />
           </label>
-
+  
           <label className="account-label">
             Username:
             <input
@@ -118,6 +118,7 @@ function UserProfile({ userProfile, setUserProfile }) {
               onChange={(e) => setPhoto(e.target.files[0])}
             />
           </div>
+  
           <div className="account-actions-row">
             <button className="action-button" onClick={handleSaveChanges}>
               Save Changes
@@ -126,10 +127,27 @@ function UserProfile({ userProfile, setUserProfile }) {
               Cancel
             </button>
           </div>
+  
+          {/* Added Reset Password and Change Email buttons here */}
+          <div className="account-actions-row">
+            <button
+              className="action-button reset-password"
+              onClick={handleResetPassword}
+            >
+              Reset Password
+            </button>
+            <button
+              className="action-button change-email"
+              onClick={handleChangeEmail}
+            >
+              Change Email
+            </button>
+          </div>
         </div>
       </div>
     );
   }
+  
 
   // View mode to display profile details
   return (
@@ -158,22 +176,7 @@ function UserProfile({ userProfile, setUserProfile }) {
           </div>
         </div>
       </div>
-      <div className="spaced-box" />
-
-      <div className="account-actions-row">
-        <button
-          className="action-button reset-password"
-          onClick={handleResetPassword}
-        >
-          Reset Password
-        </button>
-        <button
-          className="action-button change-email"
-          onClick={handleChangeEmail}
-        >
-          Change Email
-        </button>
-      </div>
+      <div className="spaced-box" /> 
       <button
         className="action-button change-email"
         onClick={handleResetWalkthrough}

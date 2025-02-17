@@ -80,8 +80,8 @@
 
 /* It was an intentional decision to make this square instead of a circle*/
 .profile-picture-2 {
-    width: 120px; 
-    height: 120px;    
+    width: 180px; 
+    height: 180px;    
     overflow: hidden;
     border: 2px solid #ddd;
     display: flex;
@@ -215,8 +215,8 @@
 }
 
 .account-display{
-    width: 90%;
-    height: 18%;
+    width: 100%;
+    height: 40%;
     display: flex;
     flex-direction: row;
     gap: 15px;
@@ -421,22 +421,26 @@ align-items: flex-start; /* Align text to the left */
 }
 
 .name {
-font-size: 1.5rem;
+font-size: 1.8rem;
 font-weight: bold;
 }
 
 .username2 {
-font-size: 1.2rem;
+font-size: 1.5rem;
 color: gray; /* Subtle color for the username */
 }
 
 .account-actions-row {
     display: flex;
-    justify-content: center; /* Center the buttons horizontally */
+    justify-content: space-evenly; /* Even spacing between buttons */
     align-items: center;
-    margin-top: 20px; /* Add space above the buttons */
-    gap: 20px; /* Add space between the buttons */
+    width: 100%; /* Ensures full width */
+    flex-wrap: nowrap; /* Allows wrapping if needed on smaller screens */
+    margin-top: 20px; /* Space above buttons */
+    gap:15px
   }
+  
+  
   
   .action-button {
     padding: 10px 20px;
@@ -469,6 +473,7 @@ color: gray; /* Subtle color for the username */
     font-size: 1rem;
     font-weight: 600;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    margin-left: 175px
   }
   
   .cancel-button:hover {
