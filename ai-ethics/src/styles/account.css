@@ -20,6 +20,7 @@
     flex-direction: column;
 }
 
+
 .input-container {
     width: 70%;
     height: 95vh;
@@ -201,3 +202,35 @@
     color: #007bff; /* Adjust color as needed */
     font-weight: bold; /* Make it bold */
 }
+
+.button-container-two {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center horizontally */
+    gap: 15px; /* Ensure equal spacing */
+    margin-top: 20px;
+    width: 60%; /* Ensures uniform width */
+}
+
+#submit-button-two, 
+#google-signup-button {
+    width: 250px; /* Ensure both buttons have the same width */
+    height: 75px; /* Keep height uniform */
+    border-radius: 15px;
+    background: #0056D1;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto; /* Ensures both are centered */
+}
+
+#submit-button-two:hover,
+#google-signup-button:hover {
+    font-weight: 550;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
