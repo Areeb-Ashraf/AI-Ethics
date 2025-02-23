@@ -205,17 +205,17 @@
 
 .button-container-two {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center horizontally */
-    gap: 15px; /* Ensure equal spacing */
+    flex-direction: row;
+    justify-content: center; /* Center the buttons vertically */
+    gap: 20px; /* Adjust spacing between buttons */
     margin-top: 20px;
-    width: 60%; /* Ensures uniform width */
 }
 
-#submit-button-two, 
+
+#submit-button-two,
 #google-signup-button {
-    width: 250px; /* Ensure both buttons have the same width */
-    height: 75px; /* Keep height uniform */
+    width: 200px;
+    height: 75px;
     border-radius: 15px;
     background: #0056D1;
     color: white;
@@ -225,7 +225,6 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 0 auto; /* Ensures both are centered */
 }
 
 #submit-button-two:hover,
@@ -233,4 +232,3 @@
     font-weight: 550;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
-

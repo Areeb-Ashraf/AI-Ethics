@@ -160,20 +160,20 @@ const Signup = () => {
             </div>
           </label>
 
-          {/* Submit Button */}
-          <button id="submit-button-two" type="submit">
+          <div className="button-container-two">
+         <button id="submit-button-two" type="submit">
             Create Account
-          </button>
-        </form>
-
-        {/* Google Sign Up Button */}
-        <button id="google-signup-button"
-          onClick={handleGoogleSignup} >
-          <img src={googleLogo} alt="Google Logo" className="google-logo" />
-          Google Sign Up
         </button>
+        <button id="google-signup-button" onClick={handleGoogleSignup}>
+        <img src={googleLogo} alt="Google Logo" className="google-logo" />
+             Google Sign Up
+        </button>
+        </div>
+        </form>
       </div>
     </div>
+
+    
   );
 };
 

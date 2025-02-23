@@ -195,10 +195,10 @@ const Quiz = ({ quizID, onQuizStateChange  }) => {
           <div className="Great-Job">
     Accuracy: {Math.round((results.correctAnswers / results.totalQuestions) * 10)} / 10
   </div>
-          <div className="Great-Job">  XP: {Math.round((results.correctAnswers / results.totalQuestions) * 100)} / 100 + </div>
-          <div className="Great-Job"> Speed Score Bonus: {xp}/200 XP!! </div>
+          <div className="Great-Job">  XP: {Math.round((results.correctAnswers / results.totalQuestions) * 100)}  + </div>
+          <div className="Great-Job"> Speed Score Bonus: {xp}XP!! </div>
           <div className="result-text">
-            You finished the quiz in {formatTime(timeTaken)}.
+            You finished the quiz in {formatTime(timeTaken)}.<br/> and the total XP earned is {xp} XP
           </div>
           <div className="result-buttons-container">
   <div className="result-finish-btn" onClick={handleRetakeQuiz}>
