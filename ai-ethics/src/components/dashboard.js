@@ -189,7 +189,7 @@ const Dashboard = () => {
                 Hey {userProfile && (userProfile.username || userProfile.name)}!{" "}
                 <div className="hand">👋</div>
               </div>
-              Let's get back to learning
+              {modulesProgress === 0 ? "Begin your journey" : "Let's get back to learning"} {/* changed for new account implementation */}
             </div>
             <h4>Course Progress</h4>
             <div className="course-prog-container">
@@ -205,7 +205,7 @@ const Dashboard = () => {
                       toModules("/modules");
                     }}
                   >
-                    Resume
+                   {modulesProgress === 0 ? "Start" : "Resume"}  {/* changed from resume to implement a resume or start whenever it is a new account or not  */}
                   </button>{" "}
                 </div>
                 <div className="db-img">
