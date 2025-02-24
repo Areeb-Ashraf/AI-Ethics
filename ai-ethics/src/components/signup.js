@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { authManager } from "../firebase"; // Adjust the path as needed
+import googleLogo from "../google.png";
 import "../styles/account.css";
 import eyeIcon from "../eye.png"; // Adjust the path as needed
 import Swal from "sweetalert2";
@@ -46,6 +47,16 @@ const Signup = () => {
       });
     } catch (err) {
       console.error("Registration failed:", err.message);
+      alert(err.message);
+    }
+  };
+
+  const handleGoogleSignup = async () => {
+    try {
+      await authManager.loginWithGoogle();
+      navigate("/");
+    } catch (err) {
+      console.error("Google signup failed:", err.message);
       alert(err.message);
     }
   };
@@ -149,13 +160,20 @@ const Signup = () => {
             </div>
           </label>
 
-          {/* Submit Button */}
-          <button id="submit-button" type="submit">
+          <div className="button-container-two">
+         <button id="submit-button-two" type="submit">
             Create Account
-          </button>
+        </button>
+        <button id="google-signup-button" onClick={handleGoogleSignup}>
+        <img src={googleLogo} alt="Google Logo" className="google-logo" />
+             Google Sign Up
+        </button>
+        </div>
         </form>
       </div>
     </div>
+
+    
   );
 };
 

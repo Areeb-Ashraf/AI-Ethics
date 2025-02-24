@@ -114,12 +114,23 @@ function UserProfile({ userProfile, setUserProfile }) {
             Profile Pic:
             <input type="file" accept="image/*" onChange={(e) => setPhoto(e.target.files[0])} />
           </div>
+
           <div className="account-actions-row">
             <button className="action-button" onClick={handleSaveChanges}>
               Save Changes
             </button>
             <button className="cancel-button" onClick={toggleEditMode}>
               Cancel
+            </button>
+          </div>
+
+          {/* Added Reset Password and Change Email buttons here */}
+          <div className="account-actions-row">
+            <button className="action-button reset-password" onClick={handleResetPassword}>
+              Reset Password
+            </button>
+            <button className="action-button change-email" onClick={handleChangeEmail}>
+              Change Email
             </button>
           </div>
         </div>

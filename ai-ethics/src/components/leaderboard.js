@@ -59,7 +59,7 @@ const Leaderboard = () => {
           <div className="list-items-container">
             {filteredPlayers.map((player, index) => (
               <div key={index} className="list-box">
-                <div className="list-rank">{index + 4}</div>
+                <div className="list-rank">{sortedData.findIndex(p => p.name === player.name) + 1}</div>
                 <div className="list-name">{player.name}</div>
                 <div className="list-score">{player.score} XP</div>
               </div>
