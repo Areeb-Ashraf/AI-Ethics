@@ -112,11 +112,7 @@ function UserProfile({ userProfile, setUserProfile }) {
           </label>
           <div className="PP-label">
             Profile Pic:
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => setPhoto(e.target.files[0])}
-            />
+            <input type="file" accept="image/*" onChange={(e) => setPhoto(e.target.files[0])} />
           </div>
           <div className="account-actions-row">
             <button className="action-button" onClick={handleSaveChanges}>
@@ -145,39 +141,25 @@ function UserProfile({ userProfile, setUserProfile }) {
       <div className="account-display">
         <div className="left-section">
           <div className="profile-picture-2">
-            <img
-              src={userProfile?.imgURL ? userProfile?.imgURL : defaultProfile}
-              alt="Profile"
-            />
+            <img src={userProfile?.imgURL ? userProfile?.imgURL : defaultProfile} alt="Profile" />
           </div>
         </div>
         <div className="right-section">
           <div className="name">Name: {userProfile?.name || "Noname"}</div>
-          <div className="username2">
-            Username: {userProfile?.username || "Noname"}
-          </div>
+          <div className="username2">Username: {userProfile?.username || "Noname"}</div>
         </div>
       </div>
       <div className="spaced-box" />
 
       <div className="account-actions-row">
-        <button
-          className="action-button reset-password"
-          onClick={handleResetPassword}
-        >
+        <button className="action-button reset-password" onClick={handleResetPassword}>
           Reset Password
         </button>
-        <button
-          className="action-button change-email"
-          onClick={handleChangeEmail}
-        >
+        <button className="action-button change-email" onClick={handleChangeEmail}>
           Change Email
         </button>
       </div>
-      <button
-        className="action-button change-email"
-        onClick={handleResetWalkthrough}
-      >
+      <button className="action-button change-email" onClick={handleResetWalkthrough}>
         Reset Walkthrough Progress
       </button>
     </div>
@@ -233,8 +215,7 @@ function UserProfile({ userProfile, setUserProfile }) {
 
   // These functions would handle the reset password and change email actions
   function handleResetPassword() {
-    // Logic to trigger password reset (e.g., Firebase authentication)
-    console.log("Password reset link sent.");
+    navigate("/reset-password");
   }
 
   function handleChangeEmail() {

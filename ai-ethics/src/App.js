@@ -1,11 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect, Suspense, lazy } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 import Sidebar from "./components/sidebar";
 import AIGlossary from "./aiGlossary";
@@ -19,6 +14,7 @@ import Welcome from "./components/welcome";
 import Help from "./components/help";
 import Profile from "./components/profile";
 import Dashboard from "./components/dashboard";
+import ResetPassword from "./components/ResetPassword";
 
 const Leaderboard = lazy(() => import("./components/leaderboard"));
 const DatabaseManTester = lazy(() => import("./DatabaseManTester"));
@@ -57,17 +53,13 @@ function App() {
           {/* Public Routes */}
           <Route
             path="/"
-            element={
-              isLoggedIn ? <Navigate to="/homepage" replace /> : <Welcome />
-            }
+            element={isLoggedIn ? <Navigate to="/homepage" replace /> : <Welcome />}
           />
-          <Route
-            path="/login"
-            element={<LoginForm setIsLoggedIn={setIsLoggedIn} />}
-          />
+          <Route path="/login" element={<LoginForm setIsLoggedIn={setIsLoggedIn} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/databaseTest" element={<DatabaseManTester />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
 
           {/* Protected Routes */}
           <Route
