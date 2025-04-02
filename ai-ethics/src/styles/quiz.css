@@ -210,6 +210,15 @@
     padding-bottom: 3px;
 }
 
+.quiz-prev-btn{
+    background-color: #fff;
+    border: 2px solid #98C0FB;
+}
+
+.quiz-prev-btn:hover{
+    border: 3px solid #98C0FB;
+}
+
 .quiz-next-btn{
     border: 4px solid #0056D1;
     background-color: #0056D1;

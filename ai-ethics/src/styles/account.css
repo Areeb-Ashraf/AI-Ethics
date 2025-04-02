@@ -4,8 +4,7 @@
 }
 .account-container {
     width: 100%;
-    height: 95vh;
-    margin: 20px;
+    height: 100vh;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -18,6 +17,7 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    margin: 20px;
 }
 
 
@@ -103,7 +103,8 @@
 #google-login-button,
 #forgot-password-button {
     width: 200px;
-    height: 75px;
+    height: 55px;
+    border: none;
     border-radius: 15px;
     background: #0056D1;
     color: white;
@@ -113,6 +114,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 #submit-button:hover,
@@ -215,7 +217,9 @@
 #submit-button-two,
 #google-signup-button {
     width: 200px;
-    height: 75px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
     border-radius: 15px;
     background: #0056D1;
     color: white;

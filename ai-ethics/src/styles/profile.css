@@ -220,6 +220,7 @@
     display: flex;
     flex-direction: row;
     gap: 15px;
+    margin-left: 20px;
 }
 
 .ad-column{
@@ -481,9 +482,7 @@ color: gray; /* Subtle color for the username */
     padding: 10px; /* Reduced padding */
     background: white;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 80%;
-    margin: 0 auto;
     box-sizing: border-box;
   }
   

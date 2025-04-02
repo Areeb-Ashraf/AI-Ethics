@@ -32,7 +32,7 @@ const Leaderboard = () => {
               id={`rank-${index === 0 ? 2 : index === 1 ? 1 : 3}-container`} // Makes sure the first one has rank 2 container since it was swapped before
             >
               <div className="rank-icon profile-picture-2">
-                <img src={player.img} alt="Profile" />
+                <img src={player.img} alt="" />
               </div>
               <div className="rank-name">{player.name}</div>
               <div className="rank-score">{player.score} XP</div>
